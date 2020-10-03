@@ -9,7 +9,6 @@ use Illuminate\View\View;
 use Turahe\Address\Http\Requests\Province\ProvinceStoreRequest;
 use Turahe\Address\Http\Requests\Province\ProvinceUpdateRequest;
 use Turahe\Address\Models\Province;
-use Turahe\Address\Tables\ProvinsiTable;
 
 /**
  * Class ProvinceController
@@ -73,8 +72,8 @@ class ProvinceController extends Controller
 
     /**
      * @param Province $province
-     * @return RedirectResponse
      * @throws \Exception
+     * @return RedirectResponse
      */
     public function destroy(Province $province): RedirectResponse
     {

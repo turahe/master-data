@@ -68,8 +68,8 @@ class DistrictController extends Controller
 
     /**
      * @param District $district
-     * @return RedirectResponse
      * @throws \Exception
+     * @return RedirectResponse
      */
     public function destroy(District $district): RedirectResponse
     {

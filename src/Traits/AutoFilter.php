@@ -2,8 +2,8 @@
 
 
 namespace Turahe\Address\Traits;
-use Illuminate\Database\Eloquent\Builder;
 
+use Illuminate\Database\Eloquent\Builder;
 
 trait AutoFilter
 {
@@ -15,5 +15,4 @@ trait AutoFilter
             }
         }
     }
-
 }

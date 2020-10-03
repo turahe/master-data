@@ -9,7 +9,6 @@ use Illuminate\View\View;
 use Turahe\Address\Http\Requests\City\CityStoreRequest;
 use Turahe\Address\Http\Requests\City\CityUpdateUpdate;
 use Turahe\Address\Models\City;
-use Turahe\Address\Tables\KabupatenTable;
 
 /**
  * Class CityController
@@ -76,8 +75,8 @@ class CityController extends Controller
 
     /**
      * @param City $city
-     * @return RedirectResponse
      * @throws \Exception
+     * @return RedirectResponse
      */
     public function destroy(City $city): RedirectResponse
     {

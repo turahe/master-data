@@ -75,8 +75,8 @@ class VillageController extends Controller
 
     /**
      * @param Village $village
-     * @return RedirectResponse
      * @throws \Exception
+     * @return RedirectResponse
      */
     public function destroy(Village $village): RedirectResponse
     {
