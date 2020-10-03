@@ -1,0 +1,60 @@
+{
+    "name": "turahe/address",
+    "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, Kecamatan, dan Keluarahan/Desa di seluruh Address.",
+    "keywords": [
+        "laravel",
+        "turahe",
+        "address",
+        "alamat",
+        "indonesia",
+        "provinsi",
+        "kabupaten",
+        "kota",
+        "kecamatan",
+        "kelurahan",
+        "desa"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nur Wachid",
+            "email": "wachid@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Turahe\\Address\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Turahe\\Address\\Test\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.2.5",
+        "illuminate/support": "^6.0 | ^7.0 | ^8.0",
+      "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5 | ^9.3",
+        "php-coveralls/php-coveralls": "^2.1",
+        "orchestra/testbench": "^4.0|^5.0"
+    },
+    "suggest": {
+        "spatie/geocoder": "Synchronize latitude longitude data directly using Google's Geocoding Service"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Turahe\\Address\\ServiceProvider"
+            ],
+            "aliases": {
+                "Address": "Turahe\\Address\\Facade"
+            }
+        }
+    }
+}
