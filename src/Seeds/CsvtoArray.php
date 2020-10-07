@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Address\Seeds;
+namespace Turahe\Master\Seeds;
 
 class CsvtoArray
 {

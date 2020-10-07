@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Address\Http\Requests\District;
+namespace Turahe\Master\Http\Requests\District;
 
 class DistrictUpdateRequest extends DistrictStoreRequest
 {

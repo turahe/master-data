@@ -1,10 +1,11 @@
 <?php
 
-namespace Turahe\Address\Seeds;
+namespace Turahe\Master\Seeds;
 
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Turahe\Master\Models\City;
 
 class CitiesSeeder extends Seeder
 {
@@ -15,16 +16,18 @@ class CitiesSeeder extends Seeder
         $file = __DIR__.'/../../resources/csv/cities.csv';
         $header = ['id', 'province_id', 'name', 'lat', 'long'];
         $data = $Csv->csv_to_array($file, $header);
-        $data = array_map(function ($arr) use ($now) {
-            $arr['meta'] = json_encode(['lat' => $arr['lat'], 'long' => $arr['long']]);
-            unset($arr['lat'], $arr['long']);
+        $cities = array_map(function ($arr) use ($now) {
 
-            return $arr + ['created_at' => $now, 'updated_at' => $now];
+            return $arr + [
+                    'province_id' => $arr['province_id'],
+                    'name' => $arr['name'],
+                    'lat' => $arr['lat'],
+                    'long' => $arr['long'],
+                    'created_at' => $now,
+                    'updated_at' => $now
+                ];
         }, $data);
 
-        $collection = collect($data);
-        foreach ($collection->chunk(50) as $chunk) {
-            DB::table(config('turahe.indonesia.table_prefix').'cities')->insert($chunk->toArray());
-        }
+        City::insert($cities);
     }
 }

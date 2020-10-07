@@ -1,18 +1,18 @@
 <?php
 
-namespace Turahe\Address\Http\Controllers;
+namespace Turahe\Master\Http\Controllers;
 
 use Illuminate\Database\QueryException;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller;
 use Illuminate\View\View;
-use Turahe\Address\Http\Requests\District\DistrictStoreRequest;
-use Turahe\Address\Http\Requests\District\DistrictUpdateRequest;
-use Turahe\Address\Models\District;
+use Turahe\Master\Http\Requests\District\DistrictStoreRequest;
+use Turahe\Master\Http\Requests\District\DistrictUpdateRequest;
+use Turahe\Master\Models\District;
 
 /**
  * Class DistrictController
- * @package Turahe\Address\Http\Controllers
+ * @package Turahe\Master\Http\Controllers
  */
 class DistrictController extends Controller
 {
@@ -23,7 +23,7 @@ class DistrictController extends Controller
     {
         $districts = District::with('cities')->autoSort()->autoFilter()->search(request('search'))->paginate();
 
-        return  view('address::districts.index', compact('districts'));
+        return  view('master::districts.index', compact('districts'));
     }
 
     /**
@@ -31,7 +31,7 @@ class DistrictController extends Controller
      */
     public function create(): View
     {
-        return view('address::districts.create');
+        return view('master::districts.create');
     }
 
     /**
@@ -42,7 +42,7 @@ class DistrictController extends Controller
     {
         District::create($request->validated());
 
-        return redirect()->route('address::districts.index')->with('success', 'District saved');
+        return redirect()->route('master::districts.index')->with('success', 'District saved');
     }
 
     /**
@@ -51,7 +51,7 @@ class DistrictController extends Controller
      */
     public function edit(District $district): View
     {
-        return view('address::districts.edit', compact('district'));
+        return view('master::districts.edit', compact('district'));
     }
 
     /**
@@ -63,7 +63,7 @@ class DistrictController extends Controller
     {
         $district->update($request->validated());
 
-        return redirect()->route('address::districts.edit', $district)->with('success', 'District saved');
+        return redirect()->route('master::districts.edit', $district)->with('success', 'District saved');
     }
 
     /**
@@ -76,7 +76,7 @@ class DistrictController extends Controller
         try {
             $district->delete();
 
-            return redirect()->route('address::districts.index')->with('success', 'District deleted');
+            return redirect()->route('master::districts.index')->with('success', 'District deleted');
         } catch (QueryException $e) {
             return redirect()->back()->with('error', $e->getMessage());
         }

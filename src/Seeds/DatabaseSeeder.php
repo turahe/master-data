@@ -1,13 +1,13 @@
 <?php
 
-namespace Turahe\Address\Seeds;
+namespace Turahe\Master\Seeds;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Schema;
-use Turahe\Address\Models\City;
-use Turahe\Address\Models\District;
-use Turahe\Address\Models\Province;
-use Turahe\Address\Models\Village;
+use Turahe\Master\Models\City;
+use Turahe\Master\Models\District;
+use Turahe\Master\Models\Province;
+use Turahe\Master\Models\Village;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,10 +20,12 @@ class DatabaseSeeder extends Seeder
     {
         $this->reset();
 
-        $this->call(ProvincesSeeder::class);
-        $this->call(CitiesSeeder::class);
-        $this->call(DistrictsSeeder::class);
-        $this->call(VillagesSeeder::class);
+        $this->call([
+            ProvincesSeeder::class,
+            CitiesSeeder::class,
+            DistrictsSeeder::class,
+            VillagesSeeder::class
+        ]);
     }
 
     public function reset()

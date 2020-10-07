@@ -1,11 +1,22 @@
 <?php
 
-namespace Turahe\Address;
+namespace Turahe\Master;
 
-class AddressService
+/**
+ * Class MasterService
+ * @package Turahe\Master
+ */
+class MasterService
 {
+    /**
+     * @var
+     */
     protected $search;
 
+    /**
+     * @param $location
+     * @return $this
+     */
     public function search($location)
     {
         $this->search = strtoupper($location);
@@ -13,6 +24,9 @@ class AddressService
         return $this;
     }
 
+    /**
+     * @return \Illuminate\Support\Collection
+     */
     public function all()
     {
         $result = collect([]);
@@ -31,6 +45,9 @@ class AddressService
         return $result->collapse();
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Collection|Models\Province[]
+     */
     public function allProvinces()
     {
         if ($this->search) {
@@ -40,6 +57,10 @@ class AddressService
         return Models\Province::all();
     }
 
+    /**
+     * @param int $numRows
+     * @return mixed
+     */
     public function paginateProvinces($numRows = 15)
     {
         if ($this->search) {
@@ -49,6 +70,9 @@ class AddressService
         return Models\Province::paginate($numRows);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Collection|Models\City[]
+     */
     public function allCities()
     {
         if ($this->search) {
@@ -58,6 +82,10 @@ class AddressService
         return Models\City::all();
     }
 
+    /**
+     * @param int $numRows
+     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+     */
     public function paginateCities($numRows = 15)
     {
         if ($this->search) {
@@ -67,6 +95,9 @@ class AddressService
         return Models\City::paginate($numRows);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Collection|Models\District[]
+     */
     public function allDistricts()
     {
         if ($this->search) {
@@ -76,6 +107,10 @@ class AddressService
         return Models\District::all();
     }
 
+    /**
+     * @param int $numRows
+     * @return mixed
+     */
     public function paginateDistricts($numRows = 15)
     {
         if ($this->search) {
@@ -85,6 +120,9 @@ class AddressService
         return Models\District::paginate($numRows);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Collection|Models\Village[]
+     */
     public function allVillages()
     {
         if ($this->search) {
@@ -94,6 +132,10 @@ class AddressService
         return Models\Village::all();
     }
 
+    /**
+     * @param int $numRows
+     * @return mixed
+     */
     public function paginateVillages($numRows = 15)
     {
         if ($this->search) {
@@ -103,6 +145,11 @@ class AddressService
         return Models\Village::paginate($numRows);
     }
 
+    /**
+     * @param $provinceId
+     * @param null $with
+     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|mixed|null
+     */
     public function findProvince($provinceId, $with = null)
     {
         $with = (array) $with;
@@ -126,6 +173,11 @@ class AddressService
         return Models\Province::find($provinceId);
     }
 
+    /**
+     * @param $cityId
+     * @param null $with
+     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|Models\City|Models\City[]|null
+     */
     public function findCity($cityId, $with = null)
     {
         $with = (array) $with;
@@ -137,6 +189,11 @@ class AddressService
         return Models\City::find($cityId);
     }
 
+    /**
+     * @param $districtId
+     * @param null $with
+     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|mixed|null
+     */
     public function findDistrict($districtId, $with = null)
     {
         $with = (array) $with;
@@ -160,6 +217,11 @@ class AddressService
         return Models\District::find($districtId);
     }
 
+    /**
+     * @param $villageId
+     * @param null $with
+     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|mixed|null
+     */
     public function findVillage($villageId, $with = null)
     {
         $with = (array) $with;
@@ -199,6 +261,12 @@ class AddressService
         return Models\Village::find($villageId);
     }
 
+    /**
+     * @param $object
+     * @param $relation
+     * @param false $belongsTo
+     * @return mixed
+     */
     private function loadRelation($object, $relation, $belongsTo = false)
     {
         $exploded = explode('.', $relation);

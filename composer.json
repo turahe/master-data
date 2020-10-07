@@ -1,6 +1,6 @@
 {
     "name": "turahe/address",
-    "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, Kecamatan, dan Keluarahan/Desa di seluruh Address.",
+    "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, Kecamatan, dan Keluarahan/Desa di seluruh Master.",
     "keywords": [
         "laravel",
         "turahe",
@@ -23,12 +23,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Turahe\\Address\\": "src/"
+            "Turahe\\Master\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Turahe\\Address\\Test\\": "tests/"
+            "Turahe\\Master\\Test\\": "tests/"
         }
     },
     "require": {
@@ -50,10 +50,10 @@
         },
         "laravel": {
             "providers": [
-                "Turahe\\Address\\ServiceProvider"
+              "MasterServiceProvider"
             ],
             "aliases": {
-                "Address": "Turahe\\Address\\Facade"
+                "Master": "Master"
             }
         }
     }

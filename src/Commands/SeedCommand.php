@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Address\Commands;
+namespace Turahe\Master\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
@@ -12,7 +12,7 @@ class SeedCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'turahe:indonesia:seed';
+    protected $signature = 'turahe:master:seed';
 
     /**
      * The console command description.
@@ -38,7 +38,7 @@ class SeedCommand extends Command
      */
     public function handle()
     {
-        Artisan::call('db:seed', ['--class' => 'Turahe\Address\Seeds\DatabaseSeeder', '--force' => true]);
-        $this->info('Seeded: Turahe\Address\Seeds\IndonesiaSeeder');
+        Artisan::call('db:seed', ['--class' => 'Turahe\Master\Seeds\DatabaseSeeder', '--force' => true]);
+        $this->info('Seeded: Turahe\Master\Seeds\IndonesiaSeeder');
     }
 }

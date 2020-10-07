@@ -1,10 +1,10 @@
 <?php
 
-namespace Turahe\Address\Http\Requests\City;
+namespace Turahe\Master\Http\Requests\City;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
-use Turahe\Address\Models\City;
+use Turahe\Master\Models\City;
 
 class CityStoreRequest extends FormRequest
 {

@@ -3,9 +3,9 @@
 return [
     'table_prefix' => 'tm_',
     'route' => [
-        'enabled' => false,
+        'enabled' => true,
         'middleware' => ['web', 'auth'],
-        'prefix' => 'tm',
+        'prefix' => 'master',
     ],
     'view' => [
         'layout' => 'ui::layouts.app',

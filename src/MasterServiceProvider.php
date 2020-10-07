@@ -1,21 +1,22 @@
 <?php
 
-namespace Turahe\Address;
+namespace Turahe\Master;
 
+use App\Models\Permission;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Arr;
-use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
-use Turahe\Address\Commands\SeedCommand;
-use Turahe\Address\Commands\SyncCoordinateCommand;
+use Turahe\Master\Commands\SeedCommand;
+use Turahe\Master\Commands\SyncCoordinateCommand;
 
-class ServiceProvider extends BaseServiceProvider
+class MasterServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->bind('indonesia', function () {
-            return new AddressService();
+        $this->app->bind('master', function () {
+            return new MasterService();
         });
 
         $this->commands([
@@ -29,7 +30,7 @@ class ServiceProvider extends BaseServiceProvider
     */
     public function boot()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/address.php', 'laravolt.indonesia');
+        $this->mergeConfigFrom(__DIR__ . '/../config/master.php', 'turahe.master');
 
         $databasePath = __DIR__.'/../database/migrations';
         if ($this->isLumen()) {
@@ -41,24 +42,24 @@ class ServiceProvider extends BaseServiceProvider
         if (class_exists(Application::class)) {
             $this->publishes(
                 [
-                    __DIR__ . '/../config/address.php' => config_path('laravolt/address.php'),
+                    __DIR__ . '/../config/master.php' => config_path('turahe/master.php'),
                 ],
                 'config'
             );
         }
 
-        $this->loadViewsFrom(realpath(__DIR__.'/../resources/views'), 'indonesia');
+        $this->loadViewsFrom(realpath(__DIR__.'/../resources/views'), 'master');
 
-        if (config('laravolt.indonesia.route.enabled')) {
+        if (config('turahe.master.route.enabled')) {
             $this->registerRoutes();
         }
 
-        if (config('laravolt.indonesia.menu.enabled')) {
+        if (config('turahe.master.menu.enabled')) {
             $this->registerMenu();
         }
 
-        if ($this->app->bound('laravolt.acl')) {
-            $this->app['laravolt.acl']->registerPermission(Permission::toArray());
+        if ($this->app->bound('turahe.acl')) {
+            $this->app['turahe.acl']->registerPermission(Permission::toArray());
         }
 
         $this->registerMacro();
@@ -66,24 +67,24 @@ class ServiceProvider extends BaseServiceProvider
 
     protected function registerMenu()
     {
-        if ($this->app->bound('laravolt.menu')) {
-            $menu = app('laravolt.menu')->add('Data Wilayah');
-            $menu->add(__('Province'), route('indonesia::provinsi.index'))
+        if ($this->app->bound('turahe.menu')) {
+            $menu = app('turahe.menu')->add('Data Wilayah');
+            $menu->add(__('Province'), route('master::provinces.index'))
                 ->data('icon', 'map')
                 ->data('permission', Permission::MANAGE_INDONESIA)
-                ->active(config('laravolt.indonesia.route.prefix').'/provinsi/*');
-            $menu->add(__('Kota/City'), route('indonesia::kabupaten.index'))
+                ->active(config('turahe.master.route.prefix').'/provinces/*');
+            $menu->add(__('Kota/City'), route('master::cities.index'))
                 ->data('icon', 'map marker')
                 ->data('permission', Permission::MANAGE_INDONESIA)
-                ->active(config('laravolt.indonesia.route.prefix').'/kabupaten/*');
-            $menu->add(__('District'), route('indonesia::kecamatan.index'))
+                ->active(config('turahe.master.route.prefix').'/cities/*');
+            $menu->add(__('District'), route('master::districts.index'))
                 ->data('icon', 'map marker alternate')
                 ->data('permission', Permission::MANAGE_INDONESIA)
-                ->active(config('laravolt.indonesia.route.prefix').'/kecamatan/*');
-            $menu->add(__('Desa/Village'), route('indonesia::kelurahan.index'))
+                ->active(config('turahe.master.route.prefix').'/districts/*');
+            $menu->add(__('Desa/Village'), route('master::villages.index'))
                 ->data('icon', 'map pin')
                 ->data('permission', Permission::MANAGE_INDONESIA)
-                ->active(config('laravolt.indonesia.route.prefix').'/kelurahan/*');
+                ->active(config('turahe.master.route.prefix').'/villages/*');
         }
     }
 

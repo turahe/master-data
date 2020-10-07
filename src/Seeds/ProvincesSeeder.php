@@ -1,10 +1,10 @@
 <?php
 
-namespace Turahe\Address\Seeds;
+namespace Turahe\Master\Seeds;
 
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use Turahe\Master\Models\Province;
 
 class ProvincesSeeder extends Seeder
 {
@@ -15,13 +15,18 @@ class ProvincesSeeder extends Seeder
         $file = __DIR__.'/../../resources/csv/provinces.csv';
         $header = ['id', 'name', 'lat', 'long'];
         $data = $csv->csv_to_array($file, $header);
-        $data = array_map(function ($arr) use ($now) {
-            $arr['meta'] = json_encode(['lat' => $arr['lat'], 'long' => $arr['long']]);
-            unset($arr['lat'], $arr['long']);
+        $provinces = array_map(function ($arr) use ($now) {
 
-            return $arr + ['created_at' => $now, 'updated_at' => $now];
+            return [
+                'country_id' => 104,
+                'name' => $arr['name'],
+                'lat' => $arr['lat'],
+                'long' => $arr['long'],
+                'created_at' => $now,
+                'updated_at' => $now
+            ];
         }, $data);
 
-        DB::table(config('turahe.indonesia.table_prefix').'provinces')->insert($data);
+        Province::insert($provinces);
     }
 }

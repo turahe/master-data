@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVillagesTable extends Migration
+class CreateMasterVillagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,16 @@ class CreateVillagesTable extends Migration
      */
     public function up()
     {
-        Schema::create(config('turahe.address.table_prefix').'villages', function (Blueprint $table) {
+        Schema::create('tm_villages', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('district_id');
             $table->string('name', 255);
-            $table->text('meta')->nullable();
             $table->timestamps();
-
+        });
+        Schema::table('tm_villages', function (Blueprint $table) {
             $table->foreign('district_id')
-                ->references('id')
-                ->on(config('turahe.address.table_prefix').'districts')
-                ->onUpdate('cascade')->onDelete('restrict');
+                ->references('id')->on('tm_districts')
+                ->onDelete('cascade');
         });
     }
 
@@ -34,6 +33,6 @@ class CreateVillagesTable extends Migration
      */
     public function down()
     {
-        Schema::drop(config('turahe.address.table_prefix').'villages');
+        Schema::dropIfExists('tm_villages');
     }
 }

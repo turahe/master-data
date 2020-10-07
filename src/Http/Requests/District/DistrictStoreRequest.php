@@ -1,10 +1,10 @@
 <?php
 
-namespace Turahe\Address\Http\Requests\District;
+namespace Turahe\Master\Http\Requests\District;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
-use Turahe\Address\Models\District;
+use Turahe\Master\Models\District;
 
 class DistrictStoreRequest extends FormRequest
 {

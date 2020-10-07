@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Address\Test;
+namespace Turahe\Master\Test;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -14,14 +14,14 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            \Turahe\Address\ServiceProvider::class,
+            \Turahe\Master\MasterServiceProvider::class,
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'Address' => \Turahe\Address\Facade::class,
+            'Address' => \Turahe\Master\MasterFacade::class,
         ];
     }
 

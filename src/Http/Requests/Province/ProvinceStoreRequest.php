@@ -1,10 +1,10 @@
 <?php
 
-namespace Turahe\Address\Http\Requests\Province;
+namespace Turahe\Master\Http\Requests\Province;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
-use Turahe\Address\Models\Province;
+use Turahe\Master\Models\Province;
 
 class ProvinceStoreRequest extends FormRequest
 {

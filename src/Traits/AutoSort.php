@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Turahe\Address\Traits;
+namespace Turahe\Master\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;

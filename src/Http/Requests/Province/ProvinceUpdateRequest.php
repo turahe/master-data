@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Address\Http\Requests\Province;
+namespace Turahe\Master\Http\Requests\Province;
 
 class ProvinceUpdateRequest extends ProvinceStoreRequest
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Address\Http\Requests\City;
+namespace Turahe\Master\Http\Requests\City;
 
 class CityUpdateUpdate extends CityStoreRequest
 {

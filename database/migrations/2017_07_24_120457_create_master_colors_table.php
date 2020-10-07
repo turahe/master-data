@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProvincesTable extends Migration
+class CreateMasterColorsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateProvincesTable extends Migration
      */
     public function up()
     {
-        Schema::create(config('turahe.address.table_prefix').'provinces', function (Blueprint $table) {
+        Schema::create('tm_colors', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 255);
-            $table->text('meta')->nullable();
+            $table->string('name');
+            $table->string('code');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateProvincesTable extends Migration
      */
     public function down()
     {
-        Schema::drop(config('turahe.address.table_prefix').'provinces');
+        Schema::dropIfExists('tm_colors');
     }
 }

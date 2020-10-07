@@ -1,18 +1,18 @@
 <?php
 
-namespace Turahe\Address\Http\Controllers;
+namespace Turahe\Master\Http\Controllers;
 
 use Illuminate\Database\QueryException;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller;
 use Illuminate\View\View;
-use Turahe\Address\Http\Requests\Province\ProvinceStoreRequest;
-use Turahe\Address\Http\Requests\Province\ProvinceUpdateRequest;
-use Turahe\Address\Models\Province;
+use Turahe\Master\Http\Requests\Province\ProvinceStoreRequest;
+use Turahe\Master\Http\Requests\Province\ProvinceUpdateRequest;
+use Turahe\Master\Models\Province;
 
 /**
  * Class ProvinceController
- * @package Turahe\Address\Http\Controllers
+ * @package Turahe\Master\Http\Controllers
  */
 class ProvinceController extends Controller
 {
@@ -23,7 +23,7 @@ class ProvinceController extends Controller
     {
         $provinces = Province::autoSort()->autoFilter()->search(request('search'))->paginate();
 
-        return  view('address::provinces.index', compact('provinces'));
+        return  view('master::provinces.index', compact('provinces'));
     }
 
     /**
@@ -31,7 +31,7 @@ class ProvinceController extends Controller
      */
     public function create(): View
     {
-        return view('address::provinces.create');
+        return view('master::provinces.create');
     }
 
     /**
@@ -43,7 +43,7 @@ class ProvinceController extends Controller
         Province::create($request->validated());
 
         return redirect()
-            ->route('address::provinces.index')
+            ->route('master::provinces.index')
             ->with('success', 'Province saved');
     }
 
@@ -53,7 +53,7 @@ class ProvinceController extends Controller
      */
     public function edit(Province $province): View
     {
-        return view('address::provinces.edit', compact('province'));
+        return view('master::provinces.edit', compact('province'));
     }
 
     /**
@@ -66,7 +66,7 @@ class ProvinceController extends Controller
         $province->update($request->validated());
 
         return redirect()
-            ->route('address::provinces.edit', $province)
+            ->route('master::provinces.edit', $province)
             ->with('success', 'Province saved');
     }
 
@@ -81,7 +81,7 @@ class ProvinceController extends Controller
             $province->delete();
 
             return redirect()
-                ->route('address::provinces.index')
+                ->route('master::provinces.index')
                 ->with('success', 'Province deleted');
         } catch (QueryException $e) {
             return redirect()->back()->with('error', $e->getMessage());

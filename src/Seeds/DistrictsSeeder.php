@@ -1,30 +1,34 @@
 <?php
 
-namespace Turahe\Address\Seeds;
+namespace Turahe\Master\Seeds;
 
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Turahe\Master\Models\District;
 
 class DistrictsSeeder extends Seeder
 {
     public function run()
     {
-        $now = Carbon::now();
+        $now = now()->toDateTimeString();
         $csv = new CsvtoArray();
         $file = __DIR__.'/../../resources/csv/districts.csv';
         $header = ['id', 'city_id', 'name', 'lat', 'long'];
         $data = $csv->csv_to_array($file, $header);
-        $data = array_map(function ($arr) use ($now) {
-            $arr['meta'] = json_encode(['lat' => $arr['lat'], 'long' => $arr['long']]);
-            unset($arr['lat'], $arr['long']);
+        $districts = array_map(function ($arr) use ($now) {
 
-            return $arr + ['created_at' => $now, 'updated_at' => $now];
+            return [
+                'name' => $arr['name'],
+                'city_id' => $arr['city_id'],
+                'lat' => $arr['lat'],
+                'long' => $arr['long'],
+                'created_at' => $now,
+                'updated_at' => $now
+            ];
         }, $data);
 
-        $collection = collect($data);
-        foreach ($collection->chunk(50) as $chunk) {
-            DB::table(config('turahe.indonesia.table_prefix').'districts')->insert($chunk->toArray());
-        }
+        District::insert($districts);
+
     }
 }

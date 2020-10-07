@@ -1,13 +1,13 @@
 <?php
 
-namespace Turahe\Address\Models;
+namespace Turahe\Master\Models;
 
-use Turahe\Address\Traits\AutoFilter;
-use Turahe\Address\Traits\AutoSort;
+use Turahe\Master\Traits\AutoFilter;
+use Turahe\Master\Traits\AutoSort;
 
 /**
  * Class Model
- * @package Turahe\Address\Models
+ * @package Turahe\Master\Models
  */
 class Model extends \Illuminate\Database\Eloquent\Model
 {

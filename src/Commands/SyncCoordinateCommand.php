@@ -1,10 +1,13 @@
 <?php
 
-namespace Turahe\Address\Commands;
+namespace Turahe\Master\Commands;
 
 use GuzzleHttp\Exception\ServerException;
 use Illuminate\Console\Command;
-use Turahe\Address\Models\Province;
+use Turahe\Master\Models\City;
+use Turahe\Master\Models\District;
+use Turahe\Master\Models\Province;
+use Turahe\Master\Models\Village;
 
 class SyncCoordinateCommand extends Command
 {
@@ -13,7 +16,7 @@ class SyncCoordinateCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'laravolt:indonesia:sync-coordinate';
+    protected $signature = 'turahe:master:sync-coordinate';
 
     /**
      * The console command description.
@@ -55,11 +58,11 @@ class SyncCoordinateCommand extends Command
 
         $this->line('');
 
-        $count = Kabupaten::count();
+        $count = City::count();
         $this->info("Processing {$count} City");
         $bar = $this->output->createProgressBar($count);
         $bar->start();
-        Kabupaten::with('provinsi')->cursor()->each(function ($item) use ($bar) {
+        City::with('provinsi')->cursor()->each(function ($item) use ($bar) {
             $meta = $item->meta;
             $geocoding = \Geocoder::getCoordinatesForAddress($item->address);
             $meta['lat'] = $geocoding['lat'] ?? null;
@@ -71,11 +74,11 @@ class SyncCoordinateCommand extends Command
 
         $this->line('');
 
-        $count = Kecamatan::count();
+        $count = District::count();
         $this->info("Processing {$count} District");
         $bar = $this->output->createProgressBar($count);
         $bar->start();
-        Kecamatan::with('kabupaten.provinsi')->cursor()->each(function ($item) use ($bar) {
+        District::with('kabupaten.provinsi')->cursor()->each(function ($item) use ($bar) {
             $meta = $item->meta;
             $geocoding = \Geocoder::getCoordinatesForAddress($item->address);
             $meta['lat'] = $geocoding['lat'] ?? null;
@@ -87,11 +90,11 @@ class SyncCoordinateCommand extends Command
 
         $this->line('');
 
-        $count = Kelurahan::whereNull('meta')->count();
+        $count = Village::whereNull('meta')->count();
         $this->info("Processing {$count} Village");
         $bar = $this->output->createProgressBar($count);
         $bar->start();
-        Kelurahan::whereNull('meta')->cursor()->each(function ($item) use ($bar) {
+        Village::whereNull('meta')->cursor()->each(function ($item) use ($bar) {
             $meta = $item->meta;
             if (!$meta) {
                 try {
