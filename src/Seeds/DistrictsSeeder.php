@@ -2,9 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 use Turahe\Master\Models\District;
 
 class DistrictsSeeder extends Seeder
