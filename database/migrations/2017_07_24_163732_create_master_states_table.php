@@ -16,12 +16,13 @@ class CreateMasterStatesTable extends Migration
         Schema::create('tm_states', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('country_id');
-            $table->string('country_name', 255);
             $table->string('name', 255);
             $table->string('region', 255)->nullable();
             $table->string('iso_3166_2', 2)->nullable();
             $table->string('region_code', 10)->nullable();
             $table->string('calling_code', 5)->nullable();
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
             $table->boolean('active')->default(1);
             $table->timestamps();
         });

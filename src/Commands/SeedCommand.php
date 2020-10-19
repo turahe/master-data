@@ -39,6 +39,6 @@ class SeedCommand extends Command
     public function handle()
     {
         Artisan::call('db:seed', ['--class' => 'Turahe\Master\Seeds\DatabaseSeeder', '--force' => true]);
-        $this->info('Seeded: Turahe\Master\Seeds\IndonesiaSeeder');
+        $this->info('Seeded: Turahe\Master\Seeds\DatabaseSeeder');
     }
 }

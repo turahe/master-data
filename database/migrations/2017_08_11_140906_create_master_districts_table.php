@@ -17,6 +17,8 @@ class CreateMasterDistrictsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('city_id');
             $table->string('name', 255);
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
             $table->timestamps();
         });
         Schema::table('tm_districts', function (Blueprint $table) {

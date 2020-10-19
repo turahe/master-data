@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Cache;
 /**
  * Class Village
  * @package Turahe\Master\Models
- *
+ * @mixin \Eloquent
  */
 class Village extends Model
 {

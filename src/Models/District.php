@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Cache;
 /**
  * Class District
  * @package Turahe\Master\Models
+ * @mixin \Eloquent
  */
 class District extends Model
 {

@@ -14,8 +14,8 @@ class CityTest extends TestCase
     /** @test */
     public function a_city_has_belongs_to_province_relation()
     {
-        $this->seed('Turahe\Master\Seeds\ProvincesSeeder');
-        $this->seed('Turahe\Master\Seeds\CitiesSeeder');
+        $this->seed('Turahe\Master\Seeds\ProvincesTableSeeder');
+        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
         $city = City::first();
 
         $this->assertInstanceOf(Province::class, $city->province);
@@ -25,8 +25,8 @@ class CityTest extends TestCase
     /** @test */
     public function a_city_has_many_districts_relation()
     {
-        $this->seed('Turahe\Master\Seeds\CitiesSeeder');
-        $this->seed('Turahe\Master\Seeds\DistrictsSeeder');
+        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
+        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
         $city = City::first();
 
         $this->assertInstanceOf(Collection::class, $city->districts);
@@ -36,9 +36,9 @@ class CityTest extends TestCase
     /** @test */
     public function a_city_has_many_villages_relation()
     {
-        $this->seed('Turahe\Master\Seeds\CitiesSeeder');
-        $this->seed('Turahe\Master\Seeds\DistrictsSeeder');
-        $this->seed('Turahe\Master\Seeds\VillagesSeeder');
+        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
+        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
+        $this->seed('Turahe\Master\Seeds\VillagesTableSeeder');
         $city = City::first();
 
         $this->assertInstanceOf(Collection::class, $city->villages);
@@ -48,7 +48,7 @@ class CityTest extends TestCase
     /** @test */
     public function a_city_has_name_attribute()
     {
-        $this->seed('Turahe\Master\Seeds\CitiesSeeder');
+        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
         $city = City::first();
 
         $this->assertEquals('KABUPATEN SIMEULUE', $city->name);
@@ -57,8 +57,8 @@ class CityTest extends TestCase
     /** @test */
     public function a_city_has_province_name_attribute()
     {
-        $this->seed('Turahe\Master\Seeds\ProvincesSeeder');
-        $this->seed('Turahe\Master\Seeds\CitiesSeeder');
+        $this->seed('Turahe\Master\Seeds\ProvincesTableSeeder');
+        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
         $city = City::first();
 
         $this->assertEquals('ACEH', $city->province_name);
@@ -67,7 +67,7 @@ class CityTest extends TestCase
     /** @test */
     public function a_city_has_logo_path_attribute()
     {
-        $this->seed('Turahe\Master\Seeds\CitiesSeeder');
+        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
         $city = City::first();
 
         $this->assertNull($city->logo_path);
@@ -76,7 +76,7 @@ class CityTest extends TestCase
     /** @test */
     public function a_city_can_store_meta_column()
     {
-        $this->seed('Turahe\Master\Seeds\CitiesSeeder');
+        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
         $city = City::first();
         $city->meta = ['luas_wilayah' => 200.2];
         $city->save();
