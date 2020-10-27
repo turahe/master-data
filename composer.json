@@ -1,5 +1,5 @@
 {
-    "name": "turahe/address",
+    "name": "turahe/master-data",
     "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, Kecamatan, dan Keluarahan/Desa di seluruh Master.",
     "keywords": [
         "laravel",
