@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Cache;
 
 /**
  * Class Village
+ * @property null|string district
+ * @property null|string name
  * @package Turahe\Master\Models
  * @mixin \Eloquent
  */

@@ -3,7 +3,6 @@
 
 namespace Turahe\Master\Http\Controllers;
 
-
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller;
 use Illuminate\View\View;
@@ -48,5 +47,4 @@ class CurrencyController extends Controller
             ->route('master::currencies.index')
             ->with('success', 'Currency deleted');
     }
-
 }

@@ -14,7 +14,6 @@ class CitiesTableSeeder extends Seeder
         $header = ['id', 'province_id', 'name', 'lat', 'long'];
         $data = $Csv->csv_to_array($file, $header);
         $cities = array_map(function ($arr) {
-
             return [
                 'state_id' => $arr['province_id'],
                 'name' => $arr['name'],

@@ -3,7 +3,6 @@
 
 namespace Turahe\Master\Http\Requests\Currency;
 
-
 use Illuminate\Foundation\Http\FormRequest;
 
 class CurrencyStoreRequest extends FormRequest
@@ -29,5 +28,4 @@ class CurrencyStoreRequest extends FormRequest
             //
         ];
     }
-
 }

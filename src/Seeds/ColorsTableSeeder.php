@@ -3,8 +3,6 @@
 
 namespace Turahe\Master\Seeds;
 
-
-
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\Color;
 
@@ -17,14 +15,13 @@ class ColorsTableSeeder extends Seeder
      */
     public function run()
     {
-        $colors = array_map(function ($color)  {
+        $colors = array_map(function ($color) {
             return [
                 'name' => $color['name'],
                 'code' => $color['code'],
                 'created_at' => now()->toDateTimeString(),
                 'updated_at' => now()->toDateTimeString()
             ];
-
         }, $this->allColors);
         Color::insert($colors);
     }
@@ -608,5 +605,4 @@ class ColorsTableSeeder extends Seeder
             'code' => '#9ACD32',
         ],
     ];
-
 }

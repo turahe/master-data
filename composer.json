@@ -39,7 +39,8 @@
     "require-dev": {
         "phpunit/phpunit": "^8.5 | ^9.3",
         "php-coveralls/php-coveralls": "^2.1",
-        "orchestra/testbench": "^4.0|^5.0"
+        "orchestra/testbench": "^4.0|^5.0",
+        "friendsofphp/php-cs-fixer": "^2.16"
     },
     "suggest": {
         "spatie/geocoder": "Synchronize latitude longitude data directly using Google's Geocoding Service"
@@ -50,10 +51,10 @@
         },
         "laravel": {
             "providers": [
-              "MasterServiceProvider"
+              "Turahe\\Master\\MasterServiceProvider"
             ],
             "aliases": {
-                "Master": "Master"
+                "Master": "Turahe\\Master\\MasterData"
             }
         }
     }

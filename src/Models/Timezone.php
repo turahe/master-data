@@ -8,14 +8,14 @@ use Illuminate\Support\Facades\Cache;
  * Turahe\Master\Timezone
  *
  * @property int $id
- * @property string|null $value
- * @property string|null $abbr
- * @property int|null $offset
- * @property int|null $isdst
- * @property string|null $text
- * @property string|null $utc
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property null|string $value
+ * @property null|string $abbr
+ * @property null|int $offset
+ * @property null|int $isdst
+ * @property null|string $text
+ * @property null|string $utc
+ * @property null|\Illuminate\Support\Carbon $created_at
+ * @property null|\Illuminate\Support\Carbon $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|Timezone newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Timezone newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Timezone query()

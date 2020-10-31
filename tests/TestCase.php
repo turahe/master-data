@@ -21,7 +21,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases($app)
     {
         return [
-            'Address' => \Turahe\Master\MasterFacade::class,
+            'MasterData' => \Turahe\Master\MasterData::class,
         ];
     }
 

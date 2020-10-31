@@ -15,7 +15,6 @@ class DistrictsTableSeeder extends Seeder
         $header = ['id', 'city_id', 'name', 'lat', 'long'];
         $data = $csv->csv_to_array($file, $header);
         $districts = array_map(function ($arr) use ($now) {
-
             return [
                 'name' => $arr['name'],
                 'city_id' => $arr['city_id'],
@@ -27,6 +26,5 @@ class DistrictsTableSeeder extends Seeder
         }, $data);
 
         District::insert($districts);
-
     }
 }

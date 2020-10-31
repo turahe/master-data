@@ -17,23 +17,23 @@ use Illuminate\Support\Facades\Cache;
  * Turahe\Master\Currency
  *
  * @property int $id
- * @property int|null $priority
- * @property string|null $iso_code
- * @property string|null $name
- * @property string|null $symbol
- * @property string|null $disambiguate_symbol
- * @property string|null $alternate_symbols
- * @property string|null $subunit
+ * @property null|int $priority
+ * @property null|string $iso_code
+ * @property null|string $name
+ * @property null|string $symbol
+ * @property null|string $disambiguate_symbol
+ * @property null|string $alternate_symbols
+ * @property null|string $subunit
  * @property int $subunit_to_unit
  * @property int $symbol_first
- * @property string|null $html_entity
- * @property string|null $decimal_mark
- * @property string|null $thousands_separator
- * @property string|null $iso_numeric
+ * @property null|string $html_entity
+ * @property null|string $decimal_mark
+ * @property null|string $thousands_separator
+ * @property null|string $iso_numeric
  * @property int $smallest_denomination
  * @property int $active
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property null|\Illuminate\Support\Carbon $created_at
+ * @property null|\Illuminate\Support\Carbon $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|Currency newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Currency newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Currency query()

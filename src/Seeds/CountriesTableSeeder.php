@@ -3,7 +3,6 @@
 
 namespace Turahe\Master\Seeds;
 
-
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\Country;
 
@@ -43,5 +42,4 @@ class CountriesTableSeeder extends Seeder
 
         Country::insert($countries);
     }
-
 }

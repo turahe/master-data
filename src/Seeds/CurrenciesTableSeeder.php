@@ -3,7 +3,6 @@
 
 namespace Turahe\Master\Seeds;
 
-
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\Currency;
 
@@ -44,5 +43,4 @@ class CurrenciesTableSeeder extends Seeder
 
         Currency::insert($currencies);
     }
-
 }

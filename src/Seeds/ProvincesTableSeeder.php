@@ -16,7 +16,6 @@ class ProvincesTableSeeder extends Seeder
         $header = ['id', 'name', 'lat', 'long'];
         $data = $csv->csv_to_array($file, $header);
         $provinces = array_map(function ($arr) use ($now) {
-
             return [
                 'country_id' => 104,
                 'name' => $arr['name'],

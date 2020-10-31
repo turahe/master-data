@@ -26,13 +26,13 @@ use Illuminate\Support\Facades\Cache;
  * @property int $country_id
  * @property string $country_name
  * @property string $name
- * @property string|null $region
- * @property string|null $iso_3166_2
- * @property string|null $region_code
- * @property string|null $calling_code
+ * @property null|string $region
+ * @property null|string $iso_3166_2
+ * @property null|string $region_code
+ * @property null|string $calling_code
  * @property int $active
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property null|\Illuminate\Support\Carbon $created_at
+ * @property null|\Illuminate\Support\Carbon $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|State whereActive($value)
  * @method static \Illuminate\Database\Eloquent\Builder|State whereCallingCode($value)
  * @method static \Illuminate\Database\Eloquent\Builder|State whereCountryId($value)

@@ -3,9 +3,8 @@
 
 namespace Turahe\Master\Http\Controllers;
 
-
-use Illuminate\Routing\Controller;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Controller;
 use Illuminate\View\View;
 use Turahe\Master\Http\Requests\Color\ColorStoreRequest;
 use Turahe\Master\Http\Requests\Color\ColorUpdateRequest;
@@ -48,5 +47,4 @@ class ColorController extends Controller
             ->route('master::colors.index')
             ->with('success', 'Color deleted');
     }
-
 }

@@ -3,7 +3,6 @@
 
 namespace Turahe\Master\Http\Requests\Color;
 
-
 use Illuminate\Foundation\Http\FormRequest;
 
 class ColorStoreRequest extends FormRequest
@@ -29,5 +28,4 @@ class ColorStoreRequest extends FormRequest
             //
         ];
     }
-
 }

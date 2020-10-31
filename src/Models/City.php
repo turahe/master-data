@@ -19,12 +19,12 @@ use Illuminate\Support\Facades\Cache;
  *
  * @property int $id
  * @property string $name
- * @property string|null $postal_code
- * @property string|null $latitude
- * @property string|null $longitude
+ * @property null|string $postal_code
+ * @property null|string $latitude
+ * @property null|string $longitude
  * @property int $state_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property null|\Illuminate\Support\Carbon $created_at
+ * @property null|\Illuminate\Support\Carbon $updated_at
  * @property-read \Turahe\Master\Models\State $state
  * @method static \Illuminate\Database\Eloquent\Builder|City newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|City newQuery()

@@ -4,14 +4,14 @@ namespace Turahe\Master\Test;
 
 use Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase;
 
-class AddressTest extends TestCase
+class MasterDataTest extends TestCase
 {
     use InteractsWithDatabase;
 
     /** @test */
     public function it_can_call_indonesia_service()
     {
-        $this->artisan('laravolt:indonesia:seed');
+        $this->artisan('turahe:master:seed');
 
         $this->checkProvinces();
         $this->checkCities();
@@ -22,11 +22,11 @@ class AddressTest extends TestCase
 
     public function checkProvinces()
     {
-        $results = \Address::allProvinces();
+        $results = \Master::allProvinces();
 
         $this->assertNotEmpty($results);
 
-        $results = \Address::paginateProvinces();
+        $results = \Master::paginateProvinces();
 
         $this->assertEquals(count($results), 15);
 
@@ -34,44 +34,44 @@ class AddressTest extends TestCase
 
         $selectedProvinceId = $results[0]->id;
 
-        $result = \Address::findProvince($selectedProvinceId);
+        $result = \Master::findProvince($selectedProvinceId);
 
         $this->assertEquals($result->id, $selectedProvinceId);
 
-        $result = \Address::findProvince($selectedProvinceId, ['cities']);
+        $result = \Master::findProvince($selectedProvinceId, ['cities']);
 
         $this->assertNotEmpty($result->cities);
 
-        $result = \Address::findProvince($selectedProvinceId, ['districts']);
+        $result = \Master::findProvince($selectedProvinceId, ['districts']);
 
         $this->assertNotEmpty($result->districts);
 
-        $result = \Address::findProvince($selectedProvinceId, ['villages']);
+        $result = \Master::findProvince($selectedProvinceId, ['villages']);
 
         $this->assertNotEmpty($result->villages);
 
-        $result = \Address::findProvince($selectedProvinceId, ['cities', 'districts.villages']);
+        $result = \Master::findProvince($selectedProvinceId, ['cities', 'districts.villages']);
 
         $this->assertNotEmpty($result->cities);
         $this->assertNotEmpty($result->districts);
         $this->assertNotEmpty($result->districts[0]->villages);
 
-        $result = \Address::findProvince($selectedProvinceId, ['cities.districts']);
+        $result = \Master::findProvince($selectedProvinceId, ['cities.districts']);
 
         $this->assertNotEmpty($result->cities[0]->districts);
 
-        $result = \Address::findProvince($selectedProvinceId, ['cities.districts.villages']);
+        $result = \Master::findProvince($selectedProvinceId, ['cities.districts.villages']);
 
         $this->assertNotEmpty($result->cities[0]->districts[0]->villages);
     }
 
     public function checkCities()
     {
-        $results = \Address::allCities();
+        $results = \Master::allCities();
 
         $this->assertNotEmpty($results);
 
-        $results = \Address::paginateCities();
+        $results = \Master::paginateCities();
 
         $this->assertEquals(count($results), 15);
 
@@ -79,23 +79,23 @@ class AddressTest extends TestCase
 
         $selectedCityId = $results[0]->id;
 
-        $result = \Address::findCity($selectedCityId);
+        $result = \Master::findCity($selectedCityId);
 
         $this->assertEquals($result->id, $selectedCityId);
 
-        $result = \Address::findCity($selectedCityId, ['provinces']);
+        $result = \Master::findCity($selectedCityId, ['provinces']);
 
         $this->assertNotEmpty($result->province);
 
-        $result = \Address::findCity($selectedCityId, ['districts']);
+        $result = \Master::findCity($selectedCityId, ['districts']);
 
         $this->assertNotEmpty($result->districts);
 
-        $result = \Address::findCity($selectedCityId, ['villages']);
+        $result = \Master::findCity($selectedCityId, ['villages']);
 
         $this->assertNotEmpty($result->villages);
 
-        $result = \Address::findCity($selectedCityId, ['districts.villages']);
+        $result = \Master::findCity($selectedCityId, ['districts.villages']);
 
         $this->assertNotEmpty($result->districts);
         $this->assertNotEmpty($result->districts[0]->villages);
@@ -103,11 +103,11 @@ class AddressTest extends TestCase
 
     public function checkDistricts()
     {
-        $results = \Address::allDistricts();
+        $results = \Master::allDistricts();
 
         $this->assertNotEmpty($results);
 
-        $results = \Address::paginateDistricts();
+        $results = \Master::paginateDistricts();
 
         $this->assertEquals(count($results), 15);
 
@@ -115,35 +115,35 @@ class AddressTest extends TestCase
 
         $selectedDistrictId = $results[0]->id;
 
-        $result = \Address::findDistrict($selectedDistrictId);
+        $result = \Master::findDistrict($selectedDistrictId);
 
         $this->assertEquals($result->id, $selectedDistrictId);
 
-        $result = \Address::findDistrict($selectedDistrictId, ['provinces']);
+        $result = \Master::findDistrict($selectedDistrictId, ['provinces']);
 
         $this->assertNotEmpty($result->province);
 
-        $result = \Address::findDistrict($selectedDistrictId, ['cities']);
+        $result = \Master::findDistrict($selectedDistrictId, ['cities']);
 
         $this->assertNotEmpty($result->city);
 
-        $result = \Address::findDistrict($selectedDistrictId, ['cities.provinces']);
+        $result = \Master::findDistrict($selectedDistrictId, ['cities.provinces']);
 
         $this->assertNotEmpty($result->city);
         $this->assertNotEmpty($result->city->province);
 
-        $result = \Address::findDistrict($selectedDistrictId, ['villages']);
+        $result = \Master::findDistrict($selectedDistrictId, ['villages']);
 
         $this->assertNotEmpty($result->villages);
     }
 
     public function checkVillages()
     {
-        $results = \Address::allVillages();
+        $results = \Master::allVillages();
 
         $this->assertNotEmpty($results);
 
-        $results = \Address::paginateVillages();
+        $results = \Master::paginateVillages();
 
         $this->assertEquals(count($results), 15);
 
@@ -151,24 +151,24 @@ class AddressTest extends TestCase
 
         $selectedVillageId = $results[0]->id;
 
-        $result = \Address::findVillage($selectedVillageId);
+        $result = \Master::findVillage($selectedVillageId);
 
         $this->assertEquals($result->id, $selectedVillageId);
 
-        $result = \Address::findVillage($selectedVillageId, ['provinces']);
+        $result = \Master::findVillage($selectedVillageId, ['provinces']);
 
         $this->assertNotEmpty($result->province);
 
-        $result = \Address::findVillage($selectedVillageId, ['cities']);
+        $result = \Master::findVillage($selectedVillageId, ['cities']);
 
         $this->assertNotEmpty($result->city);
 
-        $result = \Address::findVillage($selectedVillageId, ['districts.cities']);
+        $result = \Master::findVillage($selectedVillageId, ['districts.cities']);
 
         $this->assertNotEmpty($result->district);
         $this->assertNotEmpty($result->district->city);
 
-        $result = \Address::findVillage($selectedVillageId, ['districts.cities.provinces']);
+        $result = \Master::findVillage($selectedVillageId, ['districts.cities.provinces']);
 
         $this->assertNotEmpty($result->district);
         $this->assertNotEmpty($result->district->city);
@@ -177,7 +177,7 @@ class AddressTest extends TestCase
 
     public function search()
     {
-        $results = \Address::search('BATAM')->all();
+        $results = \Master::search('BATAM')->all();
 
         $this->assertNotEmpty($results);
     }

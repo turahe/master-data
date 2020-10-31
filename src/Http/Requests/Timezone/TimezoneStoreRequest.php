@@ -3,7 +3,6 @@
 
 namespace Turahe\Master\Http\Requests\Timezone;
 
-
 use Illuminate\Foundation\Http\FormRequest;
 
 class TimezoneStoreRequest extends FormRequest
@@ -29,5 +28,4 @@ class TimezoneStoreRequest extends FormRequest
             //
         ];
     }
-
 }
