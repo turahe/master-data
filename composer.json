@@ -46,9 +46,6 @@
         "spatie/geocoder": "Synchronize latitude longitude data directly using Google's Geocoding Service"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        },
         "laravel": {
             "providers": [
               "Turahe\\Master\\MasterServiceProvider"
