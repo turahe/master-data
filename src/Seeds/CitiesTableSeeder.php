@@ -20,7 +20,7 @@ class CitiesTableSeeder extends Seeder
                 'latitude' => $arr['lat'],
                 'longitude' => $arr['long'],
                 'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString()
+                'updated_at' => now()->toDateTimeString(),
             ];
         }, $data);
 

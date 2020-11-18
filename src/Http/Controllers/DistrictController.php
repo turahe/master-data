@@ -11,8 +11,7 @@ use Turahe\Master\Http\Requests\District\DistrictUpdateRequest;
 use Turahe\Master\Models\District;
 
 /**
- * Class DistrictController
- * @package Turahe\Master\Http\Controllers
+ * Class DistrictController.
  */
 class DistrictController extends Controller
 {
@@ -36,6 +35,7 @@ class DistrictController extends Controller
 
     /**
      * @param DistrictStoreRequest $request
+     *
      * @return RedirectResponse
      */
     public function store(DistrictStoreRequest $request): RedirectResponse
@@ -47,6 +47,7 @@ class DistrictController extends Controller
 
     /**
      * @param District $district
+     *
      * @return View
      */
     public function edit(District $district): View
@@ -56,7 +57,8 @@ class DistrictController extends Controller
 
     /**
      * @param DistrictUpdateRequest $request
-     * @param District $district
+     * @param District              $district
+     *
      * @return RedirectResponse
      */
     public function update(DistrictUpdateRequest $request, District $district): RedirectResponse
@@ -68,7 +70,9 @@ class DistrictController extends Controller
 
     /**
      * @param District $district
+     *
      * @throws \Exception
+     *
      * @return RedirectResponse
      */
     public function destroy(District $district): RedirectResponse

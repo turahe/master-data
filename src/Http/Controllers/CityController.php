@@ -11,8 +11,7 @@ use Turahe\Master\Http\Requests\City\CityUpdateUpdate;
 use Turahe\Master\Models\City;
 
 /**
- * Class CityController
- * @package Turahe\Master\Http\Controllers
+ * Class CityController.
  */
 class CityController extends Controller
 {
@@ -39,6 +38,7 @@ class CityController extends Controller
 
     /**
      * @param CityStoreRequest $request
+     *
      * @return RedirectResponse
      */
     public function store(CityStoreRequest $request): RedirectResponse
@@ -52,6 +52,7 @@ class CityController extends Controller
 
     /**
      * @param City $city
+     *
      * @return View
      */
     public function edit(City $city): View
@@ -61,7 +62,8 @@ class CityController extends Controller
 
     /**
      * @param CityUpdateUpdate $request
-     * @param City $city
+     * @param City             $city
+     *
      * @return RedirectResponse
      */
     public function update(CityUpdateUpdate $request, City $city): RedirectResponse
@@ -75,7 +77,9 @@ class CityController extends Controller
 
     /**
      * @param City $city
+     *
      * @throws \Exception
+     *
      * @return RedirectResponse
      */
     public function destroy(City $city): RedirectResponse

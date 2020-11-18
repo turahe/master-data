@@ -15,17 +15,18 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Cache;
 
 /**
- * Turahe\Master\City
+ * Turahe\Master\City.
  *
- * @property int $id
- * @property string $name
- * @property null|string $postal_code
- * @property null|string $latitude
- * @property null|string $longitude
- * @property int $state_id
+ * @property int                             $id
+ * @property string                          $name
+ * @property null|string                     $postal_code
+ * @property null|string                     $latitude
+ * @property null|string                     $longitude
+ * @property int                             $state_id
  * @property null|\Illuminate\Support\Carbon $created_at
  * @property null|\Illuminate\Support\Carbon $updated_at
  * @property-read \Turahe\Master\Models\State $state
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|City newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|City newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|City query()
@@ -64,6 +65,7 @@ class City extends Model
             Cache::delete('cities.'.$instance->slug);
         });
     }
+
     /**
      * Return the city's state.
      *

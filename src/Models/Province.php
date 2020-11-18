@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
 /**
- * Class Province
- * @package Turahe\Master\Models
+ * Class Province.
+ *
  * @mixin \Eloquent
  */
 class Province extends State

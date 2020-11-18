@@ -2,7 +2,7 @@
 
 $router->group(
     [
-        'prefix' => 'master'
+        'prefix' => 'master',
     ],
     function ($router) {
         $router->resource('provinces', \Turahe\Master\Http\Controllers\ProvinceController::class);

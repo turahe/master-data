@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
@@ -11,8 +10,7 @@ use Turahe\Master\Http\Requests\Timezone\TimezoneUpdateRequest;
 use Turahe\Master\Models\Timezone;
 
 /**
- * Class TimezoneController
- * @package Turahe\Master\Http\Controllers
+ * Class TimezoneController.
  */
 class TimezoneController extends Controller
 {
@@ -22,6 +20,7 @@ class TimezoneController extends Controller
     public function index(): View
     {
         $timezones = Timezone::all();
+
         return view('master::timezones.index', compact('timezones'));
     }
 
@@ -35,11 +34,13 @@ class TimezoneController extends Controller
 
     /**
      * @param TimezoneStoreRequest $request
+     *
      * @return RedirectResponse
      */
     public function store(TimezoneStoreRequest $request): RedirectResponse
     {
         Timezone::create($request->all());
+
         return redirect()
             ->route('timezones.index')
             ->with('success', 'Color was saved');
@@ -47,6 +48,7 @@ class TimezoneController extends Controller
 
     /**
      * @param Timezone $timezone
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|View
      */
     public function edit(Timezone $timezone)
@@ -56,12 +58,14 @@ class TimezoneController extends Controller
 
     /**
      * @param TimezoneUpdateRequest $request
-     * @param Timezone $timezone
+     * @param Timezone              $timezone
+     *
      * @return RedirectResponse
      */
     public function update(TimezoneUpdateRequest $request, Timezone $timezone): RedirectResponse
     {
         $timezone->update($request->all());
+
         return redirect()
             ->route('timezones.index')
             ->with('success', 'Color was update');
@@ -69,7 +73,9 @@ class TimezoneController extends Controller
 
     /**
      * @param Timezone $timezone
+     *
      * @throws \Exception
+     *
      * @return RedirectResponse
      */
     public function destroy(Timezone $timezone)

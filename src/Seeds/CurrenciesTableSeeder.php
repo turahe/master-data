@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Seeds;
 
 use Illuminate\Database\Seeder;

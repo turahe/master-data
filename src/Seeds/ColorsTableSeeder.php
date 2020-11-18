@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Seeds;
 
 use Illuminate\Database\Seeder;
@@ -20,7 +19,7 @@ class ColorsTableSeeder extends Seeder
                 'name' => $color['name'],
                 'code' => $color['code'],
                 'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString()
+                'updated_at' => now()->toDateTimeString(),
             ];
         }, $this->allColors);
         Color::insert($colors);

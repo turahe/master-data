@@ -26,7 +26,7 @@ class MasterServiceProvider extends ServiceProvider
     */
     public function boot()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/master.php', 'master-data');
+        $this->mergeConfigFrom(__DIR__.'/../config/master.php', 'master-data');
 
         $databasePath = __DIR__.'/../database/migrations';
         $this->loadMigrationsFrom($databasePath);
@@ -34,7 +34,7 @@ class MasterServiceProvider extends ServiceProvider
         if (class_exists(Application::class)) {
             $this->publishes(
                 [
-                    __DIR__ . '/../config/master.php' => config_path('master-data.php'),
+                    __DIR__.'/../config/master.php' => config_path('master-data.php'),
                 ],
                 'config'
             );
