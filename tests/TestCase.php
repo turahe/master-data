@@ -21,7 +21,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases($app)
     {
         return [
-            'MasterData' => \Turahe\Master\MasterData::class,
+            'Master' => \Turahe\Master\MasterData::class,
         ];
     }
 
@@ -31,8 +31,6 @@ class TestCase extends \Orchestra\Testbench\TestCase
         $app['config']->set('database.connections.sqlite', [
             'driver'   => 'sqlite',
             'database' => ':memory:',
-            'prefix'   => 'tm_',
         ]);
-        $app['config']->set('address.table_prefix', 'tm_');
     }
 }
