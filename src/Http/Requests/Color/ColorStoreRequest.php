@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Http\Requests\Color;
 
 use Illuminate\Foundation\Http\FormRequest;

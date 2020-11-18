@@ -5,17 +5,18 @@ namespace Turahe\Master\Models;
 use Illuminate\Support\Facades\Cache;
 
 /**
- * Turahe\Master\Timezone
+ * Turahe\Master\Timezone.
  *
- * @property int $id
- * @property null|string $value
- * @property null|string $abbr
- * @property null|int $offset
- * @property null|int $isdst
- * @property null|string $text
- * @property null|string $utc
+ * @property int                             $id
+ * @property null|string                     $value
+ * @property null|string                     $abbr
+ * @property null|int                        $offset
+ * @property null|int                        $isdst
+ * @property null|string                     $text
+ * @property null|string                     $utc
  * @property null|\Illuminate\Support\Carbon $created_at
  * @property null|\Illuminate\Support\Carbon $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Timezone newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Timezone newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Timezone query()
@@ -33,6 +34,7 @@ use Illuminate\Support\Facades\Cache;
 class Timezone extends Model
 {
     protected $table = 'tm_timezones';
+
     /**
      * Bootstrap the model and its traits.
      *

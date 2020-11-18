@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Cache;
 
 /**
- * Class Village
+ * Class Village.
+ *
  * @property null|string district
  * @property null|string name
- * @package Turahe\Master\Models
  * @mixin \Eloquent
  */
 class Village extends Model

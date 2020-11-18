@@ -15,11 +15,12 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Cache;
 
 /**
- * Turahe\Master\Color
+ * Turahe\Master\Color.
  *
- * @property int $id
+ * @property int    $id
  * @property string $name
  * @property string $code
+ *
  * @method static Builder|Color newModelQuery()
  * @method static Builder|Color newQuery()
  * @method static Builder|Color query()
@@ -31,6 +32,7 @@ use Illuminate\Support\Facades\Cache;
 class Color extends Model
 {
     protected $table = 'tm_colors';
+
     /**
      * @inheritDoc
      */

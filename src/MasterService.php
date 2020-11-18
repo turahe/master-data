@@ -3,8 +3,7 @@
 namespace Turahe\Master;
 
 /**
- * Class MasterService
- * @package Turahe\Master
+ * Class MasterService.
  */
 class MasterService
 {
@@ -15,6 +14,7 @@ class MasterService
 
     /**
      * @param $location
+     *
      * @return $this
      */
     public function search($location)
@@ -59,6 +59,7 @@ class MasterService
 
     /**
      * @param int $numRows
+     *
      * @return mixed
      */
     public function paginateProvinces($numRows = 15)
@@ -84,6 +85,7 @@ class MasterService
 
     /**
      * @param int $numRows
+     *
      * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
      */
     public function paginateCities($numRows = 15)
@@ -109,6 +111,7 @@ class MasterService
 
     /**
      * @param int $numRows
+     *
      * @return mixed
      */
     public function paginateDistricts($numRows = 15)
@@ -134,6 +137,7 @@ class MasterService
 
     /**
      * @param int $numRows
+     *
      * @return mixed
      */
     public function paginateVillages($numRows = 15)
@@ -148,6 +152,7 @@ class MasterService
     /**
      * @param $provinceId
      * @param null $with
+     *
      * @return null|\Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|mixed
      */
     public function findProvince($provinceId, $with = null)
@@ -176,6 +181,7 @@ class MasterService
     /**
      * @param $cityId
      * @param null $with
+     *
      * @return null|\Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|Models\City|Models\City[]
      */
     public function findCity($cityId, $with = null)
@@ -192,6 +198,7 @@ class MasterService
     /**
      * @param $districtId
      * @param null $with
+     *
      * @return null|\Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|mixed
      */
     public function findDistrict($districtId, $with = null)
@@ -220,6 +227,7 @@ class MasterService
     /**
      * @param $villageId
      * @param null $with
+     *
      * @return null|\Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|mixed
      */
     public function findVillage($villageId, $with = null)
@@ -265,6 +273,7 @@ class MasterService
      * @param $object
      * @param $relation
      * @param false $belongsTo
+     *
      * @return mixed
      */
     private function loadRelation($object, $relation, $belongsTo = false)

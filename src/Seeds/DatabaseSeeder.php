@@ -30,13 +30,13 @@ class DatabaseSeeder extends Seeder
             DistrictsTableSeeder::class,
             VillagesTableSeeder::class,
             CurrenciesTableSeeder::class,
-            ColorsTableSeeder::class
+            ColorsTableSeeder::class,
         ]);
     }
 
     /**
      * Reset database with disable foreign key and enable again
-     * if database was truncate
+     * if database was truncate.
      */
     public function reset()
     {

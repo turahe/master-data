@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Http\Requests\Timezone;
 
 use Illuminate\Foundation\Http\FormRequest;

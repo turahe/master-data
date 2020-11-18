@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Traits;
 
 use Illuminate\Database\Eloquent\Builder;

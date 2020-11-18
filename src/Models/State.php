@@ -15,24 +15,27 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Cache;
 
 /**
- * Turahe\Master\State
+ * Turahe\Master\State.
  *
  * @property-read \Turahe\Master\Models\Country $country
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|State newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|State newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|State query()
  * @mixin \Eloquent
- * @property int $id
- * @property int $country_id
- * @property string $country_name
- * @property string $name
- * @property null|string $region
- * @property null|string $iso_3166_2
- * @property null|string $region_code
- * @property null|string $calling_code
- * @property int $active
+ *
+ * @property int                             $id
+ * @property int                             $country_id
+ * @property string                          $country_name
+ * @property string                          $name
+ * @property null|string                     $region
+ * @property null|string                     $iso_3166_2
+ * @property null|string                     $region_code
+ * @property null|string                     $calling_code
+ * @property int                             $active
  * @property null|\Illuminate\Support\Carbon $created_at
  * @property null|\Illuminate\Support\Carbon $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|State whereActive($value)
  * @method static \Illuminate\Database\Eloquent\Builder|State whereCallingCode($value)
  * @method static \Illuminate\Database\Eloquent\Builder|State whereCountryId($value)
@@ -57,6 +60,7 @@ class State extends Model
         'name',
         'state_code',
     ];
+
     /**
      * Bootstrap the model and its traits.
      *

@@ -11,8 +11,7 @@ use Turahe\Master\Http\Requests\Province\ProvinceUpdateRequest;
 use Turahe\Master\Models\Province;
 
 /**
- * Class ProvinceController
- * @package Turahe\Master\Http\Controllers
+ * Class ProvinceController.
  */
 class ProvinceController extends Controller
 {
@@ -36,6 +35,7 @@ class ProvinceController extends Controller
 
     /**
      * @param ProvinceStoreRequest $request
+     *
      * @return RedirectResponse
      */
     public function store(ProvinceStoreRequest $request): RedirectResponse
@@ -49,6 +49,7 @@ class ProvinceController extends Controller
 
     /**
      * @param Province $province
+     *
      * @return View
      */
     public function edit(Province $province): View
@@ -58,7 +59,8 @@ class ProvinceController extends Controller
 
     /**
      * @param ProvinceUpdateRequest $request
-     * @param Province $province
+     * @param Province              $province
+     *
      * @return RedirectResponse
      */
     public function update(ProvinceUpdateRequest $request, Province $province): RedirectResponse
@@ -72,7 +74,9 @@ class ProvinceController extends Controller
 
     /**
      * @param Province $province
+     *
      * @throws \Exception
+     *
      * @return RedirectResponse
      */
     public function destroy(Province $province): RedirectResponse

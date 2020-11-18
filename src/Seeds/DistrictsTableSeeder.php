@@ -21,7 +21,7 @@ class DistrictsTableSeeder extends Seeder
                 'latitude' => $arr['lat'],
                 'longitude' => $arr['long'],
                 'created_at' => $now,
-                'updated_at' => $now
+                'updated_at' => $now,
             ];
         }, $data);
 

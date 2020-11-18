@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\Cache;
 
 /**
- * Class District
+ * Class District.
+ *
  * @property string city
  * @property string name
- * @package Turahe\Master\Models
  * @mixin \Eloquent
  */
 class District extends Model

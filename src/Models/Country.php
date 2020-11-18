@@ -15,33 +15,36 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\Cache;
 
 /**
- * Turahe\Master\Country
+ * Turahe\Master\Country.
  *
  * @property-read \Illuminate\Database\Eloquent\Collection|\Turahe\Master\Models\State[] $states
  * @property-read null|int $states_count
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Country newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Country newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Country query()
- * @property int $id
- * @property null|string $capital
- * @property null|string $citizenship
- * @property string $country_code
- * @property null|string $currency
- * @property null|string $currency_code
- * @property null|string $currency_sub_unit
- * @property null|string $currency_symbol
- * @property null|string $full_name
- * @property string $iso_3166_2
- * @property string $iso_3166_3
- * @property string $name
- * @property null|string $region_code
- * @property null|string $sub_region_code
- * @property int $eea
- * @property string $calling_code
- * @property null|string $flag
- * @property int $active
+ *
+ * @property int                             $id
+ * @property null|string                     $capital
+ * @property null|string                     $citizenship
+ * @property string                          $country_code
+ * @property null|string                     $currency
+ * @property null|string                     $currency_code
+ * @property null|string                     $currency_sub_unit
+ * @property null|string                     $currency_symbol
+ * @property null|string                     $full_name
+ * @property string                          $iso_3166_2
+ * @property string                          $iso_3166_3
+ * @property string                          $name
+ * @property null|string                     $region_code
+ * @property null|string                     $sub_region_code
+ * @property int                             $eea
+ * @property string                          $calling_code
+ * @property null|string                     $flag
+ * @property int                             $active
  * @property null|\Illuminate\Support\Carbon $created_at
  * @property null|\Illuminate\Support\Carbon $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Country whereActive($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Country whereCallingCode($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Country whereCapital($value)
@@ -67,6 +70,7 @@ use Illuminate\Support\Facades\Cache;
 class Country extends Model
 {
     protected $table = 'tm_countries';
+
     /**
      * Bootstrap the model and its traits.
      *
@@ -85,6 +89,7 @@ class Country extends Model
             Cache::delete('countries.'.$instance->slug);
         });
     }
+
     /**
      * @return HasMany
      */

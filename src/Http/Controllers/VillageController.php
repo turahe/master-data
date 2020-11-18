@@ -11,8 +11,7 @@ use Turahe\Master\Http\Requests\Village\VillageUpdateRequest;
 use Turahe\Master\Models\Village;
 
 /**
- * Class VillageController
- * @package Turahe\Master\Http\Controllers
+ * Class VillageController.
  */
 class VillageController extends Controller
 {
@@ -39,6 +38,7 @@ class VillageController extends Controller
 
     /**
      * @param VillageStoreRequest $request
+     *
      * @return mixed
      */
     public function store(VillageStoreRequest $request): RedirectResponse
@@ -52,6 +52,7 @@ class VillageController extends Controller
 
     /**
      * @param Village $village
+     *
      * @return View
      */
     public function edit(Village $village): View
@@ -61,7 +62,8 @@ class VillageController extends Controller
 
     /**
      * @param VillageUpdateRequest $request
-     * @param Village $village
+     * @param Village              $village
+     *
      * @return mixed
      */
     public function update(VillageUpdateRequest $request, Village $village): RedirectResponse
@@ -75,7 +77,9 @@ class VillageController extends Controller
 
     /**
      * @param Village $village
+     *
      * @throws \Exception
+     *
      * @return RedirectResponse
      */
     public function destroy(Village $village): RedirectResponse

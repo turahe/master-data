@@ -6,8 +6,7 @@ use Turahe\Master\Traits\AutoFilter;
 use Turahe\Master\Traits\AutoSort;
 
 /**
- * Class Model
- * @package Turahe\Master\Models
+ * Class Model.
  */
 class Model extends \Illuminate\Database\Eloquent\Model
 {
@@ -25,6 +24,7 @@ class Model extends \Illuminate\Database\Eloquent\Model
 
     /**
      * Model constructor.
+     *
      * @param array $attributes
      */
     public function __construct(array $attributes = [])
