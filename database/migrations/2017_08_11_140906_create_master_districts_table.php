@@ -14,7 +14,7 @@ class CreateMasterDistrictsTable extends Migration
     public function up()
     {
         Schema::create('tm_districts', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->unsignedBigInteger('city_id');
             $table->string('name', 255);
             $table->string('latitude')->nullable();

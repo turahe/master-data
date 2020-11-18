@@ -14,7 +14,7 @@ class CreateMasterCitiesTable extends Migration
     public function up()
     {
         Schema::create('tm_cities', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('name');
             $table->string('postal_code')->nullable();
             $table->string('latitude')->nullable();

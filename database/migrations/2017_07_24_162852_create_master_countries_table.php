@@ -14,7 +14,7 @@ class CreateMasterCountriesTable extends Migration
     public function up()
     {
         Schema::create('tm_countries', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('capital', 255)->nullable();
             $table->string('citizenship', 255)->nullable();
             $table->string('country_code', 3);

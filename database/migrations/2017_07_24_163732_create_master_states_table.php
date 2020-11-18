@@ -14,7 +14,7 @@ class CreateMasterStatesTable extends Migration
     public function up()
     {
         Schema::create('tm_states', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->unsignedBigInteger('country_id');
             $table->string('name', 255);
             $table->string('region', 255)->nullable();

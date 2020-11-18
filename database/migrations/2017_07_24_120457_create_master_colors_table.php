@@ -14,7 +14,7 @@ class CreateMasterColorsTable extends Migration
     public function up()
     {
         Schema::create('tm_colors', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('name');
             $table->string('code');
             $table->timestamps();

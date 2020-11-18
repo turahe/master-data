@@ -14,7 +14,7 @@ class CreateMasterTimezonesTable extends Migration
     public function up()
     {
         Schema::create('tm_timezones', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('value')->nullable();
             $table->string('abbr')->nullable();
             $table->integer('offset')->nullable();

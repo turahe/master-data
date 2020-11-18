@@ -14,7 +14,7 @@ class CreateMasterCurrenciesTable extends Migration
     public function up()
     {
         Schema::create('tm_currencies', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->integer('priority')->nullable()->default(100);
             $table->string('iso_code', 255)->nullable();
             $table->string('name', 255)->nullable();
