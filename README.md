@@ -2,7 +2,31 @@
 [![Total Downloads](https://poser.pugx.org/turahe/master-data/downloads)](//packagist.org/packages/turahe/master-data)
 [![Version](https://poser.pugx.org/turahe/master-data/version)](//packagist.org/packages/turahe/master-data)
 [![License](https://poser.pugx.org/turahe/master-data/license)](//packagist.org/packages/turahe/master-data)
+[![Build Status](https://travis-ci.org/turahe/master-data.svg?branch=master)](https://travis-ci.org/turahe/master-data)
 ![PHP Composer](https://github.com/turahe/master-data/workflows/PHP%20Composer/badge.svg)
 
-Package Laravel yang berisi data Province, City/Kota, dan District/Desa di seluruh Indonesia.
-Data wilayah diambil dari [edwardsamuel/Wilayah-Administratif-Indonesia](https://github.com/edwardsamuel/Wilayah-Administratif-Indonesia)
+
+
+Instalasi
+
+## Instalasi
+
+### Install Package Via Composer
+
+```
+composer require turahe/master-data
+```
+
+### What does it gives you?
+
+This package has all sorts of information about all:
+
+| info            | items |
+------------------|-------:|
+| currencies      | 256   |
+| countries       | 266   |
+| timezones       | 423   |
+| flags           | 1,570  |
+| states          | 4,526  |
+| cities          | 7,376  |
+| timezones times | 81,153 |
