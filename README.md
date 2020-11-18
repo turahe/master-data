@@ -1,4 +1,3 @@
-[![Latest Stable Version](https://poser.pugx.org/turahe/master-data/v)](//packagist.org/packages/turahe/master-data)
 [![Total Downloads](https://poser.pugx.org/turahe/master-data/downloads)](//packagist.org/packages/turahe/master-data)
 [![Version](https://poser.pugx.org/turahe/master-data/version)](//packagist.org/packages/turahe/master-data)
 [![License](https://poser.pugx.org/turahe/master-data/license)](//packagist.org/packages/turahe/master-data)
