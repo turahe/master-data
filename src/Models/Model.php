@@ -4,11 +4,11 @@ namespace Turahe\Master\Models;
 
 use Turahe\Master\Traits\AutoFilter;
 use Turahe\Master\Traits\AutoSort;
-
+use Illuminate\Database\Eloquent\Model as BaseModel;
 /**
  * Class Model.
  */
-class Model extends \Illuminate\Database\Eloquent\Model
+abstract class Model extends BaseModel
 {
     use AutoFilter;
     use AutoSort;
@@ -30,8 +30,6 @@ class Model extends \Illuminate\Database\Eloquent\Model
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
-
-        $this->table = config('turahe.indonesia.table_prefix').$this->table;
     }
 
     /**

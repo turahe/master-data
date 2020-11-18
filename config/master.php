@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'table_prefix' => 'tm_',
     'route' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
