@@ -4,6 +4,7 @@
 [![License](https://poser.pugx.org/turahe/master-data/license)](//packagist.org/packages/turahe/master-data)
 [![Build Status](https://travis-ci.org/turahe/master-data.svg?branch=master)](https://travis-ci.org/turahe/master-data)
 ![PHP Composer](https://github.com/turahe/master-data/workflows/PHP%20Composer/badge.svg)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fturahe%2Fmaster-data.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fturahe%2Fmaster-data?ref=badge_shield)
 
 
 
@@ -30,3 +31,7 @@ This package has all sorts of information about all:
 | states          | 4,526  |
 | cities          | 7,376  |
 | timezones times | 81,153 |
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fturahe%2Fmaster-data.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fturahe%2Fmaster-data?ref=badge_large)
