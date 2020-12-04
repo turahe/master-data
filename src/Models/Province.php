@@ -17,7 +17,7 @@ class Province extends State
      */
     public function cities(): HasMany
     {
-        return $this->hasMany(City::class, 'province_id');
+        return $this->hasMany(City::class, 'state_id');
     }
 
     /**
@@ -29,7 +29,7 @@ class Province extends State
     }
 
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\Routing\UrlGenerator|string
+     * @return string
      */
     public function getLogoPathAttribute()
     {

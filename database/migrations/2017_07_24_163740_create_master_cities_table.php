@@ -16,10 +16,12 @@ class CreateMasterCitiesTable extends Migration
         Schema::create('tm_cities', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('type')->nullable();
             $table->string('postal_code')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
             $table->unsignedBigInteger('state_id');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
 

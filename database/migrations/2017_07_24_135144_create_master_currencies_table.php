@@ -29,7 +29,8 @@ class CreateMasterCurrenciesTable extends Migration
             $table->string('thousands_separator', 25)->nullable();
             $table->string('iso_numeric', 25)->nullable();
             $table->integer('smallest_denomination')->default(1);
-            $table->boolean('active')->default(true);
+            $table->decimal('exchange_rate')->nullable()->comment('value of exchange rate from openexchange');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

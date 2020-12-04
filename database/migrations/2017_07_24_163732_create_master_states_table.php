@@ -23,7 +23,7 @@ class CreateMasterStatesTable extends Migration
             $table->string('calling_code', 5)->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
-            $table->boolean('active')->default(1);
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
 

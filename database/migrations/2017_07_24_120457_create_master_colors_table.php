@@ -17,6 +17,7 @@ class CreateMasterColorsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('code');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

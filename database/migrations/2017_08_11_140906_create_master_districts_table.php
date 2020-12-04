@@ -19,6 +19,7 @@ class CreateMasterDistrictsTable extends Migration
             $table->string('name', 255);
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
         Schema::table('tm_districts', function (Blueprint $table) {

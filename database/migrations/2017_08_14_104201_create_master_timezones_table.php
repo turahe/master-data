@@ -21,6 +21,7 @@ class CreateMasterTimezonesTable extends Migration
             $table->boolean('isdst')->nullable();
             $table->string('text')->nullable();
             $table->string('utc')->nullable();
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }
