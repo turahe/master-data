@@ -4,8 +4,6 @@ use PhpCsFixer\Finder;
 use PhpCsFixer\Config;
 
 $finder = Finder::create()
-    ->exclude('cache')
-    ->exclude('storage')
     ->exclude('vendor')
     ->in(__DIR__)
     ->ignoreDotFiles(true)

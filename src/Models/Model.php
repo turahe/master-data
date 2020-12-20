@@ -2,9 +2,10 @@
 
 namespace Turahe\Master\Models;
 
+use Illuminate\Database\Eloquent\Model as BaseModel;
 use Turahe\Master\Traits\AutoFilter;
 use Turahe\Master\Traits\AutoSort;
-use Illuminate\Database\Eloquent\Model as BaseModel;
+
 /**
  * Class Model.
  */
