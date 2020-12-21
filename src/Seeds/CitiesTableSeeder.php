@@ -9,21 +9,23 @@ class CitiesTableSeeder extends Seeder
 {
     public function run()
     {
-        $Csv = new CsvtoArray();
-        $file = __DIR__.'/../../resources/csv/cities.csv';
-        $header = ['id', 'province_id', 'name', 'lat', 'long'];
-        $data = $Csv->csv_to_array($file, $header);
+        $file = __DIR__ . '/../../resources/cities.json';
+        $data = json_decode(file_get_contents($file), true);
         $cities = array_map(function ($arr) {
             return [
-                'state_id' => $arr['province_id'],
+                'state_id' => $arr['state_id'],
                 'name' => $arr['name'],
-                'latitude' => $arr['lat'],
-                'longitude' => $arr['long'],
+                'type' => isset($arr['type']) ? $arr['type'] : null,
+                'postal_code' => $arr['postal_code'],
+                'latitude' => $arr['latitude'],
+                'longitude' => $arr['longitude'],
                 'created_at' => now()->toDateTimeString(),
                 'updated_at' => now()->toDateTimeString(),
             ];
         }, $data);
 
-        City::insert($cities);
+        foreach (array_chunk($cities, 30) as $city) {
+            City::insert($cities);
+        }
     }
 }

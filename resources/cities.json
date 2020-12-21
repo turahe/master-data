@@ -1,1 +1,4010 @@
-[{"name":"Aceh Barat","type":"subdistrict","postal_code":null,"latitude":"4.4542745","longitude":"96.1526985","state_id":21},{"name":"Aceh Barat Daya","type":"subdistrict","postal_code":null,"latitude":"3.7963426","longitude":"97.0068393","state_id":21},{"name":"Aceh Besar","type":"subdistrict","postal_code":null,"latitude":"5.4529168","longitude":"95.4777811","state_id":21},{"name":"Aceh Jaya","type":"subdistrict","postal_code":null,"latitude":"4.7873684","longitude":"95.6457951","state_id":21},{"name":"Aceh Selatan","type":"subdistrict","postal_code":null,"latitude":"3.3115056","longitude":"97.3516558","state_id":21},{"name":"Aceh Singkil","type":"subdistrict","postal_code":null,"latitude":"2.3589459","longitude":"97.87216","state_id":21},{"name":"Aceh Tamiang","type":"subdistrict","postal_code":null,"latitude":"4.2328871","longitude":"98.0028892","state_id":21},{"name":"Aceh Tengah","type":"subdistrict","postal_code":null,"latitude":"4.4482641","longitude":"96.8350999","state_id":21},{"name":"Aceh Tenggara","type":"subdistrict","postal_code":null,"latitude":"3.3088666","longitude":"97.6982272","state_id":21},{"name":"Aceh Timur","type":"subdistrict","postal_code":null,"latitude":"4.5224111","longitude":"97.6114217","state_id":21},{"name":"Aceh Utara","type":"subdistrict","postal_code":null,"latitude":"4.9786331","longitude":"97.2221421","state_id":21},{"name":"Agam","type":"subdistrict","postal_code":null,"latitude":"-0.2209392","longitude":"100.1703257","state_id":32},{"name":"Alor","type":"subdistrict","postal_code":null,"latitude":"-8.2928427","longitude":"124.5528387","state_id":23},{"name":"Ambon","type":"city","postal_code":null,"latitude":"-3.6386665","longitude":"128.1688559","state_id":19},{"name":"Asahan","type":"subdistrict","postal_code":null,"latitude":"2.8174722","longitude":"99.634135","state_id":34},{"name":"Asmat","type":"subdistrict","postal_code":null,"latitude":"-5.0573958","longitude":"138.3988186","state_id":24},{"name":"Badung","type":"subdistrict","postal_code":null,"latitude":"-8.5819296","longitude":"115.1770586","state_id":1},{"name":"Balangan","type":"subdistrict","postal_code":null,"latitude":"-2.3260425","longitude":"115.6154732","state_id":13},{"name":"Balikpapan","type":"city","postal_code":null,"latitude":"-1.2379274","longitude":"116.8528526","state_id":15},{"name":"Banda Aceh","type":"city","postal_code":null,"latitude":"5.5482904","longitude":"95.3237559","state_id":21},{"name":"Bandar Lampung","type":"city","postal_code":null,"latitude":"-5.3971396","longitude":"105.2667887","state_id":18},{"name":"Bandung","type":"subdistrict","postal_code":null,"latitude":"-7.1340702","longitude":"107.6215321","state_id":9},{"name":"Bandung","type":"city","postal_code":null,"latitude":"-6.9174639","longitude":"107.6191228","state_id":9},{"name":"Bandung Barat","type":"subdistrict","postal_code":null,"latitude":"-6.8652214","longitude":"107.4919767","state_id":9},{"name":"Banggai","type":"subdistrict","postal_code":null,"latitude":"-0.956178","longitude":"122.6277455","state_id":29},{"name":"Banggai Kepulauan","type":"subdistrict","postal_code":null,"latitude":"-1.3075939","longitude":"123.0338767","state_id":29},{"name":"Bangka","type":"subdistrict","postal_code":null,"latitude":"-1.874294","longitude":"105.92299","state_id":2},{"name":"Bangka Barat","type":"subdistrict","postal_code":null,"latitude":"-1.8405046","longitude":"105.5005483","state_id":2},{"name":"Bangka Selatan","type":"subdistrict","postal_code":null,"latitude":"-2.7410513","longitude":"106.4405872","state_id":2},{"name":"Bangka Tengah","type":"subdistrict","postal_code":null,"latitude":"-2.4007823","longitude":"106.2051484","state_id":2},{"name":"Bangkalan","type":"subdistrict","postal_code":null,"latitude":"-7.038375","longitude":"112.9136695","state_id":11},{"name":"Bangli","type":"subdistrict","postal_code":null,"latitude":"-8.2975884","longitude":"115.3548713","state_id":1},{"name":"Banjar","type":"subdistrict","postal_code":null,"latitude":"-3.3200228","longitude":"114.9991464","state_id":13},{"name":"Banjar","type":"city","postal_code":null,"latitude":"-7.3706874","longitude":"108.5342487","state_id":9},{"name":"Banjarbaru","type":"city","postal_code":null,"latitude":null,"longitude":null,"state_id":13},{"name":"Banjarmasin","type":"city","postal_code":null,"latitude":"-3.3186067","longitude":"114.5943784","state_id":13},{"name":"Banjarnegara","type":"subdistrict","postal_code":null,"latitude":"-7.3794368","longitude":"109.6163185","state_id":10},{"name":"Bantaeng","type":"subdistrict","postal_code":null,"latitude":"-5.5169316","longitude":"120.0202964","state_id":28},{"name":"Bantul","type":"subdistrict","postal_code":null,"latitude":"-7.9190169","longitude":"110.3785438","state_id":5},{"name":"Banyuasin","type":"subdistrict","postal_code":null,"latitude":null,"longitude":null,"state_id":33},{"name":"Banyumas","type":"subdistrict","postal_code":null,"latitude":"-7.4832133","longitude":"109.140438","state_id":10},{"name":"Banyuwangi","type":"subdistrict","postal_code":null,"latitude":"-8.2190944","longitude":"114.3691416","state_id":11},{"name":"Barito Kuala","type":"subdistrict","postal_code":null,"latitude":"-3.0714738","longitude":"114.6667939","state_id":13},{"name":"Barito Selatan","type":"subdistrict","postal_code":null,"latitude":"-1.875943","longitude":"114.8092691","state_id":14},{"name":"Barito Timur","type":"subdistrict","postal_code":null,"latitude":"-2.0123999","longitude":"115.188916","state_id":14},{"name":"Barito Utara","type":"subdistrict","postal_code":null,"latitude":"-0.9587136","longitude":"115.094045","state_id":14},{"name":"Barru","type":"subdistrict","postal_code":null,"latitude":"-4.436417","longitude":"119.6499162","state_id":28},{"name":"Batam","type":"city","postal_code":null,"latitude":"1.1300779","longitude":"104.0529207","state_id":17},{"name":"Batang","type":"subdistrict","postal_code":null,"latitude":"-7.0392183","longitude":"109.9020509","state_id":10},{"name":"Batang Hari","type":"subdistrict","postal_code":null,"latitude":"-1.7083922","longitude":"103.0817903","state_id":8},{"name":"Batu","type":"city","postal_code":null,"latitude":"-7.8830648","longitude":"112.5334492","state_id":11},{"name":"Batu Bara","type":"subdistrict","postal_code":null,"latitude":"3.1740979","longitude":"99.5006143","state_id":34},{"name":"Bau-Bau","type":"city","postal_code":null,"latitude":null,"longitude":null,"state_id":30},{"name":"Bekasi","type":"subdistrict","postal_code":null,"latitude":"-6.366723","longitude":"107.1735638","state_id":9},{"name":"Bekasi","type":"city","postal_code":null,"latitude":"-6.2382699","longitude":"106.9755726","state_id":9},{"name":"Belitung","type":"subdistrict","postal_code":null,"latitude":"-2.7216743","longitude":"107.763621","state_id":2},{"name":"Belitung Timur","type":"subdistrict","postal_code":null,"latitude":"-2.8678037","longitude":"108.1428669","state_id":2},{"name":"Belu","type":"subdistrict","postal_code":null,"latitude":"-9.1538978","longitude":"124.906551","state_id":23},{"name":"Bener Meriah","type":"subdistrict","postal_code":null,"latitude":"4.7513606","longitude":"96.9525224","state_id":21},{"name":"Bengkalis","type":"subdistrict","postal_code":null,"latitude":"1.4139187","longitude":"101.6157773","state_id":26},{"name":"Bengkayang","type":"subdistrict","postal_code":null,"latitude":"1.06911","longitude":"109.6639309","state_id":12},{"name":"Bengkulu","type":"city","postal_code":null,"latitude":"-3.7928451","longitude":"102.2607641","state_id":4},{"name":"Bengkulu Selatan","type":"subdistrict","postal_code":null,"latitude":"-4.3248409","longitude":"103.035694","state_id":4},{"name":"Bengkulu Tengah","type":"subdistrict","postal_code":null,"latitude":"-3.6962324","longitude":"102.3922135","state_id":4},{"name":"Bengkulu Utara","type":"subdistrict","postal_code":null,"latitude":"-3.2663246","longitude":"101.9804613","state_id":4},{"name":"Berau","type":"subdistrict","postal_code":null,"latitude":"2.0450883","longitude":"117.3616476","state_id":15},{"name":"Biak Numfor","type":"subdistrict","postal_code":null,"latitude":"-1.0381022","longitude":"135.9800848","state_id":24},{"name":"Bima","type":"subdistrict","postal_code":null,"latitude":"-8.4353962","longitude":"118.626479","state_id":22},{"name":"Bima","type":"city","postal_code":null,"latitude":"-8.4642661","longitude":"118.7449028","state_id":22},{"name":"Binjai","type":"city","postal_code":null,"latitude":"3.6135482","longitude":"98.5025286","state_id":34},{"name":"Bintan","type":"subdistrict","postal_code":null,"latitude":"1.0619173","longitude":"104.5189214","state_id":17},{"name":"Bireuen","type":"subdistrict","postal_code":null,"latitude":"5.1086446","longitude":"96.663812","state_id":21},{"name":"Bitung","type":"city","postal_code":null,"latitude":"1.4403744","longitude":"125.1216524","state_id":31},{"name":"Blitar","type":"subdistrict","postal_code":null,"latitude":"-8.0954627","longitude":"112.1609056","state_id":11},{"name":"Blitar","type":"city","postal_code":null,"latitude":"-8.0954627","longitude":"112.1609056","state_id":11},{"name":"Blora","type":"subdistrict","postal_code":null,"latitude":"-7.012244","longitude":"111.3798928","state_id":10},{"name":"Boalemo","type":"subdistrict","postal_code":null,"latitude":"0.7013419","longitude":"122.2653887","state_id":7},{"name":"Bogor","type":"subdistrict","postal_code":null,"latitude":"-6.5517758","longitude":"106.6291304","state_id":9},{"name":"Bogor","type":"city","postal_code":null,"latitude":"-6.5971469","longitude":"106.8060388","state_id":9},{"name":"Bojonegoro","type":"subdistrict","postal_code":null,"latitude":"-7.3174629","longitude":"111.7614661","state_id":11},{"name":"Bolaang Mongondow (Bolmong)","type":"subdistrict","postal_code":null,"latitude":"0.6870994","longitude":"124.0641419","state_id":31},{"name":"Bolaang Mongondow Selatan","type":"subdistrict","postal_code":null,"latitude":"0.4053215","longitude":"123.8411288","state_id":31},{"name":"Bolaang Mongondow Timur","type":"subdistrict","postal_code":null,"latitude":"0.7152651","longitude":"124.4641848","state_id":31},{"name":"Bolaang Mongondow Utara","type":"subdistrict","postal_code":null,"latitude":"0.9070359","longitude":"123.2657311","state_id":31},{"name":"Bombana","type":"subdistrict","postal_code":null,"latitude":"-4.6543462","longitude":"121.9017954","state_id":30},{"name":"Bondowoso","type":"subdistrict","postal_code":null,"latitude":"-7.9673906","longitude":"113.9060624","state_id":11},{"name":"Bone","type":"subdistrict","postal_code":null,"latitude":"-4.7443383","longitude":"120.0665236","state_id":28},{"name":"Bone Bolango","type":"subdistrict","postal_code":null,"latitude":"0.5657885","longitude":"123.3486147","state_id":7},{"name":"Bontang","type":"city","postal_code":null,"latitude":"0.120863","longitude":"117.4800445","state_id":15},{"name":"Boven Digoel","type":"subdistrict","postal_code":null,"latitude":"-5.7400018","longitude":"140.3481835","state_id":24},{"name":"Boyolali","type":"subdistrict","postal_code":null,"latitude":"-7.4317773","longitude":"110.6883536","state_id":10},{"name":"Brebes","type":"subdistrict","postal_code":null,"latitude":"-6.9591793","longitude":"108.902683","state_id":10},{"name":"Bukittinggi","type":"city","postal_code":null,"latitude":"-0.3039178","longitude":"100.383479","state_id":32},{"name":"Buleleng","type":"subdistrict","postal_code":null,"latitude":"-8.2238968","longitude":"114.9516869","state_id":1},{"name":"Bulukumba","type":"subdistrict","postal_code":null,"latitude":"-5.4329368","longitude":"120.2051096","state_id":28},{"name":"Bulungan (Bulongan)","type":"subdistrict","postal_code":null,"latitude":"2.9042476","longitude":"116.9852422","state_id":16},{"name":"Bungo","type":"subdistrict","postal_code":null,"latitude":"-1.6401338","longitude":"101.8891721","state_id":8},{"name":"Buol","type":"subdistrict","postal_code":null,"latitude":"0.9695452","longitude":"121.3541631","state_id":29},{"name":"Buru","type":"subdistrict","postal_code":null,"latitude":"-3.3307379","longitude":"126.6957216","state_id":19},{"name":"Buru Selatan","type":"subdistrict","postal_code":null,"latitude":"-3.7273972","longitude":"126.6957216","state_id":19},{"name":"Buton","type":"subdistrict","postal_code":null,"latitude":"-5.3096355","longitude":"122.9888319","state_id":30},{"name":"Buton Utara","type":"subdistrict","postal_code":null,"latitude":"-4.7023424","longitude":"123.0338767","state_id":30},{"name":"Ciamis","type":"subdistrict","postal_code":null,"latitude":"-7.3320773","longitude":"108.3492543","state_id":9},{"name":"Cianjur","type":"subdistrict","postal_code":null,"latitude":"-7.3579773","longitude":"107.1957203","state_id":9},{"name":"Cilacap","type":"subdistrict","postal_code":null,"latitude":"-7.6982991","longitude":"109.023521","state_id":10},{"name":"Cilegon","type":"city","postal_code":null,"latitude":"-6.0186817","longitude":"106.0558218","state_id":3},{"name":"Cimahi","type":"city","postal_code":null,"latitude":"-6.8840816","longitude":"107.5413039","state_id":9},{"name":"Cirebon","type":"subdistrict","postal_code":null,"latitude":"-6.6898876","longitude":"108.4750846","state_id":9},{"name":"Cirebon","type":"city","postal_code":null,"latitude":"-6.7320229","longitude":"108.5523164","state_id":9},{"name":"Dairi","type":"subdistrict","postal_code":null,"latitude":"2.8675801","longitude":"98.265058","state_id":34},{"name":"Deiyai (Deliyai)","type":"subdistrict","postal_code":null,"latitude":"-4.0974893","longitude":"136.4393054","state_id":24},{"name":"Deli Serdang","type":"subdistrict","postal_code":null,"latitude":"3.4201802","longitude":"98.704075","state_id":34},{"name":"Demak","type":"subdistrict","postal_code":null,"latitude":"-6.9238879","longitude":"110.6645683","state_id":10},{"name":"Denpasar","type":"city","postal_code":null,"latitude":"-8.6704582","longitude":"115.2126293","state_id":1},{"name":"Depok","type":"city","postal_code":null,"latitude":"-6.4024844","longitude":"106.7942405","state_id":9},{"name":"Dharmasraya","type":"subdistrict","postal_code":null,"latitude":"-1.1120568","longitude":"101.6157773","state_id":32},{"name":"Dogiyai","type":"subdistrict","postal_code":null,"latitude":"-4.0454139","longitude":"135.6763443","state_id":24},{"name":"Dompu","type":"subdistrict","postal_code":null,"latitude":"-8.5363958","longitude":"118.3461948","state_id":22},{"name":"Donggala","type":"subdistrict","postal_code":null,"latitude":"-0.4233155","longitude":"119.8352303","state_id":29},{"name":"Dumai","type":"city","postal_code":null,"latitude":null,"longitude":null,"state_id":26},{"name":"Empat Lawang","type":"subdistrict","postal_code":null,"latitude":"-3.7286029","longitude":"102.8975098","state_id":33},{"name":"Ende","type":"subdistrict","postal_code":null,"latitude":"-8.6762912","longitude":"121.7195459","state_id":23},{"name":"Enrekang","type":"subdistrict","postal_code":null,"latitude":"-3.4590744","longitude":"119.8815203","state_id":28},{"name":"Fakfak","type":"subdistrict","postal_code":null,"latitude":"-3.097706","longitude":"133.0194897","state_id":25},{"name":"Flores Timur","type":"subdistrict","postal_code":null,"latitude":"-8.3130942","longitude":"122.9663018","state_id":23},{"name":"Garut","type":"subdistrict","postal_code":null,"latitude":"-7.5012204","longitude":"107.763621","state_id":9},{"name":"Gayo Lues","type":"subdistrict","postal_code":null,"latitude":"3.955165","longitude":"97.3516558","state_id":21},{"name":"Gianyar","type":"subdistrict","postal_code":null,"latitude":"-8.4248244","longitude":"115.2600506","state_id":1},{"name":"Gorontalo","type":"subdistrict","postal_code":null,"latitude":"0.5692733","longitude":"122.8084496","state_id":7},{"name":"Gorontalo","type":"city","postal_code":null,"latitude":"0.5435442","longitude":"123.0567693","state_id":7},{"name":"Gorontalo Utara","type":"subdistrict","postal_code":null,"latitude":"0.9252647","longitude":"122.4920088","state_id":7},{"name":"Gowa","type":"subdistrict","postal_code":null,"latitude":"-5.3102888","longitude":"119.742604","state_id":28},{"name":"Gresik","type":"subdistrict","postal_code":null,"latitude":"-7.1550291","longitude":"112.5721881","state_id":11},{"name":"Grobogan","type":"subdistrict","postal_code":null,"latitude":"-7.1541672","longitude":"110.9506636","state_id":10},{"name":"Gunung Kidul","type":"subdistrict","postal_code":null,"latitude":"-8.0305091","longitude":"110.6168921","state_id":5},{"name":"Gunung Mas","type":"subdistrict","postal_code":null,"latitude":"-1.2522464","longitude":"113.5728501","state_id":14},{"name":"Gunungsitoli","type":"city","postal_code":null,"latitude":"1.2804692","longitude":"97.6146757","state_id":34},{"name":"Halmahera Barat","type":"subdistrict","postal_code":null,"latitude":"1.3589663","longitude":"127.5960704","state_id":20},{"name":"Halmahera Selatan","type":"subdistrict","postal_code":null,"latitude":"-1.5109015","longitude":"127.7237678","state_id":20},{"name":"Halmahera Tengah","type":"subdistrict","postal_code":null,"latitude":"0.4419543","longitude":"128.3587174","state_id":20},{"name":"Halmahera Timur","type":"subdistrict","postal_code":null,"latitude":"1.3121235","longitude":"128.4849923","state_id":20},{"name":"Halmahera Utara","type":"subdistrict","postal_code":null,"latitude":"1.5074308","longitude":"127.8936663","state_id":20},{"name":"Hulu Sungai Selatan","type":"subdistrict","postal_code":null,"latitude":"-2.7662681","longitude":"115.2363408","state_id":13},{"name":"Hulu Sungai Tengah","type":"subdistrict","postal_code":null,"latitude":"-2.6153162","longitude":"115.5207358","state_id":13},{"name":"Hulu Sungai Utara","type":"subdistrict","postal_code":null,"latitude":"-2.4421225","longitude":"115.188916","state_id":13},{"name":"Humbang Hasundutan","type":"subdistrict","postal_code":null,"latitude":"2.1988508","longitude":"98.5721016","state_id":34},{"name":"Indragiri Hilir","type":"subdistrict","postal_code":null,"latitude":"-0.1456733","longitude":"102.989615","state_id":26},{"name":"Indragiri Hulu","type":"subdistrict","postal_code":null,"latitude":"-0.7361181","longitude":"102.2547919","state_id":26},{"name":"Indramayu","type":"subdistrict","postal_code":null,"latitude":"-6.33731","longitude":"108.3258329","state_id":9},{"name":"Intan Jaya","type":"subdistrict","postal_code":null,"latitude":"-3.5076422","longitude":"136.7478493","state_id":24},{"name":"Jakarta Barat","type":"city","postal_code":null,"latitude":"-6.1674309","longitude":"106.7637239","state_id":6},{"name":"Jakarta Pusat","type":"city","postal_code":null,"latitude":"-6.1805113","longitude":"106.8283831","state_id":6},{"name":"Jakarta Selatan","type":"city","postal_code":null,"latitude":"-6.2614927","longitude":"106.8105998","state_id":6},{"name":"Jakarta Timur","type":"city","postal_code":null,"latitude":"-6.2250138","longitude":"106.9004472","state_id":6},{"name":"Jakarta Utara","type":"city","postal_code":null,"latitude":"-6.1554057","longitude":"106.8926634","state_id":6},{"name":"Jambi","type":"city","postal_code":null,"latitude":"-1.6101229","longitude":"103.6131203","state_id":8},{"name":"Jayapura","type":"subdistrict","postal_code":null,"latitude":"-2.987923","longitude":"139.8547266","state_id":24},{"name":"Jayapura","type":"city","postal_code":null,"latitude":"-2.5916025","longitude":"140.6689995","state_id":24},{"name":"Jayawijaya","type":"subdistrict","postal_code":null,"latitude":"-4.0004481","longitude":"138.7995122","state_id":24},{"name":"Jember","type":"subdistrict","postal_code":null,"latitude":"-8.1844859","longitude":"113.6680747","state_id":11},{"name":"Jembrana","type":"subdistrict","postal_code":null,"latitude":"-8.3233438","longitude":"114.6667939","state_id":1},{"name":"Jeneponto","type":"subdistrict","postal_code":null,"latitude":"-5.554579","longitude":"119.6730939","state_id":28},{"name":"Jepara","type":"subdistrict","postal_code":null,"latitude":"-6.582711","longitude":"110.6786933","state_id":10},{"name":"Jombang","type":"subdistrict","postal_code":null,"latitude":"-7.5740867","longitude":"112.28609","state_id":11},{"name":"Kaimana","type":"subdistrict","postal_code":null,"latitude":"-3.288406","longitude":"133.9436788","state_id":25},{"name":"Kampar","type":"subdistrict","postal_code":null,"latitude":"0.146671","longitude":"101.1617356","state_id":26},{"name":"Kapuas","type":"subdistrict","postal_code":null,"latitude":"-1.8116445","longitude":"114.3341432","state_id":14},{"name":"Kapuas Hulu","type":"subdistrict","postal_code":null,"latitude":"0.8336697","longitude":"113.0011989","state_id":12},{"name":"Karanganyar","type":"subdistrict","postal_code":null,"latitude":"-7.6387228","longitude":"111.0460407","state_id":10},{"name":"Karangasem","type":"subdistrict","postal_code":null,"latitude":null,"longitude":null,"state_id":1},{"name":"Karawang","type":"subdistrict","postal_code":null,"latitude":"-6.3227303","longitude":"107.3375791","state_id":9},{"name":"Karimun","type":"subdistrict","postal_code":null,"latitude":"0.7697665","longitude":"103.4049445","state_id":17},{"name":"Karo","type":"subdistrict","postal_code":null,"latitude":"3.1052909","longitude":"98.265058","state_id":34},{"name":"Katingan","type":"subdistrict","postal_code":null,"latitude":"-0.9758379","longitude":"112.8105512","state_id":14},{"name":"Kaur","type":"subdistrict","postal_code":null,"latitude":"-4.5215978","longitude":"103.2663479","state_id":4},{"name":"Kayong Utara","type":"subdistrict","postal_code":null,"latitude":"-0.9225877","longitude":"110.0449662","state_id":12},{"name":"Kebumen","type":"subdistrict","postal_code":null,"latitude":"-7.6680559","longitude":"109.6524575","state_id":10},{"name":"Kediri","type":"subdistrict","postal_code":null,"latitude":"-7.8232397","longitude":"112.1907122","state_id":11},{"name":"Kediri","type":"city","postal_code":null,"latitude":"-7.8480156","longitude":"112.0178286","state_id":11},{"name":"Keerom","type":"subdistrict","postal_code":null,"latitude":"-3.3449536","longitude":"140.7624493","state_id":24},{"name":"Kendal","type":"subdistrict","postal_code":null,"latitude":"-7.0265442","longitude":"110.1879106","state_id":10},{"name":"Kendari","type":"city","postal_code":null,"latitude":"-3.9984597","longitude":"122.5129742","state_id":30},{"name":"Kepahiang","type":"subdistrict","postal_code":null,"latitude":"-3.6130091","longitude":"102.6675575","state_id":4},{"name":"Kepulauan Anambas","type":"subdistrict","postal_code":null,"latitude":"3.1055459","longitude":"105.6537231","state_id":17},{"name":"Kepulauan Aru","type":"subdistrict","postal_code":null,"latitude":"-6.2067294","longitude":"134.4718394","state_id":19},{"name":"Kepulauan Mentawai","type":"subdistrict","postal_code":null,"latitude":"-1.426001","longitude":"98.9245343","state_id":32},{"name":"Kepulauan Meranti","type":"subdistrict","postal_code":null,"latitude":"0.9208765","longitude":"102.6675575","state_id":26},{"name":"Kepulauan Sangihe","type":"subdistrict","postal_code":null,"latitude":"3.6329172","longitude":"125.5000999","state_id":31},{"name":"Kepulauan Seribu","type":"subdistrict","postal_code":null,"latitude":"-5.6122404","longitude":"106.6169964","state_id":6},{"name":"Kepulauan Siau Tagulandang Biaro (Sitaro)","type":"subdistrict","postal_code":null,"latitude":"2.345964","longitude":"125.4124355","state_id":31},{"name":"Kepulauan Sula","type":"subdistrict","postal_code":null,"latitude":"-1.8321222","longitude":"125.958777","state_id":20},{"name":"Kepulauan Talaud","type":"subdistrict","postal_code":null,"latitude":"4.3066741","longitude":"126.8034921","state_id":31},{"name":"Kepulauan Yapen (Yapen Waropen)","type":"subdistrict","postal_code":null,"latitude":"-2.8435717","longitude":"136.670534","state_id":24},{"name":"Kerinci","type":"subdistrict","postal_code":null,"latitude":"-1.8720467","longitude":"101.4339148","state_id":8},{"name":"Ketapang","type":"subdistrict","postal_code":null,"latitude":"-1.5697615","longitude":"110.5215459","state_id":12},{"name":"Klaten","type":"subdistrict","postal_code":null,"latitude":"-7.657893","longitude":"110.6645683","state_id":10},{"name":"Klungkung","type":"subdistrict","postal_code":null,"latitude":"-8.727807","longitude":"115.5444231","state_id":1},{"name":"Kolaka","type":"subdistrict","postal_code":null,"latitude":"-3.9946988","longitude":"121.5826642","state_id":30},{"name":"Kolaka Utara","type":"subdistrict","postal_code":null,"latitude":"-3.1347227","longitude":"121.1710389","state_id":30},{"name":"Konawe","type":"subdistrict","postal_code":null,"latitude":"-3.9380432","longitude":"122.0837445","state_id":30},{"name":"Konawe Selatan","type":"subdistrict","postal_code":null,"latitude":"-4.2027915","longitude":"122.4467238","state_id":30},{"name":"Konawe Utara","type":"subdistrict","postal_code":null,"latitude":"-3.3803291","longitude":"122.0837445","state_id":30},{"name":"Kotabaru","type":"subdistrict","postal_code":null,"latitude":null,"longitude":null,"state_id":13},{"name":"Kotamobagu","type":"city","postal_code":null,"latitude":"0.7243733","longitude":"124.3199316","state_id":31},{"name":"Kotawaringin Barat","type":"subdistrict","postal_code":null,"latitude":"-2.5063419","longitude":"111.7614661","state_id":14},{"name":"Kotawaringin Timur","type":"subdistrict","postal_code":null,"latitude":"-2.1225475","longitude":"112.8105512","state_id":14},{"name":"Kuantan Singingi","type":"subdistrict","postal_code":null,"latitude":"-0.4411596","longitude":"101.5248055","state_id":26},{"name":"Kubu Raya","type":"subdistrict","postal_code":null,"latitude":"-0.3533938","longitude":"109.4735066","state_id":12},{"name":"Kudus","type":"subdistrict","postal_code":null,"latitude":"-6.7726186","longitude":"110.8791343","state_id":10},{"name":"Kulon Progo","type":"subdistrict","postal_code":null,"latitude":"-7.8266798","longitude":"110.1640846","state_id":5},{"name":"Kuningan","type":"subdistrict","postal_code":null,"latitude":"-7.0138053","longitude":"108.5700636","state_id":9},{"name":"Kupang","type":"subdistrict","postal_code":null,"latitude":"-9.9906166","longitude":"123.8857747","state_id":23},{"name":"Kupang","type":"city","postal_code":null,"latitude":"-10.1771997","longitude":"123.6070329","state_id":23},{"name":"Kutai Barat","type":"subdistrict","postal_code":null,"latitude":"-0.4051796","longitude":"115.8521764","state_id":15},{"name":"Kutai Kartanegara","type":"subdistrict","postal_code":null,"latitude":"-0.1336655","longitude":"116.6081653","state_id":15},{"name":"Kutai Timur","type":"subdistrict","postal_code":null,"latitude":"0.9433774","longitude":"116.9852422","state_id":15},{"name":"Labuhan Batu","type":"subdistrict","postal_code":null,"latitude":"2.3439863","longitude":"100.1703257","state_id":34},{"name":"Labuhan Batu Selatan","type":"subdistrict","postal_code":null,"latitude":"1.8799353","longitude":"100.1703257","state_id":34},{"name":"Labuhan Batu Utara","type":"subdistrict","postal_code":null,"latitude":"2.3465638","longitude":"99.8124935","state_id":34},{"name":"Lahat","type":"subdistrict","postal_code":null,"latitude":"-3.8008893","longitude":"103.3587288","state_id":33},{"name":"Lamandau","type":"subdistrict","postal_code":null,"latitude":"-1.8526377","longitude":"111.2845025","state_id":14},{"name":"Lamongan","type":"subdistrict","postal_code":null,"latitude":"-7.1269261","longitude":"112.3337769","state_id":11},{"name":"Lampung Barat","type":"subdistrict","postal_code":null,"latitude":"-5.1095293","longitude":"104.1466046","state_id":18},{"name":"Lampung Selatan","type":"subdistrict","postal_code":null,"latitude":"-5.5622614","longitude":"105.5474373","state_id":18},{"name":"Lampung Tengah","type":"subdistrict","postal_code":null,"latitude":"-4.8008086","longitude":"105.3131185","state_id":18},{"name":"Lampung Timur","type":"subdistrict","postal_code":null,"latitude":"-5.1134995","longitude":"105.6881788","state_id":18},{"name":"Lampung Utara","type":"subdistrict","postal_code":null,"latitude":"-4.8133905","longitude":"104.7520939","state_id":18},{"name":"Landak","type":"subdistrict","postal_code":null,"latitude":"0.4237287","longitude":"109.7591675","state_id":12},{"name":"Langkat","type":"subdistrict","postal_code":null,"latitude":"3.8653916","longitude":"98.3088441","state_id":34},{"name":"Langsa","type":"city","postal_code":null,"latitude":"4.4725348","longitude":"97.9756343","state_id":21},{"name":"Lanny Jaya","type":"subdistrict","postal_code":null,"latitude":"-3.971033","longitude":"138.3190276","state_id":24},{"name":"Lebak","type":"subdistrict","postal_code":null,"latitude":"-6.5643956","longitude":"106.2522143","state_id":3},{"name":"Lebong","type":"subdistrict","postal_code":null,"latitude":"-3.1455094","longitude":"102.2090224","state_id":4},{"name":"Lembata","type":"subdistrict","postal_code":null,"latitude":"-8.4719075","longitude":"123.4831906","state_id":23},{"name":"Lhokseumawe","type":"city","postal_code":null,"latitude":"5.1811638","longitude":"97.1413222","state_id":21},{"name":"Lima Puluh Koto\/Kota","type":"subdistrict","postal_code":null,"latitude":null,"longitude":null,"state_id":32},{"name":"Lingga","type":"subdistrict","postal_code":null,"latitude":"-0.4726065","longitude":"104.4257533","state_id":17},{"name":"Lombok Barat","type":"subdistrict","postal_code":null,"latitude":"-8.6464599","longitude":"116.1123078","state_id":22},{"name":"Lombok Tengah","type":"subdistrict","postal_code":null,"latitude":"-8.694623","longitude":"116.2777073","state_id":22},{"name":"Lombok Timur","type":"subdistrict","postal_code":null,"latitude":"-8.5134471","longitude":"116.5609857","state_id":22},{"name":"Lombok Utara","type":"subdistrict","postal_code":null,"latitude":"-8.3739076","longitude":"116.2777073","state_id":22},{"name":"Lubuk Linggau","type":"city","postal_code":null,"latitude":null,"longitude":null,"state_id":33},{"name":"Lumajang","type":"subdistrict","postal_code":null,"latitude":"-8.0943571","longitude":"113.1441558","state_id":11},{"name":"Luwu","type":"subdistrict","postal_code":null,"latitude":"-3.3052214","longitude":"120.2512728","state_id":28},{"name":"Luwu Timur","type":"subdistrict","postal_code":null,"latitude":"-2.5825518","longitude":"121.1710389","state_id":28},{"name":"Luwu Utara","type":"subdistrict","postal_code":null,"latitude":"-2.2690446","longitude":"119.9740534","state_id":28},{"name":"Madiun","type":"subdistrict","postal_code":null,"latitude":"-7.6093306","longitude":"111.6183755","state_id":11},{"name":"Madiun","type":"city","postal_code":null,"latitude":"-7.6310587","longitude":"111.5300159","state_id":11},{"name":"Magelang","type":"subdistrict","postal_code":null,"latitude":"-7.4305237","longitude":"110.2832217","state_id":10},{"name":"Magelang","type":"city","postal_code":null,"latitude":"-7.4797342","longitude":"110.2176941","state_id":10},{"name":"Magetan","type":"subdistrict","postal_code":null,"latitude":"-7.6433138","longitude":"111.356045","state_id":11},{"name":"Majalengka","type":"subdistrict","postal_code":null,"latitude":"-6.7790605","longitude":"108.2852049","state_id":9},{"name":"Majene","type":"subdistrict","postal_code":null,"latitude":"-3.0297251","longitude":"118.9062794","state_id":27},{"name":"Makassar","type":"city","postal_code":null,"latitude":"-5.1476651","longitude":"119.4327314","state_id":28},{"name":"Malang","type":"subdistrict","postal_code":null,"latitude":"-8.242209","longitude":"112.7152125","state_id":11},{"name":"Malang","type":"city","postal_code":null,"latitude":"-7.9666204","longitude":"112.6326321","state_id":11},{"name":"Malinau","type":"subdistrict","postal_code":null,"latitude":"3.0730929","longitude":"116.0413889","state_id":16},{"name":"Maluku Barat Daya","type":"subdistrict","postal_code":null,"latitude":"-7.7851588","longitude":"126.3498097","state_id":19},{"name":"Maluku Tengah","type":"subdistrict","postal_code":null,"latitude":"-3.0166501","longitude":"129.4864411","state_id":19},{"name":"Maluku Tenggara","type":"subdistrict","postal_code":null,"latitude":"-5.7512455","longitude":"132.7271587","state_id":19},{"name":"Maluku Tenggara Barat","type":"subdistrict","postal_code":null,"latitude":"-7.5322642","longitude":"131.3611121","state_id":19},{"name":"Mamasa","type":"subdistrict","postal_code":null,"latitude":"-2.9118209","longitude":"119.3250347","state_id":27},{"name":"Mamberamo Raya","type":"subdistrict","postal_code":null,"latitude":"-2.5331255","longitude":"137.7637565","state_id":24},{"name":"Mamberamo Tengah","type":"subdistrict","postal_code":null,"latitude":"-2.3745692","longitude":"138.3190276","state_id":24},{"name":"Mamuju","type":"subdistrict","postal_code":null,"latitude":"-2.4920057","longitude":"119.3250347","state_id":27},{"name":"Mamuju Utara","type":"subdistrict","postal_code":null,"latitude":"-1.5264542","longitude":"119.5107708","state_id":27},{"name":"Manado","type":"city","postal_code":null,"latitude":"1.4748305","longitude":"124.8420794","state_id":31},{"name":"Mandailing Natal","type":"subdistrict","postal_code":null,"latitude":"0.7432372","longitude":"99.3673084","state_id":34},{"name":"Manggarai","type":"subdistrict","postal_code":null,"latitude":"-8.6796987","longitude":"120.3896651","state_id":23},{"name":"Manggarai Barat","type":"subdistrict","postal_code":null,"latitude":"-8.6688149","longitude":"120.0665236","state_id":23},{"name":"Manggarai Timur","type":"subdistrict","postal_code":null,"latitude":"-8.6206712","longitude":"120.6199895","state_id":23},{"name":"Manokwari","type":"subdistrict","postal_code":null,"latitude":"-0.8614531","longitude":"134.0620421","state_id":25},{"name":"Manokwari Selatan","type":"subdistrict","postal_code":null,"latitude":"-0.9135107","longitude":"134.0008674","state_id":25},{"name":"Mappi","type":"subdistrict","postal_code":null,"latitude":"-6.7606468","longitude":"139.6911374","state_id":24},{"name":"Maros","type":"subdistrict","postal_code":null,"latitude":"-5.0549145","longitude":"119.6962677","state_id":28},{"name":"Mataram","type":"city","postal_code":null,"latitude":"-8.5970808","longitude":"116.1004894","state_id":22},{"name":"Maybrat","type":"subdistrict","postal_code":null,"latitude":"-1.2970979","longitude":"132.3150993","state_id":25},{"name":"Medan","type":"city","postal_code":null,"latitude":"3.5951956","longitude":"98.6722227","state_id":34},{"name":"Melawi","type":"subdistrict","postal_code":null,"latitude":"-0.7000681","longitude":"111.6660725","state_id":12},{"name":"Merangin","type":"subdistrict","postal_code":null,"latitude":"-2.1752789","longitude":"101.9804613","state_id":8},{"name":"Merauke","type":"subdistrict","postal_code":null,"latitude":"-7.7838334","longitude":"139.041312","state_id":24},{"name":"Mesuji","type":"subdistrict","postal_code":null,"latitude":"-4.0044783","longitude":"105.3131185","state_id":18},{"name":"Metro","type":"city","postal_code":null,"latitude":"-5.1178394","longitude":"105.3072646","state_id":18},{"name":"Mimika","type":"subdistrict","postal_code":null,"latitude":"-4.4553223","longitude":"137.1362125","state_id":24},{"name":"Minahasa","type":"subdistrict","postal_code":null,"latitude":"1.2168837","longitude":"124.8182593","state_id":31},{"name":"Minahasa Selatan","type":"subdistrict","postal_code":null,"latitude":"1.0946773","longitude":"124.4641848","state_id":31},{"name":"Minahasa Tenggara","type":"subdistrict","postal_code":null,"latitude":"1.0278551","longitude":"124.7298765","state_id":31},{"name":"Minahasa Utara","type":"subdistrict","postal_code":null,"latitude":"1.5327973","longitude":"124.994751","state_id":31},{"name":"Mojokerto","type":"subdistrict","postal_code":null,"latitude":"-7.4698914","longitude":"112.4351068","state_id":11},{"name":"Mojokerto","type":"city","postal_code":null,"latitude":"-7.4704747","longitude":"112.4401329","state_id":11},{"name":"Morowali","type":"subdistrict","postal_code":null,"latitude":"-2.6987231","longitude":"121.9017954","state_id":29},{"name":"Muara Enim","type":"subdistrict","postal_code":null,"latitude":"-3.7114163","longitude":"104.0072348","state_id":33},{"name":"Muaro Jambi","type":"subdistrict","postal_code":null,"latitude":"-1.552136","longitude":"103.8216261","state_id":8},{"name":"Muko Muko","type":"subdistrict","postal_code":null,"latitude":null,"longitude":null,"state_id":4},{"name":"Muna","type":"subdistrict","postal_code":null,"latitude":"-4.901629","longitude":"122.6277455","state_id":30},{"name":"Murung Raya","type":"subdistrict","postal_code":null,"latitude":"-0.1362171","longitude":"114.3341432","state_id":14},{"name":"Musi Banyuasin","type":"subdistrict","postal_code":null,"latitude":"-2.5442029","longitude":"103.7289167","state_id":33},{"name":"Musi Rawas","type":"subdistrict","postal_code":null,"latitude":"-3.0956537","longitude":"103.0817903","state_id":33},{"name":"Nabire","type":"subdistrict","postal_code":null,"latitude":"-3.5095462","longitude":"135.7520985","state_id":24},{"name":"Nagan Raya","type":"subdistrict","postal_code":null,"latitude":"4.1248406","longitude":"96.4929797","state_id":21},{"name":"Nagekeo","type":"subdistrict","postal_code":null,"latitude":"-8.6753545","longitude":"121.3084088","state_id":23},{"name":"Natuna","type":"subdistrict","postal_code":null,"latitude":"4","longitude":"108.25","state_id":17},{"name":"Nduga","type":"subdistrict","postal_code":null,"latitude":"-4.4069496","longitude":"138.2393528","state_id":24},{"name":"Ngada","type":"subdistrict","postal_code":null,"latitude":"-8.7430424","longitude":"120.9876321","state_id":23},{"name":"Nganjuk","type":"subdistrict","postal_code":null,"latitude":"-7.5943507","longitude":"111.9045541","state_id":11},{"name":"Ngawi","type":"subdistrict","postal_code":null,"latitude":"-7.460987","longitude":"111.3321974","state_id":11},{"name":"Nias","type":"subdistrict","postal_code":null,"latitude":"1.0869444","longitude":"97.7416703","state_id":34},{"name":"Nias Barat","type":"subdistrict","postal_code":null,"latitude":"1.0116383","longitude":"97.4814163","state_id":34},{"name":"Nias Selatan","type":"subdistrict","postal_code":null,"latitude":"0.7086091","longitude":"97.8286368","state_id":34},{"name":"Nias Utara","type":"subdistrict","postal_code":null,"latitude":"1.3166036","longitude":"97.394882","state_id":34},{"name":"Nunukan","type":"subdistrict","postal_code":null,"latitude":"4.0809649","longitude":"116.6081653","state_id":16},{"name":"Ogan Ilir","type":"subdistrict","postal_code":null,"latitude":"-3.426544","longitude":"104.6121475","state_id":33},{"name":"Ogan Komering Ilir","type":"subdistrict","postal_code":null,"latitude":"-3.4559744","longitude":"105.2194808","state_id":33},{"name":"Ogan Komering Ulu","type":"subdistrict","postal_code":null,"latitude":"-4.0283486","longitude":"104.0072348","state_id":33},{"name":"Ogan Komering Ulu Selatan","type":"subdistrict","postal_code":null,"latitude":"-4.6681951","longitude":"104.0072348","state_id":33},{"name":"Ogan Komering Ulu Timur","type":"subdistrict","postal_code":null,"latitude":"-3.8567934","longitude":"104.7520939","state_id":33},{"name":"Pacitan","type":"subdistrict","postal_code":null,"latitude":"-8.126331","longitude":"111.1414226","state_id":11},{"name":"Padang","type":"city","postal_code":null,"latitude":"-0.9470832","longitude":"100.417181","state_id":32},{"name":"Padang Lawas","type":"subdistrict","postal_code":null,"latitude":"1.1186977","longitude":"99.8124935","state_id":34},{"name":"Padang Lawas Utara","type":"subdistrict","postal_code":null,"latitude":"1.5758644","longitude":"99.634135","state_id":34},{"name":"Padang Panjang","type":"city","postal_code":null,"latitude":"-0.4660955","longitude":"100.3984148","state_id":32},{"name":"Padang Pariaman","type":"subdistrict","postal_code":null,"latitude":"-0.5546757","longitude":"100.2151578","state_id":32},{"name":"Padang Sidempuan","type":"city","postal_code":null,"latitude":null,"longitude":null,"state_id":34},{"name":"Pagar Alam","type":"city","postal_code":null,"latitude":"-4.0419617","longitude":"103.2278845","state_id":33},{"name":"Pakpak Bharat","type":"subdistrict","postal_code":null,"latitude":"2.5135376","longitude":"98.2212979","state_id":34},{"name":"Palangka Raya","type":"city","postal_code":null,"latitude":"-2.2161048","longitude":"113.913977","state_id":14},{"name":"Palembang","type":"city","postal_code":null,"latitude":"-2.9760735","longitude":"104.7754307","state_id":33},{"name":"Palopo","type":"city","postal_code":null,"latitude":"-3.0016343","longitude":"120.1985141","state_id":28},{"name":"Palu","type":"city","postal_code":null,"latitude":"-0.9002915","longitude":"119.8779987","state_id":29},{"name":"Pamekasan","type":"subdistrict","postal_code":null,"latitude":"-7.1050857","longitude":"113.5252319","state_id":11},{"name":"Pandeglang","type":"subdistrict","postal_code":null,"latitude":"-6.7482706","longitude":"105.6881788","state_id":3},{"name":"Pangandaran","type":"subdistrict","postal_code":null,"latitude":"-7.6150611","longitude":"108.4988269","state_id":9},{"name":"Pangkajene Kepulauan","type":"subdistrict","postal_code":null,"latitude":null,"longitude":null,"state_id":28},{"name":"Pangkal Pinang","type":"city","postal_code":null,"latitude":"-2.1316266","longitude":"106.1169299","state_id":2},{"name":"Paniai","type":"subdistrict","postal_code":null,"latitude":"-3.7876441","longitude":"136.3624686","state_id":24},{"name":"Parepare","type":"city","postal_code":null,"latitude":"-4.0096221","longitude":"119.6290617","state_id":28},{"name":"Pariaman","type":"city","postal_code":null,"latitude":"-0.6256517","longitude":"100.1233396","state_id":32},{"name":"Parigi Moutong","type":"subdistrict","postal_code":null,"latitude":"0.5817607","longitude":"120.8039474","state_id":29},{"name":"Pasaman","type":"subdistrict","postal_code":null,"latitude":"0.2209392","longitude":"100.1703257","state_id":32},{"name":"Pasaman Barat","type":"subdistrict","postal_code":null,"latitude":"0.2213005","longitude":"99.634135","state_id":32},{"name":"Paser","type":"subdistrict","postal_code":null,"latitude":"-1.7175266","longitude":"115.9467997","state_id":15},{"name":"Pasuruan","type":"subdistrict","postal_code":null,"latitude":"-7.7859961","longitude":"112.858217","state_id":11},{"name":"Pasuruan","type":"city","postal_code":null,"latitude":"-7.6469193","longitude":"112.8999225","state_id":11},{"name":"Pati","type":"subdistrict","postal_code":null,"latitude":"-6.7449635","longitude":"111.0460407","state_id":10},{"name":"Payakumbuh","type":"city","postal_code":null,"latitude":"-0.2246548","longitude":"100.6318006","state_id":32},{"name":"Pegunungan Arfak","type":"subdistrict","postal_code":null,"latitude":"-1.1554562","longitude":"133.7142484","state_id":25},{"name":"Pegunungan Bintang","type":"subdistrict","postal_code":null,"latitude":"-4.5589872","longitude":"140.5135589","state_id":24},{"name":"Pekalongan","type":"subdistrict","postal_code":null,"latitude":"-7.0517128","longitude":"109.6163185","state_id":10},{"name":"Pekalongan","type":"city","postal_code":null,"latitude":"-6.8898362","longitude":"109.6745916","state_id":10},{"name":"Pekanbaru","type":"city","postal_code":null,"latitude":"0.5070677","longitude":"101.4477793","state_id":26},{"name":"Pelalawan","type":"subdistrict","postal_code":null,"latitude":"0.1460923","longitude":"102.2547919","state_id":26},{"name":"Pemalang","type":"subdistrict","postal_code":null,"latitude":"-7.0599422","longitude":"109.4259114","state_id":10},{"name":"Pematang Siantar","type":"city","postal_code":null,"latitude":"2.970042","longitude":"99.0681668","state_id":34},{"name":"Penajam Paser Utara","type":"subdistrict","postal_code":null,"latitude":"-1.2917094","longitude":"116.5137964","state_id":15},{"name":"Pesawaran","type":"subdistrict","postal_code":null,"latitude":"-5.493245","longitude":"105.0791228","state_id":18},{"name":"Pesisir Barat","type":"subdistrict","postal_code":null,"latitude":"-5.2928191","longitude":"104.1233667","state_id":18},{"name":"Pesisir Selatan","type":"subdistrict","postal_code":null,"latitude":"-1.7223147","longitude":"100.8903099","state_id":32},{"name":"Pidie","type":"subdistrict","postal_code":null,"latitude":"5.0742659","longitude":"95.940971","state_id":21},{"name":"Pidie Jaya","type":"subdistrict","postal_code":null,"latitude":"5.1548063","longitude":"96.195132","state_id":21},{"name":"Pinrang","type":"subdistrict","postal_code":null,"latitude":"-3.6483486","longitude":"119.5571677","state_id":28},{"name":"Pohuwato","type":"subdistrict","postal_code":null,"latitude":"0.7055278","longitude":"121.7195459","state_id":7},{"name":"Polewali Mandar","type":"subdistrict","postal_code":null,"latitude":"-3.3419323","longitude":"119.1390642","state_id":27},{"name":"Ponorogo","type":"subdistrict","postal_code":null,"latitude":"-7.8650759","longitude":"111.4696322","state_id":11},{"name":"Pontianak","type":"subdistrict","postal_code":null,"latitude":null,"longitude":null,"state_id":12},{"name":"Pontianak","type":"city","postal_code":null,"latitude":"-0.0263303","longitude":"109.3425039","state_id":12},{"name":"Poso","type":"subdistrict","postal_code":null,"latitude":"-1.6468883","longitude":"120.4357631","state_id":29},{"name":"Prabumulih","type":"city","postal_code":null,"latitude":"-3.4213707","longitude":"104.2436833","state_id":33},{"name":"Pringsewu","type":"subdistrict","postal_code":null,"latitude":"-5.3331186","longitude":"104.9856176","state_id":18},{"name":"Probolinggo","type":"subdistrict","postal_code":null,"latitude":"-7.8717562","longitude":"113.4776098","state_id":11},{"name":"Probolinggo","type":"city","postal_code":null,"latitude":"-7.7764226","longitude":"113.2037131","state_id":11},{"name":"Pulang Pisau","type":"subdistrict","postal_code":null,"latitude":"-2.6849607","longitude":"113.9536466","state_id":14},{"name":"Pulau Morotai","type":"subdistrict","postal_code":null,"latitude":"2.3656672","longitude":"128.4008357","state_id":20},{"name":"Puncak","type":"subdistrict","postal_code":null,"latitude":"-3.8649098","longitude":"137.6061625","state_id":24},{"name":"Puncak Jaya","type":"subdistrict","postal_code":null,"latitude":"-3.4467891","longitude":"137.8427298","state_id":24},{"name":"Purbalingga","type":"subdistrict","postal_code":null,"latitude":"-7.3058578","longitude":"109.4259114","state_id":10},{"name":"Purwakarta","type":"subdistrict","postal_code":null,"latitude":"-6.5649241","longitude":"107.4321959","state_id":9},{"name":"Purworejo","type":"subdistrict","postal_code":null,"latitude":"-7.6964509","longitude":"109.9989416","state_id":10},{"name":"Raja Ampat","type":"subdistrict","postal_code":null,"latitude":"-1.0915151","longitude":"130.8778586","state_id":25},{"name":"Rejang Lebong","type":"subdistrict","postal_code":null,"latitude":"-3.4548154","longitude":"102.6675575","state_id":4},{"name":"Rembang","type":"subdistrict","postal_code":null,"latitude":"-6.8082115","longitude":"111.4275888","state_id":10},{"name":"Rokan Hilir","type":"subdistrict","postal_code":null,"latitude":"1.6463978","longitude":"100.8000051","state_id":26},{"name":"Rokan Hulu","type":"subdistrict","postal_code":null,"latitude":"1.0410934","longitude":"100.439656","state_id":26},{"name":"Rote Ndao","type":"subdistrict","postal_code":null,"latitude":"-10.7386421","longitude":"123.1239049","state_id":23},{"name":"Sabang","type":"city","postal_code":null,"latitude":"5.8926053","longitude":"95.3237608","state_id":21},{"name":"Sabu Raijua","type":"subdistrict","postal_code":null,"latitude":"-10.5541116","longitude":"121.8334868","state_id":23},{"name":"Salatiga","type":"city","postal_code":null,"latitude":"-7.3305234","longitude":"110.5084366","state_id":10},{"name":"Samarinda","type":"city","postal_code":null,"latitude":"-0.5016166","longitude":"117.1264753","state_id":15},{"name":"Sambas","type":"subdistrict","postal_code":null,"latitude":"1.3625191","longitude":"109.2831531","state_id":12},{"name":"Samosir","type":"subdistrict","postal_code":null,"latitude":"2.6274431","longitude":"98.7921836","state_id":34},{"name":"Sampang","type":"subdistrict","postal_code":null,"latitude":"-7.0402326","longitude":"113.2394452","state_id":11},{"name":"Sanggau","type":"subdistrict","postal_code":null,"latitude":"0.1400117","longitude":"110.5215459","state_id":12},{"name":"Sarmi","type":"subdistrict","postal_code":null,"latitude":"-2.4678144","longitude":"139.2030851","state_id":24},{"name":"Sarolangun","type":"subdistrict","postal_code":null,"latitude":"-2.3230422","longitude":"102.7135121","state_id":8},{"name":"Sawah Lunto","type":"city","postal_code":null,"latitude":"-0.6841069","longitude":"100.7323332","state_id":32},{"name":"Sekadau","type":"subdistrict","postal_code":null,"latitude":"-0.0697175","longitude":"110.9983515","state_id":12},{"name":"Selayar (Kepulauan Selayar)","type":"subdistrict","postal_code":null,"latitude":"-6.2869786","longitude":"120.5048792","state_id":28},{"name":"Seluma","type":"subdistrict","postal_code":null,"latitude":"-4.0499387","longitude":"102.7135121","state_id":4},{"name":"Semarang","type":"subdistrict","postal_code":null,"latitude":"-7.1764785","longitude":"110.4738762","state_id":10},{"name":"Semarang","type":"city","postal_code":null,"latitude":"-7.0051453","longitude":"110.4381254","state_id":10},{"name":"Seram Bagian Barat","type":"subdistrict","postal_code":null,"latitude":"-3.1271575","longitude":"128.4008357","state_id":19},{"name":"Seram Bagian Timur","type":"subdistrict","postal_code":null,"latitude":"-3.4233267","longitude":"130.2271243","state_id":19},{"name":"Serang","type":"subdistrict","postal_code":null,"latitude":"-6.1397339","longitude":"106.040506","state_id":3},{"name":"Serang","type":"city","postal_code":null,"latitude":"-6.1169309","longitude":"106.1538519","state_id":3},{"name":"Serdang Bedagai","type":"subdistrict","postal_code":null,"latitude":"3.3371694","longitude":"99.0571089","state_id":34},{"name":"Seruyan","type":"subdistrict","postal_code":null,"latitude":"-3.0123467","longitude":"112.4291464","state_id":14},{"name":"Siak","type":"subdistrict","postal_code":null,"latitude":null,"longitude":null,"state_id":26},{"name":"Sibolga","type":"city","postal_code":null,"latitude":"1.7368371","longitude":"98.7851121","state_id":34},{"name":"Sidenreng Rappang\/Rapang","type":"subdistrict","postal_code":null,"latitude":"-3.7738981","longitude":"120.0202964","state_id":28},{"name":"Sidoarjo","type":"subdistrict","postal_code":null,"latitude":"-7.4726134","longitude":"112.6675398","state_id":11},{"name":"Sigi","type":"subdistrict","postal_code":null,"latitude":"-1.3859904","longitude":"119.8815203","state_id":29},{"name":"Sijunjung (Sawah Lunto Sijunjung)","type":"subdistrict","postal_code":null,"latitude":"-0.6647007","longitude":"101.0711758","state_id":32},{"name":"Sikka","type":"subdistrict","postal_code":null,"latitude":"-8.6766175","longitude":"122.1291843","state_id":23},{"name":"Simalungun","type":"subdistrict","postal_code":null,"latitude":"2.9781612","longitude":"99.2785583","state_id":34},{"name":"Simeulue","type":"subdistrict","postal_code":null,"latitude":"2.6439724","longitude":"96.0255738","state_id":21},{"name":"Singkawang","type":"city","postal_code":null,"latitude":"0.9060204","longitude":"108.9872049","state_id":12},{"name":"Sinjai","type":"subdistrict","postal_code":null,"latitude":"-5.2171961","longitude":"120.112735","state_id":28},{"name":"Sintang","type":"subdistrict","postal_code":null,"latitude":"-0.1378068","longitude":"112.8105512","state_id":12},{"name":"Situbondo","type":"subdistrict","postal_code":null,"latitude":"-7.7888522","longitude":"114.1914951","state_id":11},{"name":"Sleman","type":"subdistrict","postal_code":null,"latitude":"-7.7325213","longitude":"110.402376","state_id":5},{"name":"Solok","type":"subdistrict","postal_code":null,"latitude":"-0.9643838","longitude":"100.8903099","state_id":32},{"name":"Solok","type":"city","postal_code":null,"latitude":"-0.7885335","longitude":"100.6549823","state_id":32},{"name":"Solok Selatan","type":"subdistrict","postal_code":null,"latitude":"-1.4157329","longitude":"101.2523792","state_id":32},{"name":"Soppeng","type":"subdistrict","postal_code":null,"latitude":"-4.3518541","longitude":"119.9277947","state_id":28},{"name":"Sorong","type":"subdistrict","postal_code":null,"latitude":"-1.1223204","longitude":"131.4883373","state_id":25},{"name":"Sorong","type":"city","postal_code":null,"latitude":"-0.8761629","longitude":"131.255828","state_id":25},{"name":"Sorong Selatan","type":"subdistrict","postal_code":null,"latitude":"-1.7657744","longitude":"132.1572702","state_id":25},{"name":"Sragen","type":"subdistrict","postal_code":null,"latitude":"-7.43027","longitude":"111.0091855","state_id":10},{"name":"Subang","type":"subdistrict","postal_code":null,"latitude":"-6.3487617","longitude":"107.763621","state_id":9},{"name":"Subulussalam","type":"city","postal_code":null,"latitude":"2.7121164","longitude":"97.9157099","state_id":21},{"name":"Sukabumi","type":"subdistrict","postal_code":null,"latitude":"-6.8649236","longitude":"106.9535691","state_id":9},{"name":"Sukabumi","type":"city","postal_code":null,"latitude":"-6.9277361","longitude":"106.9299579","state_id":9},{"name":"Sukamara","type":"subdistrict","postal_code":null,"latitude":"-2.6267517","longitude":"111.2368084","state_id":14},{"name":"Sukoharjo","type":"subdistrict","postal_code":null,"latitude":"-7.6483506","longitude":"110.8552919","state_id":10},{"name":"Sumba Barat","type":"subdistrict","postal_code":null,"latitude":"-9.6548326","longitude":"119.3947135","state_id":23},{"name":"Sumba Barat Daya","type":"subdistrict","postal_code":null,"latitude":"-9.539139","longitude":"119.1390642","state_id":23},{"name":"Sumba Tengah","type":"subdistrict","postal_code":null,"latitude":"-9.4879226","longitude":"119.6962677","state_id":23},{"name":"Sumba Timur","type":"subdistrict","postal_code":null,"latitude":"-9.9802103","longitude":"120.3435506","state_id":23},{"name":"Sumbawa","type":"subdistrict","postal_code":null,"latitude":"-8.6529334","longitude":"117.3616476","state_id":22},{"name":"Sumbawa Barat","type":"subdistrict","postal_code":null,"latitude":"-8.9292907","longitude":"116.8910342","state_id":22},{"name":"Sumedang","type":"subdistrict","postal_code":null,"latitude":"-6.832858","longitude":"107.9531836","state_id":9},{"name":"Sumenep","type":"subdistrict","postal_code":null,"latitude":"-6.9253999","longitude":"113.9060624","state_id":11},{"name":"Sungaipenuh","type":"city","postal_code":null,"latitude":null,"longitude":null,"state_id":8},{"name":"Supiori","type":"subdistrict","postal_code":null,"latitude":"-0.7295099","longitude":"135.6385125","state_id":24},{"name":"Surabaya","type":"city","postal_code":null,"latitude":"-7.2574719","longitude":"112.7520883","state_id":11},{"name":"Surakarta (Solo)","type":"city","postal_code":null,"latitude":"-7.5754887","longitude":"110.8243272","state_id":10},{"name":"Tabalong","type":"subdistrict","postal_code":null,"latitude":"-1.864302","longitude":"115.5681084","state_id":13},{"name":"Tabanan","type":"subdistrict","postal_code":null,"latitude":"-8.4595561","longitude":"115.0465991","state_id":1},{"name":"Takalar","type":"subdistrict","postal_code":null,"latitude":"-5.4162493","longitude":"119.4875668","state_id":28},{"name":"Tambrauw","type":"subdistrict","postal_code":null,"latitude":"-0.781856","longitude":"132.3938375","state_id":25},{"name":"Tana Tidung","type":"subdistrict","postal_code":null,"latitude":"3.551869","longitude":"117.0794082","state_id":16},{"name":"Tana Toraja","type":"subdistrict","postal_code":null,"latitude":"-3.0753003","longitude":"119.742604","state_id":28},{"name":"Tanah Bumbu","type":"subdistrict","postal_code":null,"latitude":"-3.4512244","longitude":"115.5681084","state_id":13},{"name":"Tanah Datar","type":"subdistrict","postal_code":null,"latitude":"-0.4797043","longitude":"100.5746224","state_id":32},{"name":"Tanah Laut","type":"subdistrict","postal_code":null,"latitude":"-3.7694047","longitude":"114.8092691","state_id":13},{"name":"Tangerang","type":"subdistrict","postal_code":null,"latitude":"-6.1870007","longitude":"106.487658","state_id":3},{"name":"Tangerang","type":"city","postal_code":null,"latitude":"-6.1701796","longitude":"106.6403236","state_id":3},{"name":"Tangerang Selatan","type":"city","postal_code":null,"latitude":"-6.2835218","longitude":"106.7112933","state_id":3},{"name":"Tanggamus","type":"subdistrict","postal_code":null,"latitude":"-5.3027489","longitude":"104.5655273","state_id":18},{"name":"Tanjung Balai","type":"city","postal_code":null,"latitude":"2.9659488","longitude":"99.7983506","state_id":34},{"name":"Tanjung Jabung Barat","type":"subdistrict","postal_code":null,"latitude":"-1.105846","longitude":"103.0817903","state_id":8},{"name":"Tanjung Jabung Timur","type":"subdistrict","postal_code":null,"latitude":"-1.1024367","longitude":"103.8216261","state_id":8},{"name":"Tanjung Pinang","type":"city","postal_code":null,"latitude":"0.9185504","longitude":"104.4665072","state_id":17},{"name":"Tapanuli Selatan","type":"subdistrict","postal_code":null,"latitude":"1.5774933","longitude":"99.2785583","state_id":34},{"name":"Tapanuli Tengah","type":"subdistrict","postal_code":null,"latitude":"1.8493299","longitude":"98.704075","state_id":34},{"name":"Tapanuli Utara","type":"subdistrict","postal_code":null,"latitude":"2.0405246","longitude":"99.1013498","state_id":34},{"name":"Tapin","type":"subdistrict","postal_code":null,"latitude":"-2.9160746","longitude":"115.0465991","state_id":13},{"name":"Tarakan","type":"city","postal_code":null,"latitude":"3.3273599","longitude":"117.5785049","state_id":16},{"name":"Tasikmalaya","type":"subdistrict","postal_code":null,"latitude":"-7.6513306","longitude":"108.1428669","state_id":9},{"name":"Tasikmalaya","type":"city","postal_code":null,"latitude":"-7.3505808","longitude":"108.2171633","state_id":9},{"name":"Tebing Tinggi","type":"city","postal_code":null,"latitude":"3.3262879","longitude":"99.1566855","state_id":34},{"name":"Tebo","type":"subdistrict","postal_code":null,"latitude":"-1.2592999","longitude":"102.3463875","state_id":8},{"name":"Tegal","type":"subdistrict","postal_code":null,"latitude":"-6.8588473","longitude":"109.1047663","state_id":10},{"name":"Tegal","type":"city","postal_code":null,"latitude":"-6.8797041","longitude":"109.1255917","state_id":10},{"name":"Teluk Bintuni","type":"subdistrict","postal_code":null,"latitude":"-1.9056848","longitude":"133.329466","state_id":25},{"name":"Teluk Wondama","type":"subdistrict","postal_code":null,"latitude":"-2.8551699","longitude":"134.3236557","state_id":25},{"name":"Temanggung","type":"subdistrict","postal_code":null,"latitude":"-7.2748721","longitude":"110.0891894","state_id":10},{"name":"Ternate","type":"city","postal_code":null,"latitude":"0.7957999","longitude":"127.3613533","state_id":20},{"name":"Tidore Kepulauan","type":"city","postal_code":null,"latitude":"0.6740044","longitude":"127.4040871","state_id":20},{"name":"Timor Tengah Selatan","type":"subdistrict","postal_code":null,"latitude":"-9.7762816","longitude":"124.4198243","state_id":23},{"name":"Timor Tengah Utara","type":"subdistrict","postal_code":null,"latitude":"-9.4522647","longitude":"124.597132","state_id":23},{"name":"Toba Samosir","type":"subdistrict","postal_code":null,"latitude":"2.3502398","longitude":"99.2785583","state_id":34},{"name":"Tojo Una-Una","type":"subdistrict","postal_code":null,"latitude":"-1.098757","longitude":"121.5370003","state_id":29},{"name":"Toli-Toli","type":"subdistrict","postal_code":null,"latitude":"0.8768231","longitude":"120.7579834","state_id":29},{"name":"Tolikara","type":"subdistrict","postal_code":null,"latitude":"-3.481132","longitude":"138.4787258","state_id":24},{"name":"Tomohon","type":"city","postal_code":null,"latitude":"1.3229337","longitude":"124.8405081","state_id":31},{"name":"Toraja Utara","type":"subdistrict","postal_code":null,"latitude":"-2.8621942","longitude":"119.8352303","state_id":28},{"name":"Trenggalek","type":"subdistrict","postal_code":null,"latitude":"-8.1824112","longitude":"111.6183755","state_id":11},{"name":"Tual","type":"city","postal_code":null,"latitude":"-5.626563","longitude":"132.7520867","state_id":19},{"name":"Tuban","type":"subdistrict","postal_code":null,"latitude":"-6.8949099","longitude":"112.0416754","state_id":11},{"name":"Tulang Bawang","type":"subdistrict","postal_code":null,"latitude":null,"longitude":null,"state_id":18},{"name":"Tulang Bawang Barat","type":"subdistrict","postal_code":null,"latitude":"-4.5256967","longitude":"105.0791228","state_id":18},{"name":"Tulungagung","type":"subdistrict","postal_code":null,"latitude":"-8.091221","longitude":"111.9641728","state_id":11},{"name":"Wajo","type":"subdistrict","postal_code":null,"latitude":"-4.022229","longitude":"120.0665236","state_id":28},{"name":"Wakatobi","type":"subdistrict","postal_code":null,"latitude":"-5.6326806","longitude":"123.8902463","state_id":30},{"name":"Waropen","type":"subdistrict","postal_code":null,"latitude":null,"longitude":null,"state_id":24},{"name":"Way Kanan","type":"subdistrict","postal_code":null,"latitude":"-4.4963689","longitude":"104.5655273","state_id":18},{"name":"Wonogiri","type":"subdistrict","postal_code":null,"latitude":"-7.8846484","longitude":"111.0460407","state_id":10},{"name":"Wonosobo","type":"subdistrict","postal_code":null,"latitude":"-7.3632094","longitude":"109.9001796","state_id":10},{"name":"Yahukimo","type":"subdistrict","postal_code":null,"latitude":"-4.4939717","longitude":"139.5279996","state_id":24},{"name":"Yalimo","type":"subdistrict","postal_code":null,"latitude":"-3.7852847","longitude":"139.4466005","state_id":24},{"name":"Yogyakarta","type":"city","postal_code":null,"latitude":"-7.7955798","longitude":"110.3694896","state_id":5}]
+[
+  {
+    "name": "Aceh Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4.4542745",
+    "longitude": "96.1526985",
+    "state_id": 21
+  },
+  {
+    "name": "Aceh Barat Daya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.7963426",
+    "longitude": "97.0068393",
+    "state_id": 21
+  },
+  {
+    "name": "Aceh Besar",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "5.4529168",
+    "longitude": "95.4777811",
+    "state_id": 21
+  },
+  {
+    "name": "Aceh Jaya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4.7873684",
+    "longitude": "95.6457951",
+    "state_id": 21
+  },
+  {
+    "name": "Aceh Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.3115056",
+    "longitude": "97.3516558",
+    "state_id": 21
+  },
+  {
+    "name": "Aceh Singkil",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.3589459",
+    "longitude": "97.87216",
+    "state_id": 21
+  },
+  {
+    "name": "Aceh Tamiang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4.2328871",
+    "longitude": "98.0028892",
+    "state_id": 21
+  },
+  {
+    "name": "Aceh Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4.4482641",
+    "longitude": "96.8350999",
+    "state_id": 21
+  },
+  {
+    "name": "Aceh Tenggara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.3088666",
+    "longitude": "97.6982272",
+    "state_id": 21
+  },
+  {
+    "name": "Aceh Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4.5224111",
+    "longitude": "97.6114217",
+    "state_id": 21
+  },
+  {
+    "name": "Aceh Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4.9786331",
+    "longitude": "97.2221421",
+    "state_id": 21
+  },
+  {
+    "name": "Agam",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.2209392",
+    "longitude": "100.1703257",
+    "state_id": 32
+  },
+  {
+    "name": "Alor",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.2928427",
+    "longitude": "124.5528387",
+    "state_id": 23
+  },
+  {
+    "name": "Ambon",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-3.6386665",
+    "longitude": "128.1688559",
+    "state_id": 19
+  },
+  {
+    "name": "Asahan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.8174722",
+    "longitude": "99.634135",
+    "state_id": 34
+  },
+  {
+    "name": "Asmat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.0573958",
+    "longitude": "138.3988186",
+    "state_id": 24
+  },
+  {
+    "name": "Badung",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.5819296",
+    "longitude": "115.1770586",
+    "state_id": 1
+  },
+  {
+    "name": "Balangan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.3260425",
+    "longitude": "115.6154732",
+    "state_id": 13
+  },
+  {
+    "name": "Balikpapan",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-1.2379274",
+    "longitude": "116.8528526",
+    "state_id": 15
+  },
+  {
+    "name": "Banda Aceh",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "5.5482904",
+    "longitude": "95.3237559",
+    "state_id": 21
+  },
+  {
+    "name": "Bandar Lampung",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-5.3971396",
+    "longitude": "105.2667887",
+    "state_id": 18
+  },
+  {
+    "name": "Bandung",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.1340702",
+    "longitude": "107.6215321",
+    "state_id": 9
+  },
+  {
+    "name": "Bandung",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.9174639",
+    "longitude": "107.6191228",
+    "state_id": 9
+  },
+  {
+    "name": "Bandung Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.8652214",
+    "longitude": "107.4919767",
+    "state_id": 9
+  },
+  {
+    "name": "Banggai",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.956178",
+    "longitude": "122.6277455",
+    "state_id": 29
+  },
+  {
+    "name": "Banggai Kepulauan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.3075939",
+    "longitude": "123.0338767",
+    "state_id": 29
+  },
+  {
+    "name": "Bangka",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.874294",
+    "longitude": "105.92299",
+    "state_id": 2
+  },
+  {
+    "name": "Bangka Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.8405046",
+    "longitude": "105.5005483",
+    "state_id": 2
+  },
+  {
+    "name": "Bangka Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.7410513",
+    "longitude": "106.4405872",
+    "state_id": 2
+  },
+  {
+    "name": "Bangka Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.4007823",
+    "longitude": "106.2051484",
+    "state_id": 2
+  },
+  {
+    "name": "Bangkalan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.038375",
+    "longitude": "112.9136695",
+    "state_id": 11
+  },
+  {
+    "name": "Bangli",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.2975884",
+    "longitude": "115.3548713",
+    "state_id": 1
+  },
+  {
+    "name": "Banjar",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.3200228",
+    "longitude": "114.9991464",
+    "state_id": 13
+  },
+  {
+    "name": "Banjar",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.3706874",
+    "longitude": "108.5342487",
+    "state_id": 9
+  },
+  {
+    "name": "Banjarbaru",
+    "type": "city",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 13
+  },
+  {
+    "name": "Banjarmasin",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-3.3186067",
+    "longitude": "114.5943784",
+    "state_id": 13
+  },
+  {
+    "name": "Banjarnegara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.3794368",
+    "longitude": "109.6163185",
+    "state_id": 10
+  },
+  {
+    "name": "Bantaeng",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.5169316",
+    "longitude": "120.0202964",
+    "state_id": 28
+  },
+  {
+    "name": "Bantul",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.9190169",
+    "longitude": "110.3785438",
+    "state_id": 5
+  },
+  {
+    "name": "Banyuasin",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 33
+  },
+  {
+    "name": "Banyumas",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.4832133",
+    "longitude": "109.140438",
+    "state_id": 10
+  },
+  {
+    "name": "Banyuwangi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.2190944",
+    "longitude": "114.3691416",
+    "state_id": 11
+  },
+  {
+    "name": "Barito Kuala",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.0714738",
+    "longitude": "114.6667939",
+    "state_id": 13
+  },
+  {
+    "name": "Barito Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.875943",
+    "longitude": "114.8092691",
+    "state_id": 14
+  },
+  {
+    "name": "Barito Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.0123999",
+    "longitude": "115.188916",
+    "state_id": 14
+  },
+  {
+    "name": "Barito Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.9587136",
+    "longitude": "115.094045",
+    "state_id": 14
+  },
+  {
+    "name": "Barru",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.436417",
+    "longitude": "119.6499162",
+    "state_id": 28
+  },
+  {
+    "name": "Batam",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "1.1300779",
+    "longitude": "104.0529207",
+    "state_id": 17
+  },
+  {
+    "name": "Batang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.0392183",
+    "longitude": "109.9020509",
+    "state_id": 10
+  },
+  {
+    "name": "Batang Hari",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.7083922",
+    "longitude": "103.0817903",
+    "state_id": 8
+  },
+  {
+    "name": "Batu",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.8830648",
+    "longitude": "112.5334492",
+    "state_id": 11
+  },
+  {
+    "name": "Batu Bara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.1740979",
+    "longitude": "99.5006143",
+    "state_id": 34
+  },
+  {
+    "name": "Bau-Bau",
+    "type": "city",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 30
+  },
+  {
+    "name": "Bekasi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.366723",
+    "longitude": "107.1735638",
+    "state_id": 9
+  },
+  {
+    "name": "Bekasi",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.2382699",
+    "longitude": "106.9755726",
+    "state_id": 9
+  },
+  {
+    "name": "Belitung",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.7216743",
+    "longitude": "107.763621",
+    "state_id": 2
+  },
+  {
+    "name": "Belitung Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.8678037",
+    "longitude": "108.1428669",
+    "state_id": 2
+  },
+  {
+    "name": "Belu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-9.1538978",
+    "longitude": "124.906551",
+    "state_id": 23
+  },
+  {
+    "name": "Bener Meriah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4.7513606",
+    "longitude": "96.9525224",
+    "state_id": 21
+  },
+  {
+    "name": "Bengkalis",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.4139187",
+    "longitude": "101.6157773",
+    "state_id": 26
+  },
+  {
+    "name": "Bengkayang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.06911",
+    "longitude": "109.6639309",
+    "state_id": 12
+  },
+  {
+    "name": "Bengkulu",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-3.7928451",
+    "longitude": "102.2607641",
+    "state_id": 4
+  },
+  {
+    "name": "Bengkulu Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.3248409",
+    "longitude": "103.035694",
+    "state_id": 4
+  },
+  {
+    "name": "Bengkulu Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.6962324",
+    "longitude": "102.3922135",
+    "state_id": 4
+  },
+  {
+    "name": "Bengkulu Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.2663246",
+    "longitude": "101.9804613",
+    "state_id": 4
+  },
+  {
+    "name": "Berau",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.0450883",
+    "longitude": "117.3616476",
+    "state_id": 15
+  },
+  {
+    "name": "Biak Numfor",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.0381022",
+    "longitude": "135.9800848",
+    "state_id": 24
+  },
+  {
+    "name": "Bima",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.4353962",
+    "longitude": "118.626479",
+    "state_id": 22
+  },
+  {
+    "name": "Bima",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-8.4642661",
+    "longitude": "118.7449028",
+    "state_id": 22
+  },
+  {
+    "name": "Binjai",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "3.6135482",
+    "longitude": "98.5025286",
+    "state_id": 34
+  },
+  {
+    "name": "Bintan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.0619173",
+    "longitude": "104.5189214",
+    "state_id": 17
+  },
+  {
+    "name": "Bireuen",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "5.1086446",
+    "longitude": "96.663812",
+    "state_id": 21
+  },
+  {
+    "name": "Bitung",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "1.4403744",
+    "longitude": "125.1216524",
+    "state_id": 31
+  },
+  {
+    "name": "Blitar",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.0954627",
+    "longitude": "112.1609056",
+    "state_id": 11
+  },
+  {
+    "name": "Blitar",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-8.0954627",
+    "longitude": "112.1609056",
+    "state_id": 11
+  },
+  {
+    "name": "Blora",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.012244",
+    "longitude": "111.3798928",
+    "state_id": 10
+  },
+  {
+    "name": "Boalemo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.7013419",
+    "longitude": "122.2653887",
+    "state_id": 7
+  },
+  {
+    "name": "Bogor",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.5517758",
+    "longitude": "106.6291304",
+    "state_id": 9
+  },
+  {
+    "name": "Bogor",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.5971469",
+    "longitude": "106.8060388",
+    "state_id": 9
+  },
+  {
+    "name": "Bojonegoro",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.3174629",
+    "longitude": "111.7614661",
+    "state_id": 11
+  },
+  {
+    "name": "Bolaang Mongondow (Bolmong)",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.6870994",
+    "longitude": "124.0641419",
+    "state_id": 31
+  },
+  {
+    "name": "Bolaang Mongondow Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.4053215",
+    "longitude": "123.8411288",
+    "state_id": 31
+  },
+  {
+    "name": "Bolaang Mongondow Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.7152651",
+    "longitude": "124.4641848",
+    "state_id": 31
+  },
+  {
+    "name": "Bolaang Mongondow Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.9070359",
+    "longitude": "123.2657311",
+    "state_id": 31
+  },
+  {
+    "name": "Bombana",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.6543462",
+    "longitude": "121.9017954",
+    "state_id": 30
+  },
+  {
+    "name": "Bondowoso",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.9673906",
+    "longitude": "113.9060624",
+    "state_id": 11
+  },
+  {
+    "name": "Bone",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.7443383",
+    "longitude": "120.0665236",
+    "state_id": 28
+  },
+  {
+    "name": "Bone Bolango",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.5657885",
+    "longitude": "123.3486147",
+    "state_id": 7
+  },
+  {
+    "name": "Bontang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "0.120863",
+    "longitude": "117.4800445",
+    "state_id": 15
+  },
+  {
+    "name": "Boven Digoel",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.7400018",
+    "longitude": "140.3481835",
+    "state_id": 24
+  },
+  {
+    "name": "Boyolali",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.4317773",
+    "longitude": "110.6883536",
+    "state_id": 10
+  },
+  {
+    "name": "Brebes",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.9591793",
+    "longitude": "108.902683",
+    "state_id": 10
+  },
+  {
+    "name": "Bukittinggi",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.3039178",
+    "longitude": "100.383479",
+    "state_id": 32
+  },
+  {
+    "name": "Buleleng",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.2238968",
+    "longitude": "114.9516869",
+    "state_id": 1
+  },
+  {
+    "name": "Bulukumba",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.4329368",
+    "longitude": "120.2051096",
+    "state_id": 28
+  },
+  {
+    "name": "Bulungan (Bulongan)",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.9042476",
+    "longitude": "116.9852422",
+    "state_id": 16
+  },
+  {
+    "name": "Bungo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.6401338",
+    "longitude": "101.8891721",
+    "state_id": 8
+  },
+  {
+    "name": "Buol",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.9695452",
+    "longitude": "121.3541631",
+    "state_id": 29
+  },
+  {
+    "name": "Buru",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.3307379",
+    "longitude": "126.6957216",
+    "state_id": 19
+  },
+  {
+    "name": "Buru Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.7273972",
+    "longitude": "126.6957216",
+    "state_id": 19
+  },
+  {
+    "name": "Buton",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.3096355",
+    "longitude": "122.9888319",
+    "state_id": 30
+  },
+  {
+    "name": "Buton Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.7023424",
+    "longitude": "123.0338767",
+    "state_id": 30
+  },
+  {
+    "name": "Ciamis",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.3320773",
+    "longitude": "108.3492543",
+    "state_id": 9
+  },
+  {
+    "name": "Cianjur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.3579773",
+    "longitude": "107.1957203",
+    "state_id": 9
+  },
+  {
+    "name": "Cilacap",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.6982991",
+    "longitude": "109.023521",
+    "state_id": 10
+  },
+  {
+    "name": "Cilegon",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.0186817",
+    "longitude": "106.0558218",
+    "state_id": 3
+  },
+  {
+    "name": "Cimahi",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.8840816",
+    "longitude": "107.5413039",
+    "state_id": 9
+  },
+  {
+    "name": "Cirebon",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.6898876",
+    "longitude": "108.4750846",
+    "state_id": 9
+  },
+  {
+    "name": "Cirebon",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.7320229",
+    "longitude": "108.5523164",
+    "state_id": 9
+  },
+  {
+    "name": "Dairi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.8675801",
+    "longitude": "98.265058",
+    "state_id": 34
+  },
+  {
+    "name": "Deiyai (Deliyai)",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.0974893",
+    "longitude": "136.4393054",
+    "state_id": 24
+  },
+  {
+    "name": "Deli Serdang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.4201802",
+    "longitude": "98.704075",
+    "state_id": 34
+  },
+  {
+    "name": "Demak",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.9238879",
+    "longitude": "110.6645683",
+    "state_id": 10
+  },
+  {
+    "name": "Denpasar",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-8.6704582",
+    "longitude": "115.2126293",
+    "state_id": 1
+  },
+  {
+    "name": "Depok",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.4024844",
+    "longitude": "106.7942405",
+    "state_id": 9
+  },
+  {
+    "name": "Dharmasraya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.1120568",
+    "longitude": "101.6157773",
+    "state_id": 32
+  },
+  {
+    "name": "Dogiyai",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.0454139",
+    "longitude": "135.6763443",
+    "state_id": 24
+  },
+  {
+    "name": "Dompu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.5363958",
+    "longitude": "118.3461948",
+    "state_id": 22
+  },
+  {
+    "name": "Donggala",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.4233155",
+    "longitude": "119.8352303",
+    "state_id": 29
+  },
+  {
+    "name": "Dumai",
+    "type": "city",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 26
+  },
+  {
+    "name": "Empat Lawang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.7286029",
+    "longitude": "102.8975098",
+    "state_id": 33
+  },
+  {
+    "name": "Ende",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.6762912",
+    "longitude": "121.7195459",
+    "state_id": 23
+  },
+  {
+    "name": "Enrekang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.4590744",
+    "longitude": "119.8815203",
+    "state_id": 28
+  },
+  {
+    "name": "Fakfak",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.097706",
+    "longitude": "133.0194897",
+    "state_id": 25
+  },
+  {
+    "name": "Flores Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.3130942",
+    "longitude": "122.9663018",
+    "state_id": 23
+  },
+  {
+    "name": "Garut",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.5012204",
+    "longitude": "107.763621",
+    "state_id": 9
+  },
+  {
+    "name": "Gayo Lues",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.955165",
+    "longitude": "97.3516558",
+    "state_id": 21
+  },
+  {
+    "name": "Gianyar",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.4248244",
+    "longitude": "115.2600506",
+    "state_id": 1
+  },
+  {
+    "name": "Gorontalo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.5692733",
+    "longitude": "122.8084496",
+    "state_id": 7
+  },
+  {
+    "name": "Gorontalo",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "0.5435442",
+    "longitude": "123.0567693",
+    "state_id": 7
+  },
+  {
+    "name": "Gorontalo Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.9252647",
+    "longitude": "122.4920088",
+    "state_id": 7
+  },
+  {
+    "name": "Gowa",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.3102888",
+    "longitude": "119.742604",
+    "state_id": 28
+  },
+  {
+    "name": "Gresik",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.1550291",
+    "longitude": "112.5721881",
+    "state_id": 11
+  },
+  {
+    "name": "Grobogan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.1541672",
+    "longitude": "110.9506636",
+    "state_id": 10
+  },
+  {
+    "name": "Gunung Kidul",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.0305091",
+    "longitude": "110.6168921",
+    "state_id": 5
+  },
+  {
+    "name": "Gunung Mas",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.2522464",
+    "longitude": "113.5728501",
+    "state_id": 14
+  },
+  {
+    "name": "Gunungsitoli",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "1.2804692",
+    "longitude": "97.6146757",
+    "state_id": 34
+  },
+  {
+    "name": "Halmahera Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.3589663",
+    "longitude": "127.5960704",
+    "state_id": 20
+  },
+  {
+    "name": "Halmahera Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.5109015",
+    "longitude": "127.7237678",
+    "state_id": 20
+  },
+  {
+    "name": "Halmahera Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.4419543",
+    "longitude": "128.3587174",
+    "state_id": 20
+  },
+  {
+    "name": "Halmahera Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.3121235",
+    "longitude": "128.4849923",
+    "state_id": 20
+  },
+  {
+    "name": "Halmahera Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.5074308",
+    "longitude": "127.8936663",
+    "state_id": 20
+  },
+  {
+    "name": "Hulu Sungai Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.7662681",
+    "longitude": "115.2363408",
+    "state_id": 13
+  },
+  {
+    "name": "Hulu Sungai Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.6153162",
+    "longitude": "115.5207358",
+    "state_id": 13
+  },
+  {
+    "name": "Hulu Sungai Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.4421225",
+    "longitude": "115.188916",
+    "state_id": 13
+  },
+  {
+    "name": "Humbang Hasundutan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.1988508",
+    "longitude": "98.5721016",
+    "state_id": 34
+  },
+  {
+    "name": "Indragiri Hilir",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.1456733",
+    "longitude": "102.989615",
+    "state_id": 26
+  },
+  {
+    "name": "Indragiri Hulu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.7361181",
+    "longitude": "102.2547919",
+    "state_id": 26
+  },
+  {
+    "name": "Indramayu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.33731",
+    "longitude": "108.3258329",
+    "state_id": 9
+  },
+  {
+    "name": "Intan Jaya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.5076422",
+    "longitude": "136.7478493",
+    "state_id": 24
+  },
+  {
+    "name": "Jakarta Barat",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.1674309",
+    "longitude": "106.7637239",
+    "state_id": 6
+  },
+  {
+    "name": "Jakarta Pusat",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.1805113",
+    "longitude": "106.8283831",
+    "state_id": 6
+  },
+  {
+    "name": "Jakarta Selatan",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.2614927",
+    "longitude": "106.8105998",
+    "state_id": 6
+  },
+  {
+    "name": "Jakarta Timur",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.2250138",
+    "longitude": "106.9004472",
+    "state_id": 6
+  },
+  {
+    "name": "Jakarta Utara",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.1554057",
+    "longitude": "106.8926634",
+    "state_id": 6
+  },
+  {
+    "name": "Jambi",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-1.6101229",
+    "longitude": "103.6131203",
+    "state_id": 8
+  },
+  {
+    "name": "Jayapura",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.987923",
+    "longitude": "139.8547266",
+    "state_id": 24
+  },
+  {
+    "name": "Jayapura",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-2.5916025",
+    "longitude": "140.6689995",
+    "state_id": 24
+  },
+  {
+    "name": "Jayawijaya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.0004481",
+    "longitude": "138.7995122",
+    "state_id": 24
+  },
+  {
+    "name": "Jember",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.1844859",
+    "longitude": "113.6680747",
+    "state_id": 11
+  },
+  {
+    "name": "Jembrana",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.3233438",
+    "longitude": "114.6667939",
+    "state_id": 1
+  },
+  {
+    "name": "Jeneponto",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.554579",
+    "longitude": "119.6730939",
+    "state_id": 28
+  },
+  {
+    "name": "Jepara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.582711",
+    "longitude": "110.6786933",
+    "state_id": 10
+  },
+  {
+    "name": "Jombang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.5740867",
+    "longitude": "112.28609",
+    "state_id": 11
+  },
+  {
+    "name": "Kaimana",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.288406",
+    "longitude": "133.9436788",
+    "state_id": 25
+  },
+  {
+    "name": "Kampar",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.146671",
+    "longitude": "101.1617356",
+    "state_id": 26
+  },
+  {
+    "name": "Kapuas",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.8116445",
+    "longitude": "114.3341432",
+    "state_id": 14
+  },
+  {
+    "name": "Kapuas Hulu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.8336697",
+    "longitude": "113.0011989",
+    "state_id": 12
+  },
+  {
+    "name": "Karanganyar",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.6387228",
+    "longitude": "111.0460407",
+    "state_id": 10
+  },
+  {
+    "name": "Karangasem",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 1
+  },
+  {
+    "name": "Karawang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.3227303",
+    "longitude": "107.3375791",
+    "state_id": 9
+  },
+  {
+    "name": "Karimun",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.7697665",
+    "longitude": "103.4049445",
+    "state_id": 17
+  },
+  {
+    "name": "Karo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.1052909",
+    "longitude": "98.265058",
+    "state_id": 34
+  },
+  {
+    "name": "Katingan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.9758379",
+    "longitude": "112.8105512",
+    "state_id": 14
+  },
+  {
+    "name": "Kaur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.5215978",
+    "longitude": "103.2663479",
+    "state_id": 4
+  },
+  {
+    "name": "Kayong Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.9225877",
+    "longitude": "110.0449662",
+    "state_id": 12
+  },
+  {
+    "name": "Kebumen",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.6680559",
+    "longitude": "109.6524575",
+    "state_id": 10
+  },
+  {
+    "name": "Kediri",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.8232397",
+    "longitude": "112.1907122",
+    "state_id": 11
+  },
+  {
+    "name": "Kediri",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.8480156",
+    "longitude": "112.0178286",
+    "state_id": 11
+  },
+  {
+    "name": "Keerom",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.3449536",
+    "longitude": "140.7624493",
+    "state_id": 24
+  },
+  {
+    "name": "Kendal",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.0265442",
+    "longitude": "110.1879106",
+    "state_id": 10
+  },
+  {
+    "name": "Kendari",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-3.9984597",
+    "longitude": "122.5129742",
+    "state_id": 30
+  },
+  {
+    "name": "Kepahiang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.6130091",
+    "longitude": "102.6675575",
+    "state_id": 4
+  },
+  {
+    "name": "Kepulauan Anambas",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.1055459",
+    "longitude": "105.6537231",
+    "state_id": 17
+  },
+  {
+    "name": "Kepulauan Aru",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.2067294",
+    "longitude": "134.4718394",
+    "state_id": 19
+  },
+  {
+    "name": "Kepulauan Mentawai",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.426001",
+    "longitude": "98.9245343",
+    "state_id": 32
+  },
+  {
+    "name": "Kepulauan Meranti",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.9208765",
+    "longitude": "102.6675575",
+    "state_id": 26
+  },
+  {
+    "name": "Kepulauan Sangihe",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.6329172",
+    "longitude": "125.5000999",
+    "state_id": 31
+  },
+  {
+    "name": "Kepulauan Seribu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.6122404",
+    "longitude": "106.6169964",
+    "state_id": 6
+  },
+  {
+    "name": "Kepulauan Siau Tagulandang Biaro (Sitaro)",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.345964",
+    "longitude": "125.4124355",
+    "state_id": 31
+  },
+  {
+    "name": "Kepulauan Sula",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.8321222",
+    "longitude": "125.958777",
+    "state_id": 20
+  },
+  {
+    "name": "Kepulauan Talaud",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4.3066741",
+    "longitude": "126.8034921",
+    "state_id": 31
+  },
+  {
+    "name": "Kepulauan Yapen (Yapen Waropen)",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.8435717",
+    "longitude": "136.670534",
+    "state_id": 24
+  },
+  {
+    "name": "Kerinci",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.8720467",
+    "longitude": "101.4339148",
+    "state_id": 8
+  },
+  {
+    "name": "Ketapang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.5697615",
+    "longitude": "110.5215459",
+    "state_id": 12
+  },
+  {
+    "name": "Klaten",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.657893",
+    "longitude": "110.6645683",
+    "state_id": 10
+  },
+  {
+    "name": "Klungkung",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.727807",
+    "longitude": "115.5444231",
+    "state_id": 1
+  },
+  {
+    "name": "Kolaka",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.9946988",
+    "longitude": "121.5826642",
+    "state_id": 30
+  },
+  {
+    "name": "Kolaka Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.1347227",
+    "longitude": "121.1710389",
+    "state_id": 30
+  },
+  {
+    "name": "Konawe",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.9380432",
+    "longitude": "122.0837445",
+    "state_id": 30
+  },
+  {
+    "name": "Konawe Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.2027915",
+    "longitude": "122.4467238",
+    "state_id": 30
+  },
+  {
+    "name": "Konawe Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.3803291",
+    "longitude": "122.0837445",
+    "state_id": 30
+  },
+  {
+    "name": "Kotabaru",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 13
+  },
+  {
+    "name": "Kotamobagu",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "0.7243733",
+    "longitude": "124.3199316",
+    "state_id": 31
+  },
+  {
+    "name": "Kotawaringin Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.5063419",
+    "longitude": "111.7614661",
+    "state_id": 14
+  },
+  {
+    "name": "Kotawaringin Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.1225475",
+    "longitude": "112.8105512",
+    "state_id": 14
+  },
+  {
+    "name": "Kuantan Singingi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.4411596",
+    "longitude": "101.5248055",
+    "state_id": 26
+  },
+  {
+    "name": "Kubu Raya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.3533938",
+    "longitude": "109.4735066",
+    "state_id": 12
+  },
+  {
+    "name": "Kudus",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.7726186",
+    "longitude": "110.8791343",
+    "state_id": 10
+  },
+  {
+    "name": "Kulon Progo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.8266798",
+    "longitude": "110.1640846",
+    "state_id": 5
+  },
+  {
+    "name": "Kuningan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.0138053",
+    "longitude": "108.5700636",
+    "state_id": 9
+  },
+  {
+    "name": "Kupang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-9.9906166",
+    "longitude": "123.8857747",
+    "state_id": 23
+  },
+  {
+    "name": "Kupang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-10.1771997",
+    "longitude": "123.6070329",
+    "state_id": 23
+  },
+  {
+    "name": "Kutai Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.4051796",
+    "longitude": "115.8521764",
+    "state_id": 15
+  },
+  {
+    "name": "Kutai Kartanegara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.1336655",
+    "longitude": "116.6081653",
+    "state_id": 15
+  },
+  {
+    "name": "Kutai Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.9433774",
+    "longitude": "116.9852422",
+    "state_id": 15
+  },
+  {
+    "name": "Labuhan Batu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.3439863",
+    "longitude": "100.1703257",
+    "state_id": 34
+  },
+  {
+    "name": "Labuhan Batu Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.8799353",
+    "longitude": "100.1703257",
+    "state_id": 34
+  },
+  {
+    "name": "Labuhan Batu Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.3465638",
+    "longitude": "99.8124935",
+    "state_id": 34
+  },
+  {
+    "name": "Lahat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.8008893",
+    "longitude": "103.3587288",
+    "state_id": 33
+  },
+  {
+    "name": "Lamandau",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.8526377",
+    "longitude": "111.2845025",
+    "state_id": 14
+  },
+  {
+    "name": "Lamongan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.1269261",
+    "longitude": "112.3337769",
+    "state_id": 11
+  },
+  {
+    "name": "Lampung Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.1095293",
+    "longitude": "104.1466046",
+    "state_id": 18
+  },
+  {
+    "name": "Lampung Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.5622614",
+    "longitude": "105.5474373",
+    "state_id": 18
+  },
+  {
+    "name": "Lampung Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.8008086",
+    "longitude": "105.3131185",
+    "state_id": 18
+  },
+  {
+    "name": "Lampung Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.1134995",
+    "longitude": "105.6881788",
+    "state_id": 18
+  },
+  {
+    "name": "Lampung Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.8133905",
+    "longitude": "104.7520939",
+    "state_id": 18
+  },
+  {
+    "name": "Landak",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.4237287",
+    "longitude": "109.7591675",
+    "state_id": 12
+  },
+  {
+    "name": "Langkat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.8653916",
+    "longitude": "98.3088441",
+    "state_id": 34
+  },
+  {
+    "name": "Langsa",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "4.4725348",
+    "longitude": "97.9756343",
+    "state_id": 21
+  },
+  {
+    "name": "Lanny Jaya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.971033",
+    "longitude": "138.3190276",
+    "state_id": 24
+  },
+  {
+    "name": "Lebak",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.5643956",
+    "longitude": "106.2522143",
+    "state_id": 3
+  },
+  {
+    "name": "Lebong",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.1455094",
+    "longitude": "102.2090224",
+    "state_id": 4
+  },
+  {
+    "name": "Lembata",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.4719075",
+    "longitude": "123.4831906",
+    "state_id": 23
+  },
+  {
+    "name": "Lhokseumawe",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "5.1811638",
+    "longitude": "97.1413222",
+    "state_id": 21
+  },
+  {
+    "name": "Lima Puluh Koto\/Kota",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 32
+  },
+  {
+    "name": "Lingga",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.4726065",
+    "longitude": "104.4257533",
+    "state_id": 17
+  },
+  {
+    "name": "Lombok Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.6464599",
+    "longitude": "116.1123078",
+    "state_id": 22
+  },
+  {
+    "name": "Lombok Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.694623",
+    "longitude": "116.2777073",
+    "state_id": 22
+  },
+  {
+    "name": "Lombok Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.5134471",
+    "longitude": "116.5609857",
+    "state_id": 22
+  },
+  {
+    "name": "Lombok Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.3739076",
+    "longitude": "116.2777073",
+    "state_id": 22
+  },
+  {
+    "name": "Lubuk Linggau",
+    "type": "city",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 33
+  },
+  {
+    "name": "Lumajang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.0943571",
+    "longitude": "113.1441558",
+    "state_id": 11
+  },
+  {
+    "name": "Luwu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.3052214",
+    "longitude": "120.2512728",
+    "state_id": 28
+  },
+  {
+    "name": "Luwu Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.5825518",
+    "longitude": "121.1710389",
+    "state_id": 28
+  },
+  {
+    "name": "Luwu Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.2690446",
+    "longitude": "119.9740534",
+    "state_id": 28
+  },
+  {
+    "name": "Madiun",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.6093306",
+    "longitude": "111.6183755",
+    "state_id": 11
+  },
+  {
+    "name": "Madiun",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.6310587",
+    "longitude": "111.5300159",
+    "state_id": 11
+  },
+  {
+    "name": "Magelang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.4305237",
+    "longitude": "110.2832217",
+    "state_id": 10
+  },
+  {
+    "name": "Magelang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.4797342",
+    "longitude": "110.2176941",
+    "state_id": 10
+  },
+  {
+    "name": "Magetan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.6433138",
+    "longitude": "111.356045",
+    "state_id": 11
+  },
+  {
+    "name": "Majalengka",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.7790605",
+    "longitude": "108.2852049",
+    "state_id": 9
+  },
+  {
+    "name": "Majene",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.0297251",
+    "longitude": "118.9062794",
+    "state_id": 27
+  },
+  {
+    "name": "Makassar",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-5.1476651",
+    "longitude": "119.4327314",
+    "state_id": 28
+  },
+  {
+    "name": "Malang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.242209",
+    "longitude": "112.7152125",
+    "state_id": 11
+  },
+  {
+    "name": "Malang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.9666204",
+    "longitude": "112.6326321",
+    "state_id": 11
+  },
+  {
+    "name": "Malinau",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.0730929",
+    "longitude": "116.0413889",
+    "state_id": 16
+  },
+  {
+    "name": "Maluku Barat Daya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.7851588",
+    "longitude": "126.3498097",
+    "state_id": 19
+  },
+  {
+    "name": "Maluku Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.0166501",
+    "longitude": "129.4864411",
+    "state_id": 19
+  },
+  {
+    "name": "Maluku Tenggara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.7512455",
+    "longitude": "132.7271587",
+    "state_id": 19
+  },
+  {
+    "name": "Maluku Tenggara Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.5322642",
+    "longitude": "131.3611121",
+    "state_id": 19
+  },
+  {
+    "name": "Mamasa",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.9118209",
+    "longitude": "119.3250347",
+    "state_id": 27
+  },
+  {
+    "name": "Mamberamo Raya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.5331255",
+    "longitude": "137.7637565",
+    "state_id": 24
+  },
+  {
+    "name": "Mamberamo Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.3745692",
+    "longitude": "138.3190276",
+    "state_id": 24
+  },
+  {
+    "name": "Mamuju",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.4920057",
+    "longitude": "119.3250347",
+    "state_id": 27
+  },
+  {
+    "name": "Mamuju Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.5264542",
+    "longitude": "119.5107708",
+    "state_id": 27
+  },
+  {
+    "name": "Manado",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "1.4748305",
+    "longitude": "124.8420794",
+    "state_id": 31
+  },
+  {
+    "name": "Mandailing Natal",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.7432372",
+    "longitude": "99.3673084",
+    "state_id": 34
+  },
+  {
+    "name": "Manggarai",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.6796987",
+    "longitude": "120.3896651",
+    "state_id": 23
+  },
+  {
+    "name": "Manggarai Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.6688149",
+    "longitude": "120.0665236",
+    "state_id": 23
+  },
+  {
+    "name": "Manggarai Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.6206712",
+    "longitude": "120.6199895",
+    "state_id": 23
+  },
+  {
+    "name": "Manokwari",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.8614531",
+    "longitude": "134.0620421",
+    "state_id": 25
+  },
+  {
+    "name": "Manokwari Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.9135107",
+    "longitude": "134.0008674",
+    "state_id": 25
+  },
+  {
+    "name": "Mappi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.7606468",
+    "longitude": "139.6911374",
+    "state_id": 24
+  },
+  {
+    "name": "Maros",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.0549145",
+    "longitude": "119.6962677",
+    "state_id": 28
+  },
+  {
+    "name": "Mataram",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-8.5970808",
+    "longitude": "116.1004894",
+    "state_id": 22
+  },
+  {
+    "name": "Maybrat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.2970979",
+    "longitude": "132.3150993",
+    "state_id": 25
+  },
+  {
+    "name": "Medan",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "3.5951956",
+    "longitude": "98.6722227",
+    "state_id": 34
+  },
+  {
+    "name": "Melawi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.7000681",
+    "longitude": "111.6660725",
+    "state_id": 12
+  },
+  {
+    "name": "Merangin",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.1752789",
+    "longitude": "101.9804613",
+    "state_id": 8
+  },
+  {
+    "name": "Merauke",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.7838334",
+    "longitude": "139.041312",
+    "state_id": 24
+  },
+  {
+    "name": "Mesuji",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.0044783",
+    "longitude": "105.3131185",
+    "state_id": 18
+  },
+  {
+    "name": "Metro",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-5.1178394",
+    "longitude": "105.3072646",
+    "state_id": 18
+  },
+  {
+    "name": "Mimika",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.4553223",
+    "longitude": "137.1362125",
+    "state_id": 24
+  },
+  {
+    "name": "Minahasa",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.2168837",
+    "longitude": "124.8182593",
+    "state_id": 31
+  },
+  {
+    "name": "Minahasa Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.0946773",
+    "longitude": "124.4641848",
+    "state_id": 31
+  },
+  {
+    "name": "Minahasa Tenggara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.0278551",
+    "longitude": "124.7298765",
+    "state_id": 31
+  },
+  {
+    "name": "Minahasa Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.5327973",
+    "longitude": "124.994751",
+    "state_id": 31
+  },
+  {
+    "name": "Mojokerto",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.4698914",
+    "longitude": "112.4351068",
+    "state_id": 11
+  },
+  {
+    "name": "Mojokerto",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.4704747",
+    "longitude": "112.4401329",
+    "state_id": 11
+  },
+  {
+    "name": "Morowali",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.6987231",
+    "longitude": "121.9017954",
+    "state_id": 29
+  },
+  {
+    "name": "Muara Enim",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.7114163",
+    "longitude": "104.0072348",
+    "state_id": 33
+  },
+  {
+    "name": "Muaro Jambi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.552136",
+    "longitude": "103.8216261",
+    "state_id": 8
+  },
+  {
+    "name": "Muko Muko",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 4
+  },
+  {
+    "name": "Muna",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.901629",
+    "longitude": "122.6277455",
+    "state_id": 30
+  },
+  {
+    "name": "Murung Raya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.1362171",
+    "longitude": "114.3341432",
+    "state_id": 14
+  },
+  {
+    "name": "Musi Banyuasin",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.5442029",
+    "longitude": "103.7289167",
+    "state_id": 33
+  },
+  {
+    "name": "Musi Rawas",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.0956537",
+    "longitude": "103.0817903",
+    "state_id": 33
+  },
+  {
+    "name": "Nabire",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.5095462",
+    "longitude": "135.7520985",
+    "state_id": 24
+  },
+  {
+    "name": "Nagan Raya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4.1248406",
+    "longitude": "96.4929797",
+    "state_id": 21
+  },
+  {
+    "name": "Nagekeo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.6753545",
+    "longitude": "121.3084088",
+    "state_id": 23
+  },
+  {
+    "name": "Natuna",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4",
+    "longitude": "108.25",
+    "state_id": 17
+  },
+  {
+    "name": "Nduga",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.4069496",
+    "longitude": "138.2393528",
+    "state_id": 24
+  },
+  {
+    "name": "Ngada",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.7430424",
+    "longitude": "120.9876321",
+    "state_id": 23
+  },
+  {
+    "name": "Nganjuk",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.5943507",
+    "longitude": "111.9045541",
+    "state_id": 11
+  },
+  {
+    "name": "Ngawi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.460987",
+    "longitude": "111.3321974",
+    "state_id": 11
+  },
+  {
+    "name": "Nias",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.0869444",
+    "longitude": "97.7416703",
+    "state_id": 34
+  },
+  {
+    "name": "Nias Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.0116383",
+    "longitude": "97.4814163",
+    "state_id": 34
+  },
+  {
+    "name": "Nias Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.7086091",
+    "longitude": "97.8286368",
+    "state_id": 34
+  },
+  {
+    "name": "Nias Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.3166036",
+    "longitude": "97.394882",
+    "state_id": 34
+  },
+  {
+    "name": "Nunukan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "4.0809649",
+    "longitude": "116.6081653",
+    "state_id": 16
+  },
+  {
+    "name": "Ogan Ilir",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.426544",
+    "longitude": "104.6121475",
+    "state_id": 33
+  },
+  {
+    "name": "Ogan Komering Ilir",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.4559744",
+    "longitude": "105.2194808",
+    "state_id": 33
+  },
+  {
+    "name": "Ogan Komering Ulu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.0283486",
+    "longitude": "104.0072348",
+    "state_id": 33
+  },
+  {
+    "name": "Ogan Komering Ulu Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.6681951",
+    "longitude": "104.0072348",
+    "state_id": 33
+  },
+  {
+    "name": "Ogan Komering Ulu Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.8567934",
+    "longitude": "104.7520939",
+    "state_id": 33
+  },
+  {
+    "name": "Pacitan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.126331",
+    "longitude": "111.1414226",
+    "state_id": 11
+  },
+  {
+    "name": "Padang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.9470832",
+    "longitude": "100.417181",
+    "state_id": 32
+  },
+  {
+    "name": "Padang Lawas",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.1186977",
+    "longitude": "99.8124935",
+    "state_id": 34
+  },
+  {
+    "name": "Padang Lawas Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.5758644",
+    "longitude": "99.634135",
+    "state_id": 34
+  },
+  {
+    "name": "Padang Panjang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.4660955",
+    "longitude": "100.3984148",
+    "state_id": 32
+  },
+  {
+    "name": "Padang Pariaman",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.5546757",
+    "longitude": "100.2151578",
+    "state_id": 32
+  },
+  {
+    "name": "Padang Sidempuan",
+    "type": "city",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 34
+  },
+  {
+    "name": "Pagar Alam",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-4.0419617",
+    "longitude": "103.2278845",
+    "state_id": 33
+  },
+  {
+    "name": "Pakpak Bharat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.5135376",
+    "longitude": "98.2212979",
+    "state_id": 34
+  },
+  {
+    "name": "Palangka Raya",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-2.2161048",
+    "longitude": "113.913977",
+    "state_id": 14
+  },
+  {
+    "name": "Palembang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-2.9760735",
+    "longitude": "104.7754307",
+    "state_id": 33
+  },
+  {
+    "name": "Palopo",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-3.0016343",
+    "longitude": "120.1985141",
+    "state_id": 28
+  },
+  {
+    "name": "Palu",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.9002915",
+    "longitude": "119.8779987",
+    "state_id": 29
+  },
+  {
+    "name": "Pamekasan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.1050857",
+    "longitude": "113.5252319",
+    "state_id": 11
+  },
+  {
+    "name": "Pandeglang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.7482706",
+    "longitude": "105.6881788",
+    "state_id": 3
+  },
+  {
+    "name": "Pangandaran",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.6150611",
+    "longitude": "108.4988269",
+    "state_id": 9
+  },
+  {
+    "name": "Pangkajene Kepulauan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 28
+  },
+  {
+    "name": "Pangkal Pinang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-2.1316266",
+    "longitude": "106.1169299",
+    "state_id": 2
+  },
+  {
+    "name": "Paniai",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.7876441",
+    "longitude": "136.3624686",
+    "state_id": 24
+  },
+  {
+    "name": "Parepare",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-4.0096221",
+    "longitude": "119.6290617",
+    "state_id": 28
+  },
+  {
+    "name": "Pariaman",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.6256517",
+    "longitude": "100.1233396",
+    "state_id": 32
+  },
+  {
+    "name": "Parigi Moutong",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.5817607",
+    "longitude": "120.8039474",
+    "state_id": 29
+  },
+  {
+    "name": "Pasaman",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.2209392",
+    "longitude": "100.1703257",
+    "state_id": 32
+  },
+  {
+    "name": "Pasaman Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.2213005",
+    "longitude": "99.634135",
+    "state_id": 32
+  },
+  {
+    "name": "Paser",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.7175266",
+    "longitude": "115.9467997",
+    "state_id": 15
+  },
+  {
+    "name": "Pasuruan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.7859961",
+    "longitude": "112.858217",
+    "state_id": 11
+  },
+  {
+    "name": "Pasuruan",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.6469193",
+    "longitude": "112.8999225",
+    "state_id": 11
+  },
+  {
+    "name": "Pati",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.7449635",
+    "longitude": "111.0460407",
+    "state_id": 10
+  },
+  {
+    "name": "Payakumbuh",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.2246548",
+    "longitude": "100.6318006",
+    "state_id": 32
+  },
+  {
+    "name": "Pegunungan Arfak",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.1554562",
+    "longitude": "133.7142484",
+    "state_id": 25
+  },
+  {
+    "name": "Pegunungan Bintang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.5589872",
+    "longitude": "140.5135589",
+    "state_id": 24
+  },
+  {
+    "name": "Pekalongan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.0517128",
+    "longitude": "109.6163185",
+    "state_id": 10
+  },
+  {
+    "name": "Pekalongan",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.8898362",
+    "longitude": "109.6745916",
+    "state_id": 10
+  },
+  {
+    "name": "Pekanbaru",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "0.5070677",
+    "longitude": "101.4477793",
+    "state_id": 26
+  },
+  {
+    "name": "Pelalawan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.1460923",
+    "longitude": "102.2547919",
+    "state_id": 26
+  },
+  {
+    "name": "Pemalang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.0599422",
+    "longitude": "109.4259114",
+    "state_id": 10
+  },
+  {
+    "name": "Pematang Siantar",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "2.970042",
+    "longitude": "99.0681668",
+    "state_id": 34
+  },
+  {
+    "name": "Penajam Paser Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.2917094",
+    "longitude": "116.5137964",
+    "state_id": 15
+  },
+  {
+    "name": "Pesawaran",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.493245",
+    "longitude": "105.0791228",
+    "state_id": 18
+  },
+  {
+    "name": "Pesisir Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.2928191",
+    "longitude": "104.1233667",
+    "state_id": 18
+  },
+  {
+    "name": "Pesisir Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.7223147",
+    "longitude": "100.8903099",
+    "state_id": 32
+  },
+  {
+    "name": "Pidie",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "5.0742659",
+    "longitude": "95.940971",
+    "state_id": 21
+  },
+  {
+    "name": "Pidie Jaya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "5.1548063",
+    "longitude": "96.195132",
+    "state_id": 21
+  },
+  {
+    "name": "Pinrang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.6483486",
+    "longitude": "119.5571677",
+    "state_id": 28
+  },
+  {
+    "name": "Pohuwato",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.7055278",
+    "longitude": "121.7195459",
+    "state_id": 7
+  },
+  {
+    "name": "Polewali Mandar",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.3419323",
+    "longitude": "119.1390642",
+    "state_id": 27
+  },
+  {
+    "name": "Ponorogo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.8650759",
+    "longitude": "111.4696322",
+    "state_id": 11
+  },
+  {
+    "name": "Pontianak",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 12
+  },
+  {
+    "name": "Pontianak",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.0263303",
+    "longitude": "109.3425039",
+    "state_id": 12
+  },
+  {
+    "name": "Poso",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.6468883",
+    "longitude": "120.4357631",
+    "state_id": 29
+  },
+  {
+    "name": "Prabumulih",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-3.4213707",
+    "longitude": "104.2436833",
+    "state_id": 33
+  },
+  {
+    "name": "Pringsewu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.3331186",
+    "longitude": "104.9856176",
+    "state_id": 18
+  },
+  {
+    "name": "Probolinggo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.8717562",
+    "longitude": "113.4776098",
+    "state_id": 11
+  },
+  {
+    "name": "Probolinggo",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.7764226",
+    "longitude": "113.2037131",
+    "state_id": 11
+  },
+  {
+    "name": "Pulang Pisau",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.6849607",
+    "longitude": "113.9536466",
+    "state_id": 14
+  },
+  {
+    "name": "Pulau Morotai",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.3656672",
+    "longitude": "128.4008357",
+    "state_id": 20
+  },
+  {
+    "name": "Puncak",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.8649098",
+    "longitude": "137.6061625",
+    "state_id": 24
+  },
+  {
+    "name": "Puncak Jaya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.4467891",
+    "longitude": "137.8427298",
+    "state_id": 24
+  },
+  {
+    "name": "Purbalingga",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.3058578",
+    "longitude": "109.4259114",
+    "state_id": 10
+  },
+  {
+    "name": "Purwakarta",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.5649241",
+    "longitude": "107.4321959",
+    "state_id": 9
+  },
+  {
+    "name": "Purworejo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.6964509",
+    "longitude": "109.9989416",
+    "state_id": 10
+  },
+  {
+    "name": "Raja Ampat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.0915151",
+    "longitude": "130.8778586",
+    "state_id": 25
+  },
+  {
+    "name": "Rejang Lebong",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.4548154",
+    "longitude": "102.6675575",
+    "state_id": 4
+  },
+  {
+    "name": "Rembang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.8082115",
+    "longitude": "111.4275888",
+    "state_id": 10
+  },
+  {
+    "name": "Rokan Hilir",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.6463978",
+    "longitude": "100.8000051",
+    "state_id": 26
+  },
+  {
+    "name": "Rokan Hulu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.0410934",
+    "longitude": "100.439656",
+    "state_id": 26
+  },
+  {
+    "name": "Rote Ndao",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-10.7386421",
+    "longitude": "123.1239049",
+    "state_id": 23
+  },
+  {
+    "name": "Sabang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "5.8926053",
+    "longitude": "95.3237608",
+    "state_id": 21
+  },
+  {
+    "name": "Sabu Raijua",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-10.5541116",
+    "longitude": "121.8334868",
+    "state_id": 23
+  },
+  {
+    "name": "Salatiga",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.3305234",
+    "longitude": "110.5084366",
+    "state_id": 10
+  },
+  {
+    "name": "Samarinda",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.5016166",
+    "longitude": "117.1264753",
+    "state_id": 15
+  },
+  {
+    "name": "Sambas",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.3625191",
+    "longitude": "109.2831531",
+    "state_id": 12
+  },
+  {
+    "name": "Samosir",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.6274431",
+    "longitude": "98.7921836",
+    "state_id": 34
+  },
+  {
+    "name": "Sampang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.0402326",
+    "longitude": "113.2394452",
+    "state_id": 11
+  },
+  {
+    "name": "Sanggau",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.1400117",
+    "longitude": "110.5215459",
+    "state_id": 12
+  },
+  {
+    "name": "Sarmi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.4678144",
+    "longitude": "139.2030851",
+    "state_id": 24
+  },
+  {
+    "name": "Sarolangun",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.3230422",
+    "longitude": "102.7135121",
+    "state_id": 8
+  },
+  {
+    "name": "Sawah Lunto",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.6841069",
+    "longitude": "100.7323332",
+    "state_id": 32
+  },
+  {
+    "name": "Sekadau",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.0697175",
+    "longitude": "110.9983515",
+    "state_id": 12
+  },
+  {
+    "name": "Selayar (Kepulauan Selayar)",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.2869786",
+    "longitude": "120.5048792",
+    "state_id": 28
+  },
+  {
+    "name": "Seluma",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.0499387",
+    "longitude": "102.7135121",
+    "state_id": 4
+  },
+  {
+    "name": "Semarang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.1764785",
+    "longitude": "110.4738762",
+    "state_id": 10
+  },
+  {
+    "name": "Semarang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.0051453",
+    "longitude": "110.4381254",
+    "state_id": 10
+  },
+  {
+    "name": "Seram Bagian Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.1271575",
+    "longitude": "128.4008357",
+    "state_id": 19
+  },
+  {
+    "name": "Seram Bagian Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.4233267",
+    "longitude": "130.2271243",
+    "state_id": 19
+  },
+  {
+    "name": "Serang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.1397339",
+    "longitude": "106.040506",
+    "state_id": 3
+  },
+  {
+    "name": "Serang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.1169309",
+    "longitude": "106.1538519",
+    "state_id": 3
+  },
+  {
+    "name": "Serdang Bedagai",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.3371694",
+    "longitude": "99.0571089",
+    "state_id": 34
+  },
+  {
+    "name": "Seruyan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.0123467",
+    "longitude": "112.4291464",
+    "state_id": 14
+  },
+  {
+    "name": "Siak",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 26
+  },
+  {
+    "name": "Sibolga",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "1.7368371",
+    "longitude": "98.7851121",
+    "state_id": 34
+  },
+  {
+    "name": "Sidenreng Rappang\/Rapang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.7738981",
+    "longitude": "120.0202964",
+    "state_id": 28
+  },
+  {
+    "name": "Sidoarjo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.4726134",
+    "longitude": "112.6675398",
+    "state_id": 11
+  },
+  {
+    "name": "Sigi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.3859904",
+    "longitude": "119.8815203",
+    "state_id": 29
+  },
+  {
+    "name": "Sijunjung (Sawah Lunto Sijunjung)",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.6647007",
+    "longitude": "101.0711758",
+    "state_id": 32
+  },
+  {
+    "name": "Sikka",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.6766175",
+    "longitude": "122.1291843",
+    "state_id": 23
+  },
+  {
+    "name": "Simalungun",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.9781612",
+    "longitude": "99.2785583",
+    "state_id": 34
+  },
+  {
+    "name": "Simeulue",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.6439724",
+    "longitude": "96.0255738",
+    "state_id": 21
+  },
+  {
+    "name": "Singkawang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "0.9060204",
+    "longitude": "108.9872049",
+    "state_id": 12
+  },
+  {
+    "name": "Sinjai",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.2171961",
+    "longitude": "120.112735",
+    "state_id": 28
+  },
+  {
+    "name": "Sintang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.1378068",
+    "longitude": "112.8105512",
+    "state_id": 12
+  },
+  {
+    "name": "Situbondo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.7888522",
+    "longitude": "114.1914951",
+    "state_id": 11
+  },
+  {
+    "name": "Sleman",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.7325213",
+    "longitude": "110.402376",
+    "state_id": 5
+  },
+  {
+    "name": "Solok",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.9643838",
+    "longitude": "100.8903099",
+    "state_id": 32
+  },
+  {
+    "name": "Solok",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.7885335",
+    "longitude": "100.6549823",
+    "state_id": 32
+  },
+  {
+    "name": "Solok Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.4157329",
+    "longitude": "101.2523792",
+    "state_id": 32
+  },
+  {
+    "name": "Soppeng",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.3518541",
+    "longitude": "119.9277947",
+    "state_id": 28
+  },
+  {
+    "name": "Sorong",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.1223204",
+    "longitude": "131.4883373",
+    "state_id": 25
+  },
+  {
+    "name": "Sorong",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-0.8761629",
+    "longitude": "131.255828",
+    "state_id": 25
+  },
+  {
+    "name": "Sorong Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.7657744",
+    "longitude": "132.1572702",
+    "state_id": 25
+  },
+  {
+    "name": "Sragen",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.43027",
+    "longitude": "111.0091855",
+    "state_id": 10
+  },
+  {
+    "name": "Subang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.3487617",
+    "longitude": "107.763621",
+    "state_id": 9
+  },
+  {
+    "name": "Subulussalam",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "2.7121164",
+    "longitude": "97.9157099",
+    "state_id": 21
+  },
+  {
+    "name": "Sukabumi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.8649236",
+    "longitude": "106.9535691",
+    "state_id": 9
+  },
+  {
+    "name": "Sukabumi",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.9277361",
+    "longitude": "106.9299579",
+    "state_id": 9
+  },
+  {
+    "name": "Sukamara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.6267517",
+    "longitude": "111.2368084",
+    "state_id": 14
+  },
+  {
+    "name": "Sukoharjo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.6483506",
+    "longitude": "110.8552919",
+    "state_id": 10
+  },
+  {
+    "name": "Sumba Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-9.6548326",
+    "longitude": "119.3947135",
+    "state_id": 23
+  },
+  {
+    "name": "Sumba Barat Daya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-9.539139",
+    "longitude": "119.1390642",
+    "state_id": 23
+  },
+  {
+    "name": "Sumba Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-9.4879226",
+    "longitude": "119.6962677",
+    "state_id": 23
+  },
+  {
+    "name": "Sumba Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-9.9802103",
+    "longitude": "120.3435506",
+    "state_id": 23
+  },
+  {
+    "name": "Sumbawa",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.6529334",
+    "longitude": "117.3616476",
+    "state_id": 22
+  },
+  {
+    "name": "Sumbawa Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.9292907",
+    "longitude": "116.8910342",
+    "state_id": 22
+  },
+  {
+    "name": "Sumedang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.832858",
+    "longitude": "107.9531836",
+    "state_id": 9
+  },
+  {
+    "name": "Sumenep",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.9253999",
+    "longitude": "113.9060624",
+    "state_id": 11
+  },
+  {
+    "name": "Sungaipenuh",
+    "type": "city",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 8
+  },
+  {
+    "name": "Supiori",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.7295099",
+    "longitude": "135.6385125",
+    "state_id": 24
+  },
+  {
+    "name": "Surabaya",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.2574719",
+    "longitude": "112.7520883",
+    "state_id": 11
+  },
+  {
+    "name": "Surakarta (Solo)",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.5754887",
+    "longitude": "110.8243272",
+    "state_id": 10
+  },
+  {
+    "name": "Tabalong",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.864302",
+    "longitude": "115.5681084",
+    "state_id": 13
+  },
+  {
+    "name": "Tabanan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.4595561",
+    "longitude": "115.0465991",
+    "state_id": 1
+  },
+  {
+    "name": "Takalar",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.4162493",
+    "longitude": "119.4875668",
+    "state_id": 28
+  },
+  {
+    "name": "Tambrauw",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.781856",
+    "longitude": "132.3938375",
+    "state_id": 25
+  },
+  {
+    "name": "Tana Tidung",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "3.551869",
+    "longitude": "117.0794082",
+    "state_id": 16
+  },
+  {
+    "name": "Tana Toraja",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.0753003",
+    "longitude": "119.742604",
+    "state_id": 28
+  },
+  {
+    "name": "Tanah Bumbu",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.4512244",
+    "longitude": "115.5681084",
+    "state_id": 13
+  },
+  {
+    "name": "Tanah Datar",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-0.4797043",
+    "longitude": "100.5746224",
+    "state_id": 32
+  },
+  {
+    "name": "Tanah Laut",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.7694047",
+    "longitude": "114.8092691",
+    "state_id": 13
+  },
+  {
+    "name": "Tangerang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.1870007",
+    "longitude": "106.487658",
+    "state_id": 3
+  },
+  {
+    "name": "Tangerang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.1701796",
+    "longitude": "106.6403236",
+    "state_id": 3
+  },
+  {
+    "name": "Tangerang Selatan",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.2835218",
+    "longitude": "106.7112933",
+    "state_id": 3
+  },
+  {
+    "name": "Tanggamus",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.3027489",
+    "longitude": "104.5655273",
+    "state_id": 18
+  },
+  {
+    "name": "Tanjung Balai",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "2.9659488",
+    "longitude": "99.7983506",
+    "state_id": 34
+  },
+  {
+    "name": "Tanjung Jabung Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.105846",
+    "longitude": "103.0817903",
+    "state_id": 8
+  },
+  {
+    "name": "Tanjung Jabung Timur",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.1024367",
+    "longitude": "103.8216261",
+    "state_id": 8
+  },
+  {
+    "name": "Tanjung Pinang",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "0.9185504",
+    "longitude": "104.4665072",
+    "state_id": 17
+  },
+  {
+    "name": "Tapanuli Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.5774933",
+    "longitude": "99.2785583",
+    "state_id": 34
+  },
+  {
+    "name": "Tapanuli Tengah",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "1.8493299",
+    "longitude": "98.704075",
+    "state_id": 34
+  },
+  {
+    "name": "Tapanuli Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.0405246",
+    "longitude": "99.1013498",
+    "state_id": 34
+  },
+  {
+    "name": "Tapin",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.9160746",
+    "longitude": "115.0465991",
+    "state_id": 13
+  },
+  {
+    "name": "Tarakan",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "3.3273599",
+    "longitude": "117.5785049",
+    "state_id": 16
+  },
+  {
+    "name": "Tasikmalaya",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.6513306",
+    "longitude": "108.1428669",
+    "state_id": 9
+  },
+  {
+    "name": "Tasikmalaya",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.3505808",
+    "longitude": "108.2171633",
+    "state_id": 9
+  },
+  {
+    "name": "Tebing Tinggi",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "3.3262879",
+    "longitude": "99.1566855",
+    "state_id": 34
+  },
+  {
+    "name": "Tebo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.2592999",
+    "longitude": "102.3463875",
+    "state_id": 8
+  },
+  {
+    "name": "Tegal",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.8588473",
+    "longitude": "109.1047663",
+    "state_id": 10
+  },
+  {
+    "name": "Tegal",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-6.8797041",
+    "longitude": "109.1255917",
+    "state_id": 10
+  },
+  {
+    "name": "Teluk Bintuni",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.9056848",
+    "longitude": "133.329466",
+    "state_id": 25
+  },
+  {
+    "name": "Teluk Wondama",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.8551699",
+    "longitude": "134.3236557",
+    "state_id": 25
+  },
+  {
+    "name": "Temanggung",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.2748721",
+    "longitude": "110.0891894",
+    "state_id": 10
+  },
+  {
+    "name": "Ternate",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "0.7957999",
+    "longitude": "127.3613533",
+    "state_id": 20
+  },
+  {
+    "name": "Tidore Kepulauan",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "0.6740044",
+    "longitude": "127.4040871",
+    "state_id": 20
+  },
+  {
+    "name": "Timor Tengah Selatan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-9.7762816",
+    "longitude": "124.4198243",
+    "state_id": 23
+  },
+  {
+    "name": "Timor Tengah Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-9.4522647",
+    "longitude": "124.597132",
+    "state_id": 23
+  },
+  {
+    "name": "Toba Samosir",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "2.3502398",
+    "longitude": "99.2785583",
+    "state_id": 34
+  },
+  {
+    "name": "Tojo Una-Una",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-1.098757",
+    "longitude": "121.5370003",
+    "state_id": 29
+  },
+  {
+    "name": "Toli-Toli",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "0.8768231",
+    "longitude": "120.7579834",
+    "state_id": 29
+  },
+  {
+    "name": "Tolikara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.481132",
+    "longitude": "138.4787258",
+    "state_id": 24
+  },
+  {
+    "name": "Tomohon",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "1.3229337",
+    "longitude": "124.8405081",
+    "state_id": 31
+  },
+  {
+    "name": "Toraja Utara",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-2.8621942",
+    "longitude": "119.8352303",
+    "state_id": 28
+  },
+  {
+    "name": "Trenggalek",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.1824112",
+    "longitude": "111.6183755",
+    "state_id": 11
+  },
+  {
+    "name": "Tual",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-5.626563",
+    "longitude": "132.7520867",
+    "state_id": 19
+  },
+  {
+    "name": "Tuban",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-6.8949099",
+    "longitude": "112.0416754",
+    "state_id": 11
+  },
+  {
+    "name": "Tulang Bawang",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 18
+  },
+  {
+    "name": "Tulang Bawang Barat",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.5256967",
+    "longitude": "105.0791228",
+    "state_id": 18
+  },
+  {
+    "name": "Tulungagung",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-8.091221",
+    "longitude": "111.9641728",
+    "state_id": 11
+  },
+  {
+    "name": "Wajo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.022229",
+    "longitude": "120.0665236",
+    "state_id": 28
+  },
+  {
+    "name": "Wakatobi",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-5.6326806",
+    "longitude": "123.8902463",
+    "state_id": 30
+  },
+  {
+    "name": "Waropen",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": null,
+    "longitude": null,
+    "state_id": 24
+  },
+  {
+    "name": "Way Kanan",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.4963689",
+    "longitude": "104.5655273",
+    "state_id": 18
+  },
+  {
+    "name": "Wonogiri",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.8846484",
+    "longitude": "111.0460407",
+    "state_id": 10
+  },
+  {
+    "name": "Wonosobo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-7.3632094",
+    "longitude": "109.9001796",
+    "state_id": 10
+  },
+  {
+    "name": "Yahukimo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-4.4939717",
+    "longitude": "139.5279996",
+    "state_id": 24
+  },
+  {
+    "name": "Yalimo",
+    "type": "subdistrict",
+    "postal_code": null,
+    "latitude": "-3.7852847",
+    "longitude": "139.4466005",
+    "state_id": 24
+  },
+  {
+    "name": "Yogyakarta",
+    "type": "city",
+    "postal_code": null,
+    "latitude": "-7.7955798",
+    "longitude": "110.3694896",
+    "state_id": 5
+  }
+]
