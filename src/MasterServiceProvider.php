@@ -14,11 +14,6 @@ class MasterServiceProvider extends ServiceProvider
         $this->app->bind('master', function () {
             return new MasterService();
         });
-
-        $this->commands([
-            SeedCommand::class,
-            SyncCoordinateCommand::class,
-        ]);
     }
 
     /*
@@ -27,9 +22,6 @@ class MasterServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->mergeConfigFrom(__DIR__.'/../config/master.php', 'master-data');
-
-        $databasePath = __DIR__.'/../database/migrations';
-        $this->loadMigrationsFrom($databasePath);
 
         if (class_exists(Application::class)) {
             $this->publishes(
@@ -42,12 +34,6 @@ class MasterServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(realpath(__DIR__.'/../resources/views'), 'master');
 
-        $this->registerRoutes();
     }
 
-    protected function registerRoutes()
-    {
-        $router = $this->app['router'];
-        require __DIR__.'/../routes/web.php';
-    }
 }
