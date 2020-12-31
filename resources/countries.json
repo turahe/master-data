@@ -1,11 +1,13 @@
-[ {
+[
+  {
+    "id": 1,
     "capital": "Kabul",
     "citizenship": "Afghan",
     "country_code": "004",
     "currency": "afghani",
     "currency_code": "AFN",
     "currency_sub_unit": "pul",
-    "currency_symbol": "؋",
+    "currency_symbol": "\u060b",
     "full_name": "Islamic Republic of Afghanistan",
     "iso_3166_2": "AF",
     "iso_3166_3": "AFG",
@@ -15,7 +17,9 @@
     "eea": 0,
     "calling_code": "93",
     "flag": "af.png"
-}, {
+  },
+  {
+    "id": 2,
     "capital": "Tirana",
     "citizenship": "Albanian",
     "country_code": "008",
@@ -32,7 +36,9 @@
     "eea": 0,
     "calling_code": "355",
     "flag": "al.png"
-}, {
+  },
+  {
+    "id": 3,
     "capital": "Antartica",
     "citizenship": "of Antartica",
     "country_code": "010",
@@ -49,7 +55,9 @@
     "eea": 0,
     "calling_code": "672",
     "flag": "aq.png"
-}, {
+  },
+  {
+    "id": 4,
     "capital": "Algiers",
     "citizenship": "Algerian",
     "country_code": "012",
@@ -57,7 +65,7 @@
     "currency_code": "DZD",
     "currency_sub_unit": "centime",
     "currency_symbol": "DZD",
-    "full_name": "People’s Democratic Republic of Algeria",
+    "full_name": "People\u2019s Democratic Republic of Algeria",
     "iso_3166_2": "DZ",
     "iso_3166_3": "DZA",
     "name": "Algeria",
@@ -66,7 +74,9 @@
     "eea": 0,
     "calling_code": "213",
     "flag": "dz.png"
-}, {
+  },
+  {
+    "id": 5,
     "capital": "Pago Pago",
     "citizenship": "American Samoan",
     "country_code": "016",
@@ -83,14 +93,16 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "as.png"
-}, {
+  },
+  {
+    "id": 6,
     "capital": "Andorra la Vella",
     "citizenship": "Andorran",
     "country_code": "020",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Principality of Andorra",
     "iso_3166_2": "AD",
     "iso_3166_3": "AND",
@@ -100,13 +112,15 @@
     "eea": 0,
     "calling_code": "376",
     "flag": "ad.png"
-}, {
+  },
+  {
+    "id": 7,
     "capital": "Luanda",
     "citizenship": "Angolan",
     "country_code": "024",
     "currency": "kwanza",
     "currency_code": "AOA",
-    "currency_sub_unit": "cêntimo",
+    "currency_sub_unit": "c\u00eantimo",
     "currency_symbol": "Kz",
     "full_name": "Republic of Angola",
     "iso_3166_2": "AO",
@@ -117,8 +131,10 @@
     "eea": 0,
     "calling_code": "244",
     "flag": "ao.png"
-}, {
-    "capital": "St John’s",
+  },
+  {
+    "id": 8,
+    "capital": "St John\u2019s",
     "citizenship": "of Antigua and Barbuda",
     "country_code": "028",
     "currency": "East Caribbean dollar",
@@ -134,14 +150,16 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "ag.png"
-}, {
+  },
+  {
+    "id": 9,
     "capital": "Baku",
     "citizenship": "Azerbaijani",
     "country_code": "031",
     "currency": "Azerbaijani manat",
     "currency_code": "AZN",
     "currency_sub_unit": "kepik (inv.)",
-    "currency_symbol": "ман",
+    "currency_symbol": "\u043c\u0430\u043d",
     "full_name": "Republic of Azerbaijan",
     "iso_3166_2": "AZ",
     "iso_3166_3": "AZE",
@@ -151,7 +169,9 @@
     "eea": 0,
     "calling_code": "994",
     "flag": "az.png"
-}, {
+  },
+  {
+    "id": 10,
     "capital": "Buenos Aires",
     "citizenship": "Argentinian",
     "country_code": "032",
@@ -168,7 +188,9 @@
     "eea": 0,
     "calling_code": "54",
     "flag": "ar.png"
-}, {
+  },
+  {
+    "id": 11,
     "capital": "Canberra",
     "citizenship": "Australian",
     "country_code": "036",
@@ -185,14 +207,16 @@
     "eea": 0,
     "calling_code": "61",
     "flag": "au.png"
-}, {
+  },
+  {
+    "id": 12,
     "capital": "Vienna",
     "citizenship": "Austrian",
     "country_code": "040",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Republic of Austria",
     "iso_3166_2": "AT",
     "iso_3166_3": "AUT",
@@ -202,7 +226,9 @@
     "eea": 1,
     "calling_code": "43",
     "flag": "at.png"
-}, {
+  },
+  {
+    "id": 13,
     "capital": "Nassau",
     "citizenship": "Bahamian",
     "country_code": "044",
@@ -219,7 +245,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "bs.png"
-}, {
+  },
+  {
+    "id": 14,
     "capital": "Manama",
     "citizenship": "Bahraini",
     "country_code": "048",
@@ -236,7 +264,9 @@
     "eea": 0,
     "calling_code": "973",
     "flag": "bh.png"
-}, {
+  },
+  {
+    "id": 15,
     "capital": "Dhaka",
     "citizenship": "Bangladeshi",
     "country_code": "050",
@@ -244,7 +274,7 @@
     "currency_code": "BDT",
     "currency_sub_unit": "poisha (inv.)",
     "currency_symbol": "BDT",
-    "full_name": "People’s Republic of Bangladesh",
+    "full_name": "People\u2019s Republic of Bangladesh",
     "iso_3166_2": "BD",
     "iso_3166_3": "BGD",
     "name": "Bangladesh",
@@ -253,7 +283,9 @@
     "eea": 0,
     "calling_code": "880",
     "flag": "bd.png"
-}, {
+  },
+  {
+    "id": 16,
     "capital": "Yerevan",
     "citizenship": "Armenian",
     "country_code": "051",
@@ -270,7 +302,9 @@
     "eea": 0,
     "calling_code": "374",
     "flag": "am.png"
-}, {
+  },
+  {
+    "id": 17,
     "capital": "Bridgetown",
     "citizenship": "Barbadian",
     "country_code": "052",
@@ -287,14 +321,16 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "bb.png"
-}, {
+  },
+  {
+    "id": 18,
     "capital": "Brussels",
     "citizenship": "Belgian",
     "country_code": "056",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Kingdom of Belgium",
     "iso_3166_2": "BE",
     "iso_3166_3": "BEL",
@@ -304,7 +340,9 @@
     "eea": 1,
     "calling_code": "32",
     "flag": "be.png"
-}, {
+  },
+  {
+    "id": 19,
     "capital": "Hamilton",
     "citizenship": "Bermudian",
     "country_code": "060",
@@ -321,7 +359,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "bm.png"
-}, {
+  },
+  {
+    "id": 20,
     "capital": "Thimphu",
     "citizenship": "Bhutanese",
     "country_code": "064",
@@ -338,7 +378,9 @@
     "eea": 0,
     "calling_code": "975",
     "flag": "bt.png"
-}, {
+  },
+  {
+    "id": 21,
     "capital": "Sucre (BO1)",
     "citizenship": "Bolivian",
     "country_code": "068",
@@ -355,7 +397,9 @@
     "eea": 0,
     "calling_code": "591",
     "flag": "bo.png"
-}, {
+  },
+  {
+    "id": 22,
     "capital": "Sarajevo",
     "citizenship": "of Bosnia and Herzegovina",
     "country_code": "070",
@@ -372,7 +416,9 @@
     "eea": 0,
     "calling_code": "387",
     "flag": "ba.png"
-}, {
+  },
+  {
+    "id": 23,
     "capital": "Gaborone",
     "citizenship": "Botswanan",
     "country_code": "072",
@@ -389,7 +435,9 @@
     "eea": 0,
     "calling_code": "267",
     "flag": "bw.png"
-}, {
+  },
+  {
+    "id": 24,
     "capital": "Bouvet island",
     "citizenship": "of Bouvet island",
     "country_code": "074",
@@ -406,7 +454,9 @@
     "eea": 0,
     "calling_code": "47",
     "flag": "bv.png"
-}, {
+  },
+  {
+    "id": 25,
     "capital": "Brasilia",
     "citizenship": "Brazilian",
     "country_code": "076",
@@ -423,7 +473,9 @@
     "eea": 0,
     "calling_code": "55",
     "flag": "br.png"
-}, {
+  },
+  {
+    "id": 26,
     "capital": "Belmopan",
     "citizenship": "Belizean",
     "country_code": "084",
@@ -440,7 +492,9 @@
     "eea": 0,
     "calling_code": "501",
     "flag": "bz.png"
-}, {
+  },
+  {
+    "id": 27,
     "capital": "Diego Garcia",
     "citizenship": "Changosian",
     "country_code": "086",
@@ -457,7 +511,9 @@
     "eea": 0,
     "calling_code": "246",
     "flag": "io.png"
-}, {
+  },
+  {
+    "id": 28,
     "capital": "Honiara",
     "citizenship": "Solomon Islander",
     "country_code": "090",
@@ -474,7 +530,9 @@
     "eea": 0,
     "calling_code": "677",
     "flag": "sb.png"
-}, {
+  },
+  {
+    "id": 29,
     "capital": "Road Town",
     "citizenship": "British Virgin Islander;",
     "country_code": "092",
@@ -491,7 +549,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "vg.png"
-}, {
+  },
+  {
+    "id": 30,
     "capital": "Bandar Seri Begawan",
     "citizenship": "Bruneian",
     "country_code": "096",
@@ -508,14 +568,16 @@
     "eea": 0,
     "calling_code": "673",
     "flag": "bn.png"
-}, {
+  },
+  {
+    "id": 31,
     "capital": "Sofia",
     "citizenship": "Bulgarian",
     "country_code": "100",
     "currency": "lev (pl. leva)",
     "currency_code": "BGN",
     "currency_sub_unit": "stotinka",
-    "currency_symbol": "лв",
+    "currency_symbol": "\u043b\u0432",
     "full_name": "Republic of Bulgaria",
     "iso_3166_2": "BG",
     "iso_3166_3": "BGR",
@@ -525,7 +587,9 @@
     "eea": 1,
     "calling_code": "359",
     "flag": "bg.png"
-}, {
+  },
+  {
+    "id": 32,
     "capital": "Yangon",
     "citizenship": "Burmese",
     "country_code": "104",
@@ -533,7 +597,7 @@
     "currency_code": "MMK",
     "currency_sub_unit": "pya",
     "currency_symbol": "K",
-    "full_name": "Union of Myanmar/",
+    "full_name": "Union of Myanmar\/",
     "iso_3166_2": "MM",
     "iso_3166_3": "MMR",
     "name": "Myanmar",
@@ -542,7 +606,9 @@
     "eea": 0,
     "calling_code": "95",
     "flag": "mm.png"
-}, {
+  },
+  {
+    "id": 33,
     "capital": "Bujumbura",
     "citizenship": "Burundian",
     "country_code": "108",
@@ -559,7 +625,9 @@
     "eea": 0,
     "calling_code": "257",
     "flag": "bi.png"
-}, {
+  },
+  {
+    "id": 34,
     "capital": "Minsk",
     "citizenship": "Belarusian",
     "country_code": "112",
@@ -576,14 +644,16 @@
     "eea": 0,
     "calling_code": "375",
     "flag": "by.png"
-}, {
+  },
+  {
+    "id": 35,
     "capital": "Phnom Penh",
     "citizenship": "Cambodian",
     "country_code": "116",
     "currency": "riel",
     "currency_code": "KHR",
     "currency_sub_unit": "sen (inv.)",
-    "currency_symbol": "៛",
+    "currency_symbol": "\u17db",
     "full_name": "Kingdom of Cambodia",
     "iso_3166_2": "KH",
     "iso_3166_3": "KHM",
@@ -593,8 +663,10 @@
     "eea": 0,
     "calling_code": "855",
     "flag": "kh.png"
-}, {
-    "capital": "Yaoundé",
+  },
+  {
+    "id": 36,
+    "capital": "Yaound\u00e9",
     "citizenship": "Cameroonian",
     "country_code": "120",
     "currency": "CFA franc (BEAC)",
@@ -610,7 +682,9 @@
     "eea": 0,
     "calling_code": "237",
     "flag": "cm.png"
-}, {
+  },
+  {
+    "id": 37,
     "capital": "Ottawa",
     "citizenship": "Canadian",
     "country_code": "124",
@@ -627,7 +701,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "ca.png"
-}, {
+  },
+  {
+    "id": 38,
     "capital": "Praia",
     "citizenship": "Cape Verdean",
     "country_code": "132",
@@ -644,7 +720,9 @@
     "eea": 0,
     "calling_code": "238",
     "flag": "cv.png"
-}, {
+  },
+  {
+    "id": 39,
     "capital": "George Town",
     "citizenship": "Caymanian",
     "country_code": "136",
@@ -661,7 +739,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "ky.png"
-}, {
+  },
+  {
+    "id": 40,
     "capital": "Bangui",
     "citizenship": "Central African",
     "country_code": "140",
@@ -678,14 +758,16 @@
     "eea": 0,
     "calling_code": "236",
     "flag": "cf.png"
-}, {
+  },
+  {
+    "id": 41,
     "capital": "Colombo",
     "citizenship": "Sri Lankan",
     "country_code": "144",
     "currency": "Sri Lankan rupee",
     "currency_code": "LKR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "₨",
+    "currency_symbol": "\u20a8",
     "full_name": "Democratic Socialist Republic of Sri Lanka",
     "iso_3166_2": "LK",
     "iso_3166_3": "LKA",
@@ -695,8 +777,10 @@
     "eea": 0,
     "calling_code": "94",
     "flag": "lk.png"
-}, {
-    "capital": "N’Djamena",
+  },
+  {
+    "id": 42,
+    "capital": "N\u2019Djamena",
     "citizenship": "Chadian",
     "country_code": "148",
     "currency": "CFA franc (BEAC)",
@@ -712,7 +796,9 @@
     "eea": 0,
     "calling_code": "235",
     "flag": "td.png"
-}, {
+  },
+  {
+    "id": 43,
     "capital": "Santiago",
     "citizenship": "Chilean",
     "country_code": "152",
@@ -729,15 +815,17 @@
     "eea": 0,
     "calling_code": "56",
     "flag": "cl.png"
-}, {
+  },
+  {
+    "id": 44,
     "capital": "Beijing",
     "citizenship": "Chinese",
     "country_code": "156",
     "currency": "renminbi-yuan (inv.)",
     "currency_code": "CNY",
     "currency_sub_unit": "jiao (10)",
-    "currency_symbol": "¥",
-    "full_name": "People’s Republic of China",
+    "currency_symbol": "\u00a5",
+    "full_name": "People\u2019s Republic of China",
     "iso_3166_2": "CN",
     "iso_3166_3": "CHN",
     "name": "China",
@@ -746,7 +834,9 @@
     "eea": 0,
     "calling_code": "86",
     "flag": "cn.png"
-}, {
+  },
+  {
+    "id": 45,
     "capital": "Taipei",
     "citizenship": "Taiwanese",
     "country_code": "158",
@@ -763,7 +853,9 @@
     "eea": 0,
     "calling_code": "886",
     "flag": "tw.png"
-}, {
+  },
+  {
+    "id": 46,
     "capital": "Flying Fish Cove",
     "citizenship": "Christmas Islander",
     "country_code": "162",
@@ -780,7 +872,9 @@
     "eea": 0,
     "calling_code": "61",
     "flag": "cx.png"
-}, {
+  },
+  {
+    "id": 47,
     "capital": "Bantam",
     "citizenship": "Cocos Islander",
     "country_code": "166",
@@ -797,8 +891,10 @@
     "eea": 0,
     "calling_code": "61",
     "flag": "cc.png"
-}, {
-    "capital": "Santa Fe de Bogotá",
+  },
+  {
+    "id": 48,
+    "capital": "Santa Fe de Bogot\u00e1",
     "citizenship": "Colombian",
     "country_code": "170",
     "currency": "Colombian peso",
@@ -814,7 +910,9 @@
     "eea": 0,
     "calling_code": "57",
     "flag": "co.png"
-}, {
+  },
+  {
+    "id": 49,
     "capital": "Moroni",
     "citizenship": "Comorian",
     "country_code": "174",
@@ -831,14 +929,16 @@
     "eea": 0,
     "calling_code": "269",
     "flag": "km.png"
-}, {
+  },
+  {
+    "id": 50,
     "capital": "Mamoudzou",
     "citizenship": "Mahorais",
     "country_code": "175",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Departmental Collectivity of Mayotte",
     "iso_3166_2": "YT",
     "iso_3166_3": "MYT",
@@ -848,7 +948,9 @@
     "eea": 0,
     "calling_code": "262",
     "flag": "yt.png"
-}, {
+  },
+  {
+    "id": 51,
     "capital": "Brazzaville",
     "citizenship": "Congolese",
     "country_code": "178",
@@ -865,7 +967,9 @@
     "eea": 0,
     "calling_code": "242",
     "flag": "cg.png"
-}, {
+  },
+  {
+    "id": 52,
     "capital": "Kinshasa",
     "citizenship": "Congolese",
     "country_code": "180",
@@ -882,7 +986,9 @@
     "eea": 0,
     "calling_code": "243",
     "flag": "cd.png"
-}, {
+  },
+  {
+    "id": 53,
     "capital": "Avarua",
     "citizenship": "Cook Islander",
     "country_code": "184",
@@ -899,14 +1005,16 @@
     "eea": 0,
     "calling_code": "682",
     "flag": "ck.png"
-}, {
-    "capital": "San José",
+  },
+  {
+    "id": 54,
+    "capital": "San Jos\u00e9",
     "citizenship": "Costa Rican",
     "country_code": "188",
-    "currency": "Costa Rican colón (pl. colones)",
+    "currency": "Costa Rican col\u00f3n (pl. colones)",
     "currency_code": "CRC",
-    "currency_sub_unit": "céntimo",
-    "currency_symbol": "₡",
+    "currency_sub_unit": "c\u00e9ntimo",
+    "currency_symbol": "\u20a1",
     "full_name": "Republic of Costa Rica",
     "iso_3166_2": "CR",
     "iso_3166_3": "CRI",
@@ -916,7 +1024,9 @@
     "eea": 0,
     "calling_code": "506",
     "flag": "cr.png"
-}, {
+  },
+  {
+    "id": 55,
     "capital": "Zagreb",
     "citizenship": "Croatian",
     "country_code": "191",
@@ -933,14 +1043,16 @@
     "eea": 1,
     "calling_code": "385",
     "flag": "hr.png"
-}, {
+  },
+  {
+    "id": 56,
     "capital": "Havana",
     "citizenship": "Cuban",
     "country_code": "192",
     "currency": "Cuban peso",
     "currency_code": "CUP",
     "currency_sub_unit": "centavo",
-    "currency_symbol": "₱",
+    "currency_symbol": "\u20b1",
     "full_name": "Republic of Cuba",
     "iso_3166_2": "CU",
     "iso_3166_3": "CUB",
@@ -950,7 +1062,9 @@
     "eea": 0,
     "calling_code": "53",
     "flag": "cu.png"
-}, {
+  },
+  {
+    "id": 57,
     "capital": "Nicosia",
     "citizenship": "Cypriot",
     "country_code": "196",
@@ -967,14 +1081,16 @@
     "eea": 1,
     "calling_code": "357",
     "flag": "cy.png"
-}, {
+  },
+  {
+    "id": 58,
     "capital": "Prague",
     "citizenship": "Czech",
     "country_code": "203",
     "currency": "Czech koruna (pl. koruny)",
     "currency_code": "CZK",
-    "currency_sub_unit": "halér",
-    "currency_symbol": "Kč",
+    "currency_sub_unit": "hal\u00e9r",
+    "currency_symbol": "K\u010d",
     "full_name": "Czech Republic",
     "iso_3166_2": "CZ",
     "iso_3166_3": "CZE",
@@ -984,7 +1100,9 @@
     "eea": 1,
     "calling_code": "420",
     "flag": "cz.png"
-}, {
+  },
+  {
+    "id": 59,
     "capital": "Porto Novo (BJ1)",
     "citizenship": "Beninese",
     "country_code": "204",
@@ -1001,13 +1119,15 @@
     "eea": 0,
     "calling_code": "229",
     "flag": "bj.png"
-}, {
+  },
+  {
+    "id": 60,
     "capital": "Copenhagen",
     "citizenship": "Danish",
     "country_code": "208",
     "currency": "Danish krone",
     "currency_code": "DKK",
-    "currency_sub_unit": "øre (inv.)",
+    "currency_sub_unit": "\u00f8re (inv.)",
     "currency_symbol": "kr",
     "full_name": "Kingdom of Denmark",
     "iso_3166_2": "DK",
@@ -1018,7 +1138,9 @@
     "eea": 1,
     "calling_code": "45",
     "flag": "dk.png"
-}, {
+  },
+  {
+    "id": 61,
     "capital": "Roseau",
     "citizenship": "Dominican",
     "country_code": "212",
@@ -1035,7 +1157,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "dm.png"
-}, {
+  },
+  {
+    "id": 62,
     "capital": "Santo Domingo",
     "citizenship": "Dominican",
     "country_code": "214",
@@ -1052,7 +1176,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "do.png"
-}, {
+  },
+  {
+    "id": 63,
     "capital": "Quito",
     "citizenship": "Ecuadorian",
     "country_code": "218",
@@ -1069,11 +1195,13 @@
     "eea": 0,
     "calling_code": "593",
     "flag": "ec.png"
-}, {
+  },
+  {
+    "id": 64,
     "capital": "San Salvador",
     "citizenship": "Salvadoran",
     "country_code": "222",
-    "currency": "Salvadorian colón (pl. colones)",
+    "currency": "Salvadorian col\u00f3n (pl. colones)",
     "currency_code": "SVC",
     "currency_sub_unit": "centavo",
     "currency_symbol": "$",
@@ -1086,7 +1214,9 @@
     "eea": 0,
     "calling_code": "503",
     "flag": "sv.png"
-}, {
+  },
+  {
+    "id": 65,
     "capital": "Malabo",
     "citizenship": "Equatorial Guinean",
     "country_code": "226",
@@ -1103,7 +1233,9 @@
     "eea": 0,
     "calling_code": "240",
     "flag": "gq.png"
-}, {
+  },
+  {
+    "id": 66,
     "capital": "Addis Ababa",
     "citizenship": "Ethiopian",
     "country_code": "231",
@@ -1120,7 +1252,9 @@
     "eea": 0,
     "calling_code": "251",
     "flag": "et.png"
-}, {
+  },
+  {
+    "id": 67,
     "capital": "Asmara",
     "citizenship": "Eritrean",
     "country_code": "232",
@@ -1137,7 +1271,9 @@
     "eea": 0,
     "calling_code": "291",
     "flag": "er.png"
-}, {
+  },
+  {
+    "id": 68,
     "capital": "Tallinn",
     "citizenship": "Estonian",
     "country_code": "233",
@@ -1154,13 +1290,15 @@
     "eea": 1,
     "calling_code": "372",
     "flag": "ee.png"
-}, {
-    "capital": "Tórshavn",
+  },
+  {
+    "id": 69,
+    "capital": "T\u00f3rshavn",
     "citizenship": "Faeroese",
     "country_code": "234",
     "currency": "Danish krone",
     "currency_code": "DKK",
-    "currency_sub_unit": "øre (inv.)",
+    "currency_sub_unit": "\u00f8re (inv.)",
     "currency_symbol": "kr",
     "full_name": "Faeroe Islands",
     "iso_3166_2": "FO",
@@ -1171,14 +1309,16 @@
     "eea": 0,
     "calling_code": "298",
     "flag": "fo.png"
-}, {
+  },
+  {
+    "id": 70,
     "capital": "Stanley",
     "citizenship": "Falkland Islander",
     "country_code": "238",
     "currency": "Falkland Islands pound",
     "currency_code": "FKP",
     "currency_sub_unit": "new penny",
-    "currency_symbol": "£",
+    "currency_symbol": "\u00a3",
     "full_name": "Falkland Islands",
     "iso_3166_2": "FK",
     "iso_3166_3": "FLK",
@@ -1188,14 +1328,16 @@
     "eea": 0,
     "calling_code": "500",
     "flag": "fk.png"
-}, {
+  },
+  {
+    "id": 71,
     "capital": "King Edward Point (Grytviken)",
     "citizenship": "of South Georgia and the South Sandwich Islands",
     "country_code": "239",
     "currency": null,
     "currency_code": null,
     "currency_sub_unit": null,
-    "currency_symbol": "£",
+    "currency_symbol": "\u00a3",
     "full_name": "South Georgia and the South Sandwich Islands",
     "iso_3166_2": "GS",
     "iso_3166_3": "SGS",
@@ -1205,7 +1347,9 @@
     "eea": 0,
     "calling_code": "44",
     "flag": "gs.png"
-}, {
+  },
+  {
+    "id": 72,
     "capital": "Suva",
     "citizenship": "Fijian",
     "country_code": "242",
@@ -1222,14 +1366,16 @@
     "eea": 0,
     "calling_code": "679",
     "flag": "fj.png"
-}, {
+  },
+  {
+    "id": 73,
     "capital": "Helsinki",
     "citizenship": "Finnish",
     "country_code": "246",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Republic of Finland",
     "iso_3166_2": "FI",
     "iso_3166_3": "FIN",
@@ -1239,31 +1385,35 @@
     "eea": 1,
     "calling_code": "358",
     "flag": "fi.png"
-}, {
+  },
+  {
+    "id": 74,
     "capital": "Mariehamn",
-    "citizenship": "Åland Islander",
+    "citizenship": "\u00c5land Islander",
     "country_code": "248",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
     "currency_symbol": null,
-    "full_name": "Åland Islands",
+    "full_name": "\u00c5land Islands",
     "iso_3166_2": "AX",
     "iso_3166_3": "ALA",
-    "name": "Åland Islands",
+    "name": "\u00c5land Islands",
     "region_code": "150",
     "sub_region_code": "154",
     "eea": 0,
     "calling_code": "358",
     "flag": null
-}, {
+  },
+  {
+    "id": 75,
     "capital": "Paris",
     "citizenship": "French",
     "country_code": "250",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "French Republic",
     "iso_3166_2": "FR",
     "iso_3166_3": "FRA",
@@ -1273,14 +1423,16 @@
     "eea": 1,
     "calling_code": "33",
     "flag": "fr.png"
-}, {
+  },
+  {
+    "id": 76,
     "capital": "Cayenne",
     "citizenship": "Guianese",
     "country_code": "254",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "French Guiana",
     "iso_3166_2": "GF",
     "iso_3166_3": "GUF",
@@ -1290,7 +1442,9 @@
     "eea": 0,
     "calling_code": "594",
     "flag": "gf.png"
-}, {
+  },
+  {
+    "id": 77,
     "capital": "Papeete",
     "citizenship": "Polynesian",
     "country_code": "258",
@@ -1307,14 +1461,16 @@
     "eea": 0,
     "calling_code": "689",
     "flag": "pf.png"
-}, {
+  },
+  {
+    "id": 78,
     "capital": "Port-aux-Francais",
     "citizenship": "of French Southern and Antarctic Lands",
     "country_code": "260",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "French Southern and Antarctic Lands",
     "iso_3166_2": "TF",
     "iso_3166_3": "ATF",
@@ -1324,7 +1480,9 @@
     "eea": 0,
     "calling_code": "33",
     "flag": "tf.png"
-}, {
+  },
+  {
+    "id": 79,
     "capital": "Djibouti",
     "citizenship": "Djiboutian",
     "country_code": "262",
@@ -1341,7 +1499,9 @@
     "eea": 0,
     "calling_code": "253",
     "flag": "dj.png"
-}, {
+  },
+  {
+    "id": 80,
     "capital": "Libreville",
     "citizenship": "Gabonese",
     "country_code": "266",
@@ -1358,7 +1518,9 @@
     "eea": 0,
     "calling_code": "241",
     "flag": "ga.png"
-}, {
+  },
+  {
+    "id": 81,
     "capital": "Tbilisi",
     "citizenship": "Georgian",
     "country_code": "268",
@@ -1375,7 +1537,9 @@
     "eea": 0,
     "calling_code": "995",
     "flag": "ge.png"
-}, {
+  },
+  {
+    "id": 82,
     "capital": "Banjul",
     "citizenship": "Gambian",
     "country_code": "270",
@@ -1392,14 +1556,16 @@
     "eea": 0,
     "calling_code": "220",
     "flag": "gm.png"
-}, {
+  },
+  {
+    "id": 83,
     "capital": null,
     "citizenship": "Palestinian",
     "country_code": "275",
     "currency": null,
     "currency_code": null,
     "currency_sub_unit": null,
-    "currency_symbol": "₪",
+    "currency_symbol": "\u20aa",
     "full_name": null,
     "iso_3166_2": "PS",
     "iso_3166_3": "PSE",
@@ -1409,14 +1575,16 @@
     "eea": 0,
     "calling_code": "970",
     "flag": "ps.png"
-}, {
+  },
+  {
+    "id": 84,
     "capital": "Berlin",
     "citizenship": "German",
     "country_code": "276",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Federal Republic of Germany",
     "iso_3166_2": "DE",
     "iso_3166_3": "DEU",
@@ -1426,14 +1594,16 @@
     "eea": 1,
     "calling_code": "49",
     "flag": "de.png"
-}, {
+  },
+  {
+    "id": 85,
     "capital": "Accra",
     "citizenship": "Ghanaian",
     "country_code": "288",
     "currency": "Ghana cedi",
     "currency_code": "GHS",
     "currency_sub_unit": "pesewa",
-    "currency_symbol": "¢",
+    "currency_symbol": "\u00a2",
     "full_name": "Republic of Ghana",
     "iso_3166_2": "GH",
     "iso_3166_3": "GHA",
@@ -1443,14 +1613,16 @@
     "eea": 0,
     "calling_code": "233",
     "flag": "gh.png"
-}, {
+  },
+  {
+    "id": 86,
     "capital": "Gibraltar",
     "citizenship": "Gibraltarian",
     "country_code": "292",
     "currency": "Gibraltar pound",
     "currency_code": "GIP",
     "currency_sub_unit": "penny",
-    "currency_symbol": "£",
+    "currency_symbol": "\u00a3",
     "full_name": "Gibraltar",
     "iso_3166_2": "GI",
     "iso_3166_3": "GIB",
@@ -1460,7 +1632,9 @@
     "eea": 0,
     "calling_code": "350",
     "flag": "gi.png"
-}, {
+  },
+  {
+    "id": 87,
     "capital": "Tarawa",
     "citizenship": "Kiribatian",
     "country_code": "296",
@@ -1477,14 +1651,16 @@
     "eea": 0,
     "calling_code": "686",
     "flag": "ki.png"
-}, {
+  },
+  {
+    "id": 88,
     "capital": "Athens",
     "citizenship": "Greek",
     "country_code": "300",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Hellenic Republic",
     "iso_3166_2": "GR",
     "iso_3166_3": "GRC",
@@ -1494,13 +1670,15 @@
     "eea": 1,
     "calling_code": "30",
     "flag": "gr.png"
-}, {
+  },
+  {
+    "id": 89,
     "capital": "Nuuk",
     "citizenship": "Greenlander",
     "country_code": "304",
     "currency": "Danish krone",
     "currency_code": "DKK",
-    "currency_sub_unit": "øre (inv.)",
+    "currency_sub_unit": "\u00f8re (inv.)",
     "currency_symbol": "kr",
     "full_name": "Greenland",
     "iso_3166_2": "GL",
@@ -1511,8 +1689,10 @@
     "eea": 0,
     "calling_code": "299",
     "flag": "gl.png"
-}, {
-    "capital": "St George’s",
+  },
+  {
+    "id": 90,
+    "capital": "St George\u2019s",
     "citizenship": "Grenadian",
     "country_code": "308",
     "currency": "East Caribbean dollar",
@@ -1528,14 +1708,16 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "gd.png"
-}, {
+  },
+  {
+    "id": 91,
     "capital": "Basse Terre",
     "citizenship": "Guadeloupean",
     "country_code": "312",
     "currency": "euro",
     "currency_code": "EUR ",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Guadeloupe",
     "iso_3166_2": "GP",
     "iso_3166_3": "GLP",
@@ -1545,8 +1727,10 @@
     "eea": 0,
     "calling_code": "590",
     "flag": "gp.png"
-}, {
-    "capital": "Agaña (Hagåtña)",
+  },
+  {
+    "id": 92,
+    "capital": "Aga\u00f1a (Hag\u00e5t\u00f1a)",
     "citizenship": "Guamanian",
     "country_code": "316",
     "currency": "US dollar",
@@ -1562,7 +1746,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "gu.png"
-}, {
+  },
+  {
+    "id": 93,
     "capital": "Guatemala City",
     "citizenship": "Guatemalan",
     "country_code": "320",
@@ -1579,7 +1765,9 @@
     "eea": 0,
     "calling_code": "502",
     "flag": "gt.png"
-}, {
+  },
+  {
+    "id": 94,
     "capital": "Conakry",
     "citizenship": "Guinean",
     "country_code": "324",
@@ -1596,7 +1784,9 @@
     "eea": 0,
     "calling_code": "224",
     "flag": "gn.png"
-}, {
+  },
+  {
+    "id": 95,
     "capital": "Georgetown",
     "citizenship": "Guyanese",
     "country_code": "328",
@@ -1613,7 +1803,9 @@
     "eea": 0,
     "calling_code": "592",
     "flag": "gy.png"
-}, {
+  },
+  {
+    "id": 96,
     "capital": "Port-au-Prince",
     "citizenship": "Haitian",
     "country_code": "332",
@@ -1630,7 +1822,9 @@
     "eea": 0,
     "calling_code": "509",
     "flag": "ht.png"
-}, {
+  },
+  {
+    "id": 97,
     "capital": "Territory of Heard Island and McDonald Islands",
     "citizenship": "of Territory of Heard Island and McDonald Islands",
     "country_code": "334",
@@ -1647,15 +1841,17 @@
     "eea": 0,
     "calling_code": "61",
     "flag": "hm.png"
-}, {
+  },
+  {
+    "id": 98,
     "capital": "Vatican City",
-    "citizenship": "of the Holy See/of the Vatican",
+    "citizenship": "of the Holy See\/of the Vatican",
     "country_code": "336",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
-    "full_name": "the Holy See/ Vatican City State",
+    "currency_symbol": "\u20ac",
+    "full_name": "the Holy See\/ Vatican City State",
     "iso_3166_2": "VA",
     "iso_3166_3": "VAT",
     "name": "Holy See (Vatican City State)",
@@ -1664,7 +1860,9 @@
     "eea": 0,
     "calling_code": "39",
     "flag": "va.png"
-}, {
+  },
+  {
+    "id": 99,
     "capital": "Tegucigalpa",
     "citizenship": "Honduran",
     "country_code": "340",
@@ -1681,7 +1879,9 @@
     "eea": 0,
     "calling_code": "504",
     "flag": "hn.png"
-}, {
+  },
+  {
+    "id": 100,
     "capital": "(HK3)",
     "citizenship": "Hong Kong Chinese",
     "country_code": "344",
@@ -1689,7 +1889,7 @@
     "currency_code": "HKD",
     "currency_sub_unit": "cent",
     "currency_symbol": "$",
-    "full_name": "Hong Kong Special Administrative Region of the People’s Republic of China (HK2)",
+    "full_name": "Hong Kong Special Administrative Region of the People\u2019s Republic of China (HK2)",
     "iso_3166_2": "HK",
     "iso_3166_3": "HKG",
     "name": "Hong Kong",
@@ -1698,13 +1898,15 @@
     "eea": 0,
     "calling_code": "852",
     "flag": "hk.png"
-}, {
+  },
+  {
+    "id": 101,
     "capital": "Budapest",
     "citizenship": "Hungarian",
     "country_code": "348",
     "currency": "forint (inv.)",
     "currency_code": "HUF",
-    "currency_sub_unit": "(fillér (inv.))",
+    "currency_sub_unit": "(fill\u00e9r (inv.))",
     "currency_symbol": "Ft",
     "full_name": "Republic of Hungary",
     "iso_3166_2": "HU",
@@ -1715,11 +1917,13 @@
     "eea": 1,
     "calling_code": "36",
     "flag": "hu.png"
-}, {
+  },
+  {
+    "id": 102,
     "capital": "Reykjavik",
     "citizenship": "Icelander",
     "country_code": "352",
-    "currency": "króna (pl. krónur)",
+    "currency": "kr\u00f3na (pl. kr\u00f3nur)",
     "currency_code": "ISK",
     "currency_sub_unit": null,
     "currency_symbol": "kr",
@@ -1732,14 +1936,16 @@
     "eea": 1,
     "calling_code": "354",
     "flag": "is.png"
-}, {
+  },
+  {
+    "id": 103,
     "capital": "New Delhi",
     "citizenship": "Indian",
     "country_code": "356",
     "currency": "Indian rupee",
     "currency_code": "INR",
     "currency_sub_unit": "paisa",
-    "currency_symbol": "₹",
+    "currency_symbol": "\u20b9",
     "full_name": "Republic of India",
     "iso_3166_2": "IN",
     "iso_3166_3": "IND",
@@ -1749,7 +1955,9 @@
     "eea": 0,
     "calling_code": "91",
     "flag": "in.png"
-}, {
+  },
+  {
+    "id": 104,
     "capital": "Jakarta",
     "citizenship": "Indonesian",
     "country_code": "360",
@@ -1766,14 +1974,16 @@
     "eea": 0,
     "calling_code": "62",
     "flag": "id.png"
-}, {
+  },
+  {
+    "id": 105,
     "capital": "Tehran",
     "citizenship": "Iranian",
     "country_code": "364",
     "currency": "Iranian rial",
     "currency_code": "IRR",
     "currency_sub_unit": "(dinar) (IR1)",
-    "currency_symbol": "﷼",
+    "currency_symbol": "\ufdfc",
     "full_name": "Islamic Republic of Iran",
     "iso_3166_2": "IR",
     "iso_3166_3": "IRN",
@@ -1783,7 +1993,9 @@
     "eea": 0,
     "calling_code": "98",
     "flag": "ir.png"
-}, {
+  },
+  {
+    "id": 106,
     "capital": "Baghdad",
     "citizenship": "Iraqi",
     "country_code": "368",
@@ -1800,14 +2012,16 @@
     "eea": 0,
     "calling_code": "964",
     "flag": "iq.png"
-}, {
+  },
+  {
+    "id": 107,
     "capital": "Dublin",
     "citizenship": "Irish",
     "country_code": "372",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Ireland (IE1)",
     "iso_3166_2": "IE",
     "iso_3166_3": "IRL",
@@ -1817,14 +2031,16 @@
     "eea": 1,
     "calling_code": "353",
     "flag": "ie.png"
-}, {
+  },
+  {
+    "id": 108,
     "capital": "(IL1)",
     "citizenship": "Israeli",
     "country_code": "376",
     "currency": "shekel",
     "currency_code": "ILS",
     "currency_sub_unit": "agora",
-    "currency_symbol": "₪",
+    "currency_symbol": "\u20aa",
     "full_name": "State of Israel",
     "iso_3166_2": "IL",
     "iso_3166_3": "ISR",
@@ -1834,14 +2050,16 @@
     "eea": 0,
     "calling_code": "972",
     "flag": "il.png"
-}, {
+  },
+  {
+    "id": 109,
     "capital": "Rome",
     "citizenship": "Italian",
     "country_code": "380",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Italian Republic",
     "iso_3166_2": "IT",
     "iso_3166_3": "ITA",
@@ -1851,7 +2069,9 @@
     "eea": 1,
     "calling_code": "39",
     "flag": "it.png"
-}, {
+  },
+  {
+    "id": 110,
     "capital": "Yamoussoukro (CI1)",
     "citizenship": "Ivorian",
     "country_code": "384",
@@ -1859,16 +2079,18 @@
     "currency_code": "XOF",
     "currency_sub_unit": "centime",
     "currency_symbol": "XOF",
-    "full_name": "Republic of Côte d’Ivoire",
+    "full_name": "Republic of C\u00f4te d\u2019Ivoire",
     "iso_3166_2": "CI",
     "iso_3166_3": "CIV",
-    "name": "Côte d'Ivoire",
+    "name": "C\u00f4te d'Ivoire",
     "region_code": "002",
     "sub_region_code": "011",
     "eea": 0,
     "calling_code": "225",
     "flag": "ci.png"
-}, {
+  },
+  {
+    "id": 111,
     "capital": "Kingston",
     "citizenship": "Jamaican",
     "country_code": "388",
@@ -1885,14 +2107,16 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "jm.png"
-}, {
+  },
+  {
+    "id": 112,
     "capital": "Tokyo",
     "citizenship": "Japanese",
     "country_code": "392",
     "currency": "yen (inv.)",
     "currency_code": "JPY",
     "currency_sub_unit": "(sen (inv.)) (JP1)",
-    "currency_symbol": "¥",
+    "currency_symbol": "\u00a5",
     "full_name": "Japan",
     "iso_3166_2": "JP",
     "iso_3166_3": "JPN",
@@ -1902,14 +2126,16 @@
     "eea": 0,
     "calling_code": "81",
     "flag": "jp.png"
-}, {
+  },
+  {
+    "id": 113,
     "capital": "Astana",
     "citizenship": "Kazakh",
     "country_code": "398",
     "currency": "tenge (inv.)",
     "currency_code": "KZT",
     "currency_sub_unit": "tiyn",
-    "currency_symbol": "лв",
+    "currency_symbol": "\u043b\u0432",
     "full_name": "Republic of Kazakhstan",
     "iso_3166_2": "KZ",
     "iso_3166_3": "KAZ",
@@ -1919,7 +2145,9 @@
     "eea": 0,
     "calling_code": "7",
     "flag": "kz.png"
-}, {
+  },
+  {
+    "id": 114,
     "capital": "Amman",
     "citizenship": "Jordanian",
     "country_code": "400",
@@ -1936,7 +2164,9 @@
     "eea": 0,
     "calling_code": "962",
     "flag": "jo.png"
-}, {
+  },
+  {
+    "id": 115,
     "capital": "Nairobi",
     "citizenship": "Kenyan",
     "country_code": "404",
@@ -1953,15 +2183,17 @@
     "eea": 0,
     "calling_code": "254",
     "flag": "ke.png"
-}, {
+  },
+  {
+    "id": 116,
     "capital": "Pyongyang",
     "citizenship": "North Korean",
     "country_code": "408",
     "currency": "North Korean won (inv.)",
     "currency_code": "KPW",
     "currency_sub_unit": "chun (inv.)",
-    "currency_symbol": "₩",
-    "full_name": "Democratic People’s Republic of Korea",
+    "currency_symbol": "\u20a9",
+    "full_name": "Democratic People\u2019s Republic of Korea",
     "iso_3166_2": "KP",
     "iso_3166_3": "PRK",
     "name": "Korea, Democratic People's Republic of",
@@ -1970,14 +2202,16 @@
     "eea": 0,
     "calling_code": "850",
     "flag": "kp.png"
-}, {
+  },
+  {
+    "id": 117,
     "capital": "Seoul",
     "citizenship": "South Korean",
     "country_code": "410",
     "currency": "South Korean won (inv.)",
     "currency_code": "KRW",
     "currency_sub_unit": "(chun (inv.))",
-    "currency_symbol": "₩",
+    "currency_symbol": "\u20a9",
     "full_name": "Republic of Korea",
     "iso_3166_2": "KR",
     "iso_3166_3": "KOR",
@@ -1987,7 +2221,9 @@
     "eea": 0,
     "calling_code": "82",
     "flag": "kr.png"
-}, {
+  },
+  {
+    "id": 118,
     "capital": "Kuwait City",
     "citizenship": "Kuwaiti",
     "country_code": "414",
@@ -2004,14 +2240,16 @@
     "eea": 0,
     "calling_code": "965",
     "flag": "kw.png"
-}, {
+  },
+  {
+    "id": 119,
     "capital": "Bishkek",
     "citizenship": "Kyrgyz",
     "country_code": "417",
     "currency": "som",
     "currency_code": "KGS",
     "currency_sub_unit": "tyiyn",
-    "currency_symbol": "лв",
+    "currency_symbol": "\u043b\u0432",
     "full_name": "Kyrgyz Republic",
     "iso_3166_2": "KG",
     "iso_3166_3": "KGZ",
@@ -2021,15 +2259,17 @@
     "eea": 0,
     "calling_code": "996",
     "flag": "kg.png"
-}, {
+  },
+  {
+    "id": 120,
     "capital": "Vientiane",
     "citizenship": "Lao",
     "country_code": "418",
     "currency": "kip (inv.)",
     "currency_code": "LAK",
     "currency_sub_unit": "(at (inv.))",
-    "currency_symbol": "₭",
-    "full_name": "Lao People’s Democratic Republic",
+    "currency_symbol": "\u20ad",
+    "full_name": "Lao People\u2019s Democratic Republic",
     "iso_3166_2": "LA",
     "iso_3166_3": "LAO",
     "name": "Lao People's Democratic Republic",
@@ -2038,14 +2278,16 @@
     "eea": 0,
     "calling_code": "856",
     "flag": "la.png"
-}, {
+  },
+  {
+    "id": 121,
     "capital": "Beirut",
     "citizenship": "Lebanese",
     "country_code": "422",
     "currency": "Lebanese pound",
     "currency_code": "LBP",
     "currency_sub_unit": "(piastre)",
-    "currency_symbol": "£",
+    "currency_symbol": "\u00a3",
     "full_name": "Lebanese Republic",
     "iso_3166_2": "LB",
     "iso_3166_3": "LBN",
@@ -2055,7 +2297,9 @@
     "eea": 0,
     "calling_code": "961",
     "flag": "lb.png"
-}, {
+  },
+  {
+    "id": 122,
     "capital": "Maseru",
     "citizenship": "Basotho",
     "country_code": "426",
@@ -2072,7 +2316,9 @@
     "eea": 0,
     "calling_code": "266",
     "flag": "ls.png"
-}, {
+  },
+  {
+    "id": 123,
     "capital": "Riga",
     "citizenship": "Latvian",
     "country_code": "428",
@@ -2089,7 +2335,9 @@
     "eea": 1,
     "calling_code": "371",
     "flag": "lv.png"
-}, {
+  },
+  {
+    "id": 124,
     "capital": "Monrovia",
     "citizenship": "Liberian",
     "country_code": "430",
@@ -2106,7 +2354,9 @@
     "eea": 0,
     "calling_code": "231",
     "flag": "lr.png"
-}, {
+  },
+  {
+    "id": 125,
     "capital": "Tripoli",
     "citizenship": "Libyan",
     "country_code": "434",
@@ -2114,7 +2364,7 @@
     "currency_code": "LYD",
     "currency_sub_unit": "dirham",
     "currency_symbol": "LYD",
-    "full_name": "Socialist People’s Libyan Arab Jamahiriya",
+    "full_name": "Socialist People\u2019s Libyan Arab Jamahiriya",
     "iso_3166_2": "LY",
     "iso_3166_3": "LBY",
     "name": "Libya",
@@ -2123,7 +2373,9 @@
     "eea": 0,
     "calling_code": "218",
     "flag": "ly.png"
-}, {
+  },
+  {
+    "id": 126,
     "capital": "Vaduz",
     "citizenship": "Liechtensteiner",
     "country_code": "438",
@@ -2140,7 +2392,9 @@
     "eea": 1,
     "calling_code": "423",
     "flag": "li.png"
-}, {
+  },
+  {
+    "id": 127,
     "capital": "Vilnius",
     "citizenship": "Lithuanian",
     "country_code": "440",
@@ -2157,14 +2411,16 @@
     "eea": 1,
     "calling_code": "370",
     "flag": "lt.png"
-}, {
+  },
+  {
+    "id": 128,
     "capital": "Luxembourg",
     "citizenship": "Luxembourger",
     "country_code": "442",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Grand Duchy of Luxembourg",
     "iso_3166_2": "LU",
     "iso_3166_3": "LUX",
@@ -2174,7 +2430,9 @@
     "eea": 1,
     "calling_code": "352",
     "flag": "lu.png"
-}, {
+  },
+  {
+    "id": 129,
     "capital": "Macao (MO3)",
     "citizenship": "Macanese",
     "country_code": "446",
@@ -2182,7 +2440,7 @@
     "currency_code": "MOP",
     "currency_sub_unit": "avo",
     "currency_symbol": "MOP",
-    "full_name": "Macao Special Administrative Region of the People’s Republic of China (MO2)",
+    "full_name": "Macao Special Administrative Region of the People\u2019s Republic of China (MO2)",
     "iso_3166_2": "MO",
     "iso_3166_3": "MAC",
     "name": "Macao",
@@ -2191,7 +2449,9 @@
     "eea": 0,
     "calling_code": "853",
     "flag": "mo.png"
-}, {
+  },
+  {
+    "id": 130,
     "capital": "Antananarivo",
     "citizenship": "Malagasy",
     "country_code": "450",
@@ -2208,7 +2468,9 @@
     "eea": 0,
     "calling_code": "261",
     "flag": "mg.png"
-}, {
+  },
+  {
+    "id": 131,
     "capital": "Lilongwe",
     "citizenship": "Malawian",
     "country_code": "454",
@@ -2225,7 +2487,9 @@
     "eea": 0,
     "calling_code": "265",
     "flag": "mw.png"
-}, {
+  },
+  {
+    "id": 132,
     "capital": "Kuala Lumpur (MY1)",
     "citizenship": "Malaysian",
     "country_code": "458",
@@ -2242,8 +2506,10 @@
     "eea": 0,
     "calling_code": "60",
     "flag": "my.png"
-}, {
-    "capital": "Malé",
+  },
+  {
+    "id": 133,
+    "capital": "Mal\u00e9",
     "citizenship": "Maldivian",
     "country_code": "462",
     "currency": "rufiyaa",
@@ -2259,7 +2525,9 @@
     "eea": 0,
     "calling_code": "960",
     "flag": "mv.png"
-}, {
+  },
+  {
+    "id": 134,
     "capital": "Bamako",
     "citizenship": "Malian",
     "country_code": "466",
@@ -2276,7 +2544,9 @@
     "eea": 0,
     "calling_code": "223",
     "flag": "ml.png"
-}, {
+  },
+  {
+    "id": 135,
     "capital": "Valletta",
     "citizenship": "Maltese",
     "country_code": "470",
@@ -2293,14 +2563,16 @@
     "eea": 1,
     "calling_code": "356",
     "flag": "mt.png"
-}, {
+  },
+  {
+    "id": 136,
     "capital": "Fort-de-France",
     "citizenship": "Martinican",
     "country_code": "474",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Martinique",
     "iso_3166_2": "MQ",
     "iso_3166_3": "MTQ",
@@ -2310,7 +2582,9 @@
     "eea": 0,
     "calling_code": "596",
     "flag": "mq.png"
-}, {
+  },
+  {
+    "id": 137,
     "capital": "Nouakchott",
     "citizenship": "Mauritanian",
     "country_code": "478",
@@ -2327,14 +2601,16 @@
     "eea": 0,
     "calling_code": "222",
     "flag": "mr.png"
-}, {
+  },
+  {
+    "id": 138,
     "capital": "Port Louis",
     "citizenship": "Mauritian",
     "country_code": "480",
     "currency": "Mauritian rupee",
     "currency_code": "MUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "₨",
+    "currency_symbol": "\u20a8",
     "full_name": "Republic of Mauritius",
     "iso_3166_2": "MU",
     "iso_3166_3": "MUS",
@@ -2344,7 +2620,9 @@
     "eea": 0,
     "calling_code": "230",
     "flag": "mu.png"
-}, {
+  },
+  {
+    "id": 139,
     "capital": "Mexico City",
     "citizenship": "Mexican",
     "country_code": "484",
@@ -2361,14 +2639,16 @@
     "eea": 0,
     "calling_code": "52",
     "flag": "mx.png"
-}, {
+  },
+  {
+    "id": 140,
     "capital": "Monaco",
     "citizenship": "Monegasque",
     "country_code": "492",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Principality of Monaco",
     "iso_3166_2": "MC",
     "iso_3166_3": "MCO",
@@ -2378,14 +2658,16 @@
     "eea": 0,
     "calling_code": "377",
     "flag": "mc.png"
-}, {
+  },
+  {
+    "id": 141,
     "capital": "Ulan Bator",
     "citizenship": "Mongolian",
     "country_code": "496",
     "currency": "tugrik",
     "currency_code": "MNT",
-    "currency_sub_unit": "möngö (inv.)",
-    "currency_symbol": "₮",
+    "currency_sub_unit": "m\u00f6ng\u00f6 (inv.)",
+    "currency_symbol": "\u20ae",
     "full_name": "Mongolia",
     "iso_3166_2": "MN",
     "iso_3166_3": "MNG",
@@ -2395,7 +2677,9 @@
     "eea": 0,
     "calling_code": "976",
     "flag": "mn.png"
-}, {
+  },
+  {
+    "id": 142,
     "capital": "Chisinau",
     "citizenship": "Moldovan",
     "country_code": "498",
@@ -2412,7 +2696,9 @@
     "eea": 0,
     "calling_code": "373",
     "flag": "md.png"
-}, {
+  },
+  {
+    "id": 143,
     "capital": "Podgorica",
     "citizenship": "Montenegrin",
     "country_code": "499",
@@ -2429,7 +2715,9 @@
     "eea": 0,
     "calling_code": "382",
     "flag": null
-}, {
+  },
+  {
+    "id": 144,
     "capital": "Plymouth (MS2)",
     "citizenship": "Montserratian",
     "country_code": "500",
@@ -2446,7 +2734,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "ms.png"
-}, {
+  },
+  {
+    "id": 145,
     "capital": "Rabat",
     "citizenship": "Moroccan",
     "country_code": "504",
@@ -2463,7 +2753,9 @@
     "eea": 0,
     "calling_code": "212",
     "flag": "ma.png"
-}, {
+  },
+  {
+    "id": 146,
     "capital": "Maputo",
     "citizenship": "Mozambican",
     "country_code": "508",
@@ -2480,14 +2772,16 @@
     "eea": 0,
     "calling_code": "258",
     "flag": "mz.png"
-}, {
+  },
+  {
+    "id": 147,
     "capital": "Muscat",
     "citizenship": "Omani",
     "country_code": "512",
     "currency": "Omani rial",
     "currency_code": "OMR",
     "currency_sub_unit": "baiza",
-    "currency_symbol": "﷼",
+    "currency_symbol": "\ufdfc",
     "full_name": "Sultanate of Oman",
     "iso_3166_2": "OM",
     "iso_3166_3": "OMN",
@@ -2497,7 +2791,9 @@
     "eea": 0,
     "calling_code": "968",
     "flag": "om.png"
-}, {
+  },
+  {
+    "id": 148,
     "capital": "Windhoek",
     "citizenship": "Namibian",
     "country_code": "516",
@@ -2514,7 +2810,9 @@
     "eea": 0,
     "calling_code": "264",
     "flag": "na.png"
-}, {
+  },
+  {
+    "id": 149,
     "capital": "Yaren",
     "citizenship": "Nauruan",
     "country_code": "520",
@@ -2531,14 +2829,16 @@
     "eea": 0,
     "calling_code": "674",
     "flag": "nr.png"
-}, {
+  },
+  {
+    "id": 150,
     "capital": "Kathmandu",
     "citizenship": "Nepalese",
     "country_code": "524",
     "currency": "Nepalese rupee",
     "currency_code": "NPR",
     "currency_sub_unit": "paisa (inv.)",
-    "currency_symbol": "₨",
+    "currency_symbol": "\u20a8",
     "full_name": "Nepal",
     "iso_3166_2": "NP",
     "iso_3166_3": "NPL",
@@ -2548,14 +2848,16 @@
     "eea": 0,
     "calling_code": "977",
     "flag": "np.png"
-}, {
+  },
+  {
+    "id": 151,
     "capital": "Amsterdam (NL2)",
     "citizenship": "Dutch",
     "country_code": "528",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Kingdom of the Netherlands",
     "iso_3166_2": "NL",
     "iso_3166_3": "NLD",
@@ -2565,31 +2867,35 @@
     "eea": 1,
     "calling_code": "31",
     "flag": "nl.png"
-}, {
+  },
+  {
+    "id": 152,
     "capital": "Willemstad",
-    "citizenship": "Curaçaoan",
+    "citizenship": "Cura\u00e7aoan",
     "country_code": "531",
     "currency": "Netherlands Antillean guilder (CW1)",
     "currency_code": "ANG",
     "currency_sub_unit": "cent",
     "currency_symbol": null,
-    "full_name": "Curaçao",
+    "full_name": "Cura\u00e7ao",
     "iso_3166_2": "CW",
     "iso_3166_3": "CUW",
-    "name": "Curaçao",
+    "name": "Cura\u00e7ao",
     "region_code": "019",
     "sub_region_code": "029",
     "eea": 0,
     "calling_code": "599",
     "flag": null
-}, {
+  },
+  {
+    "id": 153,
     "capital": "Oranjestad",
     "citizenship": "Aruban",
     "country_code": "533",
     "currency": "Aruban guilder",
     "currency_code": "AWG",
     "currency_sub_unit": "cent",
-    "currency_symbol": "ƒ",
+    "currency_symbol": "\u0192",
     "full_name": "Aruba",
     "iso_3166_2": "AW",
     "iso_3166_3": "ABW",
@@ -2599,7 +2905,9 @@
     "eea": 0,
     "calling_code": "297",
     "flag": "aw.png"
-}, {
+  },
+  {
+    "id": 154,
     "capital": "Philipsburg",
     "citizenship": "Sint Maartener",
     "country_code": "534",
@@ -2616,7 +2924,9 @@
     "eea": 0,
     "calling_code": "721",
     "flag": null
-}, {
+  },
+  {
+    "id": 155,
     "capital": null,
     "citizenship": "of Bonaire, Sint Eustatius and Saba",
     "country_code": "535",
@@ -2633,8 +2943,10 @@
     "eea": 0,
     "calling_code": "599",
     "flag": null
-}, {
-    "capital": "Nouméa",
+  },
+  {
+    "id": 156,
+    "capital": "Noum\u00e9a",
     "citizenship": "New Caledonian",
     "country_code": "540",
     "currency": "CFP franc",
@@ -2650,7 +2962,9 @@
     "eea": 0,
     "calling_code": "687",
     "flag": "nc.png"
-}, {
+  },
+  {
+    "id": 157,
     "capital": "Port Vila",
     "citizenship": "Vanuatuan",
     "country_code": "548",
@@ -2667,7 +2981,9 @@
     "eea": 0,
     "calling_code": "678",
     "flag": "vu.png"
-}, {
+  },
+  {
+    "id": 158,
     "capital": "Wellington",
     "citizenship": "New Zealander",
     "country_code": "554",
@@ -2684,11 +3000,13 @@
     "eea": 0,
     "calling_code": "64",
     "flag": "nz.png"
-}, {
+  },
+  {
+    "id": 159,
     "capital": "Managua",
     "citizenship": "Nicaraguan",
     "country_code": "558",
-    "currency": "córdoba oro",
+    "currency": "c\u00f3rdoba oro",
     "currency_code": "NIO",
     "currency_sub_unit": "centavo",
     "currency_symbol": "C$",
@@ -2701,7 +3019,9 @@
     "eea": 0,
     "calling_code": "505",
     "flag": "ni.png"
-}, {
+  },
+  {
+    "id": 160,
     "capital": "Niamey",
     "citizenship": "Nigerien",
     "country_code": "562",
@@ -2718,14 +3038,16 @@
     "eea": 0,
     "calling_code": "227",
     "flag": "ne.png"
-}, {
+  },
+  {
+    "id": 161,
     "capital": "Abuja",
     "citizenship": "Nigerian",
     "country_code": "566",
     "currency": "naira (inv.)",
     "currency_code": "NGN",
     "currency_sub_unit": "kobo (inv.)",
-    "currency_symbol": "₦",
+    "currency_symbol": "\u20a6",
     "full_name": "Federal Republic of Nigeria",
     "iso_3166_2": "NG",
     "iso_3166_3": "NGA",
@@ -2735,7 +3057,9 @@
     "eea": 0,
     "calling_code": "234",
     "flag": "ng.png"
-}, {
+  },
+  {
+    "id": 162,
     "capital": "Alofi",
     "citizenship": "Niuean",
     "country_code": "570",
@@ -2752,7 +3076,9 @@
     "eea": 0,
     "calling_code": "683",
     "flag": "nu.png"
-}, {
+  },
+  {
+    "id": 163,
     "capital": "Kingston",
     "citizenship": "Norfolk Islander",
     "country_code": "574",
@@ -2769,13 +3095,15 @@
     "eea": 0,
     "calling_code": "672",
     "flag": "nf.png"
-}, {
+  },
+  {
+    "id": 164,
     "capital": "Oslo",
     "citizenship": "Norwegian",
     "country_code": "578",
     "currency": "Norwegian krone (pl. kroner)",
     "currency_code": "NOK",
-    "currency_sub_unit": "øre (inv.)",
+    "currency_sub_unit": "\u00f8re (inv.)",
     "currency_symbol": "kr",
     "full_name": "Kingdom of Norway",
     "iso_3166_2": "NO",
@@ -2786,7 +3114,9 @@
     "eea": 1,
     "calling_code": "47",
     "flag": "no.png"
-}, {
+  },
+  {
+    "id": 165,
     "capital": "Saipan",
     "citizenship": "Northern Mariana Islander",
     "country_code": "580",
@@ -2803,7 +3133,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "mp.png"
-}, {
+  },
+  {
+    "id": 166,
     "capital": "United States Minor Outlying Islands",
     "citizenship": "of United States Minor Outlying Islands",
     "country_code": "581",
@@ -2820,7 +3152,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "um.png"
-}, {
+  },
+  {
+    "id": 167,
     "capital": "Palikir",
     "citizenship": "Micronesian",
     "country_code": "583",
@@ -2837,7 +3171,9 @@
     "eea": 0,
     "calling_code": "691",
     "flag": "fm.png"
-}, {
+  },
+  {
+    "id": 168,
     "capital": "Majuro",
     "citizenship": "Marshallese",
     "country_code": "584",
@@ -2854,7 +3190,9 @@
     "eea": 0,
     "calling_code": "692",
     "flag": "mh.png"
-}, {
+  },
+  {
+    "id": 169,
     "capital": "Melekeok",
     "citizenship": "Palauan",
     "country_code": "585",
@@ -2871,14 +3209,16 @@
     "eea": 0,
     "calling_code": "680",
     "flag": "pw.png"
-}, {
+  },
+  {
+    "id": 170,
     "capital": "Islamabad",
     "citizenship": "Pakistani",
     "country_code": "586",
     "currency": "Pakistani rupee",
     "currency_code": "PKR",
     "currency_sub_unit": "paisa",
-    "currency_symbol": "₨",
+    "currency_symbol": "\u20a8",
     "full_name": "Islamic Republic of Pakistan",
     "iso_3166_2": "PK",
     "iso_3166_3": "PAK",
@@ -2888,14 +3228,16 @@
     "eea": 0,
     "calling_code": "92",
     "flag": "pk.png"
-}, {
+  },
+  {
+    "id": 171,
     "capital": "Panama City",
     "citizenship": "Panamanian",
     "country_code": "591",
     "currency": "balboa",
     "currency_code": "PAB",
-    "currency_sub_unit": "centésimo",
-    "currency_symbol": "B/.",
+    "currency_sub_unit": "cent\u00e9simo",
+    "currency_symbol": "B\/.",
     "full_name": "Republic of Panama",
     "iso_3166_2": "PA",
     "iso_3166_3": "PAN",
@@ -2905,7 +3247,9 @@
     "eea": 0,
     "calling_code": "507",
     "flag": "pa.png"
-}, {
+  },
+  {
+    "id": 172,
     "capital": "Port Moresby",
     "citizenship": "Papua New Guinean",
     "country_code": "598",
@@ -2922,13 +3266,15 @@
     "eea": 0,
     "calling_code": "675",
     "flag": "pg.png"
-}, {
-    "capital": "Asunción",
+  },
+  {
+    "id": 173,
+    "capital": "Asunci\u00f3n",
     "citizenship": "Paraguayan",
     "country_code": "600",
-    "currency": "guaraní",
+    "currency": "guaran\u00ed",
     "currency_code": "PYG",
-    "currency_sub_unit": "céntimo",
+    "currency_sub_unit": "c\u00e9ntimo",
     "currency_symbol": "Gs",
     "full_name": "Republic of Paraguay",
     "iso_3166_2": "PY",
@@ -2939,14 +3285,16 @@
     "eea": 0,
     "calling_code": "595",
     "flag": "py.png"
-}, {
+  },
+  {
+    "id": 174,
     "capital": "Lima",
     "citizenship": "Peruvian",
     "country_code": "604",
     "currency": "new sol",
     "currency_code": "PEN",
-    "currency_sub_unit": "céntimo",
-    "currency_symbol": "S/.",
+    "currency_sub_unit": "c\u00e9ntimo",
+    "currency_symbol": "S\/.",
     "full_name": "Republic of Peru",
     "iso_3166_2": "PE",
     "iso_3166_3": "PER",
@@ -2956,7 +3304,9 @@
     "eea": 0,
     "calling_code": "51",
     "flag": "pe.png"
-}, {
+  },
+  {
+    "id": 175,
     "capital": "Manila",
     "citizenship": "Filipino",
     "country_code": "608",
@@ -2973,7 +3323,9 @@
     "eea": 0,
     "calling_code": "63",
     "flag": "ph.png"
-}, {
+  },
+  {
+    "id": 176,
     "capital": "Adamstown",
     "citizenship": "Pitcairner",
     "country_code": "612",
@@ -2990,14 +3342,16 @@
     "eea": 0,
     "calling_code": "649",
     "flag": "pn.png"
-}, {
+  },
+  {
+    "id": 177,
     "capital": "Warsaw",
     "citizenship": "Polish",
     "country_code": "616",
     "currency": "zloty",
     "currency_code": "PLN",
     "currency_sub_unit": "grosz (pl. groszy)",
-    "currency_symbol": "zł",
+    "currency_symbol": "z\u0142",
     "full_name": "Republic of Poland",
     "iso_3166_2": "PL",
     "iso_3166_3": "POL",
@@ -3007,14 +3361,16 @@
     "eea": 1,
     "calling_code": "48",
     "flag": "pl.png"
-}, {
+  },
+  {
+    "id": 178,
     "capital": "Lisbon",
     "citizenship": "Portuguese",
     "country_code": "620",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Portuguese Republic",
     "iso_3166_2": "PT",
     "iso_3166_3": "PRT",
@@ -3024,7 +3380,9 @@
     "eea": 1,
     "calling_code": "351",
     "flag": "pt.png"
-}, {
+  },
+  {
+    "id": 179,
     "capital": "Bissau",
     "citizenship": "Guinea-Bissau national",
     "country_code": "624",
@@ -3041,7 +3399,9 @@
     "eea": 0,
     "calling_code": "245",
     "flag": "gw.png"
-}, {
+  },
+  {
+    "id": 180,
     "capital": "Dili",
     "citizenship": "East Timorese",
     "country_code": "626",
@@ -3058,7 +3418,9 @@
     "eea": 0,
     "calling_code": "670",
     "flag": "tl.png"
-}, {
+  },
+  {
+    "id": 181,
     "capital": "San Juan",
     "citizenship": "Puerto Rican",
     "country_code": "630",
@@ -3075,14 +3437,16 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "pr.png"
-}, {
+  },
+  {
+    "id": 182,
     "capital": "Doha",
     "citizenship": "Qatari",
     "country_code": "634",
     "currency": "Qatari riyal",
     "currency_code": "QAR",
     "currency_sub_unit": "dirham",
-    "currency_symbol": "﷼",
+    "currency_symbol": "\ufdfc",
     "full_name": "State of Qatar",
     "iso_3166_2": "QA",
     "iso_3166_3": "QAT",
@@ -3092,24 +3456,28 @@
     "eea": 0,
     "calling_code": "974",
     "flag": "qa.png"
-}, {
+  },
+  {
+    "id": 183,
     "capital": "Saint-Denis",
     "citizenship": "Reunionese",
     "country_code": "638",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
-    "full_name": "Réunion",
+    "currency_symbol": "\u20ac",
+    "full_name": "R\u00e9union",
     "iso_3166_2": "RE",
     "iso_3166_3": "REU",
-    "name": "Réunion",
+    "name": "R\u00e9union",
     "region_code": "002",
     "sub_region_code": "014",
     "eea": 0,
     "calling_code": "262",
     "flag": "re.png"
-}, {
+  },
+  {
+    "id": 184,
     "capital": "Bucharest",
     "citizenship": "Romanian",
     "country_code": "642",
@@ -3126,14 +3494,16 @@
     "eea": 1,
     "calling_code": "40",
     "flag": "ro.png"
-}, {
+  },
+  {
+    "id": 185,
     "capital": "Moscow",
     "citizenship": "Russian",
     "country_code": "643",
     "currency": "Russian rouble",
     "currency_code": "RUB",
     "currency_sub_unit": "kopek",
-    "currency_symbol": "руб",
+    "currency_symbol": "\u0440\u0443\u0431",
     "full_name": "Russian Federation",
     "iso_3166_2": "RU",
     "iso_3166_3": "RUS",
@@ -3143,7 +3513,9 @@
     "eea": 0,
     "calling_code": "7",
     "flag": "ru.png"
-}, {
+  },
+  {
+    "id": 186,
     "capital": "Kigali",
     "citizenship": "Rwandan; Rwandese",
     "country_code": "646",
@@ -3160,31 +3532,35 @@
     "eea": 0,
     "calling_code": "250",
     "flag": "rw.png"
-}, {
+  },
+  {
+    "id": 187,
     "capital": "Gustavia",
-    "citizenship": "of Saint Barthélemy",
+    "citizenship": "of Saint Barth\u00e9lemy",
     "country_code": "652",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
     "currency_symbol": null,
-    "full_name": "Collectivity of Saint Barthélemy",
+    "full_name": "Collectivity of Saint Barth\u00e9lemy",
     "iso_3166_2": "BL",
     "iso_3166_3": "BLM",
-    "name": "Saint Barthélemy",
+    "name": "Saint Barth\u00e9lemy",
     "region_code": "019",
     "sub_region_code": "029",
     "eea": 0,
     "calling_code": "590",
     "flag": null
-}, {
+  },
+  {
+    "id": 188,
     "capital": "Jamestown",
     "citizenship": "Saint Helenian",
     "country_code": "654",
     "currency": "Saint Helena pound",
     "currency_code": "SHP",
     "currency_sub_unit": "penny",
-    "currency_symbol": "£",
+    "currency_symbol": "\u00a3",
     "full_name": "Saint Helena, Ascension and Tristan da Cunha",
     "iso_3166_2": "SH",
     "iso_3166_3": "SHN",
@@ -3194,7 +3570,9 @@
     "eea": 0,
     "calling_code": "290",
     "flag": "sh.png"
-}, {
+  },
+  {
+    "id": 189,
     "capital": "Basseterre",
     "citizenship": "Kittsian; Nevisian",
     "country_code": "659",
@@ -3211,7 +3589,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "kn.png"
-}, {
+  },
+  {
+    "id": 190,
     "capital": "The Valley",
     "citizenship": "Anguillan",
     "country_code": "660",
@@ -3228,7 +3608,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "ai.png"
-}, {
+  },
+  {
+    "id": 191,
     "capital": "Castries",
     "citizenship": "Saint Lucian",
     "country_code": "662",
@@ -3245,7 +3627,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "lc.png"
-}, {
+  },
+  {
+    "id": 192,
     "capital": "Marigot",
     "citizenship": "of Saint Martin",
     "country_code": "663",
@@ -3262,14 +3646,16 @@
     "eea": 0,
     "calling_code": "590",
     "flag": null
-}, {
+  },
+  {
+    "id": 193,
     "capital": "Saint-Pierre",
     "citizenship": "St-Pierrais; Miquelonnais",
     "country_code": "666",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Territorial Collectivity of Saint Pierre and Miquelon",
     "iso_3166_2": "PM",
     "iso_3166_3": "SPM",
@@ -3279,7 +3665,9 @@
     "eea": 0,
     "calling_code": "508",
     "flag": "pm.png"
-}, {
+  },
+  {
+    "id": 194,
     "capital": "Kingstown",
     "citizenship": "Vincentian",
     "country_code": "670",
@@ -3296,14 +3684,16 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "vc.png"
-}, {
+  },
+  {
+    "id": 195,
     "capital": "San Marino",
     "citizenship": "San Marinese",
     "country_code": "674",
     "currency": "euro",
     "currency_code": "EUR ",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Republic of San Marino",
     "iso_3166_2": "SM",
     "iso_3166_3": "SMR",
@@ -3313,15 +3703,17 @@
     "eea": 0,
     "calling_code": "378",
     "flag": "sm.png"
-}, {
-    "capital": "São Tomé",
-    "citizenship": "São Toméan",
+  },
+  {
+    "id": 196,
+    "capital": "S\u00e3o Tom\u00e9",
+    "citizenship": "S\u00e3o Tom\u00e9an",
     "country_code": "678",
     "currency": "dobra",
     "currency_code": "STD",
     "currency_sub_unit": "centavo",
     "currency_symbol": "Db",
-    "full_name": "Democratic Republic of São Tomé and Príncipe",
+    "full_name": "Democratic Republic of S\u00e3o Tom\u00e9 and Pr\u00edncipe",
     "iso_3166_2": "ST",
     "iso_3166_3": "STP",
     "name": "Sao Tome and Principe",
@@ -3330,14 +3722,16 @@
     "eea": 0,
     "calling_code": "239",
     "flag": "st.png"
-}, {
+  },
+  {
+    "id": 197,
     "capital": "Riyadh",
     "citizenship": "Saudi Arabian",
     "country_code": "682",
     "currency": "riyal",
     "currency_code": "SAR",
     "currency_sub_unit": "halala",
-    "currency_symbol": "﷼",
+    "currency_symbol": "\ufdfc",
     "full_name": "Kingdom of Saudi Arabia",
     "iso_3166_2": "SA",
     "iso_3166_3": "SAU",
@@ -3347,7 +3741,9 @@
     "eea": 0,
     "calling_code": "966",
     "flag": "sa.png"
-}, {
+  },
+  {
+    "id": 198,
     "capital": "Dakar",
     "citizenship": "Senegalese",
     "country_code": "686",
@@ -3364,7 +3760,9 @@
     "eea": 0,
     "calling_code": "221",
     "flag": "sn.png"
-}, {
+  },
+  {
+    "id": 199,
     "capital": "Belgrade",
     "citizenship": "Serb",
     "country_code": "688",
@@ -3381,14 +3779,16 @@
     "eea": 0,
     "calling_code": "381",
     "flag": null
-}, {
+  },
+  {
+    "id": 200,
     "capital": "Victoria",
     "citizenship": "Seychellois",
     "country_code": "690",
     "currency": "Seychelles rupee",
     "currency_code": "SCR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "₨",
+    "currency_symbol": "\u20a8",
     "full_name": "Republic of Seychelles",
     "iso_3166_2": "SC",
     "iso_3166_3": "SYC",
@@ -3398,7 +3798,9 @@
     "eea": 0,
     "calling_code": "248",
     "flag": "sc.png"
-}, {
+  },
+  {
+    "id": 201,
     "capital": "Freetown",
     "citizenship": "Sierra Leonean",
     "country_code": "694",
@@ -3415,7 +3817,9 @@
     "eea": 0,
     "calling_code": "232",
     "flag": "sl.png"
-}, {
+  },
+  {
+    "id": 202,
     "capital": "Singapore",
     "citizenship": "Singaporean",
     "country_code": "702",
@@ -3432,7 +3836,9 @@
     "eea": 0,
     "calling_code": "65",
     "flag": "sg.png"
-}, {
+  },
+  {
+    "id": 203,
     "capital": "Bratislava",
     "citizenship": "Slovak",
     "country_code": "703",
@@ -3449,14 +3855,16 @@
     "eea": 1,
     "calling_code": "421",
     "flag": "sk.png"
-}, {
+  },
+  {
+    "id": 204,
     "capital": "Hanoi",
     "citizenship": "Vietnamese",
     "country_code": "704",
     "currency": "dong",
     "currency_code": "VND",
-    "currency_sub_unit": "(10 hào",
-    "currency_symbol": "₫",
+    "currency_sub_unit": "(10 h\u00e0o",
+    "currency_symbol": "\u20ab",
     "full_name": "Socialist Republic of Vietnam",
     "iso_3166_2": "VN",
     "iso_3166_3": "VNM",
@@ -3466,14 +3874,16 @@
     "eea": 0,
     "calling_code": "84",
     "flag": "vn.png"
-}, {
+  },
+  {
+    "id": 205,
     "capital": "Ljubljana",
     "citizenship": "Slovene",
     "country_code": "705",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Republic of Slovenia",
     "iso_3166_2": "SI",
     "iso_3166_3": "SVN",
@@ -3483,7 +3893,9 @@
     "eea": 1,
     "calling_code": "386",
     "flag": "si.png"
-}, {
+  },
+  {
+    "id": 206,
     "capital": "Mogadishu",
     "citizenship": "Somali",
     "country_code": "706",
@@ -3500,7 +3912,9 @@
     "eea": 0,
     "calling_code": "252",
     "flag": "so.png"
-}, {
+  },
+  {
+    "id": 207,
     "capital": "Pretoria (ZA1)",
     "citizenship": "South African",
     "country_code": "710",
@@ -3517,7 +3931,9 @@
     "eea": 0,
     "calling_code": "27",
     "flag": "za.png"
-}, {
+  },
+  {
+    "id": 208,
     "capital": "Harare",
     "citizenship": "Zimbabwean",
     "country_code": "716",
@@ -3534,14 +3950,16 @@
     "eea": 0,
     "calling_code": "263",
     "flag": "zw.png"
-}, {
+  },
+  {
+    "id": 209,
     "capital": "Madrid",
     "citizenship": "Spaniard",
     "country_code": "724",
     "currency": "euro",
     "currency_code": "EUR",
     "currency_sub_unit": "cent",
-    "currency_symbol": "€",
+    "currency_symbol": "\u20ac",
     "full_name": "Kingdom of Spain",
     "iso_3166_2": "ES",
     "iso_3166_3": "ESP",
@@ -3551,7 +3969,9 @@
     "eea": 1,
     "calling_code": "34",
     "flag": "es.png"
-}, {
+  },
+  {
+    "id": 210,
     "capital": "Juba",
     "citizenship": "South Sudanese",
     "country_code": "728",
@@ -3568,7 +3988,9 @@
     "eea": 0,
     "calling_code": "211",
     "flag": null
-}, {
+  },
+  {
+    "id": 211,
     "capital": "Khartoum",
     "citizenship": "Sudanese",
     "country_code": "729",
@@ -3585,7 +4007,9 @@
     "eea": 0,
     "calling_code": "249",
     "flag": null
-}, {
+  },
+  {
+    "id": 212,
     "capital": "Al aaiun",
     "citizenship": "Sahrawi",
     "country_code": "732",
@@ -3602,7 +4026,9 @@
     "eea": 0,
     "calling_code": "212",
     "flag": "eh.png"
-}, {
+  },
+  {
+    "id": 213,
     "capital": "Paramaribo",
     "citizenship": "Surinamese",
     "country_code": "740",
@@ -3619,13 +4045,15 @@
     "eea": 0,
     "calling_code": "597",
     "flag": "sr.png"
-}, {
+  },
+  {
+    "id": 214,
     "capital": "Longyearbyen",
     "citizenship": "of Svalbard",
     "country_code": "744",
     "currency": "Norwegian krone (pl. kroner)",
     "currency_code": "NOK",
-    "currency_sub_unit": "øre (inv.)",
+    "currency_sub_unit": "\u00f8re (inv.)",
     "currency_symbol": "kr",
     "full_name": "Svalbard and Jan Mayen",
     "iso_3166_2": "SJ",
@@ -3636,7 +4064,9 @@
     "eea": 0,
     "calling_code": "47",
     "flag": "sj.png"
-}, {
+  },
+  {
+    "id": 215,
     "capital": "Mbabane",
     "citizenship": "Swazi",
     "country_code": "748",
@@ -3653,13 +4083,15 @@
     "eea": 0,
     "calling_code": "268",
     "flag": "sz.png"
-}, {
+  },
+  {
+    "id": 216,
     "capital": "Stockholm",
     "citizenship": "Swedish",
     "country_code": "752",
     "currency": "krona (pl. kronor)",
     "currency_code": "SEK",
-    "currency_sub_unit": "öre (inv.)",
+    "currency_sub_unit": "\u00f6re (inv.)",
     "currency_symbol": "kr",
     "full_name": "Kingdom of Sweden",
     "iso_3166_2": "SE",
@@ -3670,7 +4102,9 @@
     "eea": 1,
     "calling_code": "46",
     "flag": "se.png"
-}, {
+  },
+  {
+    "id": 217,
     "capital": "Berne",
     "citizenship": "Swiss",
     "country_code": "756",
@@ -3687,14 +4121,16 @@
     "eea": 1,
     "calling_code": "41",
     "flag": "ch.png"
-}, {
+  },
+  {
+    "id": 218,
     "capital": "Damascus",
     "citizenship": "Syrian",
     "country_code": "760",
     "currency": "Syrian pound",
     "currency_code": "SYP",
     "currency_sub_unit": "piastre",
-    "currency_symbol": "£",
+    "currency_symbol": "\u00a3",
     "full_name": "Syrian Arab Republic",
     "iso_3166_2": "SY",
     "iso_3166_3": "SYR",
@@ -3704,7 +4140,9 @@
     "eea": 0,
     "calling_code": "963",
     "flag": "sy.png"
-}, {
+  },
+  {
+    "id": 219,
     "capital": "Dushanbe",
     "citizenship": "Tajik",
     "country_code": "762",
@@ -3721,14 +4159,16 @@
     "eea": 0,
     "calling_code": "992",
     "flag": "tj.png"
-}, {
+  },
+  {
+    "id": 220,
     "capital": "Bangkok",
     "citizenship": "Thai",
     "country_code": "764",
     "currency": "baht (inv.)",
     "currency_code": "THB",
     "currency_sub_unit": "satang (inv.)",
-    "currency_symbol": "฿",
+    "currency_symbol": "\u0e3f",
     "full_name": "Kingdom of Thailand",
     "iso_3166_2": "TH",
     "iso_3166_3": "THA",
@@ -3738,8 +4178,10 @@
     "eea": 0,
     "calling_code": "66",
     "flag": "th.png"
-}, {
-    "capital": "Lomé",
+  },
+  {
+    "id": 221,
+    "capital": "Lom\u00e9",
     "citizenship": "Togolese",
     "country_code": "768",
     "currency": "CFA franc (BCEAO)",
@@ -3755,7 +4197,9 @@
     "eea": 0,
     "calling_code": "228",
     "flag": "tg.png"
-}, {
+  },
+  {
+    "id": 222,
     "capital": "(TK2)",
     "citizenship": "Tokelauan",
     "country_code": "772",
@@ -3772,11 +4216,13 @@
     "eea": 0,
     "calling_code": "690",
     "flag": "tk.png"
-}, {
-    "capital": "Nuku’alofa",
+  },
+  {
+    "id": 223,
+    "capital": "Nuku\u2019alofa",
     "citizenship": "Tongan",
     "country_code": "776",
-    "currency": "pa’anga (inv.)",
+    "currency": "pa\u2019anga (inv.)",
     "currency_code": "TOP",
     "currency_sub_unit": "seniti (inv.)",
     "currency_symbol": "T$",
@@ -3789,7 +4235,9 @@
     "eea": 0,
     "calling_code": "676",
     "flag": "to.png"
-}, {
+  },
+  {
+    "id": 224,
     "capital": "Port of Spain",
     "citizenship": "Trinidadian; Tobagonian",
     "country_code": "780",
@@ -3806,7 +4254,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "tt.png"
-}, {
+  },
+  {
+    "id": 225,
     "capital": "Abu Dhabi",
     "citizenship": "Emirian",
     "country_code": "784",
@@ -3823,7 +4273,9 @@
     "eea": 0,
     "calling_code": "971",
     "flag": "ae.png"
-}, {
+  },
+  {
+    "id": 226,
     "capital": "Tunis",
     "citizenship": "Tunisian",
     "country_code": "788",
@@ -3840,7 +4292,9 @@
     "eea": 0,
     "calling_code": "216",
     "flag": "tn.png"
-}, {
+  },
+  {
+    "id": 227,
     "capital": "Ankara",
     "citizenship": "Turk",
     "country_code": "792",
@@ -3857,7 +4311,9 @@
     "eea": 0,
     "calling_code": "90",
     "flag": "tr.png"
-}, {
+  },
+  {
+    "id": 228,
     "capital": "Ashgabat",
     "citizenship": "Turkmen",
     "country_code": "795",
@@ -3874,7 +4330,9 @@
     "eea": 0,
     "calling_code": "993",
     "flag": "tm.png"
-}, {
+  },
+  {
+    "id": 229,
     "capital": "Cockburn Town",
     "citizenship": "Turks and Caicos Islander",
     "country_code": "796",
@@ -3891,7 +4349,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "tc.png"
-}, {
+  },
+  {
+    "id": 230,
     "capital": "Funafuti",
     "citizenship": "Tuvaluan",
     "country_code": "798",
@@ -3908,7 +4368,9 @@
     "eea": 0,
     "calling_code": "688",
     "flag": "tv.png"
-}, {
+  },
+  {
+    "id": 231,
     "capital": "Kampala",
     "citizenship": "Ugandan",
     "country_code": "800",
@@ -3925,14 +4387,16 @@
     "eea": 0,
     "calling_code": "256",
     "flag": "ug.png"
-}, {
+  },
+  {
+    "id": 232,
     "capital": "Kiev",
     "citizenship": "Ukrainian",
     "country_code": "804",
     "currency": "hryvnia",
     "currency_code": "UAH",
     "currency_sub_unit": "kopiyka",
-    "currency_symbol": "₴",
+    "currency_symbol": "\u20b4",
     "full_name": "Ukraine",
     "iso_3166_2": "UA",
     "iso_3166_3": "UKR",
@@ -3942,14 +4406,16 @@
     "eea": 0,
     "calling_code": "380",
     "flag": "ua.png"
-}, {
+  },
+  {
+    "id": 233,
     "capital": "Skopje",
     "citizenship": "of the former Yugoslav Republic of Macedonia",
     "country_code": "807",
     "currency": "denar (pl. denars)",
     "currency_code": "MKD",
     "currency_sub_unit": "deni (inv.)",
-    "currency_symbol": "ден",
+    "currency_symbol": "\u0434\u0435\u043d",
     "full_name": "the former Yugoslav Republic of Macedonia",
     "iso_3166_2": "MK",
     "iso_3166_3": "MKD",
@@ -3959,14 +4425,16 @@
     "eea": 0,
     "calling_code": "389",
     "flag": "mk.png"
-}, {
+  },
+  {
+    "id": 234,
     "capital": "Cairo",
     "citizenship": "Egyptian",
     "country_code": "818",
     "currency": "Egyptian pound",
     "currency_code": "EGP",
     "currency_sub_unit": "piastre",
-    "currency_symbol": "£",
+    "currency_symbol": "\u00a3",
     "full_name": "Arab Republic of Egypt",
     "iso_3166_2": "EG",
     "iso_3166_3": "EGY",
@@ -3976,14 +4444,16 @@
     "eea": 0,
     "calling_code": "20",
     "flag": "eg.png"
-}, {
+  },
+  {
+    "id": 235,
     "capital": "London",
     "citizenship": "British",
     "country_code": "826",
     "currency": "pound sterling",
     "currency_code": "GBP",
     "currency_sub_unit": "penny (pl. pence)",
-    "currency_symbol": "£",
+    "currency_symbol": "\u00a3",
     "full_name": "United Kingdom of Great Britain and Northern Ireland",
     "iso_3166_2": "GB",
     "iso_3166_3": "GBR",
@@ -3993,7 +4463,9 @@
     "eea": 1,
     "calling_code": "44",
     "flag": "gb.png"
-}, {
+  },
+  {
+    "id": 236,
     "capital": "St Peter Port",
     "citizenship": "of Guernsey",
     "country_code": "831",
@@ -4010,7 +4482,9 @@
     "eea": 0,
     "calling_code": "44",
     "flag": null
-}, {
+  },
+  {
+    "id": 237,
     "capital": "St Helier",
     "citizenship": "of Jersey",
     "country_code": "832",
@@ -4027,7 +4501,9 @@
     "eea": 0,
     "calling_code": "44",
     "flag": null
-}, {
+  },
+  {
+    "id": 238,
     "capital": "Douglas",
     "citizenship": "Manxman; Manxwoman",
     "country_code": "833",
@@ -4044,7 +4520,9 @@
     "eea": 0,
     "calling_code": "44",
     "flag": null
-}, {
+  },
+  {
+    "id": 239,
     "capital": "Dodoma (TZ1)",
     "citizenship": "Tanzanian",
     "country_code": "834",
@@ -4061,7 +4539,9 @@
     "eea": 0,
     "calling_code": "255",
     "flag": "tz.png"
-}, {
+  },
+  {
+    "id": 240,
     "capital": "Washington DC",
     "citizenship": "American",
     "country_code": "840",
@@ -4078,7 +4558,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "us.png"
-}, {
+  },
+  {
+    "id": 241,
     "capital": "Charlotte Amalie",
     "citizenship": "US Virgin Islander",
     "country_code": "850",
@@ -4095,7 +4577,9 @@
     "eea": 0,
     "calling_code": "1",
     "flag": "vi.png"
-}, {
+  },
+  {
+    "id": 242,
     "capital": "Ouagadougou",
     "citizenship": "Burkinabe",
     "country_code": "854",
@@ -4112,13 +4596,15 @@
     "eea": 0,
     "calling_code": "226",
     "flag": "bf.png"
-}, {
+  },
+  {
+    "id": 243,
     "capital": "Montevideo",
     "citizenship": "Uruguayan",
     "country_code": "858",
     "currency": "Uruguayan peso",
     "currency_code": "UYU",
-    "currency_sub_unit": "centésimo",
+    "currency_sub_unit": "cent\u00e9simo",
     "currency_symbol": "$U",
     "full_name": "Eastern Republic of Uruguay",
     "iso_3166_2": "UY",
@@ -4129,14 +4615,16 @@
     "eea": 0,
     "calling_code": "598",
     "flag": "uy.png"
-}, {
+  },
+  {
+    "id": 244,
     "capital": "Tashkent",
     "citizenship": "Uzbek",
     "country_code": "860",
     "currency": "sum (inv.)",
     "currency_code": "UZS",
     "currency_sub_unit": "tiyin (inv.)",
-    "currency_symbol": "лв",
+    "currency_symbol": "\u043b\u0432",
     "full_name": "Republic of Uzbekistan",
     "iso_3166_2": "UZ",
     "iso_3166_3": "UZB",
@@ -4146,13 +4634,15 @@
     "eea": 0,
     "calling_code": "998",
     "flag": "uz.png"
-}, {
+  },
+  {
+    "id": 245,
     "capital": "Caracas",
     "citizenship": "Venezuelan",
     "country_code": "862",
-    "currency": "bolívar fuerte (pl. bolívares fuertes)",
+    "currency": "bol\u00edvar fuerte (pl. bol\u00edvares fuertes)",
     "currency_code": "VEF",
-    "currency_sub_unit": "céntimo",
+    "currency_sub_unit": "c\u00e9ntimo",
     "currency_symbol": "Bs",
     "full_name": "Bolivarian Republic of Venezuela",
     "iso_3166_2": "VE",
@@ -4163,7 +4653,9 @@
     "eea": 0,
     "calling_code": "58",
     "flag": "ve.png"
-}, {
+  },
+  {
+    "id": 246,
     "capital": "Mata-Utu",
     "citizenship": "Wallisian; Futunan; Wallis and Futuna Islander",
     "country_code": "876",
@@ -4180,7 +4672,9 @@
     "eea": 0,
     "calling_code": "681",
     "flag": "wf.png"
-}, {
+  },
+  {
+    "id": 247,
     "capital": "Apia",
     "citizenship": "Samoan",
     "country_code": "882",
@@ -4197,14 +4691,16 @@
     "eea": 0,
     "calling_code": "685",
     "flag": "ws.png"
-}, {
-    "capital": "San’a",
+  },
+  {
+    "id": 248,
+    "capital": "San\u2019a",
     "citizenship": "Yemenite",
     "country_code": "887",
     "currency": "Yemeni rial",
     "currency_code": "YER",
     "currency_sub_unit": "fils (inv.)",
-    "currency_symbol": "﷼",
+    "currency_symbol": "\ufdfc",
     "full_name": "Republic of Yemen",
     "iso_3166_2": "YE",
     "iso_3166_3": "YEM",
@@ -4214,7 +4710,9 @@
     "eea": 0,
     "calling_code": "967",
     "flag": "ye.png"
-}, {
+  },
+  {
+    "id": 249,
     "capital": "Lusaka",
     "citizenship": "Zambian",
     "country_code": "894",
@@ -4231,4 +4729,5 @@
     "eea": 0,
     "calling_code": "260",
     "flag": "zm.png"
-} ]
+  }
+]
