@@ -5,11 +5,6 @@ namespace Turahe\Master\Models;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
-/**
- * Class Province.
- *
- * @mixin \Eloquent
- */
 class Province extends State
 {
     /**
