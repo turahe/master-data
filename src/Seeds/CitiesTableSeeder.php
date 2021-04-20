@@ -9,7 +9,7 @@ class CitiesTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__ . '/../../resources/cities.json';
+        $file = __DIR__.'/../../resources/cities.json';
         $data = json_decode(file_get_contents($file), true);
         $cities = array_map(function ($arr) {
             return [

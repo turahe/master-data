@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Contracts;
 
 interface FormatterInterface

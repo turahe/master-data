@@ -1,4 +1,5 @@
 <?php
+
 namespace Turahe\Master;
 
 use Illuminate\Contracts\Cache\Factory as FactoryContract;
@@ -14,14 +15,14 @@ class Currency
     protected $config = [];
 
     /**
-     * Laravel application
+     * Laravel application.
      *
      * @var \Illuminate\Contracts\Cache\Factory
      */
     protected $cache;
 
     /**
-     * User's currency
+     * User's currency.
      *
      * @var string
      */
@@ -42,7 +43,7 @@ class Currency
     protected $formatter;
 
     /**
-     * Cached currencies
+     * Cached currencies.
      *
      * @var array
      */
@@ -77,8 +78,8 @@ class Currency
         $to = $to ?: $this->getUserCurrency();
 
         // Get exchange rates
-        (float)$from_rate = $this->getCurrencyProp($from, 'exchange_rate');
-        (float)$to_rate = $this->getCurrencyProp($to, 'exchange_rate');
+        (float) $from_rate = $this->getCurrencyProp($from, 'exchange_rate');
+        (float) $to_rate = $this->getCurrencyProp($to, 'exchange_rate');
 
         // Skip invalid to currency rates
         if ($to_rate === null) {
@@ -167,7 +168,7 @@ class Currency
         }
 
         // Return value
-        return $negative . $value;
+        return $negative.$value;
     }
 
     /**
@@ -263,13 +264,12 @@ class Currency
 
     /**
      * Get storage driver.
-     *
      */
     public function getDriver()
     {
         if ($this->driver === null) {
             // Get driver configuration
-            $config = $this->config('drivers.' . $this->config('driver'), []);
+            $config = $this->config('drivers.'.$this->config('driver'), []);
 
             // Get driver class
             $driver = Arr::pull($config, 'class');
@@ -283,13 +283,12 @@ class Currency
 
     /**
      * Get formatter driver.
-     *
      */
     public function getFormatter()
     {
         if ($this->formatter === null && $this->config('formatter') !== null) {
             // Get formatter configuration
-            $config = $this->config('formatters.' . $this->config('formatter'), []);
+            $config = $this->config('formatters.'.$this->config('formatter'), []);
 
             // Get formatter class
             $class = Arr::pull($config, 'class');
