@@ -9,7 +9,7 @@ class MasterDataTest extends TestCase
     use InteractsWithDatabase;
 
     /** @test */
-    public function it_can_call_indonesia_service()
+    public function it_can_call_master_service()
     {
         $this->artisan('turahe:master:seed');
 

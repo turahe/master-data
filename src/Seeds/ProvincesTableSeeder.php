@@ -2,9 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Turahe\Master\Models\Province;
 use Turahe\Master\Models\State;
 
 class ProvincesTableSeeder extends Seeder

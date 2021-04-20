@@ -2,10 +2,8 @@
 
 $router->group(
     [
-        'namespace' => '\Turahe\Master\Http\Controllers',
-        'prefix' => config('master-data.route.prefix'),
-        'as' => 'master::',
-        'middleware' => config('master-data.route.middleware'),
+        'prefix' => 'master',
+        'middleware' => 'api'
     ],
     function ($router) {
         $router->get('villages', \Turahe\Master\Http\Controllers\VillageController::class);

@@ -10,10 +10,9 @@ class DistrictsTableSeeder extends Seeder
     public function run()
     {
         $now = now()->toDateTimeString();
-        $csv = new CsvtoArray();
         $file = __DIR__.'/../../resources/csv/districts.csv';
         $header = ['id', 'city_id', 'name', 'lat', 'long'];
-        $data = $csv->csv_to_array($file, $header);
+        $data = csv_to_array($file, $header);
         $districts = array_map(function ($arr) use ($now) {
             return [
                 'name' => $arr['name'],
@@ -25,6 +24,9 @@ class DistrictsTableSeeder extends Seeder
             ];
         }, $data);
 
-        District::insert($districts);
+        foreach (array_chunk($districts, 30) as $district) {
+            District::insert($district);
+        }
+
     }
 }

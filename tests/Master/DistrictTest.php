@@ -63,12 +63,12 @@ class DistrictTest extends TestCase
     }
 
     /** @test */
-    public function a_district_can_store_meta_column()
-    {
-        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
-        $district = District::first();
-        $district->meta = ['luas_wilayah' => 200.2];
-        $district->save();
-        $this->assertEquals(['luas_wilayah' => 200.2], $district->meta);
-    }
+//    public function a_district_can_store_meta_column()
+//    {
+//        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
+//        $district = District::first();
+//        $district->meta = ['luas_wilayah' => 200.2];
+//        $district->save();
+//        $this->assertEquals(['luas_wilayah' => 200.2], $district->meta);
+//    }
 }

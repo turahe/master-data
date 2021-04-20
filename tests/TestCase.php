@@ -25,7 +25,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases($app)
     {
         return [
-            'Master' => \Turahe\Master\MasterData::class,
+            'Master' => \Turahe\Master\Master::class,
         ];
     }
 

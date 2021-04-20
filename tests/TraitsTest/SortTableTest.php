@@ -333,16 +333,16 @@ class SortTableTest extends TestCase
     public function it_can_use_config_properties()
     {
         config([
-            'eloquent-sortable.order_column_name' => 'order_column',
-            'eloquent-sortable.sort_when_creating' => true,
+            'master.order_column_name' => 'order_column',
+            'master.sort_when_creating' => true,
         ]);
 
         $model = new class() extends Dummy {
             public $sortable = [];
         };
 
-        $this->assertEquals(config('eloquent-sortable.order_column_name'), $model->determineOrderColumnName());
-        $this->assertEquals(config('eloquent-sortable.sort_when_creating'), $model->shouldSortWhenCreating());
+        $this->assertEquals(config('master.order_column_name'), $model->determineOrderColumnName());
+        $this->assertEquals(config('master.sort_when_creating'), $model->shouldSortWhenCreating());
     }
 
     /** @test */

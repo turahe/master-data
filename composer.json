@@ -24,7 +24,10 @@
     "autoload": {
         "psr-4": {
             "Turahe\\Master\\": "src/"
-        }
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -53,7 +56,7 @@
               "Turahe\\Master\\MasterServiceProvider"
             ],
             "aliases": {
-                "Master": "Turahe\\Master\\MasterData"
+                "Master": "Master"
             }
         }
     }

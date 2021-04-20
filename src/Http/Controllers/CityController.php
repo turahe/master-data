@@ -2,8 +2,6 @@
 
 namespace Turahe\Master\Http\Controllers;
 
-
-
 use Illuminate\Http\Request;
 use Illuminate\Pipeline\Pipeline;
 use Turahe\Master\Http\Resources\CityResource;

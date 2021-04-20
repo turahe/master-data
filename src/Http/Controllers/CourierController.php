@@ -2,10 +2,8 @@
 
 namespace Turahe\Master\Http\Controllers;
 
-
 use Illuminate\Http\Request;
 use Illuminate\Pipeline\Pipeline;
-use Turahe\Master\Http\Requests\CourierRequest;
 use Turahe\Master\Http\Resources\CourierResource;
 use Turahe\Master\Models\Courier;
 

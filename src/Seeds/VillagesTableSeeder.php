@@ -28,7 +28,10 @@ class VillagesTableSeeder extends Seeder
                 ];
             }, $data);
 
-            Village::insert($villages);
+            foreach (array_chunk($villages, 30) as $village) {
+                Village::insert($village);
+            }
+
         }
     }
 }

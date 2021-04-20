@@ -12,6 +12,13 @@ class District extends Model
      */
     protected $table = 'tm_districts';
 
+    protected $fillable = [
+        'name',
+        'city_id',
+        'latitude',
+        'longitude'
+    ];
+
     /**
      * @var string[]
      */

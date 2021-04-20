@@ -9,7 +9,7 @@ use Turahe\Master\Test\TestCase;
 class VillageTest extends TestCase
 {
     /** @test */
-    public function a_village_has_belongs_to_distict_relation()
+    public function a_village_has_belongs_to_district_relation()
     {
         $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
         $this->seed('Turahe\Master\Seeds\VillagesTableSeeder');

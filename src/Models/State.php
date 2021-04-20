@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
-use Illuminate\Support\Facades\Cache;
 
 class State extends Model
 {
@@ -48,18 +47,18 @@ class State extends Model
     /**
      * @return string
      */
-    public function getLogoPathAttribute(): string
-    {
-        $folder = 'indonesia-logo/';
-        $id = $this->getAttributeValue('id');
-        $arr_glob = glob(public_path().'/'.$folder.$id.'.*');
-        if (count($arr_glob) == 1) {
-            $logo_name = basename($arr_glob[0]);
-            $logo_path = url($folder.$logo_name);
-
-            return $logo_path;
-        }
-    }
+//    public function getLogoPathAttribute(): string
+//    {
+//        $folder = 'indonesia-logo/';
+//        $id = $this->getAttributeValue('id');
+//        $arr_glob = glob(public_path().'/'.$folder.$id.'.*');
+//        if (count($arr_glob) == 1) {
+//            $logo_name = basename($arr_glob[0]);
+//            $logo_path = url($folder.$logo_name);
+//
+//            return $logo_path;
+//        }
+//    }
 
     /**
      * @return string

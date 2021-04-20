@@ -20,7 +20,7 @@ class CountriesTableSeeder extends Seeder
             return [
                 'capital' => $country['capital'] ?? null,
                 'citizenship' => ((isset($country['citizenship'])) ? $country['citizenship'] : null),
-                'country_code' => $country['country-code'],
+                'country_code' => $country['country_code'],
                 'currency' => ((isset($country['currency'])) ? $country['currency'] : null),
                 'currency_code' => ((isset($country['currency_code'])) ? $country['currency_code'] : null),
                 'currency_sub_unit' => ((isset($country['currency_sub_unit'])) ? $country['currency_sub_unit'] : null),
@@ -39,6 +39,8 @@ class CountriesTableSeeder extends Seeder
             ];
         }, $data);
 
-        Country::insert($countries);
+        foreach (array_chunk($countries, 30) as $country) {
+            Country::insert($country);
+        }
     }
 }

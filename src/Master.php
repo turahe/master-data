@@ -2,9 +2,9 @@
 
 namespace Turahe\Master;
 
-use Illuminate\Support\Facades\Facade as BaseFacade;
+use Illuminate\Support\Facades\Facade;
 
-class MasterData extends BaseFacade
+class Master extends Facade
 {
     protected static function getFacadeAccessor()
     {
