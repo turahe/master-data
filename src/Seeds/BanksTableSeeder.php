@@ -3,7 +3,7 @@
 namespace Turahe\Master\Seeds;
 
 use Illuminate\Database\Seeder;
-use Turahe\Master\Models\Banks;
+use Turahe\Master\Models\Bank;
 
 class BanksTableSeeder extends Seeder
 {
@@ -22,6 +22,6 @@ class BanksTableSeeder extends Seeder
             ];
         }, $data);
 
-        Banks::insert($banks);
+        Bank::insert($banks);
     }
 }

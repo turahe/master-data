@@ -39,4 +39,19 @@ class MasterServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(realpath(__DIR__.'/../resources/views'), 'master');
     }
+    protected function registerRoutes()
+    {
+        $router = $this->app['router'];
+        require __DIR__.'/../routes/web.php';
+    }
+
+    protected function isLaravel()
+    {
+        return app() instanceof \Illuminate\Foundation\Application;
+    }
+
+    protected function isLumen()
+    {
+        return !$this->isLaravel();
+    }
 }

@@ -2,6 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\City;
 
@@ -15,17 +16,17 @@ class CitiesTableSeeder extends Seeder
             return [
                 'state_id' => $arr['state_id'],
                 'name' => $arr['name'],
-                'type' => isset($arr['type']) ? $arr['type'] : null,
+                'type' => $arr['type'] ?? null,
                 'postal_code' => $arr['postal_code'],
                 'latitude' => $arr['latitude'],
                 'longitude' => $arr['longitude'],
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
+                'created_at' => Carbon::now()->toDateTimeString(),
+                'updated_at' => Carbon::now()->toDateTimeString(),
             ];
         }, $data);
 
         foreach (array_chunk($cities, 30) as $city) {
-            City::insert($cities);
+            City::insert($city);
         }
     }
 }

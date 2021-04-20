@@ -8,6 +8,6 @@ class MasterData extends BaseFacade
 {
     protected static function getFacadeAccessor()
     {
-        return 'master';
+        return 'MasterService';
     }
 }

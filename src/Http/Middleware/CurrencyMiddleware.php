@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Master\Middleware;
+namespace Turahe\Master\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

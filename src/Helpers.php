@@ -9,7 +9,7 @@ if (!function_exists('currency')) {
      * @param string $to
      * @param bool   $format
      *
-     * @return string|\Torann\Currency\Currency
+     * @return string
      */
     function currency($amount = null, $from = null, $to = null, $format = true)
     {
@@ -34,5 +34,25 @@ if (!function_exists('currency_format')) {
     function currency_format($amount = null, $currency = null, $include_symbol = true)
     {
         return app('currency')->format($amount, $currency, $include_symbol);
+    }
+}
+
+if (!function_exists('csv_to_array')) {
+    function csv_to_array($filename, $header)
+    {
+        $delimiter = ',';
+        if (!file_exists($filename) || !is_readable($filename)) {
+            return false;
+        }
+
+        $data = [];
+        if (($handle = fopen($filename, 'r')) !== false) {
+            while (($row = fgetcsv($handle, 1000, $delimiter)) !== false) {
+                $data[] = array_combine($header, $row);
+            }
+            fclose($handle);
+        }
+
+        return $data;
     }
 }
