@@ -3,8 +3,10 @@
 
 namespace Turahe\Master\Traits;
 
+use ArrayAccess;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use InvalidArgumentException;
 use Turahe\Master\Contracts\Sortable;
 
 trait SortableTrait
