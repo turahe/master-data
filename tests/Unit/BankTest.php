@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Turahe\Master\Test\Master;
+namespace Turahe\Master\Test\Unit;
 
 use Turahe\Master\Models\Bank;
 use Turahe\Master\Test\TestCase;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Master\Test\Master;
+namespace Turahe\Master\Test\Unit;
 
 use Illuminate\Database\Eloquent\Collection;
 use Turahe\Master\Models\City;
