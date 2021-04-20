@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Cache;
 use Turahe\Master\Traits\AutoFilter;
 use Turahe\Master\Traits\AutoSort;
 
-
 abstract class Model extends BaseModel
 {
     use AutoFilter;

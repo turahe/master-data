@@ -4,8 +4,6 @@ namespace Turahe\Master;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
-use Turahe\Master\Commands\SeedCommand;
-use Turahe\Master\Commands\SyncCoordinateCommand;
 
 class MasterServiceProvider extends ServiceProvider
 {
@@ -33,7 +31,5 @@ class MasterServiceProvider extends ServiceProvider
         }
 
         $this->loadViewsFrom(realpath(__DIR__.'/../resources/views'), 'master');
-
     }
-
 }
