@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Test\Models;
 
 use Illuminate\Database\Eloquent\Model;
