@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Master\Test\Models;
+namespace Turahe\Master\Test\Master;
 
 use Illuminate\Database\Eloquent\Collection;
 use Turahe\Master\Models\City;
@@ -52,12 +52,12 @@ class ProvinceTest extends TestCase
     }
 
     /** @test */
-    public function a_province_can_store_meta_column()
-    {
-        $this->seed('Turahe\Master\Seeds\ProvincesTableSeeder');
-        $province = Province::first();
-        $province->meta = ['luas_wilayah' => 200.2];
-        $province->save();
-        $this->assertEquals(['luas_wilayah' => 200.2], $province->meta);
-    }
+//    public function a_province_can_store_meta_column()
+//    {
+//        $this->seed('Turahe\Master\Seeds\ProvincesTableSeeder');
+//        $province = Province::first();
+//        $province->meta = ['luas_wilayah' => 200.2];
+//        $province->save();
+//        $this->assertEquals(['luas_wilayah' => 200.2], $province->meta);
+//    }
 }

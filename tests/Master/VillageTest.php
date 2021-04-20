@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Master\Test\Models;
+namespace Turahe\Master\Test\Master;
 
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Village;
