@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Traits;
 
 use ArrayAccess;
@@ -47,7 +46,8 @@ trait SortableTrait
      * Let's be nice and provide an ordered scope.
      *
      * @param \Illuminate\Database\Eloquent\Builder $query
-     * @param string $direction
+     * @param string                                $direction
+     *
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public function scopeOrdered(Builder $query, string $direction = 'asc')
@@ -57,16 +57,16 @@ trait SortableTrait
 
     /**
      * @param $ids
-     * @param int $startOrder
+     * @param int         $startOrder
      * @param null|string $primaryKeyColumn
      */
     public static function setNewOrder($ids, int $startOrder = 1, string $primaryKeyColumn = null)
     {
-        if (! is_array($ids) && ! $ids instanceof ArrayAccess) {
+        if (!is_array($ids) && !$ids instanceof ArrayAccess) {
             throw new InvalidArgumentException('You must pass an array or ArrayAccess object to setNewOrder');
         }
 
-        $model = new static;
+        $model = new static();
 
         $orderColumnName = $model->determineOrderColumnName();
 
@@ -123,7 +123,7 @@ trait SortableTrait
             ->where($orderColumnName, '>', $this->$orderColumnName)
             ->first();
 
-        if (! $swapWithModel) {
+        if (!$swapWithModel) {
             return $this;
         }
 
@@ -142,7 +142,7 @@ trait SortableTrait
             ->where($orderColumnName, '<', $this->$orderColumnName)
             ->first();
 
-        if (! $swapWithModel) {
+        if (!$swapWithModel) {
             return $this;
         }
 
@@ -151,6 +151,7 @@ trait SortableTrait
 
     /**
      * @param Sortable $otherModel
+     *
      * @return $this
      */
     public function swapOrderWithModel(Sortable $otherModel)

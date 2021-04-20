@@ -41,6 +41,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
             'prefix' => '',
         ]);
     }
+
     protected function setUpDatabase()
     {
         $this->app['db']->connection()->getSchemaBuilder()->create('dummies', function (Blueprint $table) {
@@ -57,6 +58,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
             ]);
         });
     }
+
     protected function setUpSoftDeletes()
     {
         $this->app['db']->connection()->getSchemaBuilder()->table('dummies', function (Blueprint $table) {
