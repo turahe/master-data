@@ -11,7 +11,6 @@ use Turahe\Master\Models\Color;
  * @group Master
  *
  * Class ColorController
- * @package App\Http\Controllers\Api
  */
 class ColorController
 {
@@ -37,7 +36,8 @@ class ColorController
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
+     *
      * @return ColorResource
      */
     public function store(Request $request)
@@ -51,6 +51,7 @@ class ColorController
      * Display the specified resource.
      *
      * @param Color $color
+     *
      * @return ColorResource
      */
     public function show(Color $color)
@@ -63,7 +64,8 @@ class ColorController
      * Update the specified resource in storage.
      *
      * @param \Illuminate\Http\Request $request
-     * @param Color $color
+     * @param Color                    $color
+     *
      * @return ColorResource
      */
     public function update(Request $request, Color $color)
@@ -77,7 +79,9 @@ class ColorController
      * Remove the specified resource from storage.
      *
      * @param Color $color
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Color $color)

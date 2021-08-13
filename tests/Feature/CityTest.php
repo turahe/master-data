@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Test\Feature;
 
 use Turahe\Master\Test\TestCase;

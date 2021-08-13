@@ -38,6 +38,7 @@ class CityController
      * create city.
      *
      * @param Request $request
+     *
      * @return CityResource
      */
     public function store(Request $request)
@@ -51,7 +52,8 @@ class CityController
      * change city.
      *
      * @param Request $request
-     * @param City $city
+     * @param City    $city
+     *
      * @return CityResource
      */
     public function update(Request $request, City $city)
@@ -65,6 +67,7 @@ class CityController
      * view city.
      *
      * @param City $city
+     *
      * @return CityResource
      */
     public function show(City $city)
@@ -76,7 +79,9 @@ class CityController
      * delete city.
      *
      * @param City $city
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(City $city)

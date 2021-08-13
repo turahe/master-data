@@ -11,7 +11,6 @@ use Turahe\Master\Models\Courier;
  * @group Master
  *
  * Class CourierController
- * @package App\Http\Controllers\Api
  */
 class CourierController
 {
@@ -19,6 +18,7 @@ class CourierController
      * Display a listing of the resource.
      *
      * @param Request $request
+     *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index(Request $request)
@@ -39,6 +39,7 @@ class CourierController
      * Store a newly created resource in storage.
      *
      * @param Request $request
+     *
      * @return CourierResource
      */
     public function store(Request $request)
@@ -56,6 +57,7 @@ class CourierController
      * Display the specified resource.
      *
      * @param Courier $courier
+     *
      * @return CourierResource
      */
     public function show(Courier $courier)
@@ -68,6 +70,7 @@ class CourierController
      *
      * @param Request $request
      * @param Courier $courier
+     *
      * @return CourierResource
      */
     public function update(Request $request, Courier $courier)
@@ -87,7 +90,9 @@ class CourierController
      * Remove the specified resource from storage.
      *
      * @param Courier $courier
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Courier $courier)

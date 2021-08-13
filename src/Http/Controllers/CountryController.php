@@ -36,6 +36,7 @@ class CountryController
 
     /**
      * @param Request $request
+     *
      * @return CountryResource
      */
     public function store(Request $request)
@@ -53,6 +54,7 @@ class CountryController
     /**
      * @param Country $country
      * @param Request $request
+     *
      * @return CountryResource
      */
     public function update(Country $country, Request $request)
@@ -69,6 +71,7 @@ class CountryController
 
     /**
      * @param Country $country
+     *
      * @return CountryResource
      */
     public function show(Country $country)
@@ -78,7 +81,9 @@ class CountryController
 
     /**
      * @param Country $country
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Country $country)

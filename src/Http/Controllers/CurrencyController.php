@@ -18,6 +18,7 @@ class CurrencyController
      * Display a listing of the resource.
      *
      * @param Request $request
+     *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index(Request $request)
@@ -38,6 +39,7 @@ class CurrencyController
      * Store a newly created resource in storage.
      *
      * @param Request $request
+     *
      * @return CurrencyResource
      */
     public function store(Request $request)
@@ -50,8 +52,9 @@ class CurrencyController
     /**
      * Update the specified resource in storage.
      *
-     * @param Request $request
+     * @param Request  $request
      * @param Currency $currency
+     *
      * @return CurrencyResource
      */
     public function update(Request $request, Currency $currency)
@@ -63,6 +66,7 @@ class CurrencyController
 
     /**
      * @param Currency $currency
+     *
      * @return CurrencyResource
      */
     public function show(Currency $currency)
@@ -74,7 +78,9 @@ class CurrencyController
      * Remove the specified resource from storage.
      *
      * @param Currency $currency
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Currency $currency)

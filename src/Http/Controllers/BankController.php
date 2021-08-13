@@ -11,7 +11,6 @@ use Turahe\Master\Models\Bank;
  * @group Master
  *
  * Class BankController
- * @package Turahe\Master\Http\Controllers\Api
  */
 class BankController
 {
@@ -19,6 +18,7 @@ class BankController
      * Display a listing of the resource.
      *
      * @authenticated
+     *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index()
@@ -40,7 +40,9 @@ class BankController
      *
      * @authenticated
      * @urlParam id string required The ID of the bank. Example: 1
-     * @param  \Illuminate\Http\Request  $request
+     *
+     * @param \Illuminate\Http\Request $request
+     *
      * @return BankResource
      */
     public function store(Request $request)
@@ -54,7 +56,9 @@ class BankController
      * Display the specified resource.
      *
      * @urlParam id string required The ID of the bank. Example: 1
+     *
      * @param Bank $bank
+     *
      * @return BankResource
      */
     public function show(Bank $bank)
@@ -67,8 +71,10 @@ class BankController
      *
      * @authenticated
      * @urlParam id string required The ID of the bank. Example: 1
+     *
      * @param \Illuminate\Http\Request $request
-     * @param Bank $bank
+     * @param Bank                     $bank
+     *
      * @return BankResource
      */
     public function update(Request $request, Bank $bank)
@@ -83,8 +89,11 @@ class BankController
      *
      * @authenticated
      * @urlParam id string required The ID of the bank. Example: 1
+     *
      * @param Bank $bank
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Bank $bank)

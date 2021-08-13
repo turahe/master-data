@@ -16,7 +16,7 @@ class District extends Model
         'name',
         'city_id',
         'latitude',
-        'longitude'
+        'longitude',
     ];
 
     /**

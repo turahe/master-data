@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Http\Pipelines;
 
 class State extends Filter

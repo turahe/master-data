@@ -18,7 +18,9 @@ class StateController
      * List of state/province.
      *
      * Get all State by country id
+     *
      * @param $id
+     *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index($id)
@@ -39,7 +41,9 @@ class StateController
      * Create a province or country.
      *
      * @authenticated
+     *
      * @param Request $request
+     *
      * @return StateResource
      */
     public function store(Request $request)
@@ -53,8 +57,10 @@ class StateController
      * Change state/province.
      *
      * @authenticated
+     *
      * @param Request $request
-     * @param State $state
+     * @param State   $state
+     *
      * @return StateResource
      */
     public function update(Request $request, State $state)
@@ -68,6 +74,7 @@ class StateController
      * View all  province/state.
      *
      * @param State $state
+     *
      * @return StateResource
      */
     public function show(State $state)
@@ -79,8 +86,11 @@ class StateController
      * Delete a state/province.
      *
      * @authenticated
+     *
      * @param State $state
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(State $state)

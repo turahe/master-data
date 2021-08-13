@@ -16,6 +16,7 @@ class DistrictController
 {
     /**
      * @param Request $request
+     *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index(Request $request)
@@ -34,6 +35,7 @@ class DistrictController
 
     /**
      * @param Request $request
+     *
      * @return DistrictResource
      */
     public function store(Request $request)
@@ -45,6 +47,7 @@ class DistrictController
 
     /**
      * @param District $district
+     *
      * @return DistrictResource
      */
     public function show(District $district)
@@ -54,7 +57,8 @@ class DistrictController
 
     /**
      * @param District $district
-     * @param Request $request
+     * @param Request  $request
+     *
      * @return DistrictResource
      */
     public function update(District $district, Request $request)
@@ -66,7 +70,9 @@ class DistrictController
 
     /**
      * @param District $district
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(District $district)
