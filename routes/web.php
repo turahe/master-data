@@ -2,8 +2,10 @@
 
 $router->group(
     [
-        'prefix' => 'master',
-        'middleware' => 'api'
+        'namespace' => '\Laravolt\Indonesia\Http\Controllers',
+        'prefix' => config('master.route.prefix'),
+        'as' => 'indonesia::',
+        'middleware' => config('master.route.middleware'),
     ],
     function ($router) {
         $router->get('villages', [\Turahe\Master\Http\Controllers\VillageController::class, 'index']);
