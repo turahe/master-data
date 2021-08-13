@@ -45,7 +45,7 @@ class BankController
      */
     public function store(Request $request)
     {
-        $bank = Bank::create($request->all());
+        $bank = Bank::create($request->input());
 
         return new BankResource($bank);
     }
@@ -73,7 +73,7 @@ class BankController
      */
     public function update(Request $request, Bank $bank)
     {
-        $bank->update($request->all());
+        $bank->update($request->input());
 
         return new BankResource($bank);
     }

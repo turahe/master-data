@@ -40,7 +40,7 @@ class CountryController
      */
     public function store(Request $request)
     {
-        $country = Country::create($request->all());
+        $country = Country::create($request->input());
 
         if ($request->hasFile('flag') && $request->file('flag')->isValid()) {
             $image = $request->file('flag');
@@ -57,7 +57,7 @@ class CountryController
      */
     public function update(Country $country, Request $request)
     {
-        $country->update($request->all());
+        $country->update($request->input());
 
         if ($request->hasFile('flag') && $request->file('flag')->isValid()) {
             $image = $request->file('flag');

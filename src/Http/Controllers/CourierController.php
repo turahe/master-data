@@ -72,13 +72,13 @@ class CourierController
      */
     public function update(Request $request, Courier $courier)
     {
-        $courier->update($request->all());
+        $courier->update($request->input());
         if ($request->hasFile('logo') && $request->file('logo')->isValid()) {
             $courier->addMediaFromRequest('logo')
                 ->toMediaCollection('logo');
         }
 
-        $courier->update($request->all());
+        $courier->update($request->input());
 
         return  new CourierResource($courier);
     }

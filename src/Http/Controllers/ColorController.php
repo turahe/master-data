@@ -42,7 +42,7 @@ class ColorController
      */
     public function store(Request $request)
     {
-        $color = Color::create($request->all());
+        $color = Color::create($request->input());
 
         return new ColorResource($color);
     }
@@ -68,7 +68,7 @@ class ColorController
      */
     public function update(Request $request, Color $color)
     {
-        $color->update($request->all());
+        $color->update($request->input());
 
         return new ColorResource($color);
     }
