@@ -5,7 +5,6 @@ namespace Turahe\Master\Test\Unit;
 use Illuminate\Database\Eloquent\Collection;
 use Turahe\Master\Models\City;
 use Turahe\Master\Models\District;
-use Turahe\Master\Models\Province;
 use Turahe\Master\Models\State;
 use Turahe\Master\Models\Village;
 use Turahe\Master\Test\TestCase;

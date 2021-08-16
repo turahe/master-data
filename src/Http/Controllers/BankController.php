@@ -8,7 +8,7 @@ use Turahe\Master\Http\Resources\BankResource;
 use Turahe\Master\Models\Bank;
 
 /**
- * @group Master
+ * @group Master Data Banks
  *
  * Class BankController
  * @package Turahe\Master\Http\Controllers\Api
@@ -19,6 +19,9 @@ class BankController
      * Display a listing of the resource.
      *
      * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\BankResource
+     * @apiResourceModel Turahe\Master\Models\Bank
+     *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index()
@@ -39,6 +42,9 @@ class BankController
      * Store a newly created resource in storage.
      *
      * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\BankResource
+     * @apiResourceModel Turahe\Master\Models\Bank
+     *
      * @urlParam id string required The ID of the bank. Example: 1
      * @param  \Illuminate\Http\Request  $request
      * @return BankResource
@@ -53,6 +59,8 @@ class BankController
     /**
      * Display the specified resource.
      *
+     * @apiResource Turahe\Master\Http\Resources\BankResource
+     * @apiResourceModel Turahe\Master\Models\Bank
      * @urlParam id string required The ID of the bank. Example: 1
      * @param Bank $bank
      * @return BankResource
@@ -66,6 +74,8 @@ class BankController
      * Update the specified resource in storage.
      *
      * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\BankResource
+     * @apiResourceModel Turahe\Master\Models\Bank
      * @urlParam id string required The ID of the bank. Example: 1
      * @param \Illuminate\Http\Request $request
      * @param Bank $bank

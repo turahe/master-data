@@ -43,6 +43,5 @@ class CurrenciesTableSeeder extends Seeder
         foreach (array_chunk($currencies, 20) as $currency) {
             Currency::insert($currency);
         }
-
     }
 }

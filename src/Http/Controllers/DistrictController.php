@@ -8,13 +8,18 @@ use Turahe\Master\Http\Resources\DistrictResource;
 use Turahe\Master\Models\District;
 
 /**
- * @group Master
+ * @group Master Data District
  *
  * Class DistrictController.
  */
 class DistrictController
 {
     /**
+     * List
+     *
+     * @apiResource Turahe\Master\Http\Resources\DistrictResource
+     * @apiResourceModel Turahe\Master\Models\District
+     *
      * @param Request $request
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
@@ -33,6 +38,12 @@ class DistrictController
     }
 
     /**
+     * Store
+     *
+     * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\DistrictResource
+     * @apiResourceModel Turahe\Master\Models\District
+     *
      * @param Request $request
      * @return DistrictResource
      */
@@ -44,6 +55,11 @@ class DistrictController
     }
 
     /**
+     * Detail
+     *
+     * @apiResource Turahe\Master\Http\Resources\DistrictResource
+     * @apiResourceModel Turahe\Master\Models\District
+     *
      * @param District $district
      * @return DistrictResource
      */
@@ -53,6 +69,12 @@ class DistrictController
     }
 
     /**
+     * Update
+     *
+     * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\DistrictResource
+     * @apiResourceModel Turahe\Master\Models\District
+     *
      * @param District $district
      * @param Request $request
      * @return DistrictResource
@@ -65,6 +87,9 @@ class DistrictController
     }
 
     /**
+     * Remove
+     *
+     * @authenticated
      * @param District $district
      * @throws \Exception
      * @return \Illuminate\Http\Response

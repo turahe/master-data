@@ -8,7 +8,7 @@ use Illuminate\Pipeline\Pipeline;
 use Turahe\Master\Models\Currency;
 
 /**
- * @group Master
+ * @group Master Data Currency
  *
  * Class CurrencyController.
  */
@@ -16,6 +16,9 @@ class CurrencyController
 {
     /**
      * Display a listing of the resource.
+     *
+     * @apiResource Turahe\Master\Http\Resources\CurrencyResource
+     * @apiResourceModel Turahe\Master\Models\Currency
      *
      * @param Request $request
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
@@ -37,6 +40,9 @@ class CurrencyController
     /**
      * Store a newly created resource in storage.
      *
+     * @apiResource Turahe\Master\Http\Resources\CurrencyResource
+     * @apiResourceModel Turahe\Master\Models\Currency
+     *
      * @param Request $request
      * @return CurrencyResource
      */
@@ -50,6 +56,9 @@ class CurrencyController
     /**
      * Update the specified resource in storage.
      *
+     * @apiResource Turahe\Master\Http\Resources\CurrencyResource
+     * @apiResourceModel Turahe\Master\Models\Currency
+     *
      * @param Request $request
      * @param Currency $currency
      * @return CurrencyResource
@@ -62,6 +71,11 @@ class CurrencyController
     }
 
     /**
+     * Detail
+     *
+     * @apiResource Turahe\Master\Http\Resources\CurrencyResource
+     * @apiResourceModel Turahe\Master\Models\Currency
+     *
      * @param Currency $currency
      * @return CurrencyResource
      */

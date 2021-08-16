@@ -8,7 +8,7 @@ use Turahe\Master\Http\Resources\StateResource;
 use Turahe\Master\Models\State;
 
 /**
- * @group Master
+ * @group Master Data State
  *
  * Class StateController.
  */
@@ -18,6 +18,8 @@ class StateController
      * List of state/province.
      *
      * Get all State by country id
+     * @apiResource Turahe\Master\Http\Resources\StateResource
+     * @apiResourceModel Turahe\Master\Models\State
      * @param $id
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
@@ -39,6 +41,8 @@ class StateController
      * Create a province or country.
      *
      * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\StateResource
+     * @apiResourceModel Turahe\Master\Models\State
      * @param Request $request
      * @return StateResource
      */
@@ -53,6 +57,8 @@ class StateController
      * Change state/province.
      *
      * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\StateResource
+     * @apiResourceModel Turahe\Master\Models\State
      * @param Request $request
      * @param State $state
      * @return StateResource
@@ -67,6 +73,8 @@ class StateController
     /**
      * View all  province/state.
      *
+     * @apiResource Turahe\Master\Http\Resources\StateResource
+     * @apiResourceModel Turahe\Master\Models\State
      * @param State $state
      * @return StateResource
      */

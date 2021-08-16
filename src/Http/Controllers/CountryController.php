@@ -9,7 +9,7 @@ use Turahe\Master\Http\Resources\CountryResource;
 use Turahe\Master\Models\Country;
 
 /**
- * @group Master
+ * @group Master Data Country
  *
  * Class CountryController.
  */
@@ -17,6 +17,9 @@ class CountryController
 {
     /**
      * List of country.
+     *
+     * @apiResource Turahe\Master\Http\Resources\CountryResource
+     * @apiResourceModel Turahe\Master\Models\Country
      *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
@@ -35,6 +38,12 @@ class CountryController
     }
 
     /**
+     * Store Country
+     *
+     * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\CountryResource
+     * @apiResourceModel Turahe\Master\Models\Country
+     *
      * @param Request $request
      * @return CountryResource
      */
@@ -51,6 +60,12 @@ class CountryController
     }
 
     /**
+     * Update
+     *
+     * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\CountryResource
+     * @apiResourceModel Turahe\Master\Models\Country
+     *
      * @param Country $country
      * @param Request $request
      * @return CountryResource
@@ -68,6 +83,11 @@ class CountryController
     }
 
     /**
+     * Show
+     *
+     * @apiResource Turahe\Master\Http\Resources\CountryResource
+     * @apiResourceModel Turahe\Master\Models\Country
+     *
      * @param Country $country
      * @return CountryResource
      */
@@ -77,6 +97,11 @@ class CountryController
     }
 
     /**
+     * Delete
+     *
+     * @apiResource Turahe\Master\Http\Resources\CountryResource
+     * @apiResourceModel Turahe\Master\Models\Country
+     *
      * @param Country $country
      * @throws \Exception
      * @return \Illuminate\Http\Response

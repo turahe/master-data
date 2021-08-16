@@ -27,6 +27,5 @@ class DistrictsTableSeeder extends Seeder
         foreach (array_chunk($districts, 30) as $district) {
             District::insert($district);
         }
-
     }
 }

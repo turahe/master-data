@@ -8,7 +8,7 @@ use Turahe\Master\Http\Resources\LanguageResource;
 use Turahe\Master\Models\Language;
 
 /**
- * @group Language
+ * @group Language Data Languages
  *
  * Class LanguageController.
  * @package App\Http\Controllers
@@ -38,6 +38,8 @@ class LanguageController
      * Create a language.
      *
      * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\LanguageResource
+     * @apiResourceModel Turahe\Master\Models\Language
      * @param  \Illuminate\Http\Request  $request
      * @return LanguageResource
      */
@@ -51,6 +53,8 @@ class LanguageController
     /**
      * View language.
      *
+     * @apiResource Turahe\Master\Http\Resources\LanguageResource
+     * @apiResourceModel Turahe\Master\Models\Language
      * @param Language $language
      * @return LanguageResource
      */
@@ -63,6 +67,8 @@ class LanguageController
      * Change language.
      *
      * @authenticated
+     * @apiResource Turahe\Master\Http\Resources\LanguageResource
+     * @apiResourceModel Turahe\Master\Models\Language
      * @param \Illuminate\Http\Request $request
      * @param Language $language
      * @return LanguageResource

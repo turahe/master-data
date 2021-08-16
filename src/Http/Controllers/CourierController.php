@@ -8,7 +8,7 @@ use Turahe\Master\Http\Resources\CourierResource;
 use Turahe\Master\Models\Courier;
 
 /**
- * @group Master
+ * @group Master Data Courier
  *
  * Class CourierController
  * @package App\Http\Controllers\Api
@@ -17,6 +17,9 @@ class CourierController
 {
     /**
      * Display a listing of the resource.
+     *
+     * @apiResource Turahe\Master\Http\Resources\CourierResource
+     * @apiResourceModel Turahe\Master\Models\Courier
      *
      * @param Request $request
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
@@ -38,6 +41,9 @@ class CourierController
     /**
      * Store a newly created resource in storage.
      *
+     * @apiResource Turahe\Master\Http\Resources\CourierResource
+     * @apiResourceModel Turahe\Master\Models\Courier
+     *
      * @param Request $request
      * @return CourierResource
      */
@@ -55,6 +61,9 @@ class CourierController
     /**
      * Display the specified resource.
      *
+     * @apiResource Turahe\Master\Http\Resources\CourierResource
+     * @apiResourceModel Turahe\Master\Models\Courier
+     *
      * @param Courier $courier
      * @return CourierResource
      */
@@ -65,6 +74,9 @@ class CourierController
 
     /**
      * Update the specified resource in storage.
+     *
+     * @apiResource Turahe\Master\Http\Resources\CourierResource
+     * @apiResourceModel Turahe\Master\Models\Courier
      *
      * @param Request $request
      * @param Courier $courier
@@ -85,6 +97,9 @@ class CourierController
 
     /**
      * Remove the specified resource from storage.
+     *
+     * @apiResource Turahe\Master\Http\Resources\CourierResource
+     * @apiResourceModel Turahe\Master\Models\Courier
      *
      * @param Courier $courier
      * @throws \Exception

@@ -8,7 +8,7 @@ use Turahe\Master\Http\Resources\CityResource;
 use Turahe\Master\Models\City;
 
 /**
- * @group Master
+ * @group Master Data City
  *
  * Class CityController.
  */
@@ -17,6 +17,8 @@ class CityController
     /**
      * All Cities.
      *
+     * @apiResource Turahe\Master\Http\Resources\CityResource
+     * @apiResourceModel Turahe\Master\Models\City
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index()
@@ -37,6 +39,8 @@ class CityController
     /**
      * create city.
      *
+     * @apiResource Turahe\Master\Http\Resources\CityResource
+     * @apiResourceModel Turahe\Master\Models\City
      * @param Request $request
      * @return CityResource
      */
@@ -50,6 +54,8 @@ class CityController
     /**
      * change city.
      *
+     * @apiResource Turahe\Master\Http\Resources\CityResource
+     * @apiResourceModel Turahe\Master\Models\City
      * @param Request $request
      * @param City $city
      * @return CityResource
@@ -64,6 +70,8 @@ class CityController
     /**
      * view city.
      *
+     * @apiResource Turahe\Master\Http\Resources\CityResource
+     * @apiResourceModel Turahe\Master\Models\City
      * @param City $city
      * @return CityResource
      */

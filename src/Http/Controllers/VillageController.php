@@ -9,7 +9,7 @@ use Turahe\Master\Http\Resources\VillageResource;
 use Turahe\Master\Models\Village;
 
 /**
- * @group Master
+ * @group Master Data Villages
  *
  * Class VillageController.
  */
@@ -17,6 +17,9 @@ class VillageController extends Controller
 {
     /**
      * all villages.
+     *
+     *  @apiResource Turahe\Master\Http\Resources\VillageResource
+     * @apiResourceModel Turahe\Master\Models\Village
      *
      * @param Request $request
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
@@ -38,6 +41,9 @@ class VillageController extends Controller
     /**
      * Create new Village.
      *
+     *  @apiResource Turahe\Master\Http\Resources\VillageResource
+     * @apiResourceModel Turahe\Master\Models\Village
+     *
      * @param Request $request
      * @return VillageResource
      */
@@ -50,6 +56,9 @@ class VillageController extends Controller
 
     /**
      * Display a village.
+     *
+     *  @apiResource Turahe\Master\Http\Resources\VillageResource
+     * @apiResourceModel Turahe\Master\Models\Village
      *
      * @urlParam id string required The ID of the village. Example: 1
      * @param Village $village
@@ -65,6 +74,9 @@ class VillageController extends Controller
      *
      * @authenticated
      * @urlParam id string required The ID of the village. Example: 1
+     *  @apiResource Turahe\Master\Http\Resources\VillageResource
+     * @apiResourceModel Turahe\Master\Models\Village
+     *
      * @param Request $request
      * @param Village $village
      * @return VillageResource

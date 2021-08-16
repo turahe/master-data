@@ -8,7 +8,7 @@ use Turahe\Master\Http\Resources\ColorResource;
 use Turahe\Master\Models\Color;
 
 /**
- * @group Master
+ * @group Master Data Colours
  *
  * Class ColorController
  * @package App\Http\Controllers\Api
@@ -17,6 +17,9 @@ class ColorController
 {
     /**
      * List of colors.
+     *
+     * @apiResource Turahe\Master\Http\Resources\ColorResource
+     * @apiResourceModel Turahe\Master\Models\Color
      *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
@@ -37,6 +40,9 @@ class ColorController
     /**
      * Store a newly created resource in storage.
      *
+     * @apiResource Turahe\Master\Http\Resources\ColorResource
+     * @apiResourceModel Turahe\Master\Models\Color
+     *
      * @param  \Illuminate\Http\Request  $request
      * @return ColorResource
      */
@@ -50,6 +56,9 @@ class ColorController
     /**
      * Display the specified resource.
      *
+     * @apiResource Turahe\Master\Http\Resources\ColorResource
+     * @apiResourceModel Turahe\Master\Models\Color
+     *
      * @param Color $color
      * @return ColorResource
      */
@@ -61,6 +70,9 @@ class ColorController
 
     /**
      * Update the specified resource in storage.
+     *
+     * @apiResource Turahe\Master\Http\Resources\ColorResource
+     * @apiResourceModel Turahe\Master\Models\Color
      *
      * @param \Illuminate\Http\Request $request
      * @param Color $color
