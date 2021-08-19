@@ -2,6 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\Currency;
 
@@ -34,8 +35,8 @@ class CurrenciesTableSeeder extends Seeder
                 'thousands_separator' => $currency['thousands_separator'] ?? ',',
                 'iso_numeric' => $currency['iso_numeric'] ?? null,
                 'smallest_denomination' => $currency['smallest_denomination'] ?? 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
+                'created_at' => Carbon::now()->toDateTimeString(),
+                'updated_at' => Carbon::now()->toDateTimeString(),
 
             ];
         }, $data);

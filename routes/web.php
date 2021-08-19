@@ -2,7 +2,7 @@
 
 $router->group(
     [
-        'namespace' => '\Laravolt\Indonesia\Http\Controllers',
+        'namespace' => '\Turahe\Master\Http\Controllers',
         'prefix' => config('master.route.prefix'),
         'as' => 'indonesia::',
         'middleware' => config('master.route.middleware'),

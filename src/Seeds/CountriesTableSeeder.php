@@ -2,6 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\Country;
 
@@ -34,8 +35,8 @@ class CountriesTableSeeder extends Seeder
                 'calling_code' => $country['calling_code'],
                 'currency_symbol' => ((isset($country['currency_symbol'])) ? $country['currency_symbol'] : null),
                 'flag' =>((isset($country['flag'])) ? $country['flag'] : null),
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
+                'created_at' => Carbon::now()->toDateTimeString(),
+                'updated_at' => Carbon::now()->toDateTimeString(),
             ];
         }, $data);
 

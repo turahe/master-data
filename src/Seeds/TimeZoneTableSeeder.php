@@ -2,10 +2,11 @@
 
 namespace Turahe\Master\Seeds;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\Timezone;
 
-class TimeZoneTablesSeeder extends Seeder
+class TimeZoneTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,7 +18,7 @@ class TimeZoneTablesSeeder extends Seeder
         $file = __DIR__.'/../../resources/timezones.json';
         $data = json_decode(file_get_contents($file), true);
 
-        $colors = array_map(function ($color) {
+        $timezones = array_map(function ($color) {
             return [
                 'value' => $color['value'],
                 'abbr' => $color['abbr'],
@@ -26,10 +27,13 @@ class TimeZoneTablesSeeder extends Seeder
                 'text' => $color['text'],
                 'utc' => $color['utc'],
                 'status' => true,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
+                'created_at' => Carbon::now()->toDateTimeString(),
+                'updated_at' => Carbon::now()->toDateTimeString(),
             ];
         }, $data);
-        Timezone::insert($colors);
+
+        foreach (array_chunk($timezones, 30) as $timezone) {
+            Timezone::insert($timezone);
+        }
     }
 }

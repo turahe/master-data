@@ -2,6 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\State;
 
@@ -22,11 +23,14 @@ class ProvincesTableSeeder extends Seeder
                 'calling_code' => $province['calling_code'],
                 'latitude' => $province['latitude'],
                 'longitude' => $province['longitude'],
-                'created_at' => now(),
-                'updated_at' => now(),
+                'created_at' => Carbon::now()->toDateTimeString(),
+                'updated_at' => Carbon::now()->toDateTimeString(),
             ];
         }, $data);
 
-        State::insert($provinces);
+        foreach (array_chunk($provinces, 30) as $province) {
+            State::insert($provinces);
+        }
+
     }
 }

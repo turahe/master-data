@@ -2,6 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 use Turahe\Master\Models\Village;
@@ -23,8 +24,8 @@ class VillagesTableSeeder extends Seeder
                     'name' => $arr['name'],
                     'latitude' => $arr['lat'],
                     'longitude' => $arr['long'],
-                    'created_at' => $now,
-                    'updated_at' => $now,
+                    'created_at' => Carbon::now()->toDateTimeString(),
+                    'updated_at' => Carbon::now()->toDateTimeString(),
                 ];
             }, $data);
 
