@@ -2,6 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\Color;
 
@@ -18,8 +19,8 @@ class ColorsTableSeeder extends Seeder
             return [
                 'name' => $color['name'],
                 'code' => $color['code'],
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
+                'created_at' => Carbon::now()->toDateTimeString(),
+                'updated_at' => Carbon::now()->toDateTimeString(),
             ];
         }, $this->allColors);
         foreach (array_chunk($colors, 30) as $color) {

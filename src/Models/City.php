@@ -63,4 +63,9 @@ class City extends Model
     {
         return $this->hasMany(District::class, 'city_id');
     }
+
+    public function villages()
+    {
+        return $this->hasManyThrough(Village::class, District::class);
+    }
 }

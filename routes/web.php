@@ -4,7 +4,6 @@ $router->group(
     [
         'namespace' => '\Turahe\Master\Http\Controllers',
         'prefix' => config('master.route.prefix'),
-        'as' => 'indonesia::',
         'middleware' => config('master.route.middleware'),
     ],
     function ($router) {

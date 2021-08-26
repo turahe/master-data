@@ -58,7 +58,7 @@ class Province extends State
      */
     public function districts(): HasManyThrough
     {
-        return $this->hasManyThrough(District::class, City::class, 'state_id', 'city_id', 'id', 'id');
+        return $this->hasManyThrough(District::class, City::class, 'state_id', 'city_id');
     }
 
     /**

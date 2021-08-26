@@ -15,6 +15,9 @@ class CreateMasterLanguagesTable extends Migration
     {
         Schema::create('tm_languages', function (Blueprint $table) {
             $table->id();
+            $table->string('code');
+            $table->string('name');
+            $table->string('native_name');
             $table->timestamps();
         });
     }

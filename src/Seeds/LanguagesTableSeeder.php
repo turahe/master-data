@@ -4,27 +4,26 @@ namespace Turahe\Master\Seeds;
 
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Turahe\Master\Models\Bank;
+use Turahe\Master\Models\Language;
 
-class BanksTableSeeder extends Seeder
+class LanguagesTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__.'/../../resources/banks.json';
+        $file = __DIR__.'/../../resources/languages.json';
         $data = json_decode(file_get_contents($file), true);
-        $banks = array_map(function ($arr) {
+        $languages = array_map(function ($arr) {
             return [
+                'code' => $arr['name'],
                 'name' => $arr['name'],
-                'alias' => $arr['alias'],
-                'company' => $arr['company'],
-                'code' => $arr['code'],
+                'native_name' => $arr['nativeName'],
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString(),
             ];
         }, $data);
 
-        foreach (array_chunk($banks, 30) as $bank) {
-            Bank::insert($bank);
+        foreach (array_chunk($languages, 30) as $language) {
+            Language::insert($language);
         }
     }
 }
