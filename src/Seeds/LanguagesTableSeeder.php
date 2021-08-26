@@ -14,9 +14,9 @@ class LanguagesTableSeeder extends Seeder
         $data = json_decode(file_get_contents($file), true);
         $languages = array_map(function ($arr) {
             return [
-                'code' => $arr['name'],
+                'code' => $arr['code'],
                 'name' => $arr['name'],
-                'native_name' => $arr['nativeName'],
+                'native' => $arr['native'],
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString(),
             ];

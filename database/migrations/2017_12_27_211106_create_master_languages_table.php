@@ -17,7 +17,7 @@ class CreateMasterLanguagesTable extends Migration
             $table->id();
             $table->string('code');
             $table->string('name');
-            $table->string('native_name');
+            $table->string('native');
             $table->timestamps();
         });
     }
