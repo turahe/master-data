@@ -96,9 +96,9 @@ trait SortableTrait
      */
     public function determineOrderColumnName(): string
     {
-        return isset($this->sortable['order_column_name'])
-            ? $this->sortable['order_column_name']
-            : 'order_column';
+        return isset($this->sortable['record_ordering_name'])
+            ? $this->sortable['record_ordering_name']
+            : 'record_ordering';
     }
 
     /**
