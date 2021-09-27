@@ -19,6 +19,7 @@ class CityController
      *
      * @apiResource Turahe\Master\Http\Resources\CityResource
      * @apiResourceModel Turahe\Master\Models\City
+     *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index()
@@ -41,7 +42,9 @@ class CityController
      *
      * @apiResource Turahe\Master\Http\Resources\CityResource
      * @apiResourceModel Turahe\Master\Models\City
+     *
      * @param Request $request
+     *
      * @return CityResource
      */
     public function store(Request $request)
@@ -56,8 +59,10 @@ class CityController
      *
      * @apiResource Turahe\Master\Http\Resources\CityResource
      * @apiResourceModel Turahe\Master\Models\City
+     *
      * @param Request $request
-     * @param City $city
+     * @param City    $city
+     *
      * @return CityResource
      */
     public function update(Request $request, City $city)
@@ -72,7 +77,9 @@ class CityController
      *
      * @apiResource Turahe\Master\Http\Resources\CityResource
      * @apiResourceModel Turahe\Master\Models\City
+     *
      * @param City $city
+     *
      * @return CityResource
      */
     public function show(City $city)
@@ -84,7 +91,9 @@ class CityController
      * delete city.
      *
      * @param City $city
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(City $city)

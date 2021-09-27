@@ -6,18 +6,18 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
 /**
- * Turahe\Master\Models\Province
+ * Turahe\Master\Models\Province.
  *
- * @property int $id
- * @property int $country_id
- * @property string $name
- * @property string|null $region
- * @property string|null $iso_3166_2
- * @property string|null $region_code
- * @property string|null $calling_code
- * @property string|null $latitude
- * @property string|null $longitude
- * @property int $status
+ * @property int                             $id
+ * @property int                             $country_id
+ * @property string                          $name
+ * @property string|null                     $region
+ * @property string|null                     $iso_3166_2
+ * @property string|null                     $region_code
+ * @property string|null                     $calling_code
+ * @property string|null                     $latitude
+ * @property string|null                     $longitude
+ * @property int                             $status
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Turahe\Master\Models\City[] $cities
@@ -26,6 +26,7 @@ use Illuminate\Database\Eloquent\Relations\HasManyThrough;
  * @property-read \Illuminate\Database\Eloquent\Collection|\Turahe\Master\Models\District[] $districts
  * @property-read int|null $districts_count
  * @property-read string $address
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Province newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Province newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Province query()

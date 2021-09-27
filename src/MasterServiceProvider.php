@@ -22,8 +22,9 @@ class MasterServiceProvider extends ServiceProvider
             SyncCoordinateCommand::class,
         ]);
     }
+
     /**
-     * for lumen version <=5.2, just copy the migrations from the package directory
+     * for lumen version <=5.2, just copy the migrations from the package directory.
      */
     public function boot()
     {
@@ -49,7 +50,7 @@ class MasterServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register new routes to projects
+     * Register new routes to projects.
      */
     protected function registerRoutes()
     {
@@ -58,7 +59,8 @@ class MasterServiceProvider extends ServiceProvider
     }
 
     /**
-     * Check if Laravel
+     * Check if Laravel.
+     *
      * @return bool
      */
     protected function isLaravel()
@@ -67,7 +69,8 @@ class MasterServiceProvider extends ServiceProvider
     }
 
     /**
-     * Check if Is Laravel or Lumen
+     * Check if Is Laravel or Lumen.
+     *
      * @return bool
      */
     protected function isLumen()

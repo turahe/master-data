@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Test\Unit;
 
 use Turahe\Master\Models\Bank;
@@ -25,6 +24,7 @@ class BankTest extends TestCase
 
         $this->assertEquals('Mandiri', $bank->alias);
     }
+
     /** @test */
     public function a_bank_has_company_attribute()
     {
@@ -33,6 +33,7 @@ class BankTest extends TestCase
 
         $this->assertEquals('PT Bank Mandiri (Persero) Tbk.', $bank->company);
     }
+
     /** @test */
     public function a_bank_has_code_attribute()
     {

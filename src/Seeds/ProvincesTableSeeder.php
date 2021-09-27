@@ -31,6 +31,5 @@ class ProvincesTableSeeder extends Seeder
         foreach (array_chunk($provinces, 30) as $province) {
             State::insert($provinces);
         }
-
     }
 }

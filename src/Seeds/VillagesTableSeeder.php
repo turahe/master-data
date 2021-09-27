@@ -18,7 +18,7 @@ class VillagesTableSeeder extends Seeder
             $header = ['id', 'district_id', 'name', 'lat', 'long'];
             $data = csv_to_array($file->getRealPath(), $header);
 
-            $villages = array_map(function ($arr) use ($now) {
+            $villages = array_map(function ($arr) {
                 return [
                     'district_id' => $arr['district_id'],
                     'name' => $arr['name'],

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Http\Pipelines;
 
 use Closure;
@@ -11,11 +10,12 @@ abstract class Filter
     /**
      * @param $request
      * @param Closure $next
+     *
      * @return mixed
      */
     public function handle($request, Closure $next)
     {
-        if (! request()->has($this->filterName())) {
+        if (!request()->has($this->filterName())) {
             return $next($request);
         }
 
@@ -26,6 +26,7 @@ abstract class Filter
 
     /**
      * @param $builder
+     *
      * @return mixed
      */
     abstract protected function applyFilters($builder);

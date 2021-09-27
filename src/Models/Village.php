@@ -5,14 +5,14 @@ namespace Turahe\Master\Models;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
- * Turahe\Master\Models\Village
+ * Turahe\Master\Models\Village.
  *
- * @property string $id
- * @property int $district_id
- * @property string $name
- * @property string|null $latitude
- * @property string|null $longitude
- * @property int $status
+ * @property string                          $id
+ * @property int                             $district_id
+ * @property string                          $name
+ * @property string|null                     $latitude
+ * @property string|null                     $longitude
+ * @property int                             $status
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Turahe\Master\Models\District $district
@@ -20,6 +20,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property-read mixed $city_name
  * @property-read mixed $district_name
  * @property-read mixed $province_name
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoFilter($filter = 'filter')
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoSort($sortByKey = 'sort', $sortDirectionKey = 'direction')
  * @method static \Illuminate\Database\Eloquent\Builder|Village newModelQuery()
