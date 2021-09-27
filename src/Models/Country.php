@@ -5,30 +5,31 @@ namespace Turahe\Master\Models;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
- * Turahe\Master\Models\Country
+ * Turahe\Master\Models\Country.
  *
- * @property string $id
- * @property string|null $capital
- * @property string|null $citizenship
- * @property string $country_code
- * @property string|null $currency
- * @property string|null $currency_code
- * @property string|null $currency_sub_unit
- * @property string|null $currency_symbol
- * @property string|null $full_name
- * @property string $iso_3166_2
- * @property string $iso_3166_3
- * @property string $name
- * @property string|null $region_code
- * @property string|null $sub_region_code
- * @property int $eea
- * @property string $calling_code
- * @property string|null $flag
- * @property int $status
+ * @property string                          $id
+ * @property string|null                     $capital
+ * @property string|null                     $citizenship
+ * @property string                          $country_code
+ * @property string|null                     $currency
+ * @property string|null                     $currency_code
+ * @property string|null                     $currency_sub_unit
+ * @property string|null                     $currency_symbol
+ * @property string|null                     $full_name
+ * @property string                          $iso_3166_2
+ * @property string                          $iso_3166_3
+ * @property string                          $name
+ * @property string|null                     $region_code
+ * @property string|null                     $sub_region_code
+ * @property int                             $eea
+ * @property string                          $calling_code
+ * @property string|null                     $flag
+ * @property int                             $status
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Turahe\Master\Models\State[] $states
  * @property-read int|null $states_count
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoFilter($filter = 'filter')
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoSort($sortByKey = 'sort', $sortDirectionKey = 'direction')
  * @method static \Illuminate\Database\Eloquent\Builder|Country newModelQuery()
@@ -73,5 +74,4 @@ class Country extends Model
     {
         return $this->hasMany(State::class);
     }
-
 }

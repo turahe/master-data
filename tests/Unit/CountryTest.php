@@ -3,9 +3,8 @@
 namespace Turahe\Master\Test\Unit;
 
 use Illuminate\Database\Eloquent\Collection;
-use Turahe\Master\Models\City;
-use Turahe\Master\Models\Province;
 use Turahe\Master\Models\Country;
+use Turahe\Master\Models\Province;
 use Turahe\Master\Test\TestCase;
 
 class CountryTest extends TestCase
@@ -22,6 +21,7 @@ class CountryTest extends TestCase
         $this->assertInstanceOf(Collection::class, $country->provinces);
 //        $this->assertInstanceOf(Province::class, $country->provinces->first());
     }
+
     /** @test */
     public function a_country_has_name_attribute()
     {
@@ -39,5 +39,4 @@ class CountryTest extends TestCase
 
         $this->assertNull($country->logo_path);
     }
-
 }

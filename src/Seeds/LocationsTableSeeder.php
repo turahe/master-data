@@ -11,6 +11,7 @@ class LocationsTableSeeder extends Seeder
      * Run the database seeds.
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
+     *
      * @return void
      */
     public function run()
@@ -34,16 +35,15 @@ class LocationsTableSeeder extends Seeder
 //            ]);
 //        }
 
-
         $file = __DIR__.'./csv/provinces.csv';
         $header = ['id', 'name', 'lat', 'long'];
         $data = csv_to_array($file, $header);
         $provinces = array_map(function ($arr) {
             return [
-                 'name' => $arr['name'],
-                 'latitude' => $arr['lat'],
-                 'longitude' => $arr['long'],
-             ];
+                'name' => $arr['name'],
+                'latitude' => $arr['lat'],
+                'longitude' => $arr['long'],
+            ];
         }, $data);
 
         foreach ($provinces as $province) {

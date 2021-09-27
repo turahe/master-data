@@ -21,6 +21,7 @@ class CurrencyController
      * @apiResourceModel Turahe\Master\Models\Currency
      *
      * @param Request $request
+     *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index(Request $request)
@@ -44,6 +45,7 @@ class CurrencyController
      * @apiResourceModel Turahe\Master\Models\Currency
      *
      * @param Request $request
+     *
      * @return CurrencyResource
      */
     public function store(Request $request)
@@ -59,8 +61,9 @@ class CurrencyController
      * @apiResource Turahe\Master\Http\Resources\CurrencyResource
      * @apiResourceModel Turahe\Master\Models\Currency
      *
-     * @param Request $request
+     * @param Request  $request
      * @param Currency $currency
+     *
      * @return CurrencyResource
      */
     public function update(Request $request, Currency $currency)
@@ -71,12 +74,13 @@ class CurrencyController
     }
 
     /**
-     * Detail
+     * Detail.
      *
      * @apiResource Turahe\Master\Http\Resources\CurrencyResource
      * @apiResourceModel Turahe\Master\Models\Currency
      *
      * @param Currency $currency
+     *
      * @return CurrencyResource
      */
     public function show(Currency $currency)
@@ -88,7 +92,9 @@ class CurrencyController
      * Remove the specified resource from storage.
      *
      * @param Currency $currency
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Currency $currency)

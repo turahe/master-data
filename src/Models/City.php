@@ -6,21 +6,22 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
- * Turahe\Master\Models\City
+ * Turahe\Master\Models\City.
  *
- * @property string $id
- * @property string $name
- * @property string|null $type
- * @property string|null $postal_code
- * @property string|null $latitude
- * @property string|null $longitude
- * @property int $state_id
- * @property int $status
+ * @property string                          $id
+ * @property string                          $name
+ * @property string|null                     $type
+ * @property string|null                     $postal_code
+ * @property string|null                     $latitude
+ * @property string|null                     $longitude
+ * @property int                             $state_id
+ * @property int                             $status
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Turahe\Master\Models\District[] $districts
  * @property-read int|null $districts_count
  * @property-read \Turahe\Master\Models\State $state
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoFilter($filter = 'filter')
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoSort($sortByKey = 'sort', $sortDirectionKey = 'direction')
  * @method static \Illuminate\Database\Eloquent\Builder|City newModelQuery()
