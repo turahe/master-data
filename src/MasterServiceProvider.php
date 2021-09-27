@@ -6,6 +6,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 use Turahe\Master\Commands\SeedCommand;
 use Turahe\Master\Commands\SyncCoordinateCommand;
+use Turahe\Master\Database\Schema\Macros\UserStampsMacro;
 
 class MasterServiceProvider extends ServiceProvider
 {
@@ -47,6 +48,9 @@ class MasterServiceProvider extends ServiceProvider
         if (config('master.route.enabled')) {
             $this->registerRoutes();
         }
+
+        $userStampsMacro = new UserStampsMacro;
+        $userStampsMacro->register();
     }
 
     /**
