@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Test\Unit;
 
 use Turahe\Master\Models\Timezone;
@@ -25,6 +24,7 @@ class TimezoneTest extends TestCase
 
         $this->assertEquals('DST', $timezone->abbr);
     }
+
     /** @test */
     public function a_timezone_has_offset_attribute()
     {
@@ -33,6 +33,7 @@ class TimezoneTest extends TestCase
 
         $this->assertEquals('-12', $timezone->offset);
     }
+
     /** @test */
     public function a_timezone_has_isdst_attribute()
     {
@@ -41,6 +42,7 @@ class TimezoneTest extends TestCase
 
         $this->assertEquals('0', $timezone->isdst);
     }
+
     /** @test */
     public function a_timezone_has_text_attribute()
     {
@@ -49,6 +51,7 @@ class TimezoneTest extends TestCase
 
         $this->assertEquals('(UTC-12:00) International Date Line West', $timezone->text);
     }
+
     /** @test */
     public function a_timezone_has_utc_attribute()
     {

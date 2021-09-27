@@ -15,12 +15,13 @@ use Turahe\Master\Models\District;
 class DistrictController
 {
     /**
-     * List
+     * List.
      *
      * @apiResource Turahe\Master\Http\Resources\DistrictResource
      * @apiResourceModel Turahe\Master\Models\District
      *
      * @param Request $request
+     *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index(Request $request)
@@ -38,13 +39,14 @@ class DistrictController
     }
 
     /**
-     * Store
+     * Store.
      *
      * @authenticated
      * @apiResource Turahe\Master\Http\Resources\DistrictResource
      * @apiResourceModel Turahe\Master\Models\District
      *
      * @param Request $request
+     *
      * @return DistrictResource
      */
     public function store(Request $request)
@@ -55,12 +57,13 @@ class DistrictController
     }
 
     /**
-     * Detail
+     * Detail.
      *
      * @apiResource Turahe\Master\Http\Resources\DistrictResource
      * @apiResourceModel Turahe\Master\Models\District
      *
      * @param District $district
+     *
      * @return DistrictResource
      */
     public function show(District $district)
@@ -69,14 +72,15 @@ class DistrictController
     }
 
     /**
-     * Update
+     * Update.
      *
      * @authenticated
      * @apiResource Turahe\Master\Http\Resources\DistrictResource
      * @apiResourceModel Turahe\Master\Models\District
      *
      * @param District $district
-     * @param Request $request
+     * @param Request  $request
+     *
      * @return DistrictResource
      */
     public function update(District $district, Request $request)
@@ -87,11 +91,14 @@ class DistrictController
     }
 
     /**
-     * Remove
+     * Remove.
      *
      * @authenticated
+     *
      * @param District $district
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(District $district)

@@ -29,7 +29,6 @@ class ProvinceTest extends TestCase
         $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
         $province = Province::first();
 
-
         $this->assertInstanceOf(Collection::class, $province->districts);
 //        $this->assertInstanceOf(District::class, $province->districts->first());
     }

@@ -3,18 +3,19 @@
 namespace Turahe\Master\Models;
 
 /**
- * Turahe\Master\Models\Timezone
+ * Turahe\Master\Models\Timezone.
  *
- * @property string $id
- * @property string|null $value
- * @property string|null $abbr
- * @property int|null $offset
- * @property int|null $isdst
- * @property string|null $text
- * @property string|null $utc
- * @property int $status
+ * @property string                          $id
+ * @property string|null                     $value
+ * @property string|null                     $abbr
+ * @property int|null                        $offset
+ * @property int|null                        $isdst
+ * @property string|null                     $text
+ * @property string|null                     $utc
+ * @property int                             $status
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoFilter($filter = 'filter')
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoSort($sortByKey = 'sort', $sortDirectionKey = 'direction')
  * @method static \Illuminate\Database\Eloquent\Builder|Timezone newModelQuery()

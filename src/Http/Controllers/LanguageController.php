@@ -11,7 +11,6 @@ use Turahe\Master\Models\Language;
  * @group Language Data Languages
  *
  * Class LanguageController.
- * @package App\Http\Controllers
  */
 class LanguageController
 {
@@ -40,7 +39,9 @@ class LanguageController
      * @authenticated
      * @apiResource Turahe\Master\Http\Resources\LanguageResource
      * @apiResourceModel Turahe\Master\Models\Language
-     * @param  \Illuminate\Http\Request  $request
+     *
+     * @param \Illuminate\Http\Request $request
+     *
      * @return LanguageResource
      */
     public function store(Request $request)
@@ -55,7 +56,9 @@ class LanguageController
      *
      * @apiResource Turahe\Master\Http\Resources\LanguageResource
      * @apiResourceModel Turahe\Master\Models\Language
+     *
      * @param Language $language
+     *
      * @return LanguageResource
      */
     public function show(Language $language)
@@ -69,8 +72,10 @@ class LanguageController
      * @authenticated
      * @apiResource Turahe\Master\Http\Resources\LanguageResource
      * @apiResourceModel Turahe\Master\Models\Language
+     *
      * @param \Illuminate\Http\Request $request
-     * @param Language $language
+     * @param Language                 $language
+     *
      * @return LanguageResource
      */
     public function update(Request $request, Language $language)
@@ -84,8 +89,11 @@ class LanguageController
      * Delete language.
      *
      * @authenticated
+     *
      * @param Language $language
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Language $language)

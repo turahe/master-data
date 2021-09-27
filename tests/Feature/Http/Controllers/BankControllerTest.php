@@ -18,5 +18,4 @@ class BankControllerTest extends TestCase
 
         $response->assertStatus(200);
     }
-
 }

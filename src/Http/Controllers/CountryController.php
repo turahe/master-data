@@ -38,13 +38,14 @@ class CountryController
     }
 
     /**
-     * Store Country
+     * Store Country.
      *
      * @authenticated
      * @apiResource Turahe\Master\Http\Resources\CountryResource
      * @apiResourceModel Turahe\Master\Models\Country
      *
      * @param Request $request
+     *
      * @return CountryResource
      */
     public function store(Request $request)
@@ -60,7 +61,7 @@ class CountryController
     }
 
     /**
-     * Update
+     * Update.
      *
      * @authenticated
      * @apiResource Turahe\Master\Http\Resources\CountryResource
@@ -68,6 +69,7 @@ class CountryController
      *
      * @param Country $country
      * @param Request $request
+     *
      * @return CountryResource
      */
     public function update(Country $country, Request $request)
@@ -83,12 +85,13 @@ class CountryController
     }
 
     /**
-     * Show
+     * Show.
      *
      * @apiResource Turahe\Master\Http\Resources\CountryResource
      * @apiResourceModel Turahe\Master\Models\Country
      *
      * @param Country $country
+     *
      * @return CountryResource
      */
     public function show(Country $country)
@@ -97,13 +100,15 @@ class CountryController
     }
 
     /**
-     * Delete
+     * Delete.
      *
      * @apiResource Turahe\Master\Http\Resources\CountryResource
      * @apiResourceModel Turahe\Master\Models\Country
      *
      * @param Country $country
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Country $country)

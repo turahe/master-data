@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Turahe\Master\Test\Unit;
 
 use Turahe\Master\Models\Currency;
@@ -25,6 +24,7 @@ class CurrencyTest extends TestCase
 
         $this->assertEquals('AED', $currency->iso_code);
     }
+
     /** @test */
     public function a_currency_has_symbol_attribute()
     {
@@ -33,6 +33,7 @@ class CurrencyTest extends TestCase
 
         $this->assertEquals('د.إ', $currency->symbol);
     }
+
     /** @test */
     public function a_currency_has_iso_numeric_attribute()
     {

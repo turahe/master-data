@@ -22,6 +22,7 @@ class VillageController extends Controller
      * @apiResourceModel Turahe\Master\Models\Village
      *
      * @param Request $request
+     *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index(Request $request)
@@ -45,6 +46,7 @@ class VillageController extends Controller
      * @apiResourceModel Turahe\Master\Models\Village
      *
      * @param Request $request
+     *
      * @return VillageResource
      */
     public function store(Request $request)
@@ -61,7 +63,9 @@ class VillageController extends Controller
      * @apiResourceModel Turahe\Master\Models\Village
      *
      * @urlParam id string required The ID of the village. Example: 1
+     *
      * @param Village $village
+     *
      * @return VillageResource
      */
     public function show(Village $village)
@@ -79,6 +83,7 @@ class VillageController extends Controller
      *
      * @param Request $request
      * @param Village $village
+     *
      * @return VillageResource
      */
     public function update(Request $request, Village $village)
@@ -93,8 +98,11 @@ class VillageController extends Controller
      *
      * @authenticated
      * @urlParam id string required The ID of the village. Example: 1
+     *
      * @param Village $village
+     *
      * @throws \Exception
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Village $village)
