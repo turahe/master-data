@@ -1,6 +1,6 @@
 <?php
 
-namespace Sqits\UserStamps\Database\Schema\Macros;
+namespace Turahe\Master\Database\Schema\Macros;
 
 interface MacroInterface
 {

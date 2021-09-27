@@ -1,6 +1,6 @@
 <?php
 
-namespace Sqits\UserStamps\Database\Schema\Macros;
+namespace Turahe\Master\Database\Schema\Macros;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\SQLiteConnection;
@@ -23,26 +23,26 @@ class UserStampsMacro implements MacroInterface
 
     private function registerUserstamps()
     {
-        Blueprint::macro('userstamps', function () {
-            if (config('userstamps.users_table_column_type') === 'bigIncrements') {
-                $this->unsignedBigInteger(config('userstamps.created_by_column'))->nullable();
-                $this->unsignedBigInteger(config('userstamps.updated_by_column'))->nullable();
-            } elseif (config('userstamps.users_table_column_type') === 'uuid') {
-                $this->uuid(config('userstamps.created_by_column'))->nullable();
-                $this->uuid(config('userstamps.updated_by_column'))->nullable();
+        Blueprint::macro('master', function () {
+            if (config('master.users_table_column_type') === 'bigIncrements') {
+                $this->unsignedBigInteger(config('master.created_by_column'))->nullable();
+                $this->unsignedBigInteger(config('master.updated_by_column'))->nullable();
+            } elseif (config('master.users_table_column_type') === 'uuid') {
+                $this->uuid(config('master.created_by_column'))->nullable();
+                $this->uuid(config('master.updated_by_column'))->nullable();
             } else {
-                $this->unsignedInteger(config('userstamps.created_by_column'))->nullable();
-                $this->unsignedInteger(config('userstamps.updated_by_column'))->nullable();
+                $this->unsignedInteger(config('master.created_by_column'))->nullable();
+                $this->unsignedInteger(config('master.updated_by_column'))->nullable();
             }
 
-            $this->foreign(config('userstamps.created_by_column'))
-                ->references(config('userstamps.users_table_column_id_name'))
-                ->on(config('userstamps.users_table'))
+            $this->foreign(config('master.created_by_column'))
+                ->references(config('master.users_table_column_id_name'))
+                ->on(config('master.users_table'))
                 ->onDelete('set null');
 
-            $this->foreign(config('userstamps.updated_by_column'))
-                ->references(config('userstamps.users_table_column_id_name'))
-                ->on(config('userstamps.users_table'))
+            $this->foreign(config('master.updated_by_column'))
+                ->references(config('master.users_table_column_id_name'))
+                ->on(config('master.users_table'))
                 ->onDelete('set null');
 
             return $this;
@@ -52,17 +52,17 @@ class UserStampsMacro implements MacroInterface
     private function registerSoftUserstamps()
     {
         Blueprint::macro('softUserstamps', function () {
-            if (config('userstamps.users_table_column_type') === 'bigIncrements') {
-                $this->unsignedBigInteger(config('userstamps.deleted_by_column'))->nullable();
-            } elseif (config('userstamps.users_table_column_type') === 'uuid') {
-                $this->uuid(config('userstamps.deleted_by_column'))->nullable();
+            if (config('master.users_table_column_type') === 'bigIncrements') {
+                $this->unsignedBigInteger(config('master.deleted_by_column'))->nullable();
+            } elseif (config('master.users_table_column_type') === 'uuid') {
+                $this->uuid(config('master.deleted_by_column'))->nullable();
             } else {
-                $this->unsignedInteger(config('userstamps.deleted_by_column'))->nullable();
+                $this->unsignedInteger(config('master.deleted_by_column'))->nullable();
             }
 
-            $this->foreign(config('userstamps.deleted_by_column'))
-                ->references(config('userstamps.users_table_column_id_name'))
-                ->on(config('userstamps.users_table'))
+            $this->foreign(config('master.deleted_by_column'))
+                ->references(config('master.users_table_column_id_name'))
+                ->on(config('master.users_table'))
                 ->onDelete('set null');
 
             return $this;
@@ -74,19 +74,19 @@ class UserStampsMacro implements MacroInterface
         Blueprint::macro('dropUserstamps', function () {
             if (! DB::connection() instanceof SQLiteConnection) {
                 $this->dropForeign([
-                    config('userstamps.created_by_column'),
+                    config('master.created_by_column'),
                 ]);
             }
 
             if (! DB::connection() instanceof SQLiteConnection) {
                 $this->dropForeign([
-                    config('userstamps.updated_by_column'),
+                    config('master.updated_by_column'),
                 ]);
             }
 
             $this->dropColumn([
-                config('userstamps.created_by_column'),
-                config('userstamps.updated_by_column'),
+                config('master.created_by_column'),
+                config('master.updated_by_column'),
             ]);
         });
     }
@@ -96,11 +96,11 @@ class UserStampsMacro implements MacroInterface
         Blueprint::macro('dropSoftUserstamps', function () {
             if (! DB::connection() instanceof SQLiteConnection) {
                 $this->dropForeign([
-                    config('userstamps.deleted_by_column'),
+                    config('master.deleted_by_column'),
                 ]);
             }
 
-            $this->dropColumn(config('userstamps.deleted_by_column'));
+            $this->dropColumn(config('master.deleted_by_column'));
         });
     }
 }
