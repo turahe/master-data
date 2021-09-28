@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Master\Test\Models;
+namespace Turahe\Master\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Turahe\Master\Contracts\Sortable;

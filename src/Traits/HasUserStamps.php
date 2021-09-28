@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Master\Concerns;
+namespace Turahe\Master\Traits;
 
 use Turahe\Master\Observers\UserStampObserver;
 

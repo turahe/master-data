@@ -1,9 +1,12 @@
 <?php
 
-namespace Turahe\Master\Test;
+namespace Turahe\Master\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
-use Turahe\Master\Test\Models\Dummy;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Schema;
+use Turahe\Master\Tests\Models\Dummy;
+use Turahe\Master\Tests\Models\User;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -25,7 +28,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases($app)
     {
         return [
-            'Master' => \Turahe\Master\Master::class,
+            'Master' => \Turahe\Master\MasterFacade::class,
         ];
     }
 
@@ -45,11 +48,13 @@ class TestCase extends \Orchestra\Testbench\TestCase
 
     protected function setUpDatabase()
     {
+        Config::set('master.users_model', User::class);
+
         $this->app['db']->connection()->getSchemaBuilder()->create('dummies', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('custom_column_sort');
-            $table->integer('order_column');
+            $table->integer('record_ordering');
         });
 
         collect(range(1, 20))->each(function (int $i) {
@@ -57,6 +62,25 @@ class TestCase extends \Orchestra\Testbench\TestCase
                 'name' => $i,
                 'custom_column_sort' => rand(),
             ]);
+        });
+
+        $this->app['db']->connection()->getSchemaBuilder()->create('users', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('email')->unique();
+
+            $table->timestamps();
+        });
+
+        $this->app['db']->connection()->getSchemaBuilder()->create('userstamps', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+
+            $table->timestamps();
+            $table->softDeletes();
+
+            $table->userStamps();
+            $table->softUserStamps();
         });
     }
 

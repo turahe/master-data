@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Master\Database\Schema\Macros;
+namespace Turahe\Master\Contracts;
 
 interface MacroInterface
 {

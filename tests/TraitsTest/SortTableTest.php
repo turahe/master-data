@@ -1,19 +1,19 @@
 <?php
 
-namespace Turahe\Master\Test\TraitsTest;
+namespace Turahe\Master\Tests\TraitsTest;
 
 use Illuminate\Support\Collection;
-use Turahe\Master\Test\Models\Dummy;
-use Turahe\Master\Test\Models\DummyWithSoftDeletes;
-use Turahe\Master\Test\TestCase;
+use Turahe\Master\Tests\Models\Dummy;
+use Turahe\Master\Tests\Models\DummyWithSoftDeletes;
+use Turahe\Master\Tests\TestCase;
 
 class SortTableTest extends TestCase
 {
     /** @test */
-    public function it_sets_the_order_column_on_creation()
+    public function it_sets_the_record_ordering_on_creation()
     {
         foreach (Dummy::all() as $dummy) {
-            $this->assertEquals($dummy->name, $dummy->order_column);
+            $this->assertEquals($dummy->name, $dummy->record_ordering);
         }
     }
 
@@ -40,7 +40,7 @@ class SortTableTest extends TestCase
 
         Dummy::setNewOrder($newOrder);
 
-        foreach (Dummy::orderBy('order_column')->get() as $i => $dummy) {
+        foreach (Dummy::orderBy('record_ordering')->get() as $i => $dummy) {
             $this->assertEquals($newOrder[$i], $dummy->id);
         }
     }
@@ -52,7 +52,7 @@ class SortTableTest extends TestCase
 
         Dummy::setNewOrderByCustomColumn('custom_column_sort', $newOrder);
 
-        foreach (Dummy::orderBy('order_column')->get() as $i => $dummy) {
+        foreach (Dummy::orderBy('record_ordering')->get() as $i => $dummy) {
             $this->assertEquals($newOrder[$i], $dummy->custom_column_sort);
         }
     }
@@ -64,7 +64,7 @@ class SortTableTest extends TestCase
 
         Dummy::setNewOrder($newOrder);
 
-        foreach (Dummy::orderBy('order_column')->get() as $i => $dummy) {
+        foreach (Dummy::orderBy('record_ordering')->get() as $i => $dummy) {
             $this->assertEquals($newOrder[$i], $dummy->id);
         }
     }
@@ -76,7 +76,7 @@ class SortTableTest extends TestCase
 
         Dummy::setNewOrderByCustomColumn('custom_column_sort', $newOrder);
 
-        foreach (Dummy::orderBy('order_column')->get() as $i => $dummy) {
+        foreach (Dummy::orderBy('record_ordering')->get() as $i => $dummy) {
             $this->assertEquals($newOrder[$i], $dummy->custom_column_sort);
         }
     }
@@ -94,7 +94,7 @@ class SortTableTest extends TestCase
 
         DummyWithSoftDeletes::setNewOrder($newOrder);
 
-        foreach (DummyWithSoftDeletes::withTrashed()->orderBy('order_column')->get() as $i => $dummy) {
+        foreach (DummyWithSoftDeletes::withTrashed()->orderBy('record_ordering')->get() as $i => $dummy) {
             $this->assertEquals($newOrder[$i], $dummy->id);
         }
     }
@@ -112,7 +112,7 @@ class SortTableTest extends TestCase
 
         DummyWithSoftDeletes::setNewOrderByCustomColumn('custom_column_sort', $newOrder);
 
-        foreach (DummyWithSoftDeletes::withTrashed()->orderBy('order_column')->get() as $i => $dummy) {
+        foreach (DummyWithSoftDeletes::withTrashed()->orderBy('record_ordering')->get() as $i => $dummy) {
             $this->assertEquals($newOrder[$i], $dummy->custom_column_sort);
         }
     }
@@ -128,7 +128,7 @@ class SortTableTest extends TestCase
 
         DummyWithSoftDeletes::setNewOrder($newOrder);
 
-        foreach (DummyWithSoftDeletes::orderBy('order_column')->get() as $i => $dummy) {
+        foreach (DummyWithSoftDeletes::orderBy('record_ordering')->get() as $i => $dummy) {
             $this->assertEquals($newOrder[$i], $dummy->id);
         }
     }
@@ -144,7 +144,7 @@ class SortTableTest extends TestCase
 
         DummyWithSoftDeletes::setNewOrderByCustomColumn('custom_column_sort', $newOrder);
 
-        foreach (DummyWithSoftDeletes::orderBy('order_column')->get() as $i => $dummy) {
+        foreach (DummyWithSoftDeletes::orderBy('record_ordering')->get() as $i => $dummy) {
             $this->assertEquals($newOrder[$i], $dummy->custom_column_sort);
         }
     }
@@ -187,7 +187,7 @@ class SortTableTest extends TestCase
     {
         $i = 1;
 
-        foreach (Dummy::ordered()->get()->pluck('order_column') as $order) {
+        foreach (Dummy::ordered()->get()->pluck('record_ordering') as $order) {
             $this->assertEquals($i++, $order);
         }
     }
@@ -198,16 +198,16 @@ class SortTableTest extends TestCase
         $firstModel = Dummy::find(3);
         $secondModel = Dummy::find(4);
 
-        $this->assertEquals($firstModel->order_column, 3);
-        $this->assertEquals($secondModel->order_column, 4);
+        $this->assertEquals($firstModel->record_ordering, 3);
+        $this->assertEquals($secondModel->record_ordering, 4);
 
         $this->assertNotFalse($firstModel->moveOrderDown());
 
         $firstModel = Dummy::find(3);
         $secondModel = Dummy::find(4);
 
-        $this->assertEquals($firstModel->order_column, 4);
-        $this->assertEquals($secondModel->order_column, 3);
+        $this->assertEquals($firstModel->record_ordering, 4);
+        $this->assertEquals($secondModel->record_ordering, 3);
     }
 
     /** @test */
@@ -215,7 +215,7 @@ class SortTableTest extends TestCase
     {
         $lastModel = Dummy::all()->last();
 
-        $this->assertEquals($lastModel->order_column, 20);
+        $this->assertEquals($lastModel->record_ordering, 20);
         $this->assertEquals($lastModel, $lastModel->moveOrderDown());
     }
 
@@ -225,16 +225,16 @@ class SortTableTest extends TestCase
         $firstModel = Dummy::find(3);
         $secondModel = Dummy::find(4);
 
-        $this->assertEquals($firstModel->order_column, 3);
-        $this->assertEquals($secondModel->order_column, 4);
+        $this->assertEquals($firstModel->record_ordering, 3);
+        $this->assertEquals($secondModel->record_ordering, 4);
 
         $this->assertNotFalse($secondModel->moveOrderUp());
 
         $firstModel = Dummy::find(3);
         $secondModel = Dummy::find(4);
 
-        $this->assertEquals($firstModel->order_column, 4);
-        $this->assertEquals($secondModel->order_column, 3);
+        $this->assertEquals($firstModel->record_ordering, 4);
+        $this->assertEquals($secondModel->record_ordering, 3);
     }
 
     /** @test */
@@ -242,7 +242,7 @@ class SortTableTest extends TestCase
     {
         $lastModel = Dummy::first();
 
-        $this->assertEquals($lastModel->order_column, 1);
+        $this->assertEquals($lastModel->record_ordering, 1);
         $this->assertEquals($lastModel, $lastModel->moveOrderUp());
     }
 
@@ -252,13 +252,13 @@ class SortTableTest extends TestCase
         $firstModel = Dummy::find(3);
         $secondModel = Dummy::find(4);
 
-        $this->assertEquals($firstModel->order_column, 3);
-        $this->assertEquals($secondModel->order_column, 4);
+        $this->assertEquals($firstModel->record_ordering, 3);
+        $this->assertEquals($secondModel->record_ordering, 4);
 
         Dummy::swapOrder($firstModel, $secondModel);
 
-        $this->assertEquals($firstModel->order_column, 4);
-        $this->assertEquals($secondModel->order_column, 3);
+        $this->assertEquals($firstModel->record_ordering, 4);
+        $this->assertEquals($secondModel->record_ordering, 3);
     }
 
     /** @test */
@@ -267,13 +267,13 @@ class SortTableTest extends TestCase
         $firstModel = Dummy::find(3);
         $secondModel = Dummy::find(4);
 
-        $this->assertEquals($firstModel->order_column, 3);
-        $this->assertEquals($secondModel->order_column, 4);
+        $this->assertEquals($firstModel->record_ordering, 3);
+        $this->assertEquals($secondModel->record_ordering, 4);
 
         $firstModel->swapOrderWithModel($secondModel);
 
-        $this->assertEquals($firstModel->order_column, 4);
-        $this->assertEquals($secondModel->order_column, 3);
+        $this->assertEquals($firstModel->record_ordering, 4);
+        $this->assertEquals($secondModel->record_ordering, 3);
     }
 
     /** @test */
@@ -285,14 +285,14 @@ class SortTableTest extends TestCase
 
         $model = Dummy::find($position);
 
-        $this->assertEquals(3, $model->order_column);
+        $this->assertEquals(3, $model->record_ordering);
 
         $model = $model->moveToStart();
 
-        $this->assertEquals(1, $model->order_column);
+        $this->assertEquals(1, $model->record_ordering);
 
-        $oldModels = $oldModels->pluck('order_column', 'id');
-        $newModels = Dummy::whereNot('id', $position)->get()->pluck('order_column', 'id');
+        $oldModels = $oldModels->pluck('record_ordering', 'id');
+        $newModels = Dummy::whereNot('id', $position)->get()->pluck('record_ordering', 'id');
 
         foreach ($oldModels as $key => $oldModel) {
             $this->assertEquals($oldModel + 1, $newModels[$key]);
@@ -310,15 +310,15 @@ class SortTableTest extends TestCase
 
         $model = Dummy::find($position);
 
-        $this->assertNotEquals(20, $model->order_column);
+        $this->assertNotEquals(20, $model->record_ordering);
 
         $model = $model->moveToEnd();
 
-        $this->assertEquals(20, $model->order_column);
+        $this->assertEquals(20, $model->record_ordering);
 
-        $oldModels = $oldModels->pluck('order_column', 'id');
+        $oldModels = $oldModels->pluck('record_ordering', 'id');
 
-        $newModels = Dummy::whereNot('id', $position)->get()->pluck('order_column', 'id');
+        $newModels = Dummy::whereNot('id', $position)->get()->pluck('record_ordering', 'id');
 
         foreach ($oldModels as $key => $order) {
             if ($order > $position) {
@@ -333,7 +333,7 @@ class SortTableTest extends TestCase
     public function it_can_use_config_properties()
     {
         config([
-            'master.record_ordering_name' => 'order_column',
+            'master.record_ordering_name' => 'record_ordering',
             'master.sort_when_creating' => true,
         ]);
 
@@ -350,12 +350,12 @@ class SortTableTest extends TestCase
     {
         $model = new class() extends Dummy {
             public $sortable = [
-                'record_ordering_name' => 'my_custom_order_column',
+                'record_ordering_name' => 'my_custom_record_ordering',
                 'sort_when_creating' => false,
             ];
         };
 
-        $this->assertEquals($model->determineOrderColumnName(), 'my_custom_order_column');
+        $this->assertEquals($model->determineOrderColumnName(), 'my_custom_record_ordering');
         $this->assertFalse($model->shouldSortWhenCreating());
     }
 

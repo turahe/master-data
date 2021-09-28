@@ -1,6 +1,6 @@
 <?php
 
-namespace Turahe\Master\Test;
+namespace Turahe\Master\Tests;
 
 use Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase;
 

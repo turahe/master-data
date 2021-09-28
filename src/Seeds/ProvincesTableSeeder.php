@@ -10,7 +10,7 @@ class ProvincesTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__.'/../../resources/states.json';
+        $file = __DIR__ . '/../../resources/states.json';
 
         $data = json_decode(file_get_contents($file), true);
         $provinces = array_map(function ($province) {
@@ -28,8 +28,6 @@ class ProvincesTableSeeder extends Seeder
             ];
         }, $data);
 
-        foreach (array_chunk($provinces, 30) as $province) {
-            State::insert($provinces);
-        }
+        State::insert($provinces);
     }
 }

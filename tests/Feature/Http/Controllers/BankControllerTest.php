@@ -2,7 +2,7 @@
 
 namespace Turahe\Master\Test\Feature\Http\Controllers;
 
-use Turahe\Master\Test\TestCase;
+use Turahe\Master\Tests\TestCase;
 
 class BankControllerTest extends TestCase
 {

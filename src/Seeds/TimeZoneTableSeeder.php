@@ -15,7 +15,7 @@ class TimeZoneTableSeeder extends Seeder
      */
     public function run()
     {
-        $file = __DIR__.'/../../resources/timezones.json';
+        $file = __DIR__ . '/../../resources/timezones.json';
         $data = json_decode(file_get_contents($file), true);
 
         $timezones = array_map(function ($color) {
@@ -32,8 +32,6 @@ class TimeZoneTableSeeder extends Seeder
             ];
         }, $data);
 
-        foreach (array_chunk($timezones, 30) as $timezone) {
-            Timezone::insert($timezone);
-        }
+        Timezone::insert($timezones);
     }
 }

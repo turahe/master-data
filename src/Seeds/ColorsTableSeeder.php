@@ -23,9 +23,7 @@ class ColorsTableSeeder extends Seeder
                 'updated_at' => Carbon::now()->toDateTimeString(),
             ];
         }, $this->allColors);
-        foreach (array_chunk($colors, 30) as $color) {
-            Color::insert($color);
-        }
+        Color::insert($colors);
     }
 
     /**

@@ -1,9 +1,9 @@
 <?php
 
-namespace Turahe\Master\Test\Unit;
+namespace Turahe\Master\Tests\Unit;
 
 use Turahe\Master\Models\Color;
-use Turahe\Master\Test\TestCase;
+use Turahe\Master\Tests\TestCase;
 
 class ColorTest extends TestCase
 {

@@ -10,7 +10,7 @@ class LanguagesTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__.'/../../resources/languages.json';
+        $file = __DIR__ . '/../../resources/languages.json';
         $data = json_decode(file_get_contents($file), true);
         $languages = array_map(function ($arr) {
             return [
@@ -22,8 +22,6 @@ class LanguagesTableSeeder extends Seeder
             ];
         }, $data);
 
-        foreach (array_chunk($languages, 30) as $language) {
-            Language::insert($language);
-        }
+        Language::insert($languages);
     }
 }

@@ -62,7 +62,7 @@ class MasterService
      *
      * @return mixed
      */
-    public function paginateProvinces($numRows = 15)
+    public function paginateProvinces(int $numRows = 15)
     {
         if ($this->search) {
             return Models\Province::search($this->search)->paginate();
@@ -88,7 +88,7 @@ class MasterService
      *
      * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
      */
-    public function paginateCities($numRows = 15)
+    public function paginateCities(int $numRows = 15)
     {
         if ($this->search) {
             return Models\City::search($this->search)->paginate();
@@ -114,7 +114,7 @@ class MasterService
      *
      * @return mixed
      */
-    public function paginateDistricts($numRows = 15)
+    public function paginateDistricts(int $numRows = 15)
     {
         if ($this->search) {
             return Models\District::search($this->search)->paginate();
@@ -140,7 +140,7 @@ class MasterService
      *
      * @return mixed
      */
-    public function paginateVillages($numRows = 15)
+    public function paginateVillages(int $numRows = 15)
     {
         if ($this->search) {
             return Models\Village::search($this->search)->paginate();
@@ -276,7 +276,7 @@ class MasterService
      *
      * @return mixed
      */
-    private function loadRelation($object, $relation, $belongsTo = false)
+    private function loadRelation($object, $relation, bool $belongsTo = false)
     {
         $exploded = explode('.', $relation);
         $targetRelationName = end($exploded);

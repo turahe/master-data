@@ -4,18 +4,21 @@ namespace Turahe\Master\Seeds;
 
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 use Turahe\Master\Models\District;
 
 class DistrictsTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__.'/../../resources/csv/districts.csv';
+        $file = __DIR__ . '/../../resources/csv/districts.csv';
+
+
         $header = ['id', 'city_id', 'name', 'lat', 'long'];
         $data = csv_to_array($file, $header);
         $districts = array_map(function ($arr) {
             return [
-                'name' => $arr['name'],
+                'name' => Str::title($arr['name']),
                 'city_id' => $arr['city_id'],
                 'latitude' => $arr['lat'],
                 'longitude' => $arr['long'],
@@ -24,8 +27,6 @@ class DistrictsTableSeeder extends Seeder
             ];
         }, $data);
 
-        foreach (array_chunk($districts, 30) as $district) {
-            District::insert($district);
-        }
+        District::insert($districts);
     }
 }

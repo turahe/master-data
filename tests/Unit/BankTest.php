@@ -1,9 +1,9 @@
 <?php
 
-namespace Turahe\Master\Test\Unit;
+namespace Turahe\Master\Tests\Unit;
 
 use Turahe\Master\Models\Bank;
-use Turahe\Master\Test\TestCase;
+use Turahe\Master\Tests\TestCase;
 
 class BankTest extends TestCase
 {

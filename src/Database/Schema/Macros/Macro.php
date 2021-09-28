@@ -5,8 +5,12 @@ namespace Turahe\Master\Database\Schema\Macros;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\SQLiteConnection;
 use Illuminate\Support\Facades\DB;
+use Turahe\Master\Contracts\MacroInterface;
 
-class UserStampsMacro implements MacroInterface
+/**
+ *
+ */
+class Macro implements MacroInterface
 {
     /**
      * Bootstrap the schema macro.
@@ -15,15 +19,20 @@ class UserStampsMacro implements MacroInterface
      */
     public function register()
     {
-        $this->registerUserstamps();
-        $this->registerSoftUserstamps();
-        $this->registerDropUserstamps();
-        $this->registerDropSoftUserstamps();
+        $this->registerUserStamps();
+        $this->registerSoftUserStamps();
+        $this->registerDropUserStamps();
+        $this->registerDropSoftUserStamps();
+        $this->registerRecordStatus();
+        $this->registerNestedSet();
     }
 
-    private function registerUserstamps()
+    /**
+     *
+     */
+    private function registerUserStamps()
     {
-        Blueprint::macro('master', function () {
+        Blueprint::macro('userStamps', function () {
             if (config('master.users_table_column_type') === 'bigIncrements') {
                 $this->unsignedBigInteger(config('master.created_by_column'))->nullable();
                 $this->unsignedBigInteger(config('master.updated_by_column'))->nullable();
@@ -49,9 +58,12 @@ class UserStampsMacro implements MacroInterface
         });
     }
 
-    private function registerSoftUserstamps()
+    /**
+     *
+     */
+    private function registerSoftUserStamps()
     {
-        Blueprint::macro('softUserstamps', function () {
+        Blueprint::macro('softUserStamps', function () {
             if (config('master.users_table_column_type') === 'bigIncrements') {
                 $this->unsignedBigInteger(config('master.deleted_by_column'))->nullable();
             } elseif (config('master.users_table_column_type') === 'uuid') {
@@ -69,9 +81,12 @@ class UserStampsMacro implements MacroInterface
         });
     }
 
-    private function registerDropUserstamps()
+    /**
+     *
+     */
+    private function registerDropUserStamps()
     {
-        Blueprint::macro('dropUserstamps', function () {
+        Blueprint::macro('dropUserStamps', function () {
             if (! DB::connection() instanceof SQLiteConnection) {
                 $this->dropForeign([
                     config('master.created_by_column'),
@@ -91,9 +106,12 @@ class UserStampsMacro implements MacroInterface
         });
     }
 
-    private function registerDropSoftUserstamps()
+    /**
+     *
+     */
+    private function registerDropSoftUserStamps()
     {
-        Blueprint::macro('dropSoftUserstamps', function () {
+        Blueprint::macro('dropSoftUserStamps', function () {
             if (! DB::connection() instanceof SQLiteConnection) {
                 $this->dropForeign([
                     config('master.deleted_by_column'),
@@ -102,5 +120,32 @@ class UserStampsMacro implements MacroInterface
 
             $this->dropColumn(config('master.deleted_by_column'));
         });
+    }
+
+    /**
+     *
+     */
+    private function registerNestedSet()
+    {
+        Blueprint::macro('nestedSet', function () {
+            NestedSet::columns($this);
+        });
+
+        Blueprint::macro('dropNestedSet', function () {
+            NestedSet::dropColumns($this);
+        });
+
+
+    }
+
+    /**
+     *
+     */
+    private function registerRecordStatus()
+    {
+        Blueprint::macro('recordStatus', function () {
+            RecordStatus::column($this);
+        });
+
     }
 }

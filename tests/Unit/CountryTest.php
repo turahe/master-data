@@ -1,11 +1,11 @@
 <?php
 
-namespace Turahe\Master\Test\Unit;
+namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Collection;
 use Turahe\Master\Models\Country;
 use Turahe\Master\Models\Province;
-use Turahe\Master\Test\TestCase;
+use Turahe\Master\Tests\TestCase;
 
 class CountryTest extends TestCase
 {

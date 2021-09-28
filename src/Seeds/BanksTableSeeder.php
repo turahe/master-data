@@ -23,8 +23,6 @@ class BanksTableSeeder extends Seeder
             ];
         }, $data);
 
-        foreach (array_chunk($banks, 30) as $bank) {
-            Bank::insert($bank);
-        }
+            Bank::insert($banks);
     }
 }

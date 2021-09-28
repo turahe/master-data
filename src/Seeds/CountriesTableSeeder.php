@@ -15,7 +15,7 @@ class CountriesTableSeeder extends Seeder
      */
     public function run()
     {
-        $file = __DIR__.'/../../resources/countries.json';
+        $file = __DIR__ . '/../../resources/countries.json';
         $data = json_decode(file_get_contents($file), true);
         $countries = array_map(function ($country) {
             return [
@@ -31,17 +31,15 @@ class CountriesTableSeeder extends Seeder
                 'name' => $country['name'],
                 'region_code' => (isset($country['region-code'])) ? $country['region-code'] : null, //$country['region-code'],
                 'sub_region_code' => (isset($country['sub-region-code'])) ? $country['sub-region-code'] : null, //$country['sub-region-code'],
-                'eea' => (bool) $country['eea'],
+                'eea' => (bool)$country['eea'],
                 'calling_code' => $country['calling_code'],
                 'currency_symbol' => ((isset($country['currency_symbol'])) ? $country['currency_symbol'] : null),
-                'flag' =>((isset($country['flag'])) ? $country['flag'] : null),
+                'flag' => ((isset($country['flag'])) ? $country['flag'] : null),
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString(),
             ];
         }, $data);
 
-        foreach (array_chunk($countries, 30) as $country) {
-            Country::insert($country);
-        }
+        Country::insert($countries);
     }
 }

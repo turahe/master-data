@@ -16,7 +16,7 @@ class CurrenciesTableSeeder extends Seeder
     public function run()
     {
         //Get all of the currencies
-        $file = __DIR__.'/../../resources/currencies.json';
+        $file = __DIR__ . '/../../resources/currencies.json';
 
         $data = json_decode(file_get_contents($file), true);
         $currencies = array_map(function ($currency) {
@@ -41,8 +41,6 @@ class CurrenciesTableSeeder extends Seeder
             ];
         }, $data);
 
-        foreach (array_chunk($currencies, 20) as $currency) {
-            Currency::insert($currency);
-        }
+        Currency::insert($currencies);
     }
 }
