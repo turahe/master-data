@@ -333,7 +333,7 @@ class SortTableTest extends TestCase
     public function it_can_use_config_properties()
     {
         config([
-            'master.order_column_name' => 'order_column',
+            'master.record_ordering_name' => 'order_column',
             'master.sort_when_creating' => true,
         ]);
 
@@ -341,7 +341,7 @@ class SortTableTest extends TestCase
             public $sortable = [];
         };
 
-        $this->assertEquals(config('master.order_column_name'), $model->determineOrderColumnName());
+        $this->assertEquals(config('master.record_ordering_name'), $model->determineOrderColumnName());
         $this->assertEquals(config('master.sort_when_creating'), $model->shouldSortWhenCreating());
     }
 
@@ -350,7 +350,7 @@ class SortTableTest extends TestCase
     {
         $model = new class() extends Dummy {
             public $sortable = [
-                'order_column_name' => 'my_custom_order_column',
+                'record_ordering_name' => 'my_custom_order_column',
                 'sort_when_creating' => false,
             ];
         };
