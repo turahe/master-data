@@ -21,7 +21,7 @@ trait HasUserStamps
      *
      * @return Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function author()
+    public function creator()
     {
         return $this->belongsTo(
             config('master.users_model'),
