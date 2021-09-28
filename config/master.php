@@ -7,7 +7,7 @@ return [
         'prefix' => 'master',
     ],
     'view' => [
-        'layout' => 'ui::layouts.app',
+        'layout' => 'master::layouts.app',
     ],
     'menu' => [
         'enabled' => false,
