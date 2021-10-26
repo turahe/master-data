@@ -33,7 +33,7 @@ class DistrictController
                 \Turahe\Master\Http\Pipelines\MaxCount::class,
             ])
             ->thenReturn()
-            ->get();
+            ->paginate($request->input('limit', 10));
 
         return  DistrictResource::collection($districts);
     }

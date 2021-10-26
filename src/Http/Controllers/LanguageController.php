@@ -19,7 +19,7 @@ class LanguageController
      *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
-    public function index()
+    public function index(Request $request)
     {
         $languages = app(Pipeline::class)
             ->send(Language::query())
@@ -28,7 +28,7 @@ class LanguageController
                 \Turahe\Master\Http\Pipelines\MaxCount::class,
             ])
             ->thenReturn()
-            ->get();
+            ->paginate($request->input('limit', 10));
 
         return LanguageResource::collection($languages);
     }

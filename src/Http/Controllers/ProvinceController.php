@@ -8,34 +8,35 @@ use Turahe\Master\Http\Resources\StateResource;
 use Turahe\Master\Models\State;
 
 /**
- * @group Master Data State
+ * @group Master Data Province
  *
- * Class StateController.
+ * Class ProvinceController.
  */
-class StateController
+class ProvinceController
 {
     /**
      * List of state/province.
      *
-     * Get all State by country id
+     * Get all Province by country id
      *
      * @apiResource Turahe\Master\Http\Resources\StateResource
-     * @apiResourceModel Turahe\Master\Models\State
+     * @apiResourceModel Turahe\Master\Models\Province
      *
      * @param $id
      *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
-    public function index($id)
+    public function index(Request $request)
     {
         $states = app(Pipeline::class)
-            ->send(State::where('country_id', $id))
+            ->send(State::query())
             ->through([
                 \Turahe\Master\Http\Pipelines\Sort::class,
                 \Turahe\Master\Http\Pipelines\MaxCount::class,
+                \Turahe\Master\Http\Pipelines\Country::class,
             ])
             ->thenReturn()
-            ->get();
+            ->paginate($request->input('limit', 10));
 
         return StateResource::collection($states);
     }
@@ -45,7 +46,7 @@ class StateController
      *
      * @authenticated
      * @apiResource Turahe\Master\Http\Resources\StateResource
-     * @apiResourceModel Turahe\Master\Models\State
+     * @apiResourceModel Turahe\Master\Models\Province
      *
      * @param Request $request
      *
@@ -63,7 +64,7 @@ class StateController
      *
      * @authenticated
      * @apiResource Turahe\Master\Http\Resources\StateResource
-     * @apiResourceModel Turahe\Master\Models\State
+     * @apiResourceModel Turahe\Master\Models\Province
      *
      * @param Request $request
      * @param State   $state
@@ -81,7 +82,7 @@ class StateController
      * View all  province/state.
      *
      * @apiResource Turahe\Master\Http\Resources\StateResource
-     * @apiResourceModel Turahe\Master\Models\State
+     * @apiResourceModel Turahe\Master\Models\Province
      *
      * @param State $state
      *

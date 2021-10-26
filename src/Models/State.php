@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
 /**
- * Turahe\Master\Models\State.
+ * Turahe\Master\Models\Province.
  *
  * @property int                             $id
  * @property int                             $country_id

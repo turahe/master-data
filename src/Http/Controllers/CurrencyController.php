@@ -2,9 +2,9 @@
 
 namespace Turahe\Master\Http\Controllers;
 
-use App\Http\Resources\CurrencyResource;
 use Illuminate\Http\Request;
 use Illuminate\Pipeline\Pipeline;
+use Turahe\Master\Http\Resources\CurrencyResource;
 use Turahe\Master\Models\Currency;
 
 /**

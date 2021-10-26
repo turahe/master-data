@@ -6,7 +6,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
  * @property int id
- * @property int state_id
+ * @property int province_id
  * @property string name
  * @property string type
  * @property string postal_code
@@ -26,7 +26,7 @@ class CityResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'state_id' => $this->state_id,
+            'province_id' => $this->province_id,
             'name' => $this->name,
             'type' => $this->type,
             'postal_code' => $this->postal_code,

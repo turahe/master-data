@@ -22,17 +22,17 @@ class CityController
      *
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
-    public function index()
+    public function index(Request $request)
     {
         $cities = app(Pipeline::class)
             ->send(City::query())
             ->through([
-                \Turahe\Master\Http\Pipelines\State::class,
+                \Turahe\Master\Http\Pipelines\Province::class,
                 \Turahe\Master\Http\Pipelines\Sort::class,
                 \Turahe\Master\Http\Pipelines\MaxCount::class,
             ])
             ->thenReturn()
-            ->get();
+            ->paginate($request->input('limit', 10));
 
         return CityResource::collection($cities);
     }

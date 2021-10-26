@@ -54,7 +54,17 @@ class City extends Model
      */
     public function state(): BelongsTo
     {
-        return $this->belongsTo(State::class, 'state_id');
+        return $this->belongsTo(State::class, 'province_id');
+    }
+
+    /**
+     * Return the city's province.
+     *
+     * @return BelongsTo
+     */
+    public function province(): BelongsTo
+    {
+        return $this->belongsTo(State::class, 'province_id');
     }
 
     /**
@@ -65,6 +75,9 @@ class City extends Model
         return $this->hasMany(District::class, 'city_id');
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough
+     */
     public function villages()
     {
         return $this->hasManyThrough(Village::class, District::class);

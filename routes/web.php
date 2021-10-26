@@ -25,17 +25,17 @@ $router->group(
         $router->patch('cities/{id}', [\Turahe\Master\Http\Controllers\CityController::class, 'update']);
         $router->delete('cities/{id}', [\Turahe\Master\Http\Controllers\CityController::class, 'destroy']);
 
-        $router->get('states', [\Turahe\Master\Http\Controllers\StateController::class, 'index']);
-        $router->post('states', [\Turahe\Master\Http\Controllers\StateController::class, 'store']);
-        $router->get('states/{id}', [\Turahe\Master\Http\Controllers\StateController::class, 'show']);
-        $router->patch('states/{id}', [\Turahe\Master\Http\Controllers\StateController::class, 'update']);
-        $router->delete('states/{id}', [\Turahe\Master\Http\Controllers\StateController::class, 'destroy']);
+        $router->get('states', [\Turahe\Master\Http\Controllers\ProvinceController::class, 'index']);
+        $router->post('states', [\Turahe\Master\Http\Controllers\ProvinceController::class, 'store']);
+        $router->get('states/{id}', [\Turahe\Master\Http\Controllers\ProvinceController::class, 'show']);
+        $router->patch('states/{id}', [\Turahe\Master\Http\Controllers\ProvinceController::class, 'update']);
+        $router->delete('states/{id}', [\Turahe\Master\Http\Controllers\ProvinceController::class, 'destroy']);
 
-        $router->get('provinces', [\Turahe\Master\Http\Controllers\StateController::class, 'index']);
-        $router->post('provinces', [\Turahe\Master\Http\Controllers\StateController::class, 'store']);
-        $router->get('provinces/{id}', [\Turahe\Master\Http\Controllers\StateController::class, 'show']);
-        $router->patch('provinces/{id}', [\Turahe\Master\Http\Controllers\StateController::class, 'update']);
-        $router->delete('provinces/{id}', [\Turahe\Master\Http\Controllers\StateController::class, 'destroy']);
+        $router->get('provinces', [\Turahe\Master\Http\Controllers\ProvinceController::class, 'index']);
+        $router->post('provinces', [\Turahe\Master\Http\Controllers\ProvinceController::class, 'store']);
+        $router->get('provinces/{id}', [\Turahe\Master\Http\Controllers\ProvinceController::class, 'show']);
+        $router->patch('provinces/{id}', [\Turahe\Master\Http\Controllers\ProvinceController::class, 'update']);
+        $router->delete('provinces/{id}', [\Turahe\Master\Http\Controllers\ProvinceController::class, 'destroy']);
 
         $router->get('countries', [\Turahe\Master\Http\Controllers\CountryController::class, 'index']);
         $router->post('countries', [\Turahe\Master\Http\Controllers\CountryController::class, 'store']);

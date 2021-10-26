@@ -2,7 +2,7 @@
 
 namespace Turahe\Master\Http\Pipelines;
 
-class State extends Filter
+class Province extends Filter
 {
     protected function applyFilters($builder)
     {
