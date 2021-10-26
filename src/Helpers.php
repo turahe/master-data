@@ -4,14 +4,14 @@ if (!function_exists('currency')) {
     /**
      * Convert given number.
      *
-     * @param float  $amount
-     * @param string $from
-     * @param string $to
-     * @param bool   $format
+     * @param float|null $amount
+     * @param string|null $from
+     * @param string|null $to
+     * @param bool $format
      *
      * @return string
      */
-    function currency($amount = null, $from = null, $to = null, $format = true)
+    function currency(float $amount = null, string $from = null, string $to = null, bool $format = true)
     {
         if (is_null($amount)) {
             return app('currency');
@@ -25,13 +25,13 @@ if (!function_exists('currency_format')) {
     /**
      * Format given number.
      *
-     * @param float  $amount
-     * @param string $currency
-     * @param bool   $include_symbol
+     * @param float|null $amount
+     * @param string|null $currency
+     * @param bool $include_symbol
      *
      * @return string
      */
-    function currency_format($amount = null, $currency = null, $include_symbol = true)
+    function currency_format(float $amount = null, string $currency = null, bool $include_symbol = true)
     {
         return app('currency')->format($amount, $currency, $include_symbol);
     }

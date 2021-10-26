@@ -11,7 +11,7 @@ class DistrictsTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__ . '/../../resources/csv/districts.csv';
+        $file = __DIR__ . '/../../resources/id/districts.csv';
 
 
         $header = ['id', 'city_id', 'name', 'lat', 'long'];

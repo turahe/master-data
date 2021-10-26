@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMasterDistrictsTable extends Migration
+class CreateMasterProvincesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,22 @@ class CreateMasterDistrictsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tm_districts', function (Blueprint $table) {
+        Schema::create('tm_provinces', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('city_id');
+            $table->unsignedBigInteger('country_id')->nullable();
             $table->string('name', 255);
+            $table->string('region', 255)->nullable();
+            $table->string('iso_3166_2', 2)->nullable();
             $table->string('code', 10)->nullable();
+            $table->string('calling_code', 5)->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
             $table->timestamps();
         });
-        Schema::table('tm_districts', function (Blueprint $table) {
-            $table->foreign('city_id')
-                ->references('id')->on('tm_cities')
+
+        Schema::table('tm_provinces', function (Blueprint $table) {
+            $table->foreign('country_id')
+                ->references('id')->on('tm_countries')
                 ->onDelete('cascade');
         });
     }
@@ -36,6 +40,6 @@ class CreateMasterDistrictsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tm_districts');
+        Schema::dropIfExists('tm_provinces');
     }
 }

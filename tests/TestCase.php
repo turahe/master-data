@@ -4,7 +4,6 @@ namespace Turahe\Master\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Schema;
 use Turahe\Master\Tests\Models\Dummy;
 use Turahe\Master\Tests\Models\User;
 

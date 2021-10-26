@@ -88,7 +88,7 @@ class State extends Model
      */
 //    public function getLogoPathAttribute(): string
 //    {
-//        $folder = 'indonesia-logo/';
+//        $folder = 'logo/';
 //        $id = $this->getAttributeValue('id');
 //        $arr_glob = glob(public_path().'/'.$folder.$id.'.*');
 //        if (count($arr_glob) == 1) {
