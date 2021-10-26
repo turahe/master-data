@@ -17,6 +17,7 @@ class CreateMasterCitiesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('type')->nullable();
+            $table->string('province_code', 10)->nullable();
             $table->string('code', 10)->nullable();
             $table->string('postal_code')->nullable();
             $table->string('latitude')->nullable();
@@ -27,7 +28,7 @@ class CreateMasterCitiesTable extends Migration
 
         Schema::table('tm_cities', function (Blueprint $table) {
             $table->foreign('state_id')
-                ->references('id')->on('tm_states')
+                ->references('id')->on('tm_provinces')
                 ->onDelete('cascade');
         });
     }

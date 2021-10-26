@@ -57,7 +57,7 @@ class State extends Model
         'name',
         'state_code',
     ];
-    protected $table = 'tm_states';
+    protected $table = 'tm_provinces';
 
     /**
      * @return BelongsTo
