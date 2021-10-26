@@ -15,9 +15,8 @@ class CreateMasterVillagesTable extends Migration
     {
         Schema::create('tm_villages', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('district_id');
+            $table->unsignedBigInteger('district_id')->nullable();
             $table->string('name', 255);
-            $table->string('district_code', 10)->nullable();
             $table->string('code', 10)->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();

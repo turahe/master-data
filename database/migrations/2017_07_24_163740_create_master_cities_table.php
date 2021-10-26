@@ -15,19 +15,19 @@ class CreateMasterCitiesTable extends Migration
     {
         Schema::create('tm_cities', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('province_id')->nullable();
             $table->string('name');
             $table->string('type')->nullable();
-            $table->string('province_code', 10)->nullable();
             $table->string('code', 10)->nullable();
             $table->string('postal_code')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
-            $table->unsignedBigInteger('state_id');
+
             $table->timestamps();
         });
 
         Schema::table('tm_cities', function (Blueprint $table) {
-            $table->foreign('state_id')
+            $table->foreign('province_id')
                 ->references('id')->on('tm_provinces')
                 ->onDelete('cascade');
         });
