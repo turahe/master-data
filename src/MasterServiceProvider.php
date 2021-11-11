@@ -32,8 +32,10 @@ class MasterServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../config/master.php', 'master');
 
-        $databasePath = __DIR__.'/../database/migrations';
-        $this->loadMigrationsFrom($databasePath);
+        if (config('master.migration.enable')) {
+            $databasePath = __DIR__.'/../database/migrations';
+            $this->loadMigrationsFrom($databasePath);
+        }
 
         if (class_exists(Application::class)) {
             $this->publishes(

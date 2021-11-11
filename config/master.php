@@ -12,6 +12,9 @@ return [
     'menu' => [
         'enabled' => false,
     ],
+    'migration' => [
+        'enable' => false
+    ],
 
     /*
      * Define the table which is used in the database to retrieve the users
