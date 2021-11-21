@@ -13,7 +13,7 @@ return [
         'enabled' => false,
     ],
     'migration' => [
-        'enable' => false
+        'enable' => true
     ],
 
     /*
@@ -76,5 +76,5 @@ return [
      * will automatically assign the highest order number to a new model
      */
     'sort_when_creating' => true,
-    
+
 ];

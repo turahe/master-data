@@ -20,9 +20,6 @@ class CreateMasterProvincesTable extends Migration
             $table->string('region', 255)->nullable();
             $table->string('iso_3166_2', 2)->nullable();
             $table->string('code', 10)->nullable();
-            $table->string('calling_code', 5)->nullable();
-            $table->string('latitude')->nullable();
-            $table->string('longitude')->nullable();
             $table->timestamps();
         });
 

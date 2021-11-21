@@ -4,30 +4,28 @@ namespace Turahe\Master\Seeds;
 
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Turahe\Master\Models\State;
+use Illuminate\Support\Str;
+use Turahe\Master\Models\Province;
 
 class ProvincesTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__ . '/../../resources/states.json';
+        $file = __DIR__ . '/../../resources/id/provinces.csv';
 
-        $data = json_decode(file_get_contents($file), true);
-        $provinces = array_map(function ($province) {
+
+        $header = ['id', 'name'];
+        $data = csv_to_array($file, $header);
+        $provinces = array_map(function ($arr) {
             return [
                 'country_id' => 104,
-                'name' => $province['name'],
-                'region' => $province['region'],
-                'iso_3166_2' => $province['iso_3166_2'],
-                'region_code' => $province['region_code'],
-                'calling_code' => $province['calling_code'],
-                'latitude' => $province['latitude'],
-                'longitude' => $province['longitude'],
+                'name' => Str::title($arr['name']),
+                'code' => $arr['id'],
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString(),
             ];
         }, $data);
 
-        State::insert($provinces);
+        Province::insert($provinces);
     }
 }

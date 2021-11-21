@@ -31,7 +31,6 @@ class CreateMasterCountriesTable extends Migration
             $table->boolean('eea');
             $table->string('calling_code', 3);
             $table->string('flag', 6)->nullable();
-            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }
