@@ -5,26 +5,29 @@ namespace Turahe\Master\Seeds;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\City;
+use Turahe\Master\Models\Province;
+use Illuminate\Support\Str;
 
 class CitiesTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__ . '/../../resources/cities.json';
-        $data = json_decode(file_get_contents($file), true);
+        $file = __DIR__ . '/../../resources/id/regencies.csv';
+        $header = ['id', 'province_id', 'name'];
+        $data = csv_to_array($file, $header);
         $cities = array_map(function ($arr) {
+            $type = strpos($arr['name'], 'KAB') == 'KAB' ? 'REGENCY' : 'CITY';
+            $province = Province::where('code', $arr['province_id'])->firstOrFail();
             return [
-                'state_id' => $arr['state_id'],
-                'name' => $arr['name'],
-                'type' => $arr['type'] ?? null,
-                'postal_code' => $arr['postal_code'],
-                'latitude' => $arr['latitude'],
-                'longitude' => $arr['longitude'],
-                'created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString(),
+                'name' => Str::title($arr['name']),
+                'parent_id' => $province->id,
+                'code' => $arr['id'],
+                'type' => $type,
             ];
         }, $data);
 
-        City::insert($cities);
+        foreach ($cities as $city) {
+            City::create($city);
+        }
     }
 }

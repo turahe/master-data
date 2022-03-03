@@ -19,7 +19,6 @@ class CreateMasterCitiesTable extends Migration
             $table->string('name');
             $table->string('type')->nullable();
             $table->string('code', 10)->nullable();
-            $table->string('postal_code')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
 
