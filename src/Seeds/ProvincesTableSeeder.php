@@ -20,7 +20,6 @@ class ProvincesTableSeeder extends Seeder
                 'country_id' => 104,
                 'name' => Str::title($arr['name']),
                 'code' => $arr['id'],
-                'type' => 'PROVINCE'
             ];
         }, $data);
 

@@ -20,7 +20,7 @@ class CitiesTableSeeder extends Seeder
             $province = Province::where('code', $arr['province_id'])->firstOrFail();
             return [
                 'name' => Str::title($arr['name']),
-                'parent_id' => $province->id,
+                'province_id' => $province->id,
                 'code' => $arr['id'],
                 'type' => $type,
             ];
