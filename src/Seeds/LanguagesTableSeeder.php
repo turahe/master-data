@@ -22,6 +22,6 @@ class LanguagesTableSeeder extends Seeder
             ];
         }, $data);
 
-        app('db')->table('tm_languages')->insert($languages);
+        Language::insert($languages);
     }
 }
