@@ -48,7 +48,7 @@ class DistrictTest extends TestCase
         $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
         $district = District::first();
 
-        $this->assertEquals('KABUPATEN SIMEULUE', $district->city_name);
+        $this->assertEquals('KABUPATEN SIMEULUE', $district->city->name);
     }
 
     /** @test */
@@ -59,7 +59,7 @@ class DistrictTest extends TestCase
         $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
         $district = District::first();
 
-        $this->assertEquals('ACEH', $district->province_name);
+        $this->assertEquals('ACEH', $district->province->name);
     }
 
     /** @test */
