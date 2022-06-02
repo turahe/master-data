@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMasterTimezonesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -21,7 +21,6 @@ class CreateMasterTimezonesTable extends Migration
             $table->boolean('isdst')->nullable();
             $table->string('text')->nullable();
             $table->string('utc')->nullable();
-            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }
@@ -35,4 +34,4 @@ class CreateMasterTimezonesTable extends Migration
     {
         Schema::dropIfExists('tm_timezones');
     }
-}
+};

@@ -46,42 +46,8 @@ class MasterServiceProvider extends ServiceProvider
             );
         }
 
-        $this->loadViewsFrom(realpath(__DIR__.'/../resources/views'), 'master');
-
-        if (config('master.route.enabled')) {
-            $this->registerRoutes();
-        }
-
         $userStampsMacro = new Macro;
         $userStampsMacro->register();
     }
 
-    /**
-     * Register new routes to projects.
-     */
-    protected function registerRoutes()
-    {
-        $router = $this->app['router'];
-        require __DIR__.'/../routes/web.php';
-    }
-
-    /**
-     * Check if Laravel.
-     *
-     * @return bool
-     */
-    protected function isLaravel()
-    {
-        return app() instanceof \Illuminate\Foundation\Application;
-    }
-
-    /**
-     * Check if Is Laravel or Lumen.
-     *
-     * @return bool
-     */
-    protected function isLumen()
-    {
-        return !$this->isLaravel();
-    }
 }
