@@ -14,7 +14,7 @@ class VillagesTableSeeder extends Seeder
     public function run()
     {
         $file = __DIR__ . '/../../resources/id/villages.csv';
-        
+
         $header = ['id', 'district_id', 'name'];
         $data = csv_to_array($file, $header);
         $villages = array_map(function ($arr) {
@@ -23,11 +23,11 @@ class VillagesTableSeeder extends Seeder
                 'name' => Str::title($arr['name']),
                 'district_id' => $district->id,
                 'code' => $arr['id'],
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
             ];
         }, $data);
 
-        foreach ($villages as $village) {
-            Village::create($village);
-        }
+        Village::insert($villages);
     }
 }

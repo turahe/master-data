@@ -23,11 +23,11 @@ class DistrictsTableSeeder extends Seeder
                 'name' => Str::title($arr['name']),
                 'city_id' => $city->id,
                 'code' => $arr['id'],
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
             ];
         }, $data);
 
-        foreach ($districts as $district) {
-            District::create($district);
-        }
+        District::insert($districts);
     }
 }

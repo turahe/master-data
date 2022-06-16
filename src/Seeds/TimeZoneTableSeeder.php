@@ -26,7 +26,6 @@ class TimeZoneTableSeeder extends Seeder
                 'isdst' => $color['isdst'],
                 'text' => $color['text'],
                 'utc' => $color['utc'],
-                'status' => true,
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString(),
             ];

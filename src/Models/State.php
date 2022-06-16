@@ -28,7 +28,6 @@ use Illuminate\Database\Eloquent\Relations\HasManyThrough;
  * @property-read \Illuminate\Database\Eloquent\Collection|\Turahe\Master\Models\District[] $districts
  * @property-read int|null $districts_count
  * @property-read string $address
- *
  * @method static \Illuminate\Database\Eloquent\Builder|State newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|State newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|State query()
@@ -45,6 +44,8 @@ use Illuminate\Database\Eloquent\Relations\HasManyThrough;
  * @method static \Illuminate\Database\Eloquent\Builder|State whereStatus($value)
  * @method static \Illuminate\Database\Eloquent\Builder|State whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property string|null $code
+ * @method static \Illuminate\Database\Eloquent\Builder|State whereCode($value)
  */
 class State extends Model
 {

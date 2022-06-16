@@ -22,7 +22,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property-read mixed $province_name
  * @property-read \Illuminate\Database\Eloquent\Collection|\Turahe\Master\Models\Village[] $villages
  * @property-read int|null $villages_count
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoFilter($filter = 'filter')
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoSort($sortByKey = 'sort', $sortDirectionKey = 'direction')
  * @method static \Illuminate\Database\Eloquent\Builder|District newModelQuery()
@@ -38,6 +37,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @method static \Illuminate\Database\Eloquent\Builder|District whereStatus($value)
  * @method static \Illuminate\Database\Eloquent\Builder|District whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property string|null $code
+ * @method static \Illuminate\Database\Eloquent\Builder|District whereCode($value)
  */
 class District extends Model
 {

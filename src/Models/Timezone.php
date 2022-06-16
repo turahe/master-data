@@ -15,7 +15,6 @@ namespace Turahe\Master\Models;
  * @property int                             $status
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoFilter($filter = 'filter')
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoSort($sortByKey = 'sort', $sortDirectionKey = 'direction')
  * @method static \Illuminate\Database\Eloquent\Builder|Timezone newModelQuery()

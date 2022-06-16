@@ -20,7 +20,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property-read mixed $city_name
  * @property-read mixed $district_name
  * @property-read mixed $province_name
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoFilter($filter = 'filter')
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoSort($sortByKey = 'sort', $sortDirectionKey = 'direction')
  * @method static \Illuminate\Database\Eloquent\Builder|Village newModelQuery()
@@ -36,6 +35,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static \Illuminate\Database\Eloquent\Builder|Village whereStatus($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Village whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property string|null $code
+ * @method static \Illuminate\Database\Eloquent\Builder|Village whereCode($value)
  */
 class Village extends Model
 {

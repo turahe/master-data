@@ -31,6 +31,8 @@ return new class extends Migration
             $table->boolean('eea');
             $table->string('calling_code', 3);
             $table->string('flag', 6)->nullable();
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
             $table->timestamps();
         });
     }
