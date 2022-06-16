@@ -11,7 +11,7 @@ if (!function_exists('currency')) {
      *
      * @return string
      */
-    function currency(float $amount = null, string $from = null, string $to = null, bool $format = true)
+    function currency(float $amount = null, string $from = null, string $to = null, bool $format = true): string
     {
         if (is_null($amount)) {
             return app('currency');
@@ -31,14 +31,14 @@ if (!function_exists('currency_format')) {
      *
      * @return string
      */
-    function currency_format(float $amount = null, string $currency = null, bool $include_symbol = true)
+    function currency_format(float $amount = null, string $currency = null, bool $include_symbol = true): string
     {
         return app('currency')->format($amount, $currency, $include_symbol);
     }
 }
 
 if (!function_exists('csv_to_array')) {
-    function csv_to_array($filename, $header)
+    function csv_to_array($filename, $header): bool|array
     {
         $delimiter = ',';
         if (!file_exists($filename) || !is_readable($filename)) {

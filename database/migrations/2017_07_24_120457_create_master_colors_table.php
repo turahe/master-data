@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMasterColorsTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -17,7 +17,6 @@ class CreateMasterColorsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('code');
-            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }
@@ -31,4 +30,4 @@ class CreateMasterColorsTable extends Migration
     {
         Schema::dropIfExists('tm_colors');
     }
-}
+};

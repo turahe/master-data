@@ -5,16 +5,15 @@ namespace Turahe\Master\Seeds;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Village;
+use Illuminate\Support\Str;
 
 class VillagesTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__. '/../../resources/id/villages.csv';
-
+        $file = __DIR__ . '/../../resources/id/villages.csv';
 
         $header = ['id', 'district_id', 'name'];
         $data = csv_to_array($file, $header);
@@ -24,13 +23,11 @@ class VillagesTableSeeder extends Seeder
                 'name' => Str::title($arr['name']),
                 'district_id' => $district->id,
                 'code' => $arr['id'],
-                'created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString(),
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
             ];
         }, $data);
 
-        foreach (array_chunk($villages, 50) as $village) {
-            Village::insert($village);
-        }
+        Village::insert($villages);
     }
 }

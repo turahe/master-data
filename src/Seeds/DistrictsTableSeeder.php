@@ -14,6 +14,7 @@ class DistrictsTableSeeder extends Seeder
     {
         $file = __DIR__ . '/../../resources/id/districts.csv';
 
+
         $header = ['id', 'regency_id', 'name'];
         $data = csv_to_array($file, $header);
         $districts = array_map(function ($arr) {
@@ -22,8 +23,8 @@ class DistrictsTableSeeder extends Seeder
                 'name' => Str::title($arr['name']),
                 'city_id' => $city->id,
                 'code' => $arr['id'],
-                'created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString(),
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
             ];
         }, $data);
 

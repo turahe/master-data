@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMasterCountriesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -31,6 +31,8 @@ class CreateMasterCountriesTable extends Migration
             $table->boolean('eea');
             $table->string('calling_code', 3);
             $table->string('flag', 6)->nullable();
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
             $table->timestamps();
         });
     }
@@ -44,4 +46,4 @@ class CreateMasterCountriesTable extends Migration
     {
         Schema::dropIfExists('tm_countries');
     }
-}
+};

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMasterCitiesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -19,6 +19,9 @@ class CreateMasterCitiesTable extends Migration
             $table->string('name');
             $table->string('type')->nullable();
             $table->string('code', 10)->nullable();
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
+
             $table->timestamps();
         });
 
@@ -38,4 +41,4 @@ class CreateMasterCitiesTable extends Migration
     {
         Schema::dropIfExists('tm_cities');
     }
-}
+};

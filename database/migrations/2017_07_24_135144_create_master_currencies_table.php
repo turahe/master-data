@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMasterCurrenciesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -29,8 +29,6 @@ class CreateMasterCurrenciesTable extends Migration
             $table->string('thousands_separator', 25)->nullable();
             $table->string('iso_numeric', 25)->nullable();
             $table->integer('smallest_denomination')->default(1);
-            $table->decimal('exchange_rate')->nullable()->comment('value of exchange rate from openexchange');
-            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }
@@ -44,4 +42,4 @@ class CreateMasterCurrenciesTable extends Migration
     {
         Schema::dropIfExists('tm_currencies');
     }
-}
+};

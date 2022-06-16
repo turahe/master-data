@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMasterVillagesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -18,6 +18,8 @@ class CreateMasterVillagesTable extends Migration
             $table->unsignedBigInteger('district_id')->nullable();
             $table->string('name', 255);
             $table->string('code', 10)->nullable();
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
             $table->timestamps();
@@ -38,4 +40,4 @@ class CreateMasterVillagesTable extends Migration
     {
         Schema::dropIfExists('tm_villages');
     }
-}
+};

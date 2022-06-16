@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMasterProvincesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -20,6 +20,8 @@ class CreateMasterProvincesTable extends Migration
             $table->string('region', 255)->nullable();
             $table->string('iso_3166_2', 2)->nullable();
             $table->string('code', 10)->nullable();
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
             $table->timestamps();
         });
 
@@ -39,4 +41,4 @@ class CreateMasterProvincesTable extends Migration
     {
         Schema::dropIfExists('tm_provinces');
     }
-}
+};
