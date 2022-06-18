@@ -20,8 +20,6 @@ return new class extends Migration
             $table->string('code', 10)->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
-            $table->string('latitude')->nullable();
-            $table->string('longitude')->nullable();
             $table->timestamps();
         });
         Schema::table('tm_villages', function (Blueprint $table) {
