@@ -48,7 +48,7 @@ class SyncCoordinateCommand extends Command
         $bar->start();
         Province::cursor()->each(function ($item) use ($bar) {
             $meta = $item->meta;
-            $geocoding = \Geocoder::getCoordinatesForAddress($item->address);
+            $geocoding = \Spatie\Geocoder\Geocoder::getCoordinatesForAddress($item->address);
             $meta['lat'] = $geocoding['lat'] ?? null;
             $meta['long'] = $geocoding['lng'] ?? null;
             $item->meta = $meta;
@@ -62,9 +62,9 @@ class SyncCoordinateCommand extends Command
         $this->info("Processing {$count} City");
         $bar = $this->output->createProgressBar($count);
         $bar->start();
-        City::with('provinsi')->cursor()->each(function ($item) use ($bar) {
+        City::with('province')->cursor()->each(function ($item) use ($bar) {
             $meta = $item->meta;
-            $geocoding = \Geocoder::getCoordinatesForAddress($item->address);
+            $geocoding = \Spatie\Geocoder\Geocoder::getCoordinatesForAddress($item->address);
             $meta['lat'] = $geocoding['lat'] ?? null;
             $meta['long'] = $geocoding['lng'] ?? null;
             $item->meta = $meta;
@@ -78,9 +78,9 @@ class SyncCoordinateCommand extends Command
         $this->info("Processing {$count} District");
         $bar = $this->output->createProgressBar($count);
         $bar->start();
-        District::with('kabupaten.provinsi')->cursor()->each(function ($item) use ($bar) {
+        District::with('city.province')->cursor()->each(function ($item) use ($bar) {
             $meta = $item->meta;
-            $geocoding = \Geocoder::getCoordinatesForAddress($item->address);
+            $geocoding = \Spatie\Geocoder\Geocoder::getCoordinatesForAddress($item->address);
             $meta['lat'] = $geocoding['lat'] ?? null;
             $meta['long'] = $geocoding['lng'] ?? null;
             $item->meta = $meta;
@@ -98,7 +98,7 @@ class SyncCoordinateCommand extends Command
             $meta = $item->meta;
             if (!$meta) {
                 try {
-                    $geocoding = \Geocoder::getCoordinatesForAddress($item->address);
+                    $geocoding = \Spatie\Geocoder\Geocoder::getCoordinatesForAddress($item->address);
                     $meta['lat'] = $geocoding['lat'] ?? null;
                     $meta['long'] = $geocoding['lng'] ?? null;
                     $item->meta = $meta;

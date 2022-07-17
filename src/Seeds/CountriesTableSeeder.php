@@ -35,11 +35,12 @@ class CountriesTableSeeder extends Seeder
                 'calling_code' => $country['calling_code'],
                 'currency_symbol' => ((isset($country['currency_symbol'])) ? $country['currency_symbol'] : null),
                 'flag' => ((isset($country['flag'])) ? $country['flag'] : null),
-                'created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString(),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ];
         }, $data);
 
-        Country::insert($countries);
+        app('db')->disableQueryLog();
+        app('db')->table('tm_countries')->insert($countries);
     }
 }

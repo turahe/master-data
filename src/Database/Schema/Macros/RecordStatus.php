@@ -14,7 +14,7 @@ class RecordStatus
      */
     public static function column(Blueprint $table)
     {
-        return $table->enum('record_status', ['DELETED','ARCHIVED','DRAFT','UNPUBLISH','PUBLISH']);
+        return $table->enum('record_status', ['DELETED','ARCHIVED','DRAFT','UNPUBLISHED','PUBLISH']);
     }
 
 }

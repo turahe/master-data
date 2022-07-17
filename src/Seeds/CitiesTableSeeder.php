@@ -2,11 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Turahe\Master\Models\City;
-use Turahe\Master\Models\Province;
-use Illuminate\Support\Str;
 
 class CitiesTableSeeder extends Seeder
 {
@@ -17,17 +13,19 @@ class CitiesTableSeeder extends Seeder
         $data = csv_to_array($file, $header);
         $cities = array_map(function ($arr) {
             $type = strpos($arr['name'], 'KAB') == 'KAB' ? 'REGENCY' : 'CITY';
-            $province = Province::where('code', $arr['province_id'])->firstOrFail();
+            $province = app('db')->table('tm_provinces')->where('code', $arr['province_id'])->first();
             return [
-                'name' => Str::title($arr['name']),
+                'name' => ucwords($arr['name']),
                 'province_id' => $province->id,
                 'code' => $arr['id'],
                 'type' => $type,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ];
         }, $data);
 
-        foreach ($cities as $city) {
-            City::create($city);
-        }
+        app('db')->disableQueryLog();
+        app('db')->table('tm_cities')->insert($cities);
+
     }
 }

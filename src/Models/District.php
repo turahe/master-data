@@ -78,17 +78,17 @@ class District extends Model
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getCityNameAttribute()
+    public function getCityNameAttribute(): string
     {
         return $this->city->name;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getProvinceNameAttribute()
+    public function getProvinceNameAttribute(): string
     {
         return $this->city->province->name;
     }

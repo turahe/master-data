@@ -4,6 +4,7 @@ namespace Turahe\Master\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
 /**
  * Turahe\Master\Models\City.
@@ -82,9 +83,9 @@ class City extends Model
     }
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough
+     * @return HasManyThrough
      */
-    public function villages()
+    public function villages(): HasManyThrough
     {
         return $this->hasManyThrough(Village::class, District::class);
     }

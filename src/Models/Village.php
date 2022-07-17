@@ -61,25 +61,25 @@ class Village extends Model
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getDistrictNameAttribute()
+    public function getDistrictNameAttribute(): string
     {
         return $this->district->name;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getCityNameAttribute()
+    public function getCityNameAttribute(): string
     {
         return $this->district->city->name;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getProvinceNameAttribute()
+    public function getProvinceNameAttribute(): string
     {
         return $this->district->city->state->name;
     }

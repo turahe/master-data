@@ -61,6 +61,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  */
 class Country extends Model
 {
+    /**
+     * @var string
+     */
     protected $table = 'tm_countries';
 
     /**
@@ -71,6 +74,9 @@ class Country extends Model
         return $this->hasMany(State::class);
     }
 
+    /**
+     * @return HasMany
+     */
     public function provinces(): HasMany
     {
         return $this->hasMany(State::class);

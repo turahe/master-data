@@ -2,9 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Turahe\Master\Models\Color;
 
 class ColorsTableSeeder extends Seeder
 {
@@ -19,11 +17,12 @@ class ColorsTableSeeder extends Seeder
             return [
                 'name' => $color['name'],
                 'code' => $color['code'],
-                'created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString(),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ];
         }, $this->allColors);
-        Color::insert($colors);
+        app('db')->disableQueryLog();
+        app('db')->table('tm_colors')->insert($colors);
     }
 
     /**

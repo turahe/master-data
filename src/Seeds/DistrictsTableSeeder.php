@@ -18,7 +18,7 @@ class DistrictsTableSeeder extends Seeder
         $header = ['id', 'regency_id', 'name'];
         $data = csv_to_array($file, $header);
         $districts = array_map(function ($arr) {
-            $city = City::where('code', $arr['regency_id'])->firstOrFail();
+            $city = app('db')->table('tm_cities')->where('code', $arr['regency_id'])->first();
             return [
                 'name' => Str::title($arr['name']),
                 'city_id' => $city->id,
@@ -28,6 +28,7 @@ class DistrictsTableSeeder extends Seeder
             ];
         }, $data);
 
-        District::insert($districts);
+        app('db')->disableQueryLog();
+        app('db')->table('tm_districts')->insert($districts);
     }
 }

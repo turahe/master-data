@@ -20,11 +20,12 @@ class ProvincesTableSeeder extends Seeder
                 'country_id' => 104,
                 'name' => Str::title($arr['name']),
                 'code' => $arr['id'],
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ];
         }, $data);
 
-        foreach ($provinces as $province) {
-            Province::create($province);
-        }
+        app('db')->disableQueryLog();
+        app('db')->table('tm_provinces')->insert($provinces);
     }
 }

@@ -2,9 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Turahe\Master\Models\Bank;
 
 class BanksTableSeeder extends Seeder
 {
@@ -18,11 +16,11 @@ class BanksTableSeeder extends Seeder
                 'alias' => $arr['alias'],
                 'company' => $arr['company'],
                 'code' => $arr['code'],
-                'created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString(),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ];
         }, $data);
 
-            Bank::insert($banks);
+        app('db')->table('tm_banks')->insert($banks);
     }
 }

@@ -26,11 +26,12 @@ class TimeZoneTableSeeder extends Seeder
                 'isdst' => $color['isdst'],
                 'text' => $color['text'],
                 'utc' => $color['utc'],
-                'created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString(),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ];
         }, $data);
 
-        Timezone::insert($timezones);
+        app('db')->disableQueryLog();
+        app('db')->table('tm_timezones')->insert($timezones);
     }
 }

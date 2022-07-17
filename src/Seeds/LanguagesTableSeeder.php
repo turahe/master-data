@@ -2,7 +2,6 @@
 
 namespace Turahe\Master\Seeds;
 
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Turahe\Master\Models\Language;
 
@@ -17,11 +16,12 @@ class LanguagesTableSeeder extends Seeder
                 'code' => $arr['code'],
                 'name' => $arr['name'],
                 'native' => $arr['native'],
-                'created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString(),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ];
         }, $data);
 
-        Language::insert($languages);
+        app('db')->disableQueryLog();
+        app('db')->table('tm_languages')->insert($languages);
     }
 }

@@ -2,12 +2,7 @@
 
 namespace Turahe\Master\Seeds;
 
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\File;
-use Turahe\Master\Models\District;
-use Turahe\Master\Models\Village;
-use Illuminate\Support\Str;
 
 class VillagesTableSeeder extends Seeder
 {
@@ -18,16 +13,18 @@ class VillagesTableSeeder extends Seeder
         $header = ['id', 'district_id', 'name'];
         $data = csv_to_array($file, $header);
         $villages = array_map(function ($arr) {
-            $district = District::where('code', $arr['district_id'])->firstOrFail();
+            $district = app('db')->table('tm_districts')->where('code', $arr['district_id'])->first();
             return [
-                'name' => Str::title($arr['name']),
+                'name' => ucwords($arr['name']),
                 'district_id' => $district->id,
                 'code' => $arr['id'],
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ];
         }, $data);
 
-        Village::insert($villages);
+        app('db')->disableQueryLog();
+
+        app('db')->table('tm_villages')->insert($villages);
     }
 }

@@ -35,12 +35,13 @@ class CurrenciesTableSeeder extends Seeder
                 'thousands_separator' => $currency['thousands_separator'] ?? ',',
                 'iso_numeric' => $currency['iso_numeric'] ?? null,
                 'smallest_denomination' => $currency['smallest_denomination'] ?? 1,
-                'created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString(),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
 
             ];
         }, $data);
 
-        Currency::insert($currencies);
+        app('db')->disableQueryLog();
+        app('db')->table('tm_currencies')->insert($currencies);
     }
 }

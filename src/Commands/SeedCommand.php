@@ -3,7 +3,6 @@
 namespace Turahe\Master\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Artisan;
 
 class SeedCommand extends Command
 {
@@ -38,7 +37,7 @@ class SeedCommand extends Command
      */
     public function handle()
     {
-        Artisan::call('db:seed', ['--class' => 'Turahe\Master\Seeds\DatabaseSeeder', '--force' => true]);
+        $this->call('db:seed', ['--class' => 'Turahe\Master\Seeds\DatabaseSeeder', '--force' => true]);
         $this->info('Seeded: Turahe\Master\Seeds\DatabaseSeeder');
     }
 }
