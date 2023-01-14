@@ -1,9 +1,8 @@
 <?php
-
 namespace Turahe\Master\Tests\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Turahe\Master\Contracts\Sortable;
+use Illuminate\Database\Eloquent\Model;
 use Turahe\Master\Traits\SortableTrait;
 
 /**

@@ -1,11 +1,10 @@
 <?php
-
 namespace Turahe\Master\Tests\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Turahe\Master\Contracts\Sortable;
+use Illuminate\Database\Eloquent\Model;
 use Turahe\Master\Traits\SortableTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Turahe\Master\Tests\Models\DummyWithSoftDeletes

@@ -1,12 +1,11 @@
 <?php
-
 namespace Turahe\Master;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 use Turahe\Master\Commands\SeedCommand;
-use Turahe\Master\Commands\SyncCoordinateCommand;
 use Turahe\Master\Database\Schema\Macros\Macro;
+use Turahe\Master\Commands\SyncCoordinateCommand;
 
 class MasterServiceProvider extends ServiceProvider
 {
@@ -49,5 +48,4 @@ class MasterServiceProvider extends ServiceProvider
         $userStampsMacro = new Macro;
         $userStampsMacro->register();
     }
-
 }

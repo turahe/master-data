@@ -1,9 +1,8 @@
 <?php
-
 namespace Turahe\Master\Models;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * Turahe\Master\Models\District.

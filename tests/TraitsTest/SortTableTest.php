@@ -1,11 +1,10 @@
 <?php
-
 namespace Turahe\Master\Tests\TraitsTest;
 
+use Turahe\Master\Tests\TestCase;
 use Illuminate\Support\Collection;
 use Turahe\Master\Tests\Models\Dummy;
 use Turahe\Master\Tests\Models\DummyWithSoftDeletes;
-use Turahe\Master\Tests\TestCase;
 
 class SortTableTest extends TestCase
 {
@@ -334,7 +333,7 @@ class SortTableTest extends TestCase
     {
         config([
             'master.record_ordering_name' => 'record_ordering',
-            'master.sort_when_creating' => true,
+            'master.sort_when_creating'   => true,
         ]);
 
         $model = new class() extends Dummy {
@@ -351,7 +350,7 @@ class SortTableTest extends TestCase
         $model = new class() extends Dummy {
             public $sortable = [
                 'record_ordering_name' => 'my_custom_record_ordering',
-                'sort_when_creating' => false,
+                'sort_when_creating'   => false,
             ];
         };
 

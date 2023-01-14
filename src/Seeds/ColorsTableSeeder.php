@@ -1,5 +1,4 @@
 <?php
-
 namespace Turahe\Master\Seeds;
 
 use Illuminate\Database\Seeder;
@@ -15,8 +14,8 @@ class ColorsTableSeeder extends Seeder
     {
         $colors = array_map(function ($color) {
             return [
-                'name' => $color['name'],
-                'code' => $color['code'],
+                'name'       => $color['name'],
+                'code'       => $color['code'],
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ];

@@ -1,12 +1,11 @@
 <?php
-
 namespace Turahe\Master\Traits;
 
 use ArrayAccess;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 use InvalidArgumentException;
 use Turahe\Master\Contracts\Sortable;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 trait SortableTrait
 {
@@ -60,9 +59,9 @@ trait SortableTrait
      * @param int         $startOrder
      * @param null|string $primaryKeyColumn
      */
-    public static function setNewOrder($ids, int $startOrder = 1, string $primaryKeyColumn = null)
+    public static function setNewOrder($ids, int $startOrder = 1, ?string $primaryKeyColumn = null)
     {
-        if (!is_array($ids) && !$ids instanceof ArrayAccess) {
+        if (! is_array($ids) && ! $ids instanceof ArrayAccess) {
             throw new InvalidArgumentException('You must pass an array or ArrayAccess object to setNewOrder');
         }
 
@@ -123,7 +122,7 @@ trait SortableTrait
             ->where($orderColumnName, '>', $this->$orderColumnName)
             ->first();
 
-        if (!$swapWithModel) {
+        if (! $swapWithModel) {
             return $this;
         }
 
@@ -142,7 +141,7 @@ trait SortableTrait
             ->where($orderColumnName, '<', $this->$orderColumnName)
             ->first();
 
-        if (!$swapWithModel) {
+        if (! $swapWithModel) {
             return $this;
         }
 

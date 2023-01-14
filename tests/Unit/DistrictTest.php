@@ -1,12 +1,11 @@
 <?php
-
 namespace Turahe\Master\Tests\Unit;
 
-use Illuminate\Database\Eloquent\Collection;
 use Turahe\Master\Models\City;
-use Turahe\Master\Models\District;
 use Turahe\Master\Models\Village;
 use Turahe\Master\Tests\TestCase;
+use Turahe\Master\Models\District;
+use Illuminate\Database\Eloquent\Collection;
 
 class DistrictTest extends TestCase
 {

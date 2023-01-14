@@ -1,5 +1,4 @@
 <?php
-
 namespace Turahe\Master\Database\Schema\Macros;
 
 use Illuminate\Database\Schema\Blueprint;
@@ -14,7 +13,6 @@ class RecordStatus
      */
     public static function column(Blueprint $table)
     {
-        return $table->enum('record_status', ['DELETED','ARCHIVED','DRAFT','UNPUBLISHED','PUBLISH']);
+        return $table->enum('record_status', ['DELETED', 'ARCHIVED', 'DRAFT', 'UNPUBLISHED', 'PUBLISH']);
     }
-
 }

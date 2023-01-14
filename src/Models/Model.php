@@ -1,11 +1,10 @@
 <?php
-
 namespace Turahe\Master\Models;
 
-use Illuminate\Database\Eloquent\Model as BaseModel;
-use Illuminate\Support\Facades\Cache;
-use Turahe\Master\Traits\AutoFilter;
 use Turahe\Master\Traits\AutoSort;
+use Turahe\Master\Traits\AutoFilter;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Database\Eloquent\Model as BaseModel;
 
 abstract class Model extends BaseModel
 {

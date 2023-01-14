@@ -1,10 +1,9 @@
 <?php
-
 namespace Turahe\Master\Tests\Unit;
 
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
 use Turahe\Master\Tests\TestCase;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
 
 class DatabaseMacroTest extends TestCase
 {
@@ -98,5 +97,4 @@ class DatabaseMacroTest extends TestCase
 
         $this->assertNotContains('deleted_by', $columns);
     }
-
 }

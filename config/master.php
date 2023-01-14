@@ -1,26 +1,26 @@
 <?php
 
 return [
-    'route' => [
-        'enabled' => true,
+    'route'                      => [
+        'enabled'    => true,
         'middleware' => ['web'],
-        'prefix' => 'master',
+        'prefix'     => 'master',
     ],
-    'view' => [
+    'view'                       => [
         'layout' => 'master::layouts.app',
     ],
-    'menu' => [
+    'menu'                       => [
         'enabled' => false,
     ],
-    'migration' => [
-        'enable' => true
+    'migration'                  => [
+        'enable' => true,
     ],
 
     /*
      * Define the table which is used in the database to retrieve the users
      */
 
-    'users_table' => 'users',
+    'users_table'                => 'users',
 
     /*
      * Define the table column type which is used in the table schema for
@@ -30,7 +30,7 @@ return [
      * Default: bigIncrements
      */
 
-    'users_table_column_type' => 'bigIncrements',
+    'users_table_column_type'    => 'bigIncrements',
 
     /*
      * Define the name of the column which is used in the foreign key reference
@@ -43,38 +43,37 @@ return [
      * Define the model which is used for the relationships on your models
      */
 
-    'users_model' => \App\Models\User::class,
+    'users_model'                => \App\Models\User::class,
 
     /*
      * Define the column which is used in the database to save the user's id
      * which created the model.
      */
 
-    'created_by_column' => 'created_by',
+    'created_by_column'          => 'created_by',
 
     /*
      * Define the column which is used in the database to save the user's id
      * which updated the model.
      */
 
-    'updated_by_column' => 'updated_by',
+    'updated_by_column'          => 'updated_by',
 
     /*
      * Define the column which is used in the database to save the user's id
      * which deleted the model.
      */
 
-    'deleted_by_column' => 'deleted_by',
+    'deleted_by_column'          => 'deleted_by',
 
     /*
   * The name of the column that will be used to sort models.
   */
-    'record_ordering_name' => 'record_ordering',
+    'record_ordering_name'       => 'record_ordering',
 
     /*
      * Define if the models should sort when creating. When true, the package
      * will automatically assign the highest order number to a new model
      */
-    'sort_when_creating' => true,
-
+    'sort_when_creating'         => true,
 ];

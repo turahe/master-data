@@ -1,5 +1,4 @@
 <?php
-
 namespace Turahe\Master\Contracts;
 
 use Illuminate\Database\Eloquent\Builder;

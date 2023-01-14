@@ -1,13 +1,12 @@
 <?php
-
 namespace Turahe\Master\Commands;
 
-use GuzzleHttp\Exception\ServerException;
-use Illuminate\Console\Command;
 use Turahe\Master\Models\City;
+use Illuminate\Console\Command;
+use Turahe\Master\Models\Village;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Province;
-use Turahe\Master\Models\Village;
+use GuzzleHttp\Exception\ServerException;
 
 class SyncCoordinateCommand extends Command
 {
@@ -96,7 +95,8 @@ class SyncCoordinateCommand extends Command
         $bar->start();
         Village::whereNull('meta')->cursor()->each(function ($item) use ($bar) {
             $meta = $item->meta;
-            if (!$meta) {
+
+            if (! $meta) {
                 try {
                     $geocoding = \Spatie\Geocoder\Geocoder::getCoordinatesForAddress($item->address);
                     $meta['lat'] = $geocoding['lat'] ?? null;

@@ -1,9 +1,8 @@
 <?php
-
 namespace Turahe\Master\Traits;
 
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Builder;
 
 trait AutoSort
 {
@@ -13,6 +12,7 @@ trait AutoSort
 
         if (request()->has($sortByKey)) {
             $column = request()->get($sortByKey);
+
             if (Str::contains($column, '.')) {
                 $temp = explode('.', $column);
                 $relation = $this->{$temp[0]}();

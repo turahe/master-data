@@ -1,9 +1,8 @@
 <?php
-
 namespace Turahe\Master\Tests\Unit;
 
-use Turahe\Master\Models\Currency;
 use Turahe\Master\Tests\TestCase;
+use Turahe\Master\Models\Currency;
 
 class CurrencyTest extends TestCase
 {

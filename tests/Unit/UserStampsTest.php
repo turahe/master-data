@@ -1,10 +1,9 @@
 <?php
-
 namespace Turahe\Master\Tests\Unit;
 
+use Turahe\Master\Tests\TestCase;
 use Turahe\Master\Tests\Models\User;
 use Turahe\Master\Tests\Models\UserStamp;
-use Turahe\Master\Tests\TestCase;
 
 class UserStampsTest extends TestCase
 {
@@ -17,7 +16,7 @@ class UserStampsTest extends TestCase
     public function it_can_create_a_model_with_created_by()
     {
         $user = User::create([
-            'name' => 'Test User',
+            'name'  => 'Test User',
             'email' => 'laravel@userstamps.dev',
         ]);
 
@@ -41,7 +40,7 @@ class UserStampsTest extends TestCase
     public function it_can_update_a_model_with_updated_by()
     {
         $user = User::create([
-            'name' => 'Test User',
+            'name'  => 'Test User',
             'email' => 'laravel@userstamps.dev',
         ]);
 
@@ -68,7 +67,7 @@ class UserStampsTest extends TestCase
     public function it_can_delete_a_model_with_deleted_by()
     {
         $user = User::create([
-            'name' => 'Test User',
+            'name'  => 'Test User',
             'email' => 'laravel@userstamps.dev',
         ]);
 
@@ -94,7 +93,7 @@ class UserStampsTest extends TestCase
     public function it_can_restore_a_model_with_deleted_by()
     {
         $user = User::create([
-            'name' => 'Test User',
+            'name'  => 'Test User',
             'email' => 'laravel@userstamps.dev',
         ]);
 
@@ -112,5 +111,4 @@ class UserStampsTest extends TestCase
         $this->assertEquals(null, $model->deleted_by);
         $this->assertEquals(null, $model->destroyer);
     }
-
 }

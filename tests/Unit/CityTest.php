@@ -1,13 +1,12 @@
 <?php
-
 namespace Turahe\Master\Tests\Unit;
 
-use Illuminate\Database\Eloquent\Collection;
 use Turahe\Master\Models\City;
-use Turahe\Master\Models\District;
 use Turahe\Master\Models\State;
 use Turahe\Master\Models\Village;
 use Turahe\Master\Tests\TestCase;
+use Turahe\Master\Models\District;
+use Illuminate\Database\Eloquent\Collection;
 
 class CityTest extends TestCase
 {
@@ -17,7 +16,6 @@ class CityTest extends TestCase
         $this->seed('Turahe\Master\Seeds\ProvincesTableSeeder');
         $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
         $city = City::first();
-
 
         $this->assertInstanceOf(State::class, $city->state);
         $this->assertEquals($city->state_id, $city->state->id);
@@ -29,7 +27,6 @@ class CityTest extends TestCase
         $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
         $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
         $city = City::first();
-
 
         $this->assertInstanceOf(Collection::class, $city->districts);
         $this->assertInstanceOf(District::class, $city->districts->first());

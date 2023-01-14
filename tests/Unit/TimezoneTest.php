@@ -1,9 +1,8 @@
 <?php
-
 namespace Turahe\Master\Tests\Unit;
 
-use Turahe\Master\Models\Timezone;
 use Turahe\Master\Tests\TestCase;
+use Turahe\Master\Models\Timezone;
 
 class TimezoneTest extends TestCase
 {

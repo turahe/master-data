@@ -1,5 +1,4 @@
 <?php
-
 namespace Turahe\Master\Seeds;
 
 use Illuminate\Database\Seeder;
@@ -14,12 +13,13 @@ class VillagesTableSeeder extends Seeder
         $data = csv_to_array($file, $header);
         $villages = array_map(function ($arr) {
             $district = app('db')->table('tm_districts')->where('code', $arr['district_id'])->first();
+
             return [
-                'name' => ucwords($arr['name']),
+                'name'        => ucwords($arr['name']),
                 'district_id' => $district->id,
-                'code' => $arr['id'],
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
+                'code'        => $arr['id'],
+                'created_at'  => date('Y-m-d H:i:s'),
+                'updated_at'  => date('Y-m-d H:i:s'),
             ];
         }, $data);
 

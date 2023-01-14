@@ -1,9 +1,8 @@
 <?php
-
 namespace Turahe\Master\Database\Schema\Macros;
 
-use Illuminate\Database\Schema\Blueprint;
 use Turahe\Master\Traits\NodeTrait;
+use Illuminate\Database\Schema\Blueprint;
 
 class NestedSet
 {
@@ -31,7 +30,6 @@ class NestedSet
      * The name of default parent_id column.
      */
     const PARENT_ID = 'parent_id';
-
 
     /**
      * Insert direction.
@@ -87,7 +85,7 @@ class NestedSet
      */
     public static function getDefaultColumns()
     {
-        return [ static::LFT, static::RGT, static::PARENT_ID, static::DEPT, static::ORDERING ];
+        return [static::LFT, static::RGT, static::PARENT_ID, static::DEPT, static::ORDERING];
     }
 
     /**
@@ -99,7 +97,6 @@ class NestedSet
      */
     public static function isNode($node)
     {
-        return is_object($node) && in_array(NodeTrait::class, (array)$node);
+        return is_object($node) && in_array(NodeTrait::class, (array) $node);
     }
-
 }

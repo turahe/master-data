@@ -1,5 +1,4 @@
 <?php
-
 namespace Turahe\Master\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

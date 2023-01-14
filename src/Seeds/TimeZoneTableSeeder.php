@@ -1,10 +1,7 @@
 <?php
-
 namespace Turahe\Master\Seeds;
 
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Turahe\Master\Models\Timezone;
 
 class TimeZoneTableSeeder extends Seeder
 {
@@ -20,12 +17,12 @@ class TimeZoneTableSeeder extends Seeder
 
         $timezones = array_map(function ($color) {
             return [
-                'value' => $color['value'],
-                'abbr' => $color['abbr'],
-                'offset' => $color['offset'],
-                'isdst' => $color['isdst'],
-                'text' => $color['text'],
-                'utc' => $color['utc'],
+                'value'      => $color['value'],
+                'abbr'       => $color['abbr'],
+                'offset'     => $color['offset'],
+                'isdst'      => $color['isdst'],
+                'text'       => $color['text'],
+                'utc'        => $color['utc'],
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ];

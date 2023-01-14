@@ -1,10 +1,9 @@
 <?php
-
 namespace Turahe\Master\Database\Schema\Macros;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\SQLiteConnection;
-use Illuminate\Support\Facades\DB;
 use Turahe\Master\Contracts\MacroInterface;
 
 /**
@@ -134,8 +133,6 @@ class Macro implements MacroInterface
         Blueprint::macro('dropNestedSet', function () {
             NestedSet::dropColumns($this);
         });
-
-
     }
 
     /**
@@ -146,6 +143,5 @@ class Macro implements MacroInterface
         Blueprint::macro('recordStatus', function () {
             RecordStatus::column($this);
         });
-
     }
 }

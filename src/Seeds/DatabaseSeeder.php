@@ -1,16 +1,15 @@
 <?php
-
 namespace Turahe\Master\Seeds;
 
-use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Schema;
 use Turahe\Master\Models\City;
+use Illuminate\Database\Seeder;
 use Turahe\Master\Models\Color;
 use Turahe\Master\Models\Country;
+use Turahe\Master\Models\Village;
 use Turahe\Master\Models\Currency;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Province;
-use Turahe\Master\Models\Village;
+use Illuminate\Support\Facades\Schema;
 
 class DatabaseSeeder extends Seeder
 {
