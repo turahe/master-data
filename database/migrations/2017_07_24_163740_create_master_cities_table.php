@@ -13,7 +13,7 @@ return new class extends Migration {
     public function up()
     {
         Schema::create('tm_cities', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->unsignedBigInteger('province_id')->nullable();
             $table->string('name');
             $table->string('type')->nullable();

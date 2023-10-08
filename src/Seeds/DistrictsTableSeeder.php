@@ -4,6 +4,7 @@ namespace Turahe\Master\Seeds;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
+use Turahe\Master\Models\District;
 
 class DistrictsTableSeeder extends Seeder
 {
@@ -11,21 +12,17 @@ class DistrictsTableSeeder extends Seeder
     {
         $file = __DIR__ . '/../../resources/id/districts.csv';
 
-        $header = ['id', 'regency_id', 'name'];
+        $header = ['name', 1, 2, 3,  'regency_id','code' ];
         $data = csv_to_array($file, $header);
-        $districts = array_map(function ($arr) {
-            $city = app('db')->table('tm_cities')->where('code', $arr['regency_id'])->first();
 
-            return [
+        foreach ($data as $arr)
+        {
+            $city = app('db')->table('tm_cities')->where('code', $arr['regency_id'])->first();
+            District::create([
                 'name'       => Str::title($arr['name']),
                 'city_id'    => $city->id,
-                'code'       => $arr['id'],
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
-            ];
-        }, $data);
-
-        app('db')->disableQueryLog();
-        app('db')->table('tm_districts')->insert($districts);
+                'code'       => $arr['code'],
+            ]);
+        }
     }
 }

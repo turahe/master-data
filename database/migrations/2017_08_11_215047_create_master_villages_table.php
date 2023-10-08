@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->unsignedBigInteger('district_id')->nullable();
             $table->string('name', 255);
             $table->string('code', 10)->nullable();
+            $table->string('postal_code')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
             $table->timestamps();
