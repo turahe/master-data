@@ -44,8 +44,5 @@ class MasterServiceProvider extends ServiceProvider
                 'config'
             );
         }
-
-        $userStampsMacro = new Macro;
-        $userStampsMacro->register();
     }
 }
