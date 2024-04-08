@@ -45,7 +45,7 @@
         "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0",
         "friendsofphp/php-cs-fixer": "^3.1",
         "spatie/geocoder": "^3.10",
-        "doctrine/dbal": "^3.1"
+        "doctrine/dbal": "^4.0"
     },
     "suggest": {
         "spatie/geocoder": "Synchronize latitude longitude data directly using Google's Geocoding Service"
