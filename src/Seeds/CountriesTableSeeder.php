@@ -26,14 +26,14 @@ class CountriesTableSeeder extends Seeder
                 'iso_3166_2'        => $country['iso_3166_2'],
                 'iso_3166_3'        => $country['iso_3166_3'],
                 'name'              => $country['name'],
-                'region_code'       => (isset($country['region-code'])) ? $country['region-code'] : null, //$country['region-code'],
-                'sub_region_code'   => (isset($country['sub-region-code'])) ? $country['sub-region-code'] : null, //$country['sub-region-code'],
+                'region_code'       => (isset($country['region_code'])) ? $country['region_code'] : null, //$country['region_code'],
+                'sub_region_code'   => (isset($country['sub_region_code'])) ? $country['sub_region_code'] : null, //$country['sub_region_code'],
                 'eea'               => (bool) $country['eea'],
                 'calling_code'      => $country['calling_code'],
                 'currency_symbol'   => ((isset($country['currency_symbol'])) ? $country['currency_symbol'] : null),
                 'flag'              => ((isset($country['flag'])) ? $country['flag'] : null),
-                'created_at'        => date('Y-m-d H:i:s'),
-                'updated_at'        => date('Y-m-d H:i:s'),
+                'created_at'        => now()->toDateTimeString(),
+                'updated_at'        => now()->toDateTimeString(),
             ];
         }, $data);
 

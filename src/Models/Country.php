@@ -65,6 +65,14 @@ class Country extends Model
      */
     protected $table = 'tm_countries';
 
+
+
+    public function currency()
+    {
+        return $this->belongsTo(Currency::class, 'currency_code');
+
+    }
+
     /**
      * @return HasMany
      */
