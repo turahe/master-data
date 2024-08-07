@@ -1,6 +1,7 @@
 <?php
 namespace Turahe\Master\Models;
 
+use Laravel\Scout\Searchable;
 use Turahe\Master\Traits\AutoSort;
 use Turahe\Master\Traits\AutoFilter;
 use Illuminate\Support\Facades\Cache;
@@ -10,6 +11,7 @@ abstract class Model extends BaseModel
 {
     use AutoFilter;
     use AutoSort;
+    use Searchable;
     /**
      * @var string
      */

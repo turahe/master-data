@@ -1,6 +1,8 @@
 <?php
 namespace Turahe\Master\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
+
 /**
  * Turahe\Master\Models\Bank.
  *
@@ -29,4 +31,19 @@ namespace Turahe\Master\Models;
 class Bank extends Model
 {
     protected $table = 'tm_banks';
+
+    /**
+     * Get logo of city
+     *
+     * @return Attribute
+     */
+    /**
+     * Get the logo's country code.
+     */
+    protected function logo(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => asset('vendor/assets/banks/' . $this->code . '.png'),
+        );
+    }
 }

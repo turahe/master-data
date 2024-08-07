@@ -1,6 +1,7 @@
 <?php
 namespace Turahe\Master\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
@@ -87,5 +88,15 @@ class Country extends Model
     public function provinces(): HasMany
     {
         return $this->hasMany(State::class);
+    }
+
+    /**
+     * Get the flag's country code.
+     */
+    protected function flag(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => asset('vendor/assets/countries/flags/' . $this->code . '.png'),
+        );
     }
 }

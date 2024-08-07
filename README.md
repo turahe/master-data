@@ -19,6 +19,28 @@ Instalasi
 composer require turahe/master-data
 ```
 
+In Laravel 5.5 and higher versions, the service provider will automatically get registered. In older versions of the framework just add the service provider in `config/app.php` file:
+
+```php
+'providers' => [
+    // ...
+    Turahe\Master\MasterServiceProvider::class,
+    //...
+];
+```
+
+You must publish [the migration](https://github.com/turahe/master-data/tree/master/database/migrations) with:
+
+```bash
+php artisan vendor:publish --provider="Turahe\Master\MasterServiceProvider"
+```
+
+After the migration has been published you can create the tables by running the migrations:
+
+```bash
+php artisan migrate
+```
+
 ### What does it gives you?
 
 This package has all sorts of information about all:

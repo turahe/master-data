@@ -12,7 +12,7 @@ class CountriesTableSeeder extends Seeder
      */
     public function run()
     {
-        $file = __DIR__ . '/../../resources/countries.json';
+        $file = __DIR__ . '/../../resources/data/countries.json';
         $data = json_decode(file_get_contents($file), true);
         $countries = array_map(function ($country) {
             return [

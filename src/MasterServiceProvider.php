@@ -43,6 +43,10 @@ class MasterServiceProvider extends ServiceProvider
                 ],
                 'config'
             );
+
+            $this->publishes([
+                __DIR__ . 'resources/assets' => public_path('vendor/assets'),
+            ], 'assets');
         }
     }
 }

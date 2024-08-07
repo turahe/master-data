@@ -1,9 +1,11 @@
 <?php
 namespace Turahe\Master\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use Laravel\Scout\Searchable;
 
 /**
  * Turahe\Master\Models\City.
@@ -87,5 +89,37 @@ class City extends Model
     public function villages(): HasManyThrough
     {
         return $this->hasManyThrough(Village::class, District::class);
+    }
+
+    /**
+     * Get logo of city
+     *
+     * @return Attribute
+     */
+    /**
+     * Get the logo's country code.
+     */
+    protected function logo(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => asset('vendor/assets/'.$this->province->country->iso_3166_2.'/cities/' . $this->code . '.png'),
+        );
+    }
+
+    /**
+     * @return Attribute
+     */
+    public function fullName(): Attribute
+    {
+        $this->load('province.country');
+
+        $name =  sprintf(
+            '%s, %s, %s',
+            $this->name,
+            $this->province->name,
+            $this->province->country->name
+        );
+
+        return Attribute::get(fn() => $name);
     }
 }

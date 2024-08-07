@@ -7,7 +7,7 @@ class BanksTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__.'/../../resources/banks.json';
+        $file = __DIR__.'/../../resources/data/banks.json';
         $data = json_decode(file_get_contents($file), true);
         $banks = array_map(function ($arr) {
             return [
