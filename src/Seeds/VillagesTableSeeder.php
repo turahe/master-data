@@ -3,28 +3,24 @@ namespace Turahe\Master\Seeds;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
 use Turahe\Master\Models\Village;
+use Illuminate\Support\LazyCollection;
 
 class VillagesTableSeeder extends Seeder
 {
     public function run()
     {
-        Schema::disableForeignKeyConstraints();
-        Village::truncate();
-        $file = __DIR__ . '/../../resources/id/villages.csv';
+        app('db')->table('tm_villages')->truncate();
+        $file = __DIR__ . '/../../resources/data/id/villages.json';
+        $data = json_decode(file_get_contents($file), true);
+        app('db')->disableQueryLog();
 
-        $header = ['postal_code','name', 1, 2, 3, 4, 'code', 'district_id', ];
-        $data = csv_to_array($file, $header);
 
-        foreach ($data as $value)
-        {
-            $district = app('db')->table('tm_districts')->where('code', $value['district_id'])->first();
-            Village::create([
-                'name'        => ucwords($value['name']),
-                'district_id' => $district->id,
-                'code'        => $value['code'],
-                'postal_code' => $value['postal_code'],
-            ]);
+        foreach ($data as $arr) {
+            $arr['created_at']  = date('Y-m-d H:i:s');
+            $arr['updated_at']  = date('Y-m-d H:i:s');
+            app('db')->table('tm_villages')->insert($arr);
         }
 
 

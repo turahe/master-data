@@ -45,7 +45,7 @@ class MasterServiceProvider extends ServiceProvider
             );
 
             $this->publishes([
-                __DIR__ . 'resources/assets' => public_path('vendor/assets'),
+                __DIR__.'/../resources/assets' => public_path('vendor/assets'),
             ], 'assets');
         }
     }

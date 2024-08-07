@@ -9,17 +9,13 @@ class ProvincesTableSeeder extends Seeder
 {
     public function run()
     {
-        $file = __DIR__ . '/../../resources/id/provinces.csv';
-
-        $header = [ 'name', 'code'];
-        $data = csv_to_array($file, $header);
+        $file = __DIR__ . '/../../resources/data/id/provinces.json';
+        $data = json_decode(file_get_contents($file), true);
         $provinces = array_map(function ($arr) {
             return [
                 'country_id' => 104,
                 'name'       => Str::title($arr['name']),
                 'code'       => $arr['code'],
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
             ];
         }, $data);
         
