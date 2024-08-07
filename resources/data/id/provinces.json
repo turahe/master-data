@@ -1,0 +1,335 @@
+[
+  {
+    "country_id": 104,
+    "name": "Aceh (Nad)",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "11",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Bali",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "51",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Banten",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "36",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Bengkulu",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "17",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Di Yogyakarta",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "34",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Dki Jakarta",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "31",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Gorontalo",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "75",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Jambi",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "15",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Jawa Barat",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "32",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Jawa Tengah",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "33",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Jawa Timur",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "35",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Kalimantan Barat",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "61",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Kalimantan Selatan",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "63",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Kalimantan Tengah",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "62",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Kalimantan Timur",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "64",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Kalimantan Utara",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "65",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Kepulauan Bangka Belitung",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "19",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Kepulauan Riau",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "21",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Lampung",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "18",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Maluku",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "81",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Maluku Utara",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "82",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Nusa Tenggara Barat (Ntb)",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "52",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Nusa Tenggara Timur (Ntt)",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "53",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Papua",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "91",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Papua Barat",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "92",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Papua Pegunungan",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "95",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Papua Selatan",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "93",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Papua Tengah",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "94",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Riau",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "14",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Sulawesi Barat",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "76",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Sulawesi Selatan",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "73",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Sulawesi Tengah",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "72",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Sulawesi Tenggara",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "74",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Sulawesi Utara",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "71",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Sumatera Barat",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "13",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Sumatera Selatan",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "16",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "country_id": 104,
+    "name": "Sumatera Utara",
+    "region": null,
+    "iso_3166_2": null,
+    "code": "12",
+    "latitude": null,
+    "longitude": null
+  }
+]
