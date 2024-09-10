@@ -1,4 +1,5 @@
 <?php
+
 namespace Turahe\Master;
 
 use Illuminate\Support\Facades\Facade;

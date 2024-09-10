@@ -1,12 +1,13 @@
 <?php
+
 namespace Turahe\Master\Commands;
 
-use Turahe\Master\Models\City;
+use GuzzleHttp\Exception\ServerException;
 use Illuminate\Console\Command;
-use Turahe\Master\Models\Village;
+use Turahe\Master\Models\City;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Province;
-use GuzzleHttp\Exception\ServerException;
+use Turahe\Master\Models\Village;
 
 class SyncCoordinateCommand extends Command
 {

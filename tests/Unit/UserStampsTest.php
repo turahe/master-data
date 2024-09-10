@@ -1,9 +1,10 @@
 <?php
+
 namespace Turahe\Master\Tests\Unit;
 
-use Turahe\Master\Tests\TestCase;
 use Turahe\Master\Tests\Models\User;
 use Turahe\Master\Tests\Models\UserStamp;
+use Turahe\Master\Tests\TestCase;
 
 class UserStampsTest extends TestCase
 {
@@ -11,12 +12,13 @@ class UserStampsTest extends TestCase
      * Test if a model can be created and the created_by is set correctly.
      *
      * @test
+     *
      * @return void
      */
     public function it_can_create_a_model_with_created_by()
     {
         $user = User::create([
-            'name'  => 'Test User',
+            'name' => 'Test User',
             'email' => 'laravel@userstamps.dev',
         ]);
 
@@ -35,12 +37,13 @@ class UserStampsTest extends TestCase
      * Test if a model can be updated and the updated_by is set correctly.
      *
      * @test
+     *
      * @return void
      */
     public function it_can_update_a_model_with_updated_by()
     {
         $user = User::create([
-            'name'  => 'Test User',
+            'name' => 'Test User',
             'email' => 'laravel@userstamps.dev',
         ]);
 
@@ -62,12 +65,13 @@ class UserStampsTest extends TestCase
      * Test if a model can be deleted and the deleted_by is set correctly.
      *
      * @test
+     *
      * @return void
      */
     public function it_can_delete_a_model_with_deleted_by()
     {
         $user = User::create([
-            'name'  => 'Test User',
+            'name' => 'Test User',
             'email' => 'laravel@userstamps.dev',
         ]);
 
@@ -88,12 +92,13 @@ class UserStampsTest extends TestCase
      * Test if a model can be deleted and the deleted_by is set correctly.
      *
      * @test
+     *
      * @return void
      */
     public function it_can_restore_a_model_with_deleted_by()
     {
         $user = User::create([
-            'name'  => 'Test User',
+            'name' => 'Test User',
             'email' => 'laravel@userstamps.dev',
         ]);
 

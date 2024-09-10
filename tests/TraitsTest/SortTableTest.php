@@ -1,10 +1,11 @@
 <?php
+
 namespace Turahe\Master\Tests\TraitsTest;
 
-use Turahe\Master\Tests\TestCase;
 use Illuminate\Support\Collection;
 use Turahe\Master\Tests\Models\Dummy;
 use Turahe\Master\Tests\Models\DummyWithSoftDeletes;
+use Turahe\Master\Tests\TestCase;
 
 class SortTableTest extends TestCase
 {
@@ -19,7 +20,7 @@ class SortTableTest extends TestCase
     /** @test */
     public function it_can_get_the_highest_order_number()
     {
-        $this->assertEquals(Dummy::all()->count(), (new Dummy())->getHighestOrderNumber());
+        $this->assertEquals(Dummy::all()->count(), (new Dummy)->getHighestOrderNumber());
     }
 
     /** @test */
@@ -29,7 +30,7 @@ class SortTableTest extends TestCase
 
         DummyWithSoftDeletes::first()->delete();
 
-        $this->assertEquals(DummyWithSoftDeletes::withTrashed()->count(), (new DummyWithSoftDeletes())->getHighestOrderNumber());
+        $this->assertEquals(DummyWithSoftDeletes::withTrashed()->count(), (new DummyWithSoftDeletes)->getHighestOrderNumber());
     }
 
     /** @test */
@@ -151,7 +152,7 @@ class SortTableTest extends TestCase
     /** @test */
     public function it_will_determine_to_sort_when_creating_if_sortable_attribute_does_not_exist()
     {
-        $model = new Dummy();
+        $model = new Dummy;
 
         $this->assertTrue($model->shouldSortWhenCreating());
     }
@@ -159,7 +160,8 @@ class SortTableTest extends TestCase
     /** @test */
     public function it_will_determine_to_sort_when_creating_if_sort_when_creating_setting_does_not_exist()
     {
-        $model = new class() extends Dummy {
+        $model = new class extends Dummy
+        {
             public $sortable = [];
         };
 
@@ -169,13 +171,15 @@ class SortTableTest extends TestCase
     /** @test */
     public function it_will_respect_the_sort_when_creating_setting()
     {
-        $model = new class() extends Dummy {
+        $model = new class extends Dummy
+        {
             public $sortable = ['sort_when_creating' => true];
         };
 
         $this->assertTrue($model->shouldSortWhenCreating());
 
-        $model = new class() extends Dummy {
+        $model = new class extends Dummy
+        {
             public $sortable = ['sort_when_creating' => false];
         };
         $this->assertFalse($model->shouldSortWhenCreating());
@@ -333,10 +337,11 @@ class SortTableTest extends TestCase
     {
         config([
             'master.record_ordering_name' => 'record_ordering',
-            'master.sort_when_creating'   => true,
+            'master.sort_when_creating' => true,
         ]);
 
-        $model = new class() extends Dummy {
+        $model = new class extends Dummy
+        {
             public $sortable = [];
         };
 
@@ -347,10 +352,11 @@ class SortTableTest extends TestCase
     /** @test */
     public function it_can_override_config_properties()
     {
-        $model = new class() extends Dummy {
+        $model = new class extends Dummy
+        {
             public $sortable = [
                 'record_ordering_name' => 'my_custom_record_ordering',
-                'sort_when_creating'   => false,
+                'sort_when_creating' => false,
             ];
         };
 
@@ -361,7 +367,7 @@ class SortTableTest extends TestCase
     /** @test */
     public function it_can_tell_if_element_is_first_in_order()
     {
-        $model = (new Dummy())->buildSortQuery()->get();
+        $model = (new Dummy)->buildSortQuery()->get();
         $this->assertTrue($model[0]->isFirstInOrder());
         $this->assertFalse($model[1]->isFirstInOrder());
     }
@@ -369,7 +375,7 @@ class SortTableTest extends TestCase
     /** @test */
     public function it_can_tell_if_element_is_last_in_order()
     {
-        $model = (new Dummy())->buildSortQuery()->get();
+        $model = (new Dummy)->buildSortQuery()->get();
         $this->assertTrue($model[$model->count() - 1]->isLastInOrder());
         $this->assertFalse($model[$model->count() - 2]->isLastInOrder());
     }

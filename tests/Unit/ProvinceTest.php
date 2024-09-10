@@ -1,11 +1,12 @@
 <?php
+
 namespace Turahe\Master\Tests\Unit;
 
+use Illuminate\Database\Eloquent\Collection;
 use Turahe\Master\Models\City;
-use Turahe\Master\Tests\TestCase;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Province;
-use Illuminate\Database\Eloquent\Collection;
+use Turahe\Master\Tests\TestCase;
 
 class ProvinceTest extends TestCase
 {
@@ -29,7 +30,7 @@ class ProvinceTest extends TestCase
         $province = Province::first();
 
         $this->assertInstanceOf(Collection::class, $province->districts);
-//        $this->assertInstanceOf(District::class, $province->districts->first());
+        //        $this->assertInstanceOf(District::class, $province->districts->first());
     }
 
     /** @test */

@@ -1,28 +1,32 @@
 <?php
+
 namespace Turahe\Master\Models;
+
+use Illuminate\Database\Eloquent\Model;
 
 /**
  * Turahe\Master\Models\Currency.
  *
- * @property string                          $id
- * @property int|null                        $priority
- * @property string|null                     $iso_code
- * @property string|null                     $name
- * @property string|null                     $symbol
- * @property string|null                     $disambiguate_symbol
- * @property array|null                      $alternate_symbols
- * @property string|null                     $subunit
- * @property int                             $subunit_to_unit
- * @property int                             $symbol_first
- * @property string|null                     $html_entity
- * @property string|null                     $decimal_mark
- * @property string|null                     $thousands_separator
- * @property string|null                     $iso_numeric
- * @property int                             $smallest_denomination
- * @property string|null                     $exchange_rate         value of exchange rate from openexchange
- * @property int                             $status
+ * @property string $id
+ * @property int|null $priority
+ * @property string|null $iso_code
+ * @property string|null $name
+ * @property string|null $symbol
+ * @property string|null $disambiguate_symbol
+ * @property array|null $alternate_symbols
+ * @property string|null $subunit
+ * @property int $subunit_to_unit
+ * @property int $symbol_first
+ * @property string|null $html_entity
+ * @property string|null $decimal_mark
+ * @property string|null $thousands_separator
+ * @property string|null $iso_numeric
+ * @property int $smallest_denomination
+ * @property string|null $exchange_rate value of exchange rate from openexchange
+ * @property int $status
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoFilter($filter = 'filter')
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoSort($sortByKey = 'sort', $sortDirectionKey = 'direction')
  * @method static \Illuminate\Database\Eloquent\Builder|Currency newModelQuery()
@@ -48,16 +52,20 @@ namespace Turahe\Master\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|Currency whereSymbolFirst($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Currency whereThousandsSeparator($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Currency whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class Currency extends Model
 {
-    protected $table = 'tm_currencies';
+    public function getTable(): string
+    {
+        return config('master.tables.currencies');
+    }
 
     protected $casts = [
         'alternate_symbols' => 'object',
     ];
-    
+
     public function country()
     {
         return $this->belongsTo(Country::class, 'iso_code');

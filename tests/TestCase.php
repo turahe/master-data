@@ -1,10 +1,11 @@
 <?php
+
 namespace Turahe\Master\Tests;
 
-use Turahe\Master\Tests\Models\User;
-use Turahe\Master\Tests\Models\Dummy;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Config;
+use Turahe\Master\Tests\Models\Dummy;
+use Turahe\Master\Tests\Models\User;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -31,15 +32,15 @@ class TestCase extends \Orchestra\Testbench\TestCase
     }
 
     /**
-     * @param \Illuminate\Foundation\Application $app
+     * @param  \Illuminate\Foundation\Application  $app
      */
     protected function getEnvironmentSetUp($app)
     {
         $app['config']->set('database.default', 'sqlite');
         $app['config']->set('database.connections.sqlite', [
-            'driver'   => 'sqlite',
+            'driver' => 'sqlite',
             'database' => ':memory:',
-            'prefix'   => '',
+            'prefix' => '',
         ]);
         $app['config']->set('app.key', 'base64:MFOsOH9RomiI2LRdgP4hIeoQJ5nyBhdABdH77UY2zi8=');
     }
@@ -57,7 +58,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
 
         collect(range(1, 20))->each(function (int $i) {
             Dummy::create([
-                'name'               => $i,
+                'name' => $i,
                 'custom_column_sort' => rand(),
             ]);
         });

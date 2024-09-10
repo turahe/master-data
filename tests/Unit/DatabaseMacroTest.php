@@ -1,9 +1,10 @@
 <?php
+
 namespace Turahe\Master\Tests\Unit;
 
-use Turahe\Master\Tests\TestCase;
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+use Turahe\Master\Tests\TestCase;
 
 class DatabaseMacroTest extends TestCase
 {
@@ -11,6 +12,7 @@ class DatabaseMacroTest extends TestCase
      * Test if a database table can be created with the marco for userstamps.
      *
      * @test
+     *
      * @return void
      */
     public function it_can_create_a_table_with_userstamps()
@@ -30,6 +32,7 @@ class DatabaseMacroTest extends TestCase
      * Test if a database table can be created with the marco for soft userstamps.
      *
      * @test
+     *
      * @return void
      */
     public function it_can_create_a_table_with_soft_userstamps()
@@ -48,6 +51,7 @@ class DatabaseMacroTest extends TestCase
      * Test if a database table can be created with the marco for soft userstamps.
      *
      * @test
+     *
      * @return void
      */
     public function it_can_alter_a_table_for_dropping_userstamps()
@@ -76,6 +80,7 @@ class DatabaseMacroTest extends TestCase
      * Test if a database table can be created with the marco for soft userstamps.
      *
      * @test
+     *
      * @return void
      */
     public function it_can_alter_a_table_for_dropping_soft_user_stamps()

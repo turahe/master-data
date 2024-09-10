@@ -1,9 +1,10 @@
 <?php
+
 namespace Turahe\Master\Tests\Unit;
 
+use Turahe\Master\Models\District;
 use Turahe\Master\Models\Village;
 use Turahe\Master\Tests\TestCase;
-use Turahe\Master\Models\District;
 
 class VillageTest extends TestCase
 {

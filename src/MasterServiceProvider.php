@@ -1,10 +1,10 @@
 <?php
+
 namespace Turahe\Master;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 use Turahe\Master\Commands\SeedCommand;
-use Turahe\Master\Database\Schema\Macros\Macro;
 use Turahe\Master\Commands\SyncCoordinateCommand;
 
 class MasterServiceProvider extends ServiceProvider
@@ -15,7 +15,7 @@ class MasterServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('master', function () {
-            return new MasterService();
+            return new MasterService;
         });
 
         $this->commands([

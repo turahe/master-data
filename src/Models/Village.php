@@ -1,17 +1,19 @@
 <?php
+
 namespace Turahe\Master\Models;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * Turahe\Master\Models\Village.
  *
- * @property string                          $id
- * @property int                             $district_id
- * @property string                          $name
- * @property string|null                     $latitude
- * @property string|null                     $longitude
- * @property int                             $status
+ * @property string $id
+ * @property int $district_id
+ * @property string $name
+ * @property string|null $latitude
+ * @property string|null $longitude
+ * @property int $status
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Turahe\Master\Models\District $district
@@ -19,6 +21,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property-read mixed $city_name
  * @property-read mixed $district_name
  * @property-read mixed $province_name
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoFilter($filter = 'filter')
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoSort($sortByKey = 'sort', $sortDirectionKey = 'direction')
  * @method static \Illuminate\Database\Eloquent\Builder|Village newModelQuery()
@@ -33,16 +36,19 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static \Illuminate\Database\Eloquent\Builder|Village whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Village whereStatus($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Village whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
+ *
  * @property string|null $code
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Village whereCode($value)
  */
 class Village extends Model
 {
-    /**
-     * @var string
-     */
-    protected $table = 'tm_villages';
+    public function getTable(): string
+    {
+        return config('master.tables.villages');
+    }
 
     /**
      * @var string[]
@@ -51,41 +57,26 @@ class Village extends Model
         'meta' => 'array',
     ];
 
-    /**
-     * @return BelongsTo
-     */
     public function district(): BelongsTo
     {
         return $this->belongsTo(District::class, 'district_id');
     }
 
-    /**
-     * @return string
-     */
     public function getDistrictNameAttribute(): string
     {
         return $this->district->name;
     }
 
-    /**
-     * @return string
-     */
     public function getCityNameAttribute(): string
     {
         return $this->district->city->name;
     }
 
-    /**
-     * @return string
-     */
     public function getProvinceNameAttribute(): string
     {
         return $this->district->city->state->name;
     }
 
-    /**
-     * @return string
-     */
     public function getAddressAttribute(): string
     {
         return sprintf(

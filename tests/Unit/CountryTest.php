@@ -1,10 +1,11 @@
 <?php
+
 namespace Turahe\Master\Tests\Unit;
 
-use Turahe\Master\Models\Country;
-use Turahe\Master\Tests\TestCase;
-use Turahe\Master\Models\Province;
 use Illuminate\Database\Eloquent\Collection;
+use Turahe\Master\Models\Country;
+use Turahe\Master\Models\Province;
+use Turahe\Master\Tests\TestCase;
 
 class CountryTest extends TestCase
 {
@@ -15,10 +16,10 @@ class CountryTest extends TestCase
         $this->seed('Turahe\Master\Seeds\ProvincesTableSeeder');
         $country = Country::find(104);
 
-//        dd($country->provinces->first());
+        //        dd($country->provinces->first());
 
         $this->assertInstanceOf(Collection::class, $country->provinces);
-//        $this->assertInstanceOf(Province::class, $country->provinces->first());
+        //        $this->assertInstanceOf(Province::class, $country->provinces->first());
     }
 
     /** @test */

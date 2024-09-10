@@ -1,4 +1,5 @@
 <?php
+
 namespace Turahe\Master\Tests\Unit;
 
 use Turahe\Master\Models\Color;

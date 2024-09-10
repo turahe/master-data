@@ -1,4 +1,5 @@
 <?php
+
 namespace Turahe\Master\Commands;
 
 use Illuminate\Console\Command;

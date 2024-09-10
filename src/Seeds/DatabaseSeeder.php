@@ -1,15 +1,15 @@
 <?php
+
 namespace Turahe\Master\Seeds;
 
-use Turahe\Master\Models\City;
 use Illuminate\Database\Seeder;
-use Turahe\Master\Models\Color;
+use Illuminate\Support\Facades\Schema;
+use Turahe\Master\Models\City;
 use Turahe\Master\Models\Country;
-use Turahe\Master\Models\Village;
 use Turahe\Master\Models\Currency;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Province;
-use Illuminate\Support\Facades\Schema;
+use Turahe\Master\Models\Village;
 
 class DatabaseSeeder extends Seeder
 {
@@ -29,7 +29,6 @@ class DatabaseSeeder extends Seeder
             DistrictsTableSeeder::class,
             VillagesTableSeeder::class,
             CurrenciesTableSeeder::class,
-            ColorsTableSeeder::class,
         ]);
     }
 
@@ -42,7 +41,6 @@ class DatabaseSeeder extends Seeder
         Schema::disableForeignKeyConstraints();
 
         Currency::truncate();
-        Color::truncate();
         Village::truncate();
         District::truncate();
         City::truncate();
