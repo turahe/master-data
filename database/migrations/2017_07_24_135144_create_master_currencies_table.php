@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tm_currencies', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->integer('priority')->nullable()->default(100);
             $table->string('iso_code', 16)->unique()->index();
             $table->string('name', 255)->nullable();

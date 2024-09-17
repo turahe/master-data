@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tm_timezones', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->string('value')->nullable();
             $table->string('abbr')->nullable();
             $table->integer('offset')->nullable();

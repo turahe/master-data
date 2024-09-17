@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('tm_cities', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('province_id')->nullable();
+            $table->foreignIdFor(\Turahe\Master\Models\Province::class, 'province_id')->nullable();
             $table->string('name');
             $table->string('type')->nullable();
             $table->string('code', 10)->nullable();

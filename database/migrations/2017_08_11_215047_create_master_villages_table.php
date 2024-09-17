@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tm_villages', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->unsignedBigInteger('district_id')->nullable();
+            $table->id();
+            $table->foreignIdFor(\Turahe\Master\Models\Village::class, 'district_id')->nullable();
             $table->string('name', 255);
             $table->string('code', 10)->nullable();
             $table->string('postal_code')->nullable();

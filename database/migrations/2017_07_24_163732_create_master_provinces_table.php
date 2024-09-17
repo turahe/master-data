@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tm_provinces', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->unsignedBigInteger('country_id')->nullable();
+            $table->id();
+            $table->foreignIdFor(\Turahe\Master\Models\Country::class, 'country_id')->nullable();
             $table->string('name', 255);
             $table->string('region', 255)->nullable();
             $table->string('iso_3166_2', 2)->nullable();

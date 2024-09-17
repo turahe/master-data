@@ -35,5 +35,4 @@ class DummyWithSoftDeletes extends Model implements Sortable
         'order_column_name' => 'record_ordering',
         'sort_when_creating' => true,
     ];
-
 }
