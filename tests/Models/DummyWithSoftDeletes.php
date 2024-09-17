@@ -4,8 +4,8 @@ namespace Turahe\Master\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Turahe\Master\Contracts\Sortable;
-use Turahe\Master\Traits\SortableTrait;
+use Spatie\EloquentSortable\Sortable;
+use Spatie\EloquentSortable\SortableTrait;
 
 /**
  * Turahe\Master\Tests\Models\DummyWithSoftDeletes
@@ -30,4 +30,10 @@ class DummyWithSoftDeletes extends Model implements Sortable
     protected $guarded = [];
 
     public $timestamps = false;
+
+    public $sortable = [
+        'order_column_name' => 'record_ordering',
+        'sort_when_creating' => true,
+    ];
+
 }

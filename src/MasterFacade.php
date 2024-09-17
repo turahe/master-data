@@ -8,6 +8,6 @@ class MasterFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'MasterService';
+        return MasterService::class;
     }
 }

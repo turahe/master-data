@@ -78,8 +78,6 @@ class TestCase extends \Orchestra\Testbench\TestCase
             $table->timestamps();
             $table->softDeletes();
 
-            $table->userStamps();
-            $table->softUserStamps();
         });
     }
 

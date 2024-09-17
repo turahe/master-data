@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('tm_currencies', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('priority')->nullable()->default(100);
-            $table->string('iso_code', 16)->unique()->index()->primary();
+            $table->string('iso_code', 16)->unique()->index();
             $table->string('name', 255)->nullable();
             $table->string('symbol', 255)->nullable();
             $table->string('disambiguate_symbol', 255)->nullable();
