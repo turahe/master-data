@@ -45,7 +45,7 @@ class CountryTest extends TestCase
         $this->assertEquals('Indonesia', $country->name);
         $this->assertEquals('142', $country->region_code);
         $this->assertEquals('035', $country->sub_region_code);
-        $this->assertTrue($country->eea);
+        $this->assertEquals(true, $country->eea);
         $this->assertEquals('62', $country->calling_code);
         $this->assertEquals('360', $country->country_code);
         $this->assertEquals(null, $country->latitude);
