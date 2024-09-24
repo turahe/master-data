@@ -4,18 +4,48 @@ namespace Turahe\Master\Models;
 
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Country extends Model
 {
+    protected $fillable = [
+        'capital',
+        'citizenship',
+        'country_code',
+        'currency_name',
+        'currency_code',
+        'currency_sub_unit',
+        'currency_symbol',
+        'full_name',
+        'iso_3166_2',
+        'iso_3166_3',
+        'name',
+        'region_code',
+        'sub_region_code',
+        'eea',
+        'calling_code',
+        'flag',
+        'latitude',
+        'longitude',
+
+    ];
+
+    protected function casts(): array
+    {
+        return [
+            'eea' => 'boolean',
+        ];
+    }
+
     public function getTable(): string
     {
         return config('master.tables.countries');
     }
 
-    public function currency()
+    public function currency(): BelongsTo
     {
-        return $this->belongsTo(Currency::class, 'currency_code');
+        return $this->belongsTo(Currency::class, 'currency_code', 'iso_code');
 
     }
 
@@ -26,7 +56,7 @@ class Country extends Model
 
     public function provinces(): HasMany
     {
-        return $this->hasMany(State::class);
+        return $this->hasMany(Province::class);
     }
 
     /**

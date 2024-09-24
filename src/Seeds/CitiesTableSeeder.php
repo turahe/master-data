@@ -22,6 +22,6 @@ class CitiesTableSeeder extends Seeder
         }, $data);
 
         app('db')->disableQueryLog();
-        app('db')->table('tm_cities')->insert($cities);
+        app('db')->table(config('master.tables.cities'))->insert($cities);
     }
 }

@@ -20,7 +20,7 @@ class CountriesTableSeeder extends Seeder
                 'capital' => $country['capital'] ?? null,
                 'citizenship' => ((isset($country['citizenship'])) ? $country['citizenship'] : null),
                 'country_code' => $country['country_code'],
-                'currency' => ((isset($country['currency'])) ? $country['currency'] : null),
+                'currency_name' => ((isset($country['currency'])) ? $country['currency'] : null),
                 'currency_code' => ((isset($country['currency_code'])) ? $country['currency_code'] : null),
                 'currency_sub_unit' => ((isset($country['currency_sub_unit'])) ? $country['currency_sub_unit'] : null),
                 'full_name' => ((isset($country['full_name'])) ? $country['full_name'] : null),
@@ -39,6 +39,6 @@ class CountriesTableSeeder extends Seeder
         }, $data);
 
         app('db')->disableQueryLog();
-        app('db')->table('tm_countries')->insert($countries);
+        app('db')->table(config('master.tables.countries'))->insert($countries);
     }
 }

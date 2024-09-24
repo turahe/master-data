@@ -21,6 +21,6 @@ class LanguagesTableSeeder extends Seeder
         }, $data);
 
         app('db')->disableQueryLog();
-        app('db')->table('tm_languages')->insert($languages);
+        app('db')->table(config('master.tables.languages'))->insert($languages);
     }
 }

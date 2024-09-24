@@ -3,10 +3,11 @@
 namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\QueryException;
 use Turahe\Master\Models\City;
 use Turahe\Master\Models\District;
+use Turahe\Master\Models\Province;
 use Turahe\Master\Models\State;
-use Turahe\Master\Models\Village;
 use Turahe\Master\Tests\TestCase;
 
 class CityTest extends TestCase
@@ -14,62 +15,117 @@ class CityTest extends TestCase
     /** @test */
     public function a_city_has_belongs_to_province_relation()
     {
-        $this->seed('Turahe\Master\Seeds\ProvincesTableSeeder');
-        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
-        $city = City::first();
+        $province = Province::create([
+            'country_id' => '100',
+            'name' => $this->faker->country,
+            'region' => '12',
+            'iso_3166_2' => '12',
+            'code' => '11',
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
 
-        $this->assertInstanceOf(State::class, $city->state);
-        $this->assertEquals($city->state_id, $city->state->id);
+        ]);
+        $city = City::create([
+            'province_id' => $province->id,
+            'name' => $this->faker->city,
+            'type' => 'CITY',
+            'code' => '11',
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ]);
+
+        $this->assertInstanceOf(State::class, $city->province);
+        $this->assertEquals($city->province_id, $city->province->id);
     }
 
     /** @test */
     public function a_city_has_many_districts_relation()
     {
-        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
-        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
-        $city = City::first();
+        $city = City::create([
+            'province_id' => 1,
+            'name' => $this->faker->city,
+            'type' => 'CITY',
+            'code' => '11',
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ]);
+
+        District::create([
+            'city_id' => $city->id,
+            'name' => $this->faker->city,
+            'code' => '11',
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ]);
 
         $this->assertInstanceOf(Collection::class, $city->districts);
         $this->assertInstanceOf(District::class, $city->districts->first());
     }
 
     /** @test */
-    public function a_city_has_many_villages_relation()
+    public function a_create_city()
     {
-        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
-        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
-        $this->seed('Turahe\Master\Seeds\VillagesTableSeeder');
-        $city = City::first();
+        $data = [
+            'province_id' => 1,
+            'name' => $this->faker->city,
+            'type' => 'CITY',
+            'code' => '11',
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ];
 
-        $this->assertInstanceOf(Collection::class, $city->villages);
-        $this->assertInstanceOf(Village::class, $city->villages->first());
+        $city = City::create($data);
+
+        $this->assertEquals($data['province_id'], $city->province_id);
+        $this->assertEquals($data['name'], $city->name);
+        $this->assertEquals($data['type'], $city->type);
+        $this->assertEquals($data['code'], $city->code);
+        $this->assertEquals($data['latitude'], $city->latitude);
+        $this->assertEquals($data['longitude'], $city->longitude);
     }
 
     /** @test */
-    public function a_city_has_name_attribute()
+    public function it_can_delete_a_city()
     {
         $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
         $city = City::first();
 
-        $this->assertEquals('Aceh Barat', $city->name);
+        $deleted = $city->delete();
+
+        $this->assertTrue($deleted);
+        $this->assertDatabaseMissing(config('master.tables.citys'), ['name' => $city->name]);
     }
 
     /** @test */
-    public function a_city_has_province_name_attribute()
+    public function it_errors_when_updating_the_city()
     {
-        $this->seed('Turahe\Master\Seeds\ProvincesTableSeeder');
         $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
         $city = City::first();
+        $this->expectException(QueryException::class);
 
-        $this->assertEquals('Nanggroe Aceh Darussalam (NAD)', $city->state->name);
+        $city->update(['name' => null]);
     }
 
     /** @test */
-    public function a_city_has_logo_path_attribute()
+    public function it_can_update_the_city()
     {
         $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
         $city = City::first();
 
-        $this->assertNull($city->logo_path);
+        $update = ['code' => 'AFF'];
+        $city->update($update);
+
+        $this->assertEquals('AFF', $city->code);
+    }
+
+    /** @test */
+    public function it_can_find_the_city()
+    {
+        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
+        $city = City::first();
+
+        $found = City::where('code', $city->code)->first();
+
+        $this->assertEquals($city->code, $found->code);
     }
 }

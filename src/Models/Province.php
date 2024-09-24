@@ -2,9 +2,6 @@
 
 namespace Turahe\Master\Models;
 
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasManyThrough;
-
 /**
  * Turahe\Master\Models\Province.
  *
@@ -49,23 +46,4 @@ use Illuminate\Database\Eloquent\Relations\HasManyThrough;
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Province whereCode($value)
  */
-class Province extends State
-{
-    public function cities(): HasMany
-    {
-        return $this->hasMany(City::class, 'state_id');
-    }
-
-    public function districts(): HasManyThrough
-    {
-        return $this->hasManyThrough(District::class, City::class, 'state_id', 'city_id');
-    }
-
-    public function getAddressAttribute(): string
-    {
-        return sprintf(
-            '%s, Indonesia',
-            $this->name
-        );
-    }
-}
+class Province extends State {}

@@ -53,8 +53,14 @@ class Village extends Model
     /**
      * @var string[]
      */
-    protected $casts = [
-        'meta' => 'array',
+    protected $fillable = [
+        'district_id',
+        'name',
+        'code',
+        'postal_code',
+        'latitude',
+        'longitude',
+
     ];
 
     public function district(): BelongsTo

@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tm_districts', function (Blueprint $table) {
+        Schema::create(config('master.tables.districts'), function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\Turahe\Master\Models\City::class, 'city_id')->nullable();
+            $table->foreignIdFor(\Turahe\Master\Models\City::class, 'city_id');
             $table->string('name', 255);
             $table->string('code', 10)->nullable();
             $table->string('latitude')->nullable();
@@ -36,6 +36,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tm_districts');
+        Schema::dropIfExists(config('master.tables.districts'));
     }
 };

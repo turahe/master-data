@@ -3,7 +3,7 @@
 namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Collection;
-use Turahe\Master\Models\City;
+use Illuminate\Database\QueryException;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Village;
 use Turahe\Master\Tests\TestCase;
@@ -11,64 +11,116 @@ use Turahe\Master\Tests\TestCase;
 class DistrictTest extends TestCase
 {
     /** @test */
-    public function a_district_has_belongs_to_city_relation()
-    {
-        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
-        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
-        $district = District::first();
-
-        $this->assertInstanceOf(City::class, $district->city);
-        $this->assertEquals($district->city_id, $district->city->id);
-    }
-
-    /** @test */
     public function a_district_has_many_villages_relation()
     {
-        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
-        $this->seed('Turahe\Master\Seeds\VillagesTableSeeder');
-        $district = District::first();
+        $district = District::create([
+            'name' => 'Name',
+            'code' => 1111222,
+            'city_id' => 1111,
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ]);
 
+        $villages = Village::create([
+            'name' => 'Village 1',
+            'district_id' => $district->id,
+            'code' => 1111222,
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ]);
         $this->assertInstanceOf(Collection::class, $district->villages);
         $this->assertInstanceOf(Village::class, $district->villages->first());
     }
 
     /** @test */
-    public function a_district_has_name_attribute()
+    public function a_create_district()
     {
-        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
-        $district = District::first();
+        $data = [
+            'name' => 'Name',
+            'city_id' => 1111,
+            'code' => 1111222,
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ];
 
-        $this->assertEquals('TEUPAH SELATAN', $district->name);
+        $district = District::create($data);
+
+        $this->assertEquals($data['city_id'], $district->city_id);
+        $this->assertEquals($data['name'], $district->name);
+        $this->assertEquals($data['latitude'], $district->latitude);
+        $this->assertEquals($data['longitude'], $district->longitude);
     }
 
     /** @test */
-    public function a_district_has_city_name_attribute()
+    public function it_can_delete_a_district()
     {
-        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
-        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
-        $district = District::first();
+        $district = District::create([
+            'name' => 'Name',
+            'city_id' => 1111,
+            'code' => 1111222,
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ]);
 
-        $this->assertEquals('KABUPATEN SIMEULUE', $district->city->name);
+        $villages = Village::create([
+            'name' => 'Village 1',
+            'code' => 1111222,
+            'district_id' => $district->id,
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ]);
+
+        $deleted = $district->delete();
+
+        $this->assertTrue($deleted);
+        $this->assertDatabaseMissing(config('master.tables.districts'), ['name' => $district->name]);
     }
 
     /** @test */
-    public function a_district_has_province_name_attribute()
+    public function it_errors_when_updating_the_district()
     {
-        $this->seed('Turahe\Master\Seeds\ProvincesTableSeeder');
-        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
-        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
-        $district = District::first();
+        $district = District::create([
+            'name' => 'Name',
+            'city_id' => 1111,
+            'code' => 1111222,
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ]);
+        $this->expectException(QueryException::class);
 
-        $this->assertEquals('ACEH', $district->province->name);
+        $district->update(['name' => null]);
     }
 
     /** @test */
-    //    public function a_district_can_store_meta_column()
-    //    {
-    //        $this->seed('Turahe\Master\Seeds\DistrictsTableSeeder');
-    //        $district = District::first();
-    //        $district->meta = ['luas_wilayah' => 200.2];
-    //        $district->save();
-    //        $this->assertEquals(['luas_wilayah' => 200.2], $district->meta);
-    //    }
+    public function it_can_update_the_district()
+    {
+        $district = District::create([
+            'name' => 'Name',
+            'city_id' => 1111,
+            'code' => 1111222,
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ]);
+
+        $update = ['code' => '1234'];
+        $district->update($update);
+
+        $this->assertEquals('1234', $district->code);
+    }
+
+    /** @test */
+    public function it_can_find_the_district()
+    {
+        $district = District::create([
+            'name' => 'Name',
+            'city_id' => 1111,
+            'code' => 1111222,
+            'latitude' => $this->faker->latitude,
+            'longitude' => $this->faker->longitude,
+        ]);
+
+        $found = District::where('code', $district->code)->first();
+
+        $this->assertEquals($district->code, $found->code);
+    }
 }

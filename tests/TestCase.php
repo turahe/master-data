@@ -2,19 +2,19 @@
 
 namespace Turahe\Master\Tests;
 
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Config;
-use Turahe\Master\Tests\Models\Dummy;
-use Turahe\Master\Tests\Models\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
+    use RefreshDatabase;
+    use WithFaker;
+
     public function setUp(): void
     {
         parent::setUp();
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        $this->setUpDatabase();
     }
 
     protected function getPackageProviders($app)
@@ -43,48 +43,5 @@ class TestCase extends \Orchestra\Testbench\TestCase
             'prefix' => '',
         ]);
         $app['config']->set('app.key', 'base64:MFOsOH9RomiI2LRdgP4hIeoQJ5nyBhdABdH77UY2zi8=');
-    }
-
-    protected function setUpDatabase()
-    {
-        Config::set('master.users_model', User::class);
-
-        $this->app['db']->connection()->getSchemaBuilder()->create('dummies', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('custom_column_sort');
-            $table->integer('record_ordering');
-        });
-
-        collect(range(1, 20))->each(function (int $i) {
-            Dummy::create([
-                'name' => $i,
-                'custom_column_sort' => rand(),
-            ]);
-        });
-
-        $this->app['db']->connection()->getSchemaBuilder()->create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-
-            $table->timestamps();
-        });
-
-        $this->app['db']->connection()->getSchemaBuilder()->create('userstamps', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-
-            $table->timestamps();
-            $table->softDeletes();
-
-        });
-    }
-
-    protected function setUpSoftDeletes()
-    {
-        $this->app['db']->connection()->getSchemaBuilder()->table('dummies', function (Blueprint $table) {
-            $table->softDeletes();
-        });
     }
 }

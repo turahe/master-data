@@ -39,6 +39,6 @@ class CurrenciesTableSeeder extends Seeder
         }, $data);
 
         app('db')->disableQueryLog();
-        app('db')->table('tm_currencies')->insert($currencies);
+        app('db')->table(config('master.tables.currencies'))->insert($currencies);
     }
 }

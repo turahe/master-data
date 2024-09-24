@@ -23,6 +23,6 @@ class DistrictsTableSeeder extends Seeder
         }, $data);
 
         app('db')->disableQueryLog();
-        app('db')->table('tm_districts')->insert($districts);
+        app('db')->table(config('master.tables.districts'))->insert($districts);
     }
 }

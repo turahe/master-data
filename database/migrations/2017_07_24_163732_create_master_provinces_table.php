@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tm_provinces', function (Blueprint $table) {
+        Schema::create(config('master.tables.provinces'), function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\Turahe\Master\Models\Country::class, 'country_id')->nullable();
+            $table->foreignIdFor(\Turahe\Master\Models\Country::class, 'country_id');
             $table->string('name', 255);
             $table->string('region', 255)->nullable();
             $table->string('iso_3166_2', 2)->nullable();
@@ -23,12 +23,6 @@ return new class extends Migration
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
             $table->timestamps();
-        });
-
-        Schema::table('tm_provinces', function (Blueprint $table) {
-            $table->foreign('country_id')
-                ->references('id')->on('tm_countries')
-                ->onDelete('cascade');
         });
     }
 
@@ -39,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tm_provinces');
+        Schema::dropIfExists(config('master.tables.provinces'));
     }
 };

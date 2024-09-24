@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tm_languages', function (Blueprint $table) {
+        Schema::create(config('master.tables.languages'), function (Blueprint $table) {
             $table->id();
-            $table->string('code');
+            $table->string('code')->index();
             $table->string('name');
             $table->string('native');
             $table->timestamps();
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tm_languages');
+        Schema::dropIfExists(config('master.tables.languages'));
     }
 };

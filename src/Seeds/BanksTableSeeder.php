@@ -21,6 +21,6 @@ class BanksTableSeeder extends Seeder
             ];
         }, $data);
 
-        app('db')->table('tm_banks')->insert($banks);
+        app('db')->table(config('master.tables.banks'))->insert($banks);
     }
 }

@@ -60,8 +60,14 @@ class State extends Model
      * @var array
      */
     public $fillable = [
+        'country_id',
         'name',
-        'state_code',
+        'region',
+        'iso_3166_2',
+        'code',
+        'latitude',
+        'longitude',
+
     ];
 
     public function getTable(): string
@@ -71,33 +77,22 @@ class State extends Model
 
     public function country(): BelongsTo
     {
-        return $this->belongsTo(Country::class);
+        return $this->belongsTo(Country::class, 'country_id');
     }
 
     public function cities(): HasMany
     {
-        return $this->hasMany(City::class, 'state_id');
+        return $this->hasMany(City::class, 'province_id');
     }
 
     public function districts(): HasManyThrough
     {
-        return $this->hasManyThrough(District::class, City::class);
-    }
-
-    public function getLogoPathAttribute(): string
-    {
-        $folder = 'logo/';
-        $id = $this->getAttributeValue('id');
-        $arr_glob = glob(public_path().'/'.$folder.$id.'.*');
-
-        if (count($arr_glob) == 1) {
-            $logo_name = basename($arr_glob[0]);
-            $logo_path = url($folder.$logo_name);
-
-            return $logo_path;
-        }
-
-        return '';
+        return $this->hasManyThrough(
+            District::class,
+            City::class,
+            'province_id',
+            'city_id',
+        );
     }
 
     /**
@@ -110,11 +105,8 @@ class State extends Model
         );
     }
 
-    public function getAddressAttribute(): string
+    protected function fullName(): Attribute
     {
-        return sprintf(
-            '%s, Indonesia',
-            $this->name
-        );
+        return Attribute::get(fn () => $this->name.' '.$this->code);
     }
 }

@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Bank extends Model
 {
+    protected $fillable = [
+        'name',
+        'alias',
+        'company',
+        'code',
+    ];
+
     public function getTable(): string
     {
         return config('master.tables.banks');

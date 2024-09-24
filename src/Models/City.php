@@ -10,6 +10,16 @@ use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
 class City extends Model
 {
+    protected $fillable = [
+        'province_id',
+        'name',
+        'type',
+        'code',
+        'latitude',
+        'longitude',
+
+    ];
+
     public function getTable(): string
     {
         return config('master.tables.cities');

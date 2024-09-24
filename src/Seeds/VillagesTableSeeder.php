@@ -8,7 +8,7 @@ class VillagesTableSeeder extends Seeder
 {
     public function run()
     {
-        app('db')->table('tm_villages')->truncate();
+        app('db')->table(config('master.tables.villages'))->truncate();
         $file = __DIR__.'/../../resources/data/id/villages.json';
         $data = json_decode(file_get_contents($file), true);
         app('db')->disableQueryLog();
@@ -16,7 +16,7 @@ class VillagesTableSeeder extends Seeder
         foreach ($data as $arr) {
             $arr['created_at'] = date('Y-m-d H:i:s');
             $arr['updated_at'] = date('Y-m-d H:i:s');
-            app('db')->table('tm_villages')->insert($arr);
+            app('db')->table(config('master.tables.villages'))->insert($arr);
         }
 
     }
