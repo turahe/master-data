@@ -45,18 +45,18 @@ class VillageTest extends TestCase
     }
 
     /** @test */
-    public function it_can_delete_a_language()
+    public function it_can_delete_a_village()
     {
         [$data, $village] = $this->createData();
 
         $deleted = $village->delete();
 
         $this->assertTrue($deleted);
-        $this->assertDatabaseMissing(config('master.tables.languages'), ['name' => $village->name]);
+        $this->assertDatabaseMissing(config('master.tables.villages'), ['name' => $village->name]);
     }
 
     /** @test */
-    public function it_errors_when_updating_the_language()
+    public function it_errors_when_updating_the_village()
     {
         [$data, $village] = $this->createData();
         $this->expectException(QueryException::class);
@@ -65,7 +65,7 @@ class VillageTest extends TestCase
     }
 
     /** @test */
-    public function it_can_update_the_language()
+    public function it_can_update_the_village()
     {
         [$data, $village] = $this->createData();
 
@@ -76,7 +76,7 @@ class VillageTest extends TestCase
     }
 
     /** @test */
-    public function it_can_find_the_language()
+    public function it_can_find_the_village()
     {
         [$data, $village] = $this->createData();
 
