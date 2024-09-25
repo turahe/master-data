@@ -38,7 +38,7 @@ class SyncCoordinateCommand extends Command
     /**
      * Execute the console command.
      *
-     * @return mixed
+     * @return int
      */
     public function handle()
     {
@@ -111,5 +111,7 @@ class SyncCoordinateCommand extends Command
             }
             $bar->advance();
         });
+
+        return 0;
     }
 }

@@ -4,13 +4,14 @@ namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\QueryException;
+use PHPUnit\Framework\Attributes\Test;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Village;
 use Turahe\Master\Tests\TestCase;
 
 class DistrictTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function a_district_has_many_villages_relation()
     {
         $district = District::create([
@@ -32,7 +33,7 @@ class DistrictTest extends TestCase
         $this->assertInstanceOf(Village::class, $district->villages->first());
     }
 
-    /** @test */
+    #[Test]
     public function a_create_district()
     {
         $data = [
@@ -51,7 +52,7 @@ class DistrictTest extends TestCase
         $this->assertEquals($data['longitude'], $district->longitude);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_delete_a_district()
     {
         $district = District::create([
@@ -76,7 +77,7 @@ class DistrictTest extends TestCase
         $this->assertDatabaseMissing(config('master.tables.districts'), ['name' => $district->name]);
     }
 
-    /** @test */
+    #[Test]
     public function it_errors_when_updating_the_district()
     {
         $district = District::create([
@@ -91,7 +92,7 @@ class DistrictTest extends TestCase
         $district->update(['name' => null]);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_update_the_district()
     {
         $district = District::create([
@@ -108,7 +109,7 @@ class DistrictTest extends TestCase
         $this->assertEquals('1234', $district->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_find_the_district()
     {
         $district = District::create([

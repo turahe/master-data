@@ -4,6 +4,7 @@ namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\QueryException;
+use PHPUnit\Framework\Attributes\Test;
 use Turahe\Master\Models\Country;
 use Turahe\Master\Models\Currency;
 use Turahe\Master\Models\Language;
@@ -13,7 +14,7 @@ use Turahe\Master\Tests\TestCase;
 
 class CountryTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function a_country_has_many_provinces_relation()
     {
         $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');
@@ -28,7 +29,7 @@ class CountryTest extends TestCase
         $this->assertInstanceOf(Currency::class, $country->currency);
     }
 
-    /** @test */
+    #[Test]
     public function a_country_has_attribute()
     {
         $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');
@@ -53,7 +54,7 @@ class CountryTest extends TestCase
         $this->assertEquals(asset('vendor/assets/countries/flags/'.$country->code.'.png'), $country->flag);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_the_country()
     {
         $data = [
@@ -100,7 +101,7 @@ class CountryTest extends TestCase
         $this->assertEquals($data['longitude'], $country->longitude);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_delete_a_country()
     {
         $this->seed('Turahe\Master\Seeds\LanguagesTableSeeder');
@@ -112,7 +113,7 @@ class CountryTest extends TestCase
         $this->assertDatabaseMissing(config('master.tables.countries'), ['name' => $country->name]);
     }
 
-    /** @test */
+    #[Test]
     public function it_errors_when_updating_the_country()
     {
         $this->seed('Turahe\Master\Seeds\LanguagesTableSeeder');
@@ -122,7 +123,7 @@ class CountryTest extends TestCase
         $country->update(['name' => null]);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_update_the_country()
     {
         $this->seed('Turahe\Master\Seeds\LanguagesTableSeeder');
@@ -134,7 +135,7 @@ class CountryTest extends TestCase
         $this->assertEquals('AFF', $country->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_find_the_country()
     {
         $this->seed('Turahe\Master\Seeds\LanguagesTableSeeder');

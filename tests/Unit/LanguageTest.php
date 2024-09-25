@@ -3,12 +3,13 @@
 namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\QueryException;
+use PHPUnit\Framework\Attributes\Test;
 use Turahe\Master\Models\Language;
 use Turahe\Master\Tests\TestCase;
 
 class LanguageTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function a_bank_has_attribute()
     {
         $this->seed('Turahe\Master\Seeds\LanguagesTableSeeder');
@@ -19,7 +20,7 @@ class LanguageTest extends TestCase
         $this->assertEquals('Afar', $language->native);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_the_language()
     {
         $data = [
@@ -35,7 +36,7 @@ class LanguageTest extends TestCase
         $this->assertEquals($data['code'], $language->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_delete_a_language()
     {
         $this->seed('Turahe\Master\Seeds\LanguagesTableSeeder');
@@ -47,7 +48,7 @@ class LanguageTest extends TestCase
         $this->assertDatabaseMissing(config('master.tables.languages'), ['name' => $language->name]);
     }
 
-    /** @test */
+    #[Test]
     public function it_errors_when_updating_the_language()
     {
         $this->seed('Turahe\Master\Seeds\LanguagesTableSeeder');
@@ -57,7 +58,7 @@ class LanguageTest extends TestCase
         $language->update(['name' => null]);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_update_the_language()
     {
         $this->seed('Turahe\Master\Seeds\LanguagesTableSeeder');
@@ -69,7 +70,7 @@ class LanguageTest extends TestCase
         $this->assertEquals('AFF', $language->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_find_the_language()
     {
         $this->seed('Turahe\Master\Seeds\LanguagesTableSeeder');

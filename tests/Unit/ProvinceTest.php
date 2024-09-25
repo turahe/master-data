@@ -4,6 +4,7 @@ namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\QueryException;
+use PHPUnit\Framework\Attributes\Test;
 use Turahe\Master\Models\City;
 use Turahe\Master\Models\Country;
 use Turahe\Master\Models\District;
@@ -12,7 +13,7 @@ use Turahe\Master\Tests\TestCase;
 
 class ProvinceTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function a_province_has_many_cities_relation()
     {
         $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');
@@ -26,7 +27,7 @@ class ProvinceTest extends TestCase
         $this->assertInstanceOf(Collection::class, $province->districts);
     }
 
-    /** @test */
+    #[Test]
     public function a_province_has_many_districts_relation()
     {
         $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');
@@ -39,7 +40,7 @@ class ProvinceTest extends TestCase
         //        $this->assertInstanceOf(District::class, $province->districts->first());
     }
 
-    /** @test */
+    #[Test]
     public function a_province_has_attribute()
     {
         $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');
@@ -52,7 +53,7 @@ class ProvinceTest extends TestCase
         $this->assertEquals('11', $province->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_the_province()
     {
         $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');
@@ -75,7 +76,7 @@ class ProvinceTest extends TestCase
         $this->assertEquals($data['longitude'], $province->longitude);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_delete_a_province()
     {
         $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');
@@ -88,7 +89,7 @@ class ProvinceTest extends TestCase
         $this->assertDatabaseMissing(config('master.tables.provinces'), ['name' => $province->name]);
     }
 
-    /** @test */
+    #[Test]
     public function it_errors_when_updating_the_province()
     {
         $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');
@@ -99,7 +100,7 @@ class ProvinceTest extends TestCase
         $province->update(['name' => null]);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_update_the_province()
     {
         $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');
@@ -112,7 +113,7 @@ class ProvinceTest extends TestCase
         $this->assertEquals('11', $province->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_find_the_province()
     {
         $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');

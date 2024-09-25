@@ -3,13 +3,14 @@
 namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\QueryException;
+use PHPUnit\Framework\Attributes\Test;
 use Turahe\Master\Models\Country;
 use Turahe\Master\Models\Currency;
 use Turahe\Master\Tests\TestCase;
 
 class CurrencyTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function a_currency_has_attribute()
     {
         $this->seed('Turahe\Master\Seeds\CurrenciesTableSeeder');
@@ -23,7 +24,7 @@ class CurrencyTest extends TestCase
         $this->assertInstanceOf(Country::class, $currency->country);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_the_currency()
     {
         $data = [
@@ -41,7 +42,7 @@ class CurrencyTest extends TestCase
         $this->assertEquals($data['iso_numeric'], $currency->iso_numeric);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_delete_a_currency()
     {
         $this->seed('Turahe\Master\Seeds\CurrenciesTableSeeder');
@@ -53,7 +54,7 @@ class CurrencyTest extends TestCase
         $this->assertDatabaseMissing(config('master.tables.currencies'), ['name' => $currency->name]);
     }
 
-    /** @test */
+    #[Test]
     public function it_errors_when_updating_the_currency()
     {
         $this->seed('Turahe\Master\Seeds\CurrenciesTableSeeder');
@@ -63,7 +64,7 @@ class CurrencyTest extends TestCase
         $currency->update(['iso_code' => null]);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_update_the_currency()
     {
         $this->seed('Turahe\Master\Seeds\CurrenciesTableSeeder');
@@ -75,7 +76,7 @@ class CurrencyTest extends TestCase
         $this->assertEquals('WWW', $currency->iso_code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_find_the_currency()
     {
         $this->seed('Turahe\Master\Seeds\CurrenciesTableSeeder');

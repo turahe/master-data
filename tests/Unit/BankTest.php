@@ -3,12 +3,13 @@
 namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\QueryException;
+use PHPUnit\Framework\Attributes\Test;
 use Turahe\Master\Models\Bank;
 use Turahe\Master\Tests\TestCase;
 
 class BankTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function a_bank_has_attribute()
     {
         $this->seed('Turahe\Master\Seeds\BanksTableSeeder');
@@ -20,7 +21,7 @@ class BankTest extends TestCase
         $this->assertEquals('008', $bank->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_the_bank()
     {
         $data = [
@@ -38,7 +39,7 @@ class BankTest extends TestCase
         $this->assertEquals($data['code'], $bank->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_delete_a_bank()
     {
         $this->seed('Turahe\Master\Seeds\BanksTableSeeder');
@@ -50,7 +51,7 @@ class BankTest extends TestCase
         $this->assertDatabaseMissing(config('master.tables.banks'), ['name' => $bank->name]);
     }
 
-    /** @test */
+    #[Test]
     public function it_errors_when_updating_the_bank()
     {
         $this->seed('Turahe\Master\Seeds\BanksTableSeeder');
@@ -60,7 +61,7 @@ class BankTest extends TestCase
         $bank->update(['name' => null]);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_update_the_bank()
     {
         $this->seed('Turahe\Master\Seeds\BanksTableSeeder');
@@ -72,7 +73,7 @@ class BankTest extends TestCase
         $this->assertEquals('011', $bank->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_find_the_bank()
     {
         $this->seed('Turahe\Master\Seeds\BanksTableSeeder');

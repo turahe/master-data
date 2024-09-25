@@ -4,6 +4,7 @@ namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\QueryException;
+use PHPUnit\Framework\Attributes\Test;
 use Turahe\Master\Models\City;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Province;
@@ -12,7 +13,7 @@ use Turahe\Master\Tests\TestCase;
 
 class CityTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function a_city_has_belongs_to_province_relation()
     {
         $province = Province::create([
@@ -38,7 +39,7 @@ class CityTest extends TestCase
         $this->assertEquals($city->province_id, $city->province->id);
     }
 
-    /** @test */
+    #[Test]
     public function a_city_has_many_districts_relation()
     {
         $city = City::create([
@@ -62,7 +63,7 @@ class CityTest extends TestCase
         $this->assertInstanceOf(District::class, $city->districts->first());
     }
 
-    /** @test */
+    #[Test]
     public function a_create_city()
     {
         $data = [
@@ -84,7 +85,7 @@ class CityTest extends TestCase
         $this->assertEquals($data['longitude'], $city->longitude);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_delete_a_city()
     {
         $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
@@ -96,7 +97,7 @@ class CityTest extends TestCase
         $this->assertDatabaseMissing(config('master.tables.citys'), ['name' => $city->name]);
     }
 
-    /** @test */
+    #[Test]
     public function it_errors_when_updating_the_city()
     {
         $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
@@ -106,7 +107,7 @@ class CityTest extends TestCase
         $city->update(['name' => null]);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_update_the_city()
     {
         $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
@@ -118,7 +119,7 @@ class CityTest extends TestCase
         $this->assertEquals('AFF', $city->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_find_the_city()
     {
         $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');

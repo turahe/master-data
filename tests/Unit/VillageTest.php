@@ -3,13 +3,14 @@
 namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\QueryException;
+use PHPUnit\Framework\Attributes\Test;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Village;
 use Turahe\Master\Tests\TestCase;
 
 class VillageTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function a_village_has_belongs_to_district_relation()
     {
         $district = District::create([
@@ -32,7 +33,7 @@ class VillageTest extends TestCase
         $this->assertEquals($village->district_id, $village->district->id);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_the_village()
     {
         [$data, $village] = $this->createData();
@@ -44,7 +45,7 @@ class VillageTest extends TestCase
         $this->assertEquals($data['longitude'], $village->longitude);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_delete_a_village()
     {
         [$data, $village] = $this->createData();
@@ -55,7 +56,7 @@ class VillageTest extends TestCase
         $this->assertDatabaseMissing(config('master.tables.villages'), ['name' => $village->name]);
     }
 
-    /** @test */
+    #[Test]
     public function it_errors_when_updating_the_village()
     {
         [$data, $village] = $this->createData();
@@ -64,7 +65,7 @@ class VillageTest extends TestCase
         $village->update(['name' => null]);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_update_the_village()
     {
         [$data, $village] = $this->createData();
@@ -75,7 +76,7 @@ class VillageTest extends TestCase
         $this->assertEquals('AFF', $village->code);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_find_the_village()
     {
         [$data, $village] = $this->createData();
