@@ -4,10 +4,12 @@ namespace Turahe\Master\Seeds;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Schema;
+use Turahe\Master\Models\Bank;
 use Turahe\Master\Models\City;
 use Turahe\Master\Models\Country;
 use Turahe\Master\Models\Currency;
 use Turahe\Master\Models\District;
+use Turahe\Master\Models\Language;
 use Turahe\Master\Models\Province;
 use Turahe\Master\Models\Village;
 
@@ -30,6 +32,7 @@ class DatabaseSeeder extends Seeder
             VillagesTableSeeder::class,
             LanguagesTableSeeder::class,
             CurrenciesTableSeeder::class,
+            BanksTableSeeder::class,
         ]);
     }
 
@@ -47,6 +50,8 @@ class DatabaseSeeder extends Seeder
         City::truncate();
         Province::truncate();
         Country::truncate();
+        Language::truncate();
+        Bank::truncate();
 
         Schema::disableForeignKeyConstraints();
     }
