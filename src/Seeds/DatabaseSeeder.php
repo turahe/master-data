@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
             CitiesTableSeeder::class,
             DistrictsTableSeeder::class,
             VillagesTableSeeder::class,
+            LanguagesTableSeeder::class,
             CurrenciesTableSeeder::class,
         ]);
     }
