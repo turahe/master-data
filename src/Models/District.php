@@ -39,11 +39,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @method static \Illuminate\Database\Eloquent\Builder|District whereStatus($value)
  * @method static \Illuminate\Database\Eloquent\Builder|District whereUpdatedAt($value)
  *
- * @mixin \Eloquent
- *
  * @property string|null $code
  *
  * @method static \Illuminate\Database\Eloquent\Builder|District whereCode($value)
+ *
+ * @mixin \Eloquent
  */
 class District extends Model
 {

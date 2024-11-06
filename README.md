@@ -32,7 +32,7 @@ In Laravel 5.5 and higher versions, the service provider will automatically get 
 You must publish [the migration](https://github.com/turahe/master-data/tree/master/database/migrations) with:
 
 ```bash
-php artisan vendor:publish --provider="Turahe\Master\MasterServiceProvider"
+php artisan vendor:publish --provider="Turahe\Master\MasterServiceProvider" --tag=assets
 ```
 
 After the migration has been published you can create the tables by running the migrations:
