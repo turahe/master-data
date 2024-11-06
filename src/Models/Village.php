@@ -47,7 +47,7 @@ class Village extends Model
 {
     public function getTable(): string
     {
-        return config('master.tables.villages');
+        return config('master.tables.villages', 'tm_villages');
     }
 
     /**

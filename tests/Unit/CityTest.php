@@ -94,7 +94,7 @@ class CityTest extends TestCase
         $deleted = $city->delete();
 
         $this->assertTrue($deleted);
-        $this->assertDatabaseMissing(config('master.tables.cities'), []);
+        $this->assertDatabaseMissing(config('master.tables.cities'), ['name' => $city->name]);
     }
 
     #[Test]
@@ -128,5 +128,17 @@ class CityTest extends TestCase
         $found = City::where('code', $city->code)->first();
 
         $this->assertEquals($city->code, $found->code);
+    }
+
+    #[Test]
+    public function it_can_get_full_name_of_city()
+    {
+        $this->seed('Turahe\Master\Seeds\CountriesTableSeeder');
+        $this->seed('Turahe\Master\Seeds\ProvincesTableSeeder');
+        $this->seed('Turahe\Master\Seeds\CitiesTableSeeder');
+
+        $city = City::first();
+
+        $this->assertEquals('Aceh Barat, Aceh (Nad), Indonesia', $city->full_name);
     }
 }

@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('master.tables.currencies'), function (Blueprint $table) {
+        Schema::create(config('master.tables.currencies', 'tm_currencies'), function (Blueprint $table) {
             $table->id();
             $table->integer('priority')->nullable()->default(100);
             $table->string('iso_code', 16)->unique()->index();
@@ -40,6 +40,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('master.tables.currencies'));
+        Schema::dropIfExists(config('master.tables.currencies', 'tm_currencies'));
     }
 };

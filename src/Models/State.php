@@ -72,7 +72,7 @@ class State extends Model
 
     public function getTable(): string
     {
-        return config('master.tables.provinces');
+        return config('master.tables.provinces', 'tm_provinces');
     }
 
     public function country(): BelongsTo

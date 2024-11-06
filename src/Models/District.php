@@ -49,7 +49,7 @@ class District extends Model
 {
     public function getTable(): string
     {
-        return config('master.tables.districts');
+        return config('master.tables.districts', 'tm_districts');
     }
 
     protected $fillable = [

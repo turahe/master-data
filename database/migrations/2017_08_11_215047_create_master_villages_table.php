@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('master.tables.villages'), function (Blueprint $table) {
+        Schema::create(config('master.tables.villages', 'tm_villages'), function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(\Turahe\Master\Models\Village::class, 'district_id');
             $table->string('name', 255);
@@ -21,12 +21,10 @@ return new class extends Migration
             $table->string('postal_code')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
-            $table->timestamps();
-        });
-        Schema::table('tm_villages', function (Blueprint $table) {
             $table->foreign('district_id')
                 ->references('id')->on('tm_districts')
                 ->onDelete('cascade');
+            $table->timestamps();
         });
     }
 
@@ -37,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('master.tables.villages'));
+        Schema::dropIfExists(config('master.tables.villages', 'tm_villages'));
     }
 };

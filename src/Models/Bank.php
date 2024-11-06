@@ -39,7 +39,7 @@ class Bank extends Model
 
     public function getTable(): string
     {
-        return config('master.tables.banks');
+        return config('master.tables.banks', 'tm_banks');
     }
 
     /**

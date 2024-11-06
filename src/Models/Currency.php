@@ -52,7 +52,7 @@ class Currency extends Model
 {
     public function getTable(): string
     {
-        return config('master.tables.currencies');
+        return config('master.tables.currencies', 'tm_currencies');
     }
 
     protected $fillable = [

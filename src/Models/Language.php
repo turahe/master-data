@@ -34,6 +34,6 @@ class Language extends Model
 
     public function getTable(): string
     {
-        return config('master.tables.languages');
+        return config('master.tables.languages', 'tm_languages');
     }
 }

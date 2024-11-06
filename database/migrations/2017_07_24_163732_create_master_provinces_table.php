@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('master.tables.provinces'), function (Blueprint $table) {
+        Schema::create(config('master.tables.provinces', 'tm_provinces'), function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(\Turahe\Master\Models\Country::class, 'country_id');
             $table->string('name', 255);
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('master.tables.provinces'));
+        Schema::dropIfExists(config('master.tables.provinces', 'tm_provinces'));
     }
 };

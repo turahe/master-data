@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('master.tables.countries'), function (Blueprint $table) {
+        Schema::create(config('master.tables.countries', 'tm_countries'), function (Blueprint $table) {
             $table->id();
             $table->string('capital', 255)->nullable();
             $table->string('citizenship', 255)->nullable();
@@ -44,6 +44,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('master.tables.countries'));
+        Schema::dropIfExists(config('master.tables.countries', 'tm_countries'));
     }
 };

@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('master.tables.banks'), function (Blueprint $table) {
+        Schema::create(config('master.tables.banks', 'tm_banks'), function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('alias');
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('master.tables.banks'));
+        Schema::dropIfExists(config('master.tables.banks', 'tm_banks'));
     }
 };

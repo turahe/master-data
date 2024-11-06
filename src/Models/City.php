@@ -22,7 +22,7 @@ class City extends Model
 
     public function getTable(): string
     {
-        return config('master.tables.cities');
+        return config('master.tables.cities', 'tm_cities');
     }
 
     /**

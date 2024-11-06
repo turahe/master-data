@@ -95,7 +95,7 @@ class Country extends Model
 
     public function getTable(): string
     {
-        return config('master.tables.countries');
+        return config('master.tables.countries', 'tm_countries');
     }
 
     public function currency(): BelongsTo

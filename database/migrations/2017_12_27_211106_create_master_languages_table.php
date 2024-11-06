@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('master.tables.languages'), function (Blueprint $table) {
+        Schema::create(config('master.tables.languages', 'tm_languages'), function (Blueprint $table) {
             $table->id();
             $table->string('code')->index();
             $table->string('name');
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('master.tables.languages'));
+        Schema::dropIfExists(config('master.tables.languages', 'tm_languages'));
     }
 };
