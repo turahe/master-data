@@ -94,7 +94,7 @@ class CityTest extends TestCase
         $deleted = $city->delete();
 
         $this->assertTrue($deleted);
-        $this->assertDatabaseMissing(config('master.tables.citys'), ['name' => $city->name]);
+        $this->assertDatabaseMissing(config('master.tables.cities'), []);
     }
 
     #[Test]
