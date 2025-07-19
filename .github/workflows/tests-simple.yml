@@ -1,0 +1,54 @@
+name: Tests (Simple)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        laravel: [10.*, 11.*, 12.*]
+        php: [8.2, 8.3, 8.4]
+        exclude:
+          - laravel: 12.*
+            php: 8.2
+          - laravel: 10.*
+            php: 8.4
+
+    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php }}
+        extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, json
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate --strict
+
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v3
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+
+    - name: Install dependencies
+      run: |
+        composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
+        composer install --prefer-dist --no-interaction
+
+    - name: Execute tests
+      run: vendor/bin/phpunit 
