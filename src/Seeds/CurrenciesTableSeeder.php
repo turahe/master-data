@@ -13,7 +13,7 @@ class CurrenciesTableSeeder extends Seeder
      */
     public function run()
     {
-        //Get all of the currencies
+        // Get all of the currencies
         $file = __DIR__.'/../../resources/data/currencies.json';
 
         $data = json_decode(file_get_contents($file), true);

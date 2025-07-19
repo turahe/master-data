@@ -22,41 +22,41 @@ class MasterManager
 
     public function country()
     {
-        return new Country();
+        return new Country;
     }
 
     public function province()
     {
-        return new Province();
+        return new Province;
     }
 
     public function city()
     {
-        return new City();
+        return new City;
     }
 
     public function district()
     {
-        return new District();
+        return new District;
     }
 
     public function village()
     {
-        return new Village();
+        return new Village;
     }
 
     public function bank()
     {
-        return new Bank();
+        return new Bank;
     }
 
     public function currency()
     {
-        return new Currency();
+        return new Currency;
     }
 
     public function language()
     {
-        return new Language();
+        return new Language;
     }
-} 
+}

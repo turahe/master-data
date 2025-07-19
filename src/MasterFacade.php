@@ -25,4 +25,4 @@ class MasterFacade extends Facade
     {
         return 'master';
     }
-} 
+}
