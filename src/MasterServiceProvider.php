@@ -18,6 +18,10 @@ class MasterServiceProvider extends ServiceProvider
             SeedCommand::class,
             SyncCoordinateCommand::class,
         ]);
+
+        $this->app->singleton('master', function ($app) {
+            return new \Turahe\Master\MasterManager($app);
+        });
     }
 
     /**

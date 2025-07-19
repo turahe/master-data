@@ -1,0 +1,45 @@
+name: Debug Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        laravel: [10.*]
+        php: [8.2]
+
+    name: Debug PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php }}
+        extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, json
+
+    - name: Install dependencies
+      run: |
+        composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
+        composer install --prefer-dist --no-interaction
+
+    - name: Show PHP version
+      run: php --version
+
+    - name: Show Composer packages
+      run: composer show
+
+    - name: Run single test
+      run: vendor/bin/phpunit tests/Unit/BankTest.php --verbose
+      env:
+        DB_CONNECTION: sqlite
+        DB_DATABASE: ":memory:" 

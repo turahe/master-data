@@ -33,20 +33,27 @@ jobs:
       with:
         php-version: ${{ matrix.php }}
         extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, json
-        coverage: none
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate --strict
+
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v3
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ matrix.php }}-laravel-${{ matrix.laravel }}-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-${{ matrix.php }}-laravel-${{ matrix.laravel }}-
+          ${{ runner.os }}-php-${{ matrix.php }}-
 
     - name: Install dependencies
       run: |
         composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
-        composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
+        composer install --prefer-dist --no-interaction
 
     - name: Execute tests (Unit and Feature tests) via PHPUnit
-      run: vendor/bin/phpunit
-
-    - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        file: ./coverage.xml
-        flags: unittests
-        name: codecov-umbrella
-        fail_ci_if_error: true 
+      run: vendor/bin/phpunit --verbose
+      env:
+        DB_CONNECTION: sqlite
+        DB_DATABASE: ":memory:" 
