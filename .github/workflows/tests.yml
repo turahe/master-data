@@ -53,7 +53,7 @@ jobs:
         composer install --prefer-dist --no-interaction
 
     - name: Execute tests (Unit and Feature tests) via PHPUnit
-      run: vendor/bin/phpunit --verbose
+      run: vendor/bin/phpunit
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: ":memory:" 

@@ -38,8 +38,14 @@ jobs:
     - name: Show Composer packages
       run: composer show
 
+    - name: Check PHPUnit version
+      run: vendor/bin/phpunit --version
+
+    - name: List test files
+      run: find tests -name "*.php" -type f
+
     - name: Run single test
-      run: vendor/bin/phpunit tests/Unit/BankTest.php --verbose
+      run: vendor/bin/phpunit tests/Unit/BankTest.php
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: ":memory:" 
