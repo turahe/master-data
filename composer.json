@@ -47,7 +47,7 @@
         "laravel/scout": "^10.11",
         "laravel/pint": "^1.17",
         "spatie/eloquent-sortable": "^4.4",
-        "phpstan/phpstan": "^1.10"
+        "phpstan/phpstan": "^2.1"
     },
     "suggest": {
         "spatie/geocoder": "Synchronize latitude longitude data directly using Google's Geocoding Service"
