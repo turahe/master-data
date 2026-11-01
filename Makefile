@@ -1,8 +1,9 @@
 COMPOSE ?= docker compose
 PHP_VERSION ?= 8.4
+PINT_ARGS ?=
 export PHP_VERSION
 
-.PHONY: build test test-mysql test-postgres test-all down
+.PHONY: build test test-mysql test-postgres test-all pint down
 
 build:
 	$(COMPOSE) build test
@@ -22,6 +23,9 @@ test-all:
 	$(MAKE) test
 	$(MAKE) test-mysql
 	$(MAKE) test-postgres
+
+pint:
+	$(COMPOSE) run --rm --build --no-deps -v "$(CURDIR):/workspace" -w /workspace test /app/vendor/bin/pint $(PINT_ARGS)
 
 down:
 	$(COMPOSE) down

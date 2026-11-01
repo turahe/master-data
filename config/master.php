@@ -1,5 +1,11 @@
 <?php
 
+use Turahe\Master\Models\City;
+use Turahe\Master\Models\Country;
+use Turahe\Master\Models\District;
+use Turahe\Master\Models\Province;
+use Turahe\Master\Models\Village;
+
 return [
     /*
   |--------------------------------------------------------------------------
@@ -29,11 +35,11 @@ return [
     |
     */
     'models' => [
-        'country' => \Turahe\Master\Models\Country::class,
-        'province' => \Turahe\Master\Models\Province::class,
-        'city' => \Turahe\Master\Models\City::class,
-        'district' => \Turahe\Master\Models\District::class,
-        'village' => \Turahe\Master\Models\Village::class,
+        'country' => Country::class,
+        'province' => Province::class,
+        'city' => City::class,
+        'district' => District::class,
+        'village' => Village::class,
     ],
 
 ];

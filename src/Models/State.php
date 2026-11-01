@@ -3,10 +3,12 @@
 namespace Turahe\Master\Models;
 
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use Illuminate\Support\Carbon;
 
 /**
  * Turahe\Master\Models\Province.
@@ -21,12 +23,12 @@ use Illuminate\Database\Eloquent\Relations\HasManyThrough;
  * @property string|null $latitude
  * @property string|null $longitude
  * @property int $status
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection|\Turahe\Master\Models\City[] $cities
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Collection|City[] $cities
  * @property-read int|null $cities_count
- * @property-read \Turahe\Master\Models\Country $country
- * @property-read \Illuminate\Database\Eloquent\Collection|\Turahe\Master\Models\District[] $districts
+ * @property-read Country $country
+ * @property-read Collection|District[] $districts
  * @property-read int|null $districts_count
  * @property-read string $address
  *

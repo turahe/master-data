@@ -2,9 +2,11 @@
 
 namespace Turahe\Master\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Carbon;
 
 /**
  * Turahe\Master\Models\District.
@@ -15,13 +17,13 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string|null $latitude
  * @property string|null $longitude
  * @property int $status
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Turahe\Master\Models\City $city
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read City $city
  * @property-read string $address
  * @property-read mixed $city_name
  * @property-read mixed $province_name
- * @property-read \Illuminate\Database\Eloquent\Collection|\Turahe\Master\Models\Village[] $villages
+ * @property-read Collection|Village[] $villages
  * @property-read int|null $villages_count
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Model autoFilter($filter = 'filter')

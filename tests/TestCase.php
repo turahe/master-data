@@ -2,9 +2,12 @@
 
 namespace Turahe\Master\Tests;
 
+use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\DB;
+use Turahe\Master\MasterFacade;
+use Turahe\Master\MasterServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -21,14 +24,14 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            \Turahe\Master\MasterServiceProvider::class,
+            MasterServiceProvider::class,
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'Master' => \Turahe\Master\MasterFacade::class,
+            'Master' => MasterFacade::class,
         ];
     }
 
@@ -38,7 +41,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     }
 
     /**
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param  Application  $app
      */
     protected function getEnvironmentSetUp($app)
     {

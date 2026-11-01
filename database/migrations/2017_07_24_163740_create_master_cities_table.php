@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Turahe\Master\Models\Province;
 
 return new class extends Migration
 {
@@ -15,7 +16,7 @@ return new class extends Migration
     {
         Schema::create(config('master.tables.cities', 'tm_cities'), function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\Turahe\Master\Models\Province::class, 'province_id');
+            $table->foreignIdFor(Province::class, 'province_id');
             $table->string('name');
             $table->string('type')->nullable();
             $table->string('code', 10)->nullable();

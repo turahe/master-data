@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Turahe\Master\Models\Country;
 
 return new class extends Migration
 {
@@ -15,7 +16,7 @@ return new class extends Migration
     {
         Schema::create(config('master.tables.provinces', 'tm_provinces'), function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\Turahe\Master\Models\Country::class, 'country_id');
+            $table->foreignIdFor(Country::class, 'country_id');
             $table->string('name', 255);
             $table->string('region', 255)->nullable();
             $table->string('iso_3166_2', 2)->nullable();

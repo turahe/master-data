@@ -267,6 +267,7 @@ make test          # SQLite (in memory)
 make test-mysql
 make test-postgres
 make test-all      # all three databases
+make pint          # format PHP files using Laravel Pint in Docker
 make down          # stop the database services
 make test PHP_VERSION=8.5  # use PHP 8.5 instead of the default 8.4
 ```

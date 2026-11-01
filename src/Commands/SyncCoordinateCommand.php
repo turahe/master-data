@@ -4,6 +4,7 @@ namespace Turahe\Master\Commands;
 
 use GuzzleHttp\Exception\ServerException;
 use Illuminate\Console\Command;
+use Spatie\Geocoder\Geocoder;
 use Turahe\Master\Models\City;
 use Turahe\Master\Models\District;
 use Turahe\Master\Models\Province;
@@ -48,7 +49,7 @@ class SyncCoordinateCommand extends Command
         $bar->start();
         Province::cursor()->each(function ($item) use ($bar) {
             $meta = $item->meta;
-            $geocoding = \Spatie\Geocoder\Geocoder::getCoordinatesForAddress($item->address);
+            $geocoding = Geocoder::getCoordinatesForAddress($item->address);
             $meta['lat'] = $geocoding['lat'] ?? null;
             $meta['long'] = $geocoding['lng'] ?? null;
             $item->meta = $meta;
@@ -64,7 +65,7 @@ class SyncCoordinateCommand extends Command
         $bar->start();
         City::with('province')->cursor()->each(function ($item) use ($bar) {
             $meta = $item->meta;
-            $geocoding = \Spatie\Geocoder\Geocoder::getCoordinatesForAddress($item->address);
+            $geocoding = Geocoder::getCoordinatesForAddress($item->address);
             $meta['lat'] = $geocoding['lat'] ?? null;
             $meta['long'] = $geocoding['lng'] ?? null;
             $item->meta = $meta;
@@ -80,7 +81,7 @@ class SyncCoordinateCommand extends Command
         $bar->start();
         District::with('city.province')->cursor()->each(function ($item) use ($bar) {
             $meta = $item->meta;
-            $geocoding = \Spatie\Geocoder\Geocoder::getCoordinatesForAddress($item->address);
+            $geocoding = Geocoder::getCoordinatesForAddress($item->address);
             $meta['lat'] = $geocoding['lat'] ?? null;
             $meta['long'] = $geocoding['lng'] ?? null;
             $item->meta = $meta;
@@ -99,7 +100,7 @@ class SyncCoordinateCommand extends Command
 
             if (! $meta) {
                 try {
-                    $geocoding = \Spatie\Geocoder\Geocoder::getCoordinatesForAddress($item->address);
+                    $geocoding = Geocoder::getCoordinatesForAddress($item->address);
                     $meta['lat'] = $geocoding['lat'] ?? null;
                     $meta['long'] = $geocoding['lng'] ?? null;
                     $item->meta = $meta;

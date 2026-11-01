@@ -20,7 +20,7 @@ class MasterServiceProvider extends ServiceProvider
         ]);
 
         $this->app->singleton('master', function ($app) {
-            return new \Turahe\Master\MasterManager($app);
+            return new MasterManager($app);
         });
     }
 

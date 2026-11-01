@@ -4,6 +4,7 @@ namespace Turahe\Master\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 
 /**
  * @property int $id
@@ -21,9 +22,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string|null $thousands_separator
  * @property string|null $iso_numeric
  * @property int $smallest_denomination
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Turahe\Master\Models\Country|null $country
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Country|null $country
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Currency newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Currency newQuery()

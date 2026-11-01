@@ -3,9 +3,11 @@
 namespace Turahe\Master\Models;
 
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Carbon;
 
 /**
  * @property int $id
@@ -27,12 +29,12 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string|null $flag
  * @property string|null $latitude
  * @property string|null $longitude
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Turahe\Master\Models\Currency|null $currency
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Turahe\Master\Models\Province> $provinces
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Currency|null $currency
+ * @property-read Collection<int, Province> $provinces
  * @property-read int|null $provinces_count
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Turahe\Master\Models\State> $states
+ * @property-read Collection<int, State> $states
  * @property-read int|null $states_count
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Country newModelQuery()
