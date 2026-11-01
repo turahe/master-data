@@ -44,7 +44,7 @@
         "orchestra/testbench": "^10.0|^11.0",
         "spatie/geocoder": "^3.10|^4.0",
         "doctrine/dbal": "^4.1",
-        "laravel/scout": "^10.11",
+        "laravel/scout": "^10.11|^11.0",
         "laravel/pint": "^1.17",
         "spatie/eloquent-sortable": "^4.4|^5.0",
         "phpstan/phpstan": "^2.1"
