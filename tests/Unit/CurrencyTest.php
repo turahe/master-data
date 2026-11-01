@@ -61,7 +61,7 @@ class CurrencyTest extends TestCase
         $currency = Currency::first();
         $this->expectException(QueryException::class);
 
-        $currency->update(['iso_code' => null]);
+        $this->runInTransaction(fn () => $currency->update(['iso_code' => null]));
     }
 
     #[Test]

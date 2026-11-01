@@ -12,8 +12,8 @@ jobs:
 
     strategy:
       matrix:
-        laravel: [10.*]
-        php: [8.2]
+        laravel: [13.*]
+        php: [8.4]
 
     name: Debug PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
 

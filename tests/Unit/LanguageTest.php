@@ -55,7 +55,7 @@ class LanguageTest extends TestCase
         $language = Language::first();
         $this->expectException(QueryException::class);
 
-        $language->update(['name' => null]);
+        $this->runInTransaction(fn () => $language->update(['name' => null]));
     }
 
     #[Test]

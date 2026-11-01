@@ -97,7 +97,7 @@ class ProvinceTest extends TestCase
         $province = Province::first();
         $this->expectException(QueryException::class);
 
-        $province->update(['name' => null]);
+        $this->runInTransaction(fn () => $province->update(['name' => null]));
     }
 
     #[Test]

@@ -120,7 +120,7 @@ class CountryTest extends TestCase
         $country = Language::first();
         $this->expectException(QueryException::class);
 
-        $country->update(['name' => null]);
+        $this->runInTransaction(fn () => $country->update(['name' => null]));
     }
 
     #[Test]

@@ -1,0 +1,9 @@
+.git
+.github
+.cursor
+graphify-out
+vendor
+.phpunit.cache
+coverage
+.env
+.env.*

@@ -58,7 +58,7 @@ class BankTest extends TestCase
         $bank = Bank::first();
         $this->expectException(QueryException::class);
 
-        $bank->update(['name' => null]);
+        $this->runInTransaction(fn () => $bank->update(['name' => null]));
     }
 
     #[Test]

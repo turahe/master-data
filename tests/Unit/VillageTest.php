@@ -4,7 +4,9 @@ namespace Turahe\Master\Tests\Unit;
 
 use Illuminate\Database\QueryException;
 use PHPUnit\Framework\Attributes\Test;
+use Turahe\Master\Models\City;
 use Turahe\Master\Models\District;
+use Turahe\Master\Models\Province;
 use Turahe\Master\Models\Village;
 use Turahe\Master\Tests\TestCase;
 
@@ -13,13 +15,7 @@ class VillageTest extends TestCase
     #[Test]
     public function a_village_has_belongs_to_district_relation()
     {
-        $district = District::create([
-            'name' => 'Name',
-            'code' => 1111222,
-            'city_id' => 1111,
-            'latitude' => $this->faker->latitude,
-            'longitude' => $this->faker->longitude,
-        ]);
+        $district = $this->createDistrict();
 
         $village = Village::create([
             'name' => 'Village 1',
@@ -62,7 +58,7 @@ class VillageTest extends TestCase
         [$data, $village] = $this->createData();
         $this->expectException(QueryException::class);
 
-        $village->update(['name' => null]);
+        $this->runInTransaction(fn () => $village->update(['name' => null]));
     }
 
     #[Test]
@@ -90,7 +86,7 @@ class VillageTest extends TestCase
     {
         $data = [
             'name' => 'Village 1',
-            'district_id' => 1111,
+            'district_id' => $this->createDistrict()->id,
             'code' => 1111222,
             'latitude' => $this->faker->latitude,
             'longitude' => $this->faker->longitude,
@@ -99,5 +95,23 @@ class VillageTest extends TestCase
         $village = Village::create($data);
 
         return [$data, $village];
+    }
+
+    private function createDistrict(): District
+    {
+        $province = Province::create([
+            'country_id' => 100,
+            'name' => 'Test Province',
+        ]);
+        $city = City::create([
+            'province_id' => $province->id,
+            'name' => 'Test City',
+            'type' => 'CITY',
+        ]);
+
+        return District::create([
+            'name' => 'Test District',
+            'city_id' => $city->id,
+        ]);
     }
 }

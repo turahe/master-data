@@ -5,7 +5,9 @@ namespace Turahe\Master\Tests\Unit;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\QueryException;
 use PHPUnit\Framework\Attributes\Test;
+use Turahe\Master\Models\City;
 use Turahe\Master\Models\District;
+use Turahe\Master\Models\Province;
 use Turahe\Master\Models\Village;
 use Turahe\Master\Tests\TestCase;
 
@@ -17,7 +19,7 @@ class DistrictTest extends TestCase
         $district = District::create([
             'name' => 'Name',
             'code' => 1111222,
-            'city_id' => 1111,
+            'city_id' => $this->createCity()->id,
             'latitude' => $this->faker->latitude,
             'longitude' => $this->faker->longitude,
         ]);
@@ -38,7 +40,7 @@ class DistrictTest extends TestCase
     {
         $data = [
             'name' => 'Name',
-            'city_id' => 1111,
+            'city_id' => $this->createCity()->id,
             'code' => 1111222,
             'latitude' => $this->faker->latitude,
             'longitude' => $this->faker->longitude,
@@ -57,7 +59,7 @@ class DistrictTest extends TestCase
     {
         $district = District::create([
             'name' => 'Name',
-            'city_id' => 1111,
+            'city_id' => $this->createCity()->id,
             'code' => 1111222,
             'latitude' => $this->faker->latitude,
             'longitude' => $this->faker->longitude,
@@ -82,14 +84,14 @@ class DistrictTest extends TestCase
     {
         $district = District::create([
             'name' => 'Name',
-            'city_id' => 1111,
+            'city_id' => $this->createCity()->id,
             'code' => 1111222,
             'latitude' => $this->faker->latitude,
             'longitude' => $this->faker->longitude,
         ]);
         $this->expectException(QueryException::class);
 
-        $district->update(['name' => null]);
+        $this->runInTransaction(fn () => $district->update(['name' => null]));
     }
 
     #[Test]
@@ -97,7 +99,7 @@ class DistrictTest extends TestCase
     {
         $district = District::create([
             'name' => 'Name',
-            'city_id' => 1111,
+            'city_id' => $this->createCity()->id,
             'code' => 1111222,
             'latitude' => $this->faker->latitude,
             'longitude' => $this->faker->longitude,
@@ -114,7 +116,7 @@ class DistrictTest extends TestCase
     {
         $district = District::create([
             'name' => 'Name',
-            'city_id' => 1111,
+            'city_id' => $this->createCity()->id,
             'code' => 1111222,
             'latitude' => $this->faker->latitude,
             'longitude' => $this->faker->longitude,
@@ -123,5 +125,19 @@ class DistrictTest extends TestCase
         $found = District::where('code', $district->code)->first();
 
         $this->assertEquals($district->code, $found->code);
+    }
+
+    private function createCity(): City
+    {
+        $province = Province::create([
+            'country_id' => 100,
+            'name' => 'Test Province',
+        ]);
+
+        return City::create([
+            'province_id' => $province->id,
+            'name' => 'Test City',
+            'type' => 'CITY',
+        ]);
     }
 }

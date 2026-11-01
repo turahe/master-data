@@ -34,8 +34,8 @@ A comprehensive Laravel package that provides master data for countries, provinc
 
 ## 📋 Requirements
 
-- **PHP**: 8.2, 8.3, 8.4
-- **Laravel**: 10.x, 11.x, 12.x
+- **PHP**: 8.4, 8.5
+- **Laravel**: 10.x, 11.x, 12.x, 13.x
 - **Database**: MySQL, PostgreSQL, SQLite (for testing)
 
 ## 🚀 Installation
@@ -241,8 +241,8 @@ php artisan master:sync-coordinates
 
 This package is thoroughly tested against:
 
-- **PHP**: 8.2, 8.3, 8.4
-- **Laravel**: 10.x, 11.x, 12.x
+- **PHP**: 8.4, 8.5
+- **Laravel**: 10.x, 11.x, 12.x, 13.x
 
 ### Running Tests Locally
 
@@ -258,11 +258,35 @@ vendor/bin/pint --test
 vendor/bin/phpstan analyse src tests --level=8
 ```
 
+### Testing with MySQL and PostgreSQL
+
+The Docker test image includes PHP and the PDO drivers for SQLite, MySQL, and PostgreSQL. Use the Makefile targets to build the image and run tests:
+
+```bash
+make test          # SQLite (in memory)
+make test-mysql
+make test-postgres
+make test-all      # all three databases
+make down          # stop the database services
+make test PHP_VERSION=8.5  # use PHP 8.5 instead of the default 8.4
+```
+
+To run tests using the host PHP installation instead, start the required service and set the connection variables. The host PHP CLI must have the matching PDO extension enabled:
+
+```bash
+docker compose up -d --wait mysql
+DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=master_data_test DB_USERNAME=master DB_PASSWORD=secret vendor/bin/phpunit
+
+docker compose up -d --wait postgres
+DB_CONNECTION=pgsql DB_HOST=127.0.0.1 DB_PORT=5432 DB_DATABASE=master_data_test DB_USERNAME=master DB_PASSWORD=secret vendor/bin/phpunit
+```
+
+The test case uses SQLite in memory by default. The MySQL and PostgreSQL services use the test-only credentials shown above.
+
 ### Test Matrix
 
 The CI/CD pipeline excludes incompatible combinations:
-- Laravel 12.x requires PHP 8.3+
-- Laravel 10.x doesn't support PHP 8.4
+- Laravel 10.x is excluded because it does not support PHP 8.4 or 8.5
 
 ## 🤝 Contributing
 
