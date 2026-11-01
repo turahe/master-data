@@ -35,7 +35,7 @@ A comprehensive Laravel package that provides master data for countries, provinc
 ## 📋 Requirements
 
 - **PHP**: 8.4, 8.5
-- **Laravel**: 10.x, 11.x, 12.x, 13.x
+- **Laravel**: 12.x, 13.x
 - **Database**: MySQL, PostgreSQL, SQLite (for testing)
 
 ## 🚀 Installation
@@ -242,7 +242,7 @@ php artisan master:sync-coordinates
 This package is thoroughly tested against:
 
 - **PHP**: 8.4, 8.5
-- **Laravel**: 10.x, 11.x, 12.x, 13.x
+- **Laravel**: 12.x, 13.x
 
 ### Running Tests Locally
 
